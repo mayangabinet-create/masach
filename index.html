@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>מסך. — כל ההקרנות בישראל</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   מסך. — מערכת עיצוב ממוזגת
+   כהה, כי הפוסטרים עצמם הם הפלטה. אקצנט אחד — כתום — שמור
+   אך ורק לכפתורי השעה (הפעולה). כל שאר המסך נייטרלי ושקט,
+   כדי שהעין לא תתחרה עם הפוסטרים ותנוח על מבנה חוזר.
+   ========================================================= */
+:root{
+  --bg:#0C0C0E; --surface:#151517; --surface2:#1B1B1E;
+  --line:#28282C; --line-soft:#1E1E21;
+  --text:#F2F1EF; --dim:#8A8681;
+  --acc:#F07818; --acc-soft:rgba(240,120,24,.14); --on-acc:#1A0E00;
+  --red:#E5484D;
+  --r:8px;
+  /* רשת 8px */
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:40px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--bg)}
+body{font-family:'Assistant',system-ui,sans-serif;background:var(--bg);color:var(--text);
+  min-height:100vh;padding-bottom:64px;font-size:16px;line-height:1.5}
+.wrap{max-width:480px;margin:0 auto;padding:0 var(--s3)}
+::selection{background:var(--acc);color:#fff}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+button{font-family:inherit;cursor:pointer;color:inherit}
+img{display:block}
+
+/* ---------- ראש: הזהות נחה בפינה שנצפית ראשונה (ימין-עליון בעברית) ---------- */
+header{padding-top:var(--s4);padding-bottom:var(--s2)}
+.logo{font-family:'Suez One',serif;font-size:36px;line-height:1}
+.tagline{color:var(--dim);font-size:14px;margin-top:6px}
+.updated{color:var(--dim);font-size:12px;margin-top:var(--s2);opacity:.8;
+  display:flex;align-items:center;gap:6px}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--acc);flex:0 0 auto}
+
+/* ---------- סרגל ראשי: דביק, קומפקטי, בלי צבע חזק ---------- */
+.primary{position:sticky;top:0;z-index:15;background:var(--bg);
+  padding-top:var(--s2);padding-bottom:var(--s2);border-bottom:1px solid var(--line-soft)}
+
+input[type="text"],input[type="time"],select{
+  width:100%;appearance:none;background:var(--surface);color:var(--text);
+  border:1px solid var(--line);border-radius:var(--r);padding:13px 14px;font-size:16px;font-family:inherit}
+input[type="text"]::placeholder{color:var(--dim)}
+.chosen{display:flex;align-items:center;gap:10px;background:var(--surface);
+  border:1px solid var(--acc);border-radius:var(--r);padding:9px 12px}
+.chosen img{width:34px;height:50px;object-fit:cover;border-radius:4px;background:var(--line)}
+.chosen .ct{font-size:15px;font-weight:700;line-height:1.25}
+.chosen .cs{font-size:12px;color:var(--dim)}
+.chosen .clear{margin-inline-start:auto;background:none;border:none;font-size:20px;color:var(--dim);line-height:1;padding:4px}
+
+/* יום: דביק, נגלל */
+.daywrap{margin-top:var(--s2)}
+.strip{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.day{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border:1px solid var(--line);background:var(--surface);border-radius:var(--r);
+  padding:9px 13px 8px;color:var(--dim);min-width:58px}
+.day.on{border-color:var(--acc);color:var(--acc)}
+.day .n1{font-size:14px;font-weight:700;line-height:1.2}
+.day .n2{font-family:'IBM Plex Mono',monospace;font-size:11px;opacity:.85;direction:ltr;margin-top:1px}
+
+/* שורת זמן + עוד סינון, קומפקטית */
+.subrow{display:flex;gap:8px;align-items:center;margin-top:var(--s2)}
+.timefield{flex:1;display:flex;align-items:center;gap:9px;height:44px;padding:0 12px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.timefield .tlab{font-size:13px;color:var(--dim);flex:0 0 auto}
+.timefield input[type="time"]{flex:1;width:auto;background:none;border:none;padding:0;
+  font-family:'IBM Plex Mono',monospace;font-size:15px}
+.morebtn{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--dim);
+  border-radius:var(--r);padding:0 14px;font-size:14px;height:44px;white-space:nowrap}
+.morebtn.on{color:var(--acc);border-color:var(--acc)}
+
+/* חיפוש סרט = כפתור קבוע בשורת הפקדים, באותו משקל של "עוד סינון".
+   אין שדה ריק בזרימה, ולכן אין תחושה של שלב שדילגת עליו — אבל החיפוש
+   נגיש תמיד בנגיעה אחת, ולא מוסתר בתוך תפריט. הוא פותח מסך מלא. */
+.searchbtn{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px;height:44px;padding:0 13px;
+  border:1px solid var(--line);background:var(--surface);color:var(--dim);
+  border-radius:var(--r);font-size:14px;white-space:nowrap}
+.searchbtn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;
+  stroke-linecap:round;flex:0 0 auto}
+.searchbtn:hover{color:var(--text);border-color:var(--line)}
+
+/* מסך חיפוש מלא — מופיע מעל הכל, נסגר וחוזר בדיוק לאותו מקום */
+.ov{position:fixed;inset:0;z-index:60;background:var(--bg);display:none;flex-direction:column}
+.ov.show{display:flex}
+.ovbar{display:flex;gap:10px;align-items:center;width:100%;max-width:480px;margin:0 auto;
+  padding:var(--s2) var(--s3);border-bottom:1px solid var(--line-soft)}
+.ovbar input{flex:1}
+.ovclose{flex:0 0 auto;background:none;border:none;color:var(--dim);font-size:15px;padding:10px 2px}
+.ovclose:hover{color:var(--text)}
+.ovlist{flex:1;overflow-y:auto;width:100%;max-width:480px;margin:0 auto;padding:0 var(--s3) var(--s5)}
+.ovhint{font-size:12px;color:var(--dim);padding:var(--s2) 0 var(--s1)}
+.ovitem{display:flex;gap:12px;align-items:center;width:100%;text-align:start;background:none;
+  border:none;border-bottom:1px solid var(--line-soft);padding:11px 0;color:inherit}
+.ovitem img{width:40px;height:58px;object-fit:cover;border-radius:4px;flex:0 0 auto;background:var(--surface2)}
+.ovitem .t{font-size:16px;font-weight:600;line-height:1.3}
+.ovitem .s{font-size:12px;color:var(--dim);margin-top:3px}
+
+/* פאנל "עוד סינון" — נחשף רק כשצריך */
+.more{display:none;margin-top:var(--s2);padding-top:var(--s2);border-top:1px solid var(--line-soft)}
+.more.show{display:block}
+.mfield{margin-bottom:var(--s2)}
+.mfield:last-child{margin-bottom:0}
+.mfield>label{display:block;font-size:12px;color:var(--dim);margin-bottom:7px}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;justify-content:center;line-height:1;
+  border:1px solid var(--line);background:var(--surface);color:var(--dim);border-radius:6px;
+  padding:8px 13px 7px;font-size:13px}
+.chip.on{color:var(--acc);border-color:var(--acc)}
+
+/* ---------- תוצאות ---------- */
+main{padding-top:var(--s3)}
+#results{min-height:200px}
+.toolbar{display:flex;gap:7px;flex-wrap:wrap;padding-bottom:var(--s2);border-bottom:1px solid var(--line-soft)}
+.count{font-size:13px;color:var(--dim);margin-top:var(--s2)}
+.foot{font-size:11px;color:var(--dim);opacity:.75;margin-top:5px}
+.note{font-size:14px;color:var(--dim);margin-top:var(--s2);line-height:1.6}
+.fixes{display:flex;gap:7px;flex-wrap:wrap;margin-top:var(--s2)}
+.fix{display:inline-flex;align-items:center;line-height:1;border:1px solid var(--line);
+  background:var(--surface);color:var(--text);border-radius:6px;padding:9px 13px 8px;font-size:14px}
+.fix:hover{border-color:var(--acc);color:var(--acc)}
+
+/* שורת הקרנה — הפוסטר הוא העוגן היחיד; בעברית, בזכות flex-row+rtl,
+   הילד הראשון (הפוסטר) יושב מימין — בדיוק העמוד השדרה שהעין חוזרת אליו. */
+.item{display:flex;gap:var(--s2);width:100%;text-align:start;background:none;border:none;
+  border-bottom:1px solid var(--line-soft);padding:var(--s3) 0;color:inherit;position:relative;
+  -webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+.poster{width:72px;height:104px;object-fit:cover;border-radius:6px;flex:0 0 auto;background:var(--surface2)}
+.item.best .poster{width:84px;height:122px}          /* גודל, לא צבע, הוא מה שמייחד */
+.body{flex:1;min-width:0;padding-top:2px}
+.best-tag{font-size:11px;color:var(--acc);letter-spacing:.08em;font-weight:700;display:block;margin-bottom:5px}
+.titlerow{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.title{font-size:18px;font-weight:700;line-height:1.25}
+.tag{display:inline-flex;align-items:center;line-height:1;font-size:11px;font-weight:700;
+  border-radius:5px;padding:4px 7px 3px;border:1px solid currentColor}
+.tag.dub{color:var(--acc)}
+.tag.rating{color:var(--dim)}
+.tag.ev{color:var(--dim)}
+.where{color:var(--dim);font-size:14px;margin-top:3px;line-height:1.3}
+/* שורת מטא-דאטה מצומצמת לשני פרטים בלבד: מרחק+נסיעה, וסיום */
+.meta{color:var(--dim);font-size:12px;margin-top:5px}
+.timerow{display:flex;align-items:center;gap:10px;margin-top:var(--s2);flex-wrap:wrap}
+.time{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;direction:ltr;
+  background:var(--acc);color:var(--on-acc);border-radius:6px;padding:7px 12px;border:none;text-decoration:none;
+  display:inline-block}
+.time:hover{filter:brightness(1.08)}
+.starts{color:var(--red);font-size:12px;font-weight:600}
+.fav{position:absolute;top:var(--s3);left:0;background:none;border:none;font-size:19px;color:var(--line);
+  line-height:1;padding:4px}
+.fav.on{color:var(--acc)}
+
+/* קבוצת קולנוע — מצב "סרט נבחר" */
+.venue{border-bottom:1px solid var(--line-soft);padding:var(--s3) 0}
+.vhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.vname{font-size:16px;font-weight:700}
+.vdist{font-size:12px;color:var(--dim);white-space:nowrap}
+.vtimes{display:flex;gap:8px;flex-wrap:wrap;margin-top:var(--s2)}
+
+/* מצבי טעינה / שגיאה */
+.skel{height:104px;border-radius:6px;background:linear-gradient(90deg,var(--surface),var(--surface2),var(--surface));
+  background-size:200% 100%;animation:sh 1.3s infinite;margin-bottom:var(--s2)}
+@keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.err{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s4) var(--s3);text-align:center}
+.err h3{font-size:16px;margin-bottom:6px}
+.err p{font-size:13px;color:var(--dim);line-height:1.6}
+.err button{margin-top:var(--s3);background:var(--acc);color:var(--on-acc);border:none;
+  border-radius:var(--r);padding:11px 22px;font-size:14px;font-weight:700}
+.empty{text-align:center;padding:var(--s4) 0;color:var(--dim);font-size:14px}
+
+/* ---------- גיליון ---------- */
+.sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;
+  align-items:flex-end;justify-content:center;z-index:50}
+.sheet-bg.show{display:flex}
+.sheet{width:100%;max-width:480px;max-height:88vh;overflow-y:auto;background:var(--surface);
+  border-radius:16px 16px 0 0;padding:var(--s2) var(--s3) var(--s4);animation:rise .22s ease}
+@keyframes rise{from{transform:translateY(24px)}to{transform:none}}
+.grab{width:38px;height:3px;border-radius:99px;background:var(--line);margin:0 auto var(--s3)}
+.shead{display:flex;gap:var(--s2)}
+.shead img{width:96px;height:140px;object-fit:cover;border-radius:8px;flex:0 0 auto;background:var(--surface2)}
+.sheet h2{font-size:20px;font-weight:700;line-height:1.25}
+.sen{font-size:12px;color:var(--dim);margin-top:3px}
+.stags{display:flex;gap:6px;flex-wrap:wrap;margin-top:var(--s1)}
+.sfacts{font-size:13px;color:var(--dim);margin-top:var(--s1);line-height:1.6}
+.ssyn{font-size:15px;line-height:1.65;margin-top:var(--s3)}
+.slabel{font-size:12px;color:var(--dim);letter-spacing:.04em;margin-top:var(--s4)}
+.book{display:block;width:100%;margin-top:var(--s3);background:var(--acc);color:var(--on-acc);
+  border-radius:var(--r);padding:15px;font-size:16px;font-weight:700;text-align:center;text-decoration:none}
+.ghost{display:block;width:100%;margin-top:var(--s1);background:none;border:1px solid var(--line);
+  color:var(--text);border-radius:var(--r);padding:12px;font-size:14px;text-align:center;text-decoration:none}
+/* מספרים בתוך משפט עברי — בידוד דו-כיווני, אחרת הסדר נשבר */
+.num{font-family:'IBM Plex Mono',monospace;direction:ltr;unicode-bidi:isolate;font-size:.95em}
+
+/* למה דווקא ההקרנה הזאת — הדירוג חייב להיות מוסבר, לא קסם */
+.why{color:var(--dim);font-size:12px;margin-top:4px;line-height:1.45}
+.tight{color:var(--dim);font-size:12px;font-weight:600}
+
+/* חץ קטן שמסמן שהלחיצה יוצאת מהאתר */
+.time .ext{font-size:11px;opacity:.7;margin-inline-start:5px}
+.time.cur{outline:2px solid var(--text);outline-offset:2px}
+
+/* מיקום לא זוהה — במקום ליפול בשקט לעיר אקראית */
+.geo{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:var(--s2);margin-bottom:var(--s2)}
+.geo h4{font-size:14px;font-weight:700;margin-bottom:4px}
+.geo p{font-size:13px;color:var(--dim);line-height:1.55;margin-bottom:var(--s2)}
+.geo select{font-size:15px}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="logo">מסך.</div>
+  <div class="tagline">כל ההקרנות בישראל. מסך אחד.</div>
+  <div class="updated" id="updated"><span class="dot"></span>טוען…</div>
+</header>
+
+<div class="primary">
+  <div class="wrap">
+    <div id="chosenWrap"></div>
+
+    <div class="daywrap">
+      <div class="strip" id="dayStrip" role="tablist"></div>
+    </div>
+
+    <div class="subrow" id="timeRow">
+      <div class="timefield">
+        <span class="tlab">מהשעה</span>
+        <input type="time" id="fromTime" aria-label="מהשעה">
+      </div>
+      <button class="searchbtn" id="findBtn" aria-label="חיפוש סרט לפי שם">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.6-3.6"></path></svg>
+        סרט
+      </button>
+      <button class="morebtn" id="moreBtn">עוד סינון ⌄</button>
+    </div>
+
+    <div class="more" id="morePanel">
+      <div class="mfield">
+        <label>מאיפה למדוד מרחק</label>
+        <select id="citySel" aria-label="מאיפה למדוד מרחק"><option value="me">📍 המיקום שלי</option></select>
+      </div>
+      <div class="mfield">
+        <label>טווח חיפוש</label>
+        <div class="chips" id="radChips">
+          <button class="chip" data-rad="10">10 ק"מ</button>
+          <button class="chip" data-rad="25">25 ק"מ</button>
+          <button class="chip" data-rad="50">50 ק"מ</button>
+          <button class="chip" data-rad="0">כל הארץ</button>
+        </div>
+      </div>
+      <div class="mfield" id="langField">
+        <label>שפה</label>
+        <div class="chips" id="langChips">
+          <button class="chip" data-lang="">הכל</button>
+          <button class="chip" data-lang="dub">מדובב</button>
+          <button class="chip" data-lang="sub">בשפת המקור</button>
+        </div>
+      </div>
+      <div class="mfield" id="genreField">
+        <label for="genreSel">ז'אנר</label>
+        <select id="genreSel"><option value="">הכל</option></select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-label="חיפוש סרט">
+  <div class="ovbar">
+    <input type="text" id="movieInput" placeholder="שם הסרט" autocomplete="off" enterkeyhint="search">
+    <button class="ovclose" id="ovClose">ביטול</button>
+  </div>
+  <div class="ovlist" id="ovList"></div>
+</div>
+
+<main class="wrap">
+  <div id="results"></div>
+</main>
+
+<div class="sheet-bg" id="sheetBg">
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sTitle">
+    <div class="grab"></div>
+    <div class="shead">
+      <img id="sPoster" alt="" onerror="this.style.visibility='hidden'">
+      <div>
+        <h2 id="sTitle"></h2>
+        <div class="sen" id="sEn"></div>
+        <div class="stags" id="sTags"></div>
+        <div class="sfacts" id="sFacts"></div>
+      </div>
+    </div>
+    <div class="ssyn" id="sSyn"></div>
+    <div class="slabel" id="sMoreLabel"></div>
+    <div class="vtimes" id="sTimes"></div>
+    <a class="book" id="sBook" target="_blank" rel="noopener">להזמנת כרטיסים</a>
+    <a class="ghost" id="sTrailer" target="_blank" rel="noopener">לצפייה בטריילר ↗</a>
+    <button class="ghost" id="sClose">סגירה</button>
+  </div>
+</div>
+
+<script>
+"use strict";
+/* =========================================================
+   מקור נתונים
+   ========================================================= */
+const DATA_URL = "data/showtimes.json";
+const FALLBACK_URL =
+  "https://raw.githubusercontent.com/mayangabinet-create/masach/main/data/showtimes.json";
+
+/* אם אין הרשאת מיקום ולא נבחרה עיר — מודדים ממרכז תל אביב, ואומרים את זה
+   במפורש למשתמש. עדיף מרכז ידוע ומוצהר מאשר "העיר הראשונה ברשימה" בשקט. */
+const DEFAULT_CENTER = { lat:32.0853, lng:34.7818, name:"מרכז תל אביב" };
+
+let DATA = null;
+const M = new Map(), C = new Map();
+
+const store = {
+  get(k){ try{ return JSON.parse(localStorage.getItem("masach:"+k)); }catch{ return null; } },
+  set(k,v){ try{ localStorage.setItem("masach:"+k, JSON.stringify(v)); }catch{} },
+};
+
+const state = {
+  date:null, movieId:"", rad: store.get("rad") ?? 25, lang:"", genre:"",
+  place: store.get("place") ?? "me", pos:null, geoFail:false, sort:"match",
+  favs: new Set(store.get("favs") || []),
+};
+
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+
+const km = (a,b) => {const R=6371,x=(b.lat-a.lat)*Math.PI/180,y=(b.lng-a.lng)*Math.PI/180;
+  const q=Math.sin(x/2)**2+Math.cos(a.lat*Math.PI/180)*Math.cos(b.lat*Math.PI/180)*Math.sin(y/2)**2;
+  return R*2*Math.atan2(Math.sqrt(q),Math.sqrt(1-q));};
+const fmt = m => String(Math.floor(m/60)%24).padStart(2,"0")+":"+String(m%60).padStart(2,"0");
+const nowMin = () => {const d=new Date();return d.getHours()*60+d.getMinutes();};
+/* הערכה גסה בכוונה: ~2 דק׳ לק"מ + 3. זה לא ניווט, ולכן מוצג תמיד עם ~ */
+const drive = k => Math.max(4, Math.round(k*2)+3);
+const READY = 12;                    /* דקות חניה, קופה וכניסה לאולם */
+const todayISO = () => new Date().toISOString().slice(0,10);
+const DN=["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const DS=["א׳","ב׳","ג׳","ד׳","ה׳","ו׳","ש׳"];
+const dOf = iso => new Date(iso+"T00:00:00");
+const offOf = iso => Math.round((dOf(iso)-dOf(todayISO()))/864e5);
+const dayShort = iso => {const o=offOf(iso);return o===0?"היום":o===1?"מחר":DS[dOf(iso).getDay()];};
+const dayLong  = iso => {const o=offOf(iso);
+  return o===0?"היום":o===1?"מחר":o===2?"מחרתיים":"יום "+DN[dOf(iso).getDay()];};
+const numOf = iso => {const d=dOf(iso);return `${d.getDate()}.${d.getMonth()+1}`;};
+const isDubbed = t => /מדובב/.test(t||"");
+const isEvent  = m => !m.genre && /[–-]/.test(m.title||"");
+const cleanTitle = t => (t||"").replace(/\s*-\s*מדובב\s*$/,"").trim();
+
+/* מספרים בתוך משפט עברי חייבים בידוד, אחרת הכיווניות מתהפכת */
+const N = v => `<span class="num">${v}</span>`;
+const T = m => N(fmt(m));
+const scrCount = n => n===1 ? "הקרנה אחת" : `${N(n)} הקרנות`;
+const movMatch = n => n===1 ? "סרט אחד מתאים" : `${N(n)} סרטים מתאימים`;
+const cinCount = n => n===1 ? "בית קולנוע אחד" : `${N(n)} בתי קולנוע`;
+function agoText(ms){
+  const m=Math.round(ms/60000);
+  if(m<2) return "עכשיו";
+  if(m<60) return `לפני ${N(m)} דקות`;
+  const h=Math.round(m/60);
+  if(h<24) return h===1?"לפני שעה":h===2?"לפני שעתיים":`לפני ${N(h)} שעות`;
+  const d=Math.round(h/24);
+  return d===1?"אתמול":`לפני ${N(d)} ימים`;
+}
+
+let CITY_LIST = [];
+const origin = () => state.place==="me"
+  ? (state.pos || DEFAULT_CENTER)
+  : (CITY_LIST[state.place] || DEFAULT_CENTER);
+const originUnknown = () => state.place==="me" && !state.pos;
+
+/* =========================================================
+   טעינה
+   ========================================================= */
+async function load(){
+  showSkeleton();
+  let json=null, err=null;
+  for (const url of [DATA_URL, FALLBACK_URL]){
+    try{
+      const r = await fetch(url, {cache:"no-store"});
+      if(!r.ok) throw new Error("HTTP "+r.status);
+      json = await r.json();
+      break;
+    }catch(e){ err=e; }
+  }
+  if(!json) return showError(err);
+
+  DATA = json;
+  DATA.movies.forEach(m=>M.set(m.id,m));
+  DATA.cinemas.forEach(c=>C.set(c.id,c));
+  CITY_LIST = [...new Map(DATA.cinemas.map(c=>[c.city,{name:c.city,lat:c.lat,lng:c.lng}])).values()]
+              .sort((a,b)=>a.name.localeCompare(b.name,"he"));
+
+  buildUpdated(); buildCities(); buildGenres(); buildStrip(); bindAll(); search();
+}
+function buildUpdated(){
+  const d=new Date(DATA.updatedAt);
+  $("#updated").innerHTML=`<span class="dot"></span>${scrCount(DATA.screenings.length)} · עודכן ${agoText(Date.now()-d)}`;
+}
+function showSkeleton(){ $("#results").innerHTML='<div class="skel"></div>'.repeat(4); }
+function showError(e){
+  $("#updated").innerHTML='<span class="dot" style="background:var(--red)"></span>הלוח לא נטען';
+  $("#results").innerHTML=`<div class="err"><h3>לוח ההקרנות לא נטען</h3>
+    <p>ייתכן שאין חיבור לרשת, או שהעדכון האחרון לא הסתיים.</p>
+    <button id="retry">לנסות שוב</button></div>`;
+  $("#retry").addEventListener("click", load);
+}
+
+/* =========================================================
+   פקדים
+   ========================================================= */
+function buildCities(){
+  const sel=$("#citySel");
+  CITY_LIST.forEach((c,i)=>{const o=document.createElement("option");o.value=i;o.textContent=c.name;sel.appendChild(o);});
+  sel.value=String(state.place);
+}
+function buildGenres(){
+  const gs=[...new Set(DATA.movies.map(m=>m.genre).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"he"));
+  const sel=$("#genreSel");
+  gs.forEach(g=>{const o=document.createElement("option");o.value=g;o.textContent=g;sel.appendChild(o);});
+}
+function buildStrip(){
+  const days=[...new Set(DATA.screenings.map(s=>s.date))].sort();
+  const today=todayISO(); const live=days.filter(d=>d>=today);
+  state.date = state.date && live.includes(state.date) ? state.date : (live[0]||days[0]);
+  const s=$("#dayStrip"); s.innerHTML="";
+  for(const iso of live){
+    const b=document.createElement("button");
+    b.className="day"+(iso===state.date?" on":""); b.dataset.date=iso; b.setAttribute("role","tab");
+    b.innerHTML=`<div class="n1">${dayShort(iso)}</div><div class="n2">${numOf(iso)}</div>`;
+    b.addEventListener("click",()=>goDay(iso));
+    s.appendChild(b);
+  }
+  syncTimeDefault();
+}
+function goDay(iso){
+  state.date=iso;
+  $$("#dayStrip .day").forEach(b=>{
+    const on=b.dataset.date===iso; b.classList.toggle("on",on);
+    if(on) try{ b.scrollIntoView({block:"nearest",inline:"center"}); }catch{}
+  });
+  syncTimeDefault(); search();
+}
+function syncTimeDefault(){ $("#fromTime").value = offOf(state.date)===0 ? fmt(Math.min(nowMin(),23*60+30)) : "10:00"; }
+const fromMin = () => {const[h,m]=$("#fromTime").value.split(":").map(Number);return h*60+m;};
+
+/* חיפוש סרט — מסך מלא. נפתח רק ביוזמת המשתמש, ומראה מיד את כל
+   הסרטים שרצים ביום הנבחר, כדי שגם מי שלא יודע מה לכתוב יקבל רשימה. */
+function openFind(){
+  $("#ov").classList.add("show");
+  document.body.style.overflow="hidden";
+  const i=$("#movieInput"); i.value=""; renderSugg("");
+  setTimeout(()=>i.focus(),30);
+}
+function closeFind(){
+  $("#ov").classList.remove("show");
+  document.body.style.overflow="";
+  $("#movieInput").value="";
+}
+function movieOptions(q){
+  const n=q.trim().toLowerCase();
+  const day=new Map(), all=new Map();
+  for(const s of DATA.screenings){
+    all.set(s.movieId,(all.get(s.movieId)||0)+1);
+    if(s.date===state.date) day.set(s.movieId,(day.get(s.movieId)||0)+1);
+  }
+  return DATA.movies.filter(m=>all.has(m.id))
+    .filter(m=>!n || (m.title||"").toLowerCase().includes(n) || (m.titleEn||"").toLowerCase().includes(n))
+    .map(m=>({m, today:day.get(m.id)||0, any:all.get(m.id)}))
+    .sort((a,b)=>b.today-a.today || b.any-a.any)
+    .slice(0,60);
+}
+function renderSugg(q){
+  const list=movieOptions(q), box=$("#ovList");
+  const hint = q.trim()
+    ? (list.length ? movMatch(list.length) : "")
+    : `הסרטים שרצים ${dayLong(state.date)}`;
+  box.innerHTML = (hint?`<div class="ovhint">${hint}</div>`:"") + (list.map(({m,today})=>`
+    <button class="ovitem" data-id="${m.id}">
+      ${m.poster?`<img src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:`<img alt="">`}
+      <span><span class="t">${cleanTitle(m.title)}</span>
+      <span class="s">${[m.genre,m.runtime?m.runtime+" דק׳":null,isDubbed(m.title)?"מדובב":null].filter(Boolean).join(" · ")||"אירוע"}<br>
+      ${today?`${scrCount(today)} ${dayLong(state.date)}`:`אין הקרנות ${dayLong(state.date)}`}</span></span>
+    </button>`).join("") || `<div class="ovhint">אין סרט בשם כזה בלוח</div>`);
+  box.scrollTop=0;
+  box.querySelectorAll("[data-id]").forEach(b=>b.addEventListener("click",()=>pickMovie(b.dataset.id)));
+}
+function pickMovie(id){
+  state.movieId=id; closeFind();
+  const m=M.get(id);
+  $("#chosenWrap").innerHTML=`<div class="chosen">
+    ${m.poster?`<img src="${m.poster}" alt="" onerror="this.style.visibility='hidden'">`:""}
+    <div><div class="ct">${cleanTitle(m.title)}</div>
+    <div class="cs">${[m.genre,m.runtime?m.runtime+" דק׳":null].filter(Boolean).join(" · ")}</div></div>
+    <button class="clear" aria-label="ביטול בחירת הסרט">×</button></div>`;
+  $(".chosen .clear").addEventListener("click",clearMovie);
+  applyMode(); search();
+}
+function clearMovie(){ state.movieId=""; $("#chosenWrap").innerHTML=""; applyMode(); search(); }
+/* בלי סרט = מנוע גילוי, וזו ברירת המחדל. עם סרט = כל השעות לפי קולנוע,
+   ואז שעת ההתחלה מפסיקה להיות מסננת והופכת למכשול — לכן היא נעלמת. */
+function applyMode(){
+  const picked=!!state.movieId;
+  $("#timeRow").style.display = picked ? "none" : "flex";
+  $("#langField").style.display = picked ? "none" : "";
+  $("#genreField").style.display = picked ? "none" : "";
+  if(picked) closeFind();
+}
+
+/* =========================================================
+   מנוע ההתאמה
+   ---------------------------------------------------------
+   הקרנה "טובה" היא כזו שאפשר להגיע אליה, שמתחילה קרוב לשעה
+   שביקשת (ואיחור עדיף על הקדמה), ושלא רחוקה מדי. מועדף מקבל
+   דחיפה קטנה. כל רכיב כאן מוצג אחר כך למשתמש כנימוק.
+   ========================================================= */
+function enrich(s){ const c=C.get(s.cinemaId), m=M.get(s.movieId); return {...s,cinema:c,movie:m,dist:km(origin(),c)}; }
+/* כמה דקות מרווח יש בין "לצאת עכשיו" לבין תחילת ההקרנה */
+function margin(s){
+  if(offOf(s.date)!==0) return 999;
+  return s.min - (nowMin() + drive(s.dist) + READY);
+}
+function score(s,from){
+  const late = s.min - from;
+  let t = late>=0 ? late*0.30 : -late*0.85;   /* מוקדם מהשעה שביקשת גרוע יותר מאיחור */
+  if(late>=0 && late<=25) t -= 6;             /* בול בחלון שביקשת */
+  const d = s.dist*1.5;
+  const m = margin(s);
+  const r = m<0 ? 70 : m<15 ? 12 : 0;         /* לא תספיק / בקושי תספיק */
+  const f = state.favs.has(s.cinemaId) ? -12 : 0;
+  return d + t + r + f;
+}
+function whyBest(s,from){
+  const late=s.min-from, p=[];
+  if(late>=0&&late<=30) p.push("מתחיל קרוב לשעה שביקשת");
+  else if(late>30)      p.push("ההתחלה הקרובה ביותר לשעה שביקשת");
+  else                  p.push("מתחיל מעט לפני השעה שביקשת");
+  if(s.dist<=8) p.push("קרוב אליך");
+  else p.push(`${N(s.dist.toFixed(1))} ק"מ ממך`);
+  if(state.favs.has(s.cinemaId)) p.push("בקולנוע המועדף עליך");
+  return p.join(" · ");
+}
+
+function search(){
+  if(!DATA) return;
+  const rad=state.rad, picked=state.movieId;
+  let rows=DATA.screenings.filter(s=>s.date===state.date).map(enrich);
+  if(rad) rows=rows.filter(s=>s.dist<=rad);
+
+  if(picked){
+    rows=rows.filter(s=>s.movieId===picked);
+    if(offOf(state.date)===0) rows=rows.filter(s=>s.min>=nowMin());
+    return renderByVenue(rows);
+  }
+
+  const from=fromMin();
+  if(state.lang)  rows=rows.filter(s=>isDubbed(s.movie?.title)===(state.lang==="dub"));
+  if(state.genre) rows=rows.filter(s=>s.movie?.genre===state.genre);
+  const floor=offOf(state.date)===0?Math.max(from,nowMin()):from;
+  let hits=rows.filter(s=>s.min>=floor);
+
+  const sorter={match:(a,b)=>score(a,from)-score(b,from),near:(a,b)=>a.dist-b.dist,early:(a,b)=>a.min-b.min}[state.sort];
+  hits.sort(sorter);
+
+  if(!hits.length){
+    const fixes=[];
+    if(rad) fixes.push({t:"כל הארץ",f:"allrad"});
+    if(state.lang||state.genre) fixes.push({t:"ניקוי הסינון",f:"clearfilters"});
+    fixes.push({t:"החל מהבוקר",f:"morning"});
+    return renderList([], "אין הקרנה שמתאימה לתנאים האלה.", fixes, 0, from);
+  }
+  const total=hits.length;
+  let note=null, fixes=null;
+  if(offOf(state.date)===0 && !hits.some(s=>margin(s)>=0)){
+    note="כל ההקרנות שנותרו היום כבר קרובות מדי כדי להספיק להגיע אליהן.";
+    fixes=[{t:"מחר",f:"nextday"}];
+  }
+  const seen=new Set();
+  hits=hits.filter(s=>!seen.has(s.movieId)&&seen.add(s.movieId));
+  renderList(hits.slice(0,12), note, fixes, total, from);
+}
+
+/* =========================================================
+   תצוגה — כל שורה זהה במבנה (עקביות מרגיעה); ההתאמה הכי טובה
+   מיוחדת בגודל ובנימוק, לא ברקע צבעוני.
+   ========================================================= */
+function tags(m){
+  let t="";
+  if(m?.rating) t+=`<span class="tag rating">${m.rating}</span>`;
+  if(isDubbed(m?.title)) t+=`<span class="tag dub">מדובב</span>`;
+  if(m && isEvent(m)) t+=`<span class="tag ev">אירוע</span>`;
+  return t;
+}
+/* כפתור שעה = יציאה להזמנה באתר הרשת. החץ אומר את זה בלי מילים. */
+function timeBtn(s,cur){
+  return `<a class="time${cur?" cur":""}" href="${s.url}" target="_blank" rel="noopener"
+    aria-label="הזמנת כרטיסים להקרנה ב-${fmt(s.min)} באתר הקולנוע"
+    onclick="event.stopPropagation()">${fmt(s.min)}<span class="ext">↗</span></a>`;
+}
+function geoBanner(){
+  if(!originUnknown()) return "";
+  return `<div class="geo">
+    <h4>לא הצלחנו לאתר אותך</h4>
+    <p>המרחקים נמדדים כרגע ממרכז תל אביב. בחירת עיר תיתן תוצאות מדויקות יותר.</p>
+    <select id="geoCity" aria-label="בחירת עיר">
+      <option value="">בחירת עיר</option>
+      ${CITY_LIST.map((c,i)=>`<option value="${i}">${c.name}</option>`).join("")}
+    </select>
+  </div>`;
+}
+function rowHTML(s,i){
+  const m=s.movie,c=s.cinema,mg=margin(s),today=offOf(s.date)===0;
+  const best=i===0&&state.sort==="match"&&mg>=0;
+  let flag="";
+  if(today && mg<0)       flag=`<span class="tight">כנראה לא תספיק להגיע</span>`;
+  else if(today && mg<15) flag=`<span class="starts">כדאי לצאת עכשיו</span>`;
+  const endTxt = m?.runtime ? `מסתיים ${T(s.min+m.runtime)}` : "";
+  const fav = state.favs.has(c.id);
+  return `<div class="item ${best?"best":""}" data-sid="${s.movieId}|${s.cinemaId}|${s.date}|${s.min}">
+    ${m?.poster?`<img class="poster" src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:`<div class="poster"></div>`}
+    <div class="body">
+      ${best?'<span class="best-tag">ההתאמה הכי טובה</span>':""}
+      <div class="titlerow"><span class="title">${cleanTitle(m?.title||"—")}</span>${tags(m)}</div>
+      <div class="where">${c.name}</div>
+      <div class="meta">${N(s.dist.toFixed(1))} ק"מ ממך · ~${N(drive(s.dist))} דק׳ נסיעה${endTxt?" · "+endTxt:""}</div>
+      ${best?`<div class="why">${whyBest(s,fromMin())}</div>`:""}
+      <div class="timerow">
+        ${timeBtn(s)}
+        ${flag}
+      </div>
+    </div>
+    <button class="fav ${fav?"on":""}" data-fav="${c.id}" aria-label="הוספת ${c.name} למועדפים">★</button>
+  </div>`;
+}
+function renderList(list,note,fixes,total,from){
+  const SORTS=[["match","הכי מתאים"],["near","הכי קרוב"],["early","הכי מוקדם"]];
+  let h=geoBanner();
+  h+=`<div class="toolbar" role="group" aria-label="סדר התוצאות">${SORTS.map(([k,t])=>
+    `<button class="chip ${state.sort===k?"on":""}" data-sort="${k}">${t}</button>`).join("")}</div>`;
+  h+=`<div class="count">${dayLong(state.date)} ${N(numOf(state.date))}${total?` · ${scrCount(total)} מהשעה ${T(from)}`:""}</div>`;
+  if(list.length) h+=`<div class="foot">מרחק בקו אווירי · זמן נסיעה משוער · לחיצה על שעה פותחת את דף ההזמנה של הרשת</div>`;
+  if(note) h+=`<div class="note">${note}</div>`;
+  if(fixes?.length) h+=`<div class="fixes">${fixes.map(f=>`<button class="fix" data-fix="${f.f}">${f.t}</button>`).join("")}</div>`;
+  h+=list.length?list.map(rowHTML).join(""):(note?"":'<div class="empty">אין הקרנות ביום הזה.</div>');
+  $("#results").innerHTML=h;
+  bindResults();
+}
+function renderByVenue(rows){
+  const m=M.get(state.movieId);
+  const by=new Map();
+  for(const s of rows){ if(!by.has(s.cinemaId)) by.set(s.cinemaId,{c:s.cinema,dist:s.dist,list:[]}); by.get(s.cinemaId).list.push(s); }
+  /* מיון לפי קרבה, עם דחיפה קטנה לקולנוע מועדף — כמו במצב הגילוי */
+  const w=g=>g.dist-(state.favs.has(g.c.id)?5:0);
+  const groups=[...by.values()].sort((a,b)=>w(a)-w(b));
+  let h=geoBanner();
+  h+=`<div class="count">${cleanTitle(m?.title||"")} · ${dayLong(state.date)} ${N(numOf(state.date))}</div>`;
+  if(!groups.length){
+    h+=`<div class="note">אין הקרנות של הסרט הזה ביום ובטווח שנבחרו.</div>
+        <div class="fixes"><button class="fix" data-fix="allrad">כל הארץ</button>
+        <button class="fix" data-fix="nextday">היום הבא</button></div>`;
+  }else{
+    h+=`<div class="foot">${cinCount(groups.length)} · לפי הקרבה אליך · לחיצה על שעה פותחת את דף ההזמנה של הרשת</div>`;
+    for(const g of groups){
+      g.list.sort((a,b)=>a.min-b.min);
+      const fav=state.favs.has(g.c.id);
+      h+=`<div class="venue"><div class="vhead">
+        <div class="vname">${g.c.name}</div>
+        <div class="vdist">${N(g.dist.toFixed(1))} ק"מ ממך · ~${N(drive(g.dist))} דק׳ נסיעה</div></div>
+        <div class="vtimes">${g.list.map(s=>timeBtn(s)).join("")}
+        <button class="fav vfav ${fav?"on":""}" data-fav="${g.c.id}" aria-label="הוספת ${g.c.name} למועדפים">★</button></div>
+      </div>`;
+    }
+  }
+  $("#results").innerHTML=h;
+  bindResults();
+}
+function bindResults(){
+  $$("#results [data-sort]").forEach(b=>b.addEventListener("click",()=>{state.sort=b.dataset.sort;search();}));
+  $$("#results .fix").forEach(b=>b.addEventListener("click",()=>applyFix(b.dataset.fix)));
+  $$("#results .item").forEach(el=>el.addEventListener("click",()=>openSheet(el.dataset.sid)));
+  const gc=$("#geoCity");
+  if(gc) gc.addEventListener("change",e=>{
+    if(e.target.value==="") return;
+    state.place=+e.target.value; store.set("place",state.place);
+    $("#citySel").value=String(state.place); state.geoFail=false; search();
+  });
+  $$("#results .fav").forEach(f=>{
+    const toggle=e=>{e.stopPropagation();e.preventDefault();
+      const id=f.dataset.fav;
+      state.favs.has(id)?state.favs.delete(id):state.favs.add(id);
+      store.set("favs",[...state.favs]); f.classList.toggle("on");};
+    f.addEventListener("click",toggle);
+    f.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ")toggle(e);});
+  });
+}
+function applyFix(f){
+  if(f==="allrad") return setChip("#radChips","rad",0);
+  if(f==="morning"){ $("#fromTime").value="10:00"; return search(); }
+  if(f==="clearfilters"){ setChipQuiet("#langChips","lang",""); state.genre=""; $("#genreSel").value=""; return search(); }
+  if(f==="nextday"){
+    const days=[...$$("#dayStrip .day")].map(b=>b.dataset.date);
+    const i=days.indexOf(state.date); if(i>-1&&days[i+1]) goDay(days[i+1]); return;
+  }
+}
+function setChipQuiet(sel,key,val){ state[key]=val; $$(sel+" .chip").forEach(b=>b.classList.toggle("on",String(b.dataset[key])===String(val))); }
+function setChip(sel,key,val){ setChipQuiet(sel,key,val); if(key==="rad") store.set("rad",val); search(); }
+
+/* =========================================================
+   גיליון — מידע על הסרט. ההזמנה עצמה נשארת בכפתורי השעה.
+   ========================================================= */
+function openSheet(sid){
+  const[mid,cid,date,min]=sid.split("|");
+  const m=M.get(mid), c=C.get(cid);
+  $("#sPoster").src=m?.poster||""; $("#sPoster").style.visibility=m?.poster?"visible":"hidden";
+  $("#sTitle").textContent=cleanTitle(m?.title||"");
+  $("#sEn").textContent=m?.titleEn||"";
+  $("#sTags").innerHTML=tags(m);
+  $("#sFacts").innerHTML=[m?.genre,m?.runtime?`${m.runtime} דק׳`:null].filter(Boolean).join(" · ")+
+    `<br>${c.name} · ${dayLong(date)} ${N(numOf(date))} · ${T(+min)}`+(m?.runtime?` (מסתיים ${T(+min+m.runtime)})`:"");
+  $("#sSyn").textContent=m?.synopsis||"";
+  const past = offOf(date)===0 ? nowMin() : -1;
+  const same=DATA.screenings
+    .filter(s=>s.movieId===mid&&s.cinemaId===cid&&s.date===date&&(s.min>=past||s.min===+min))
+    .sort((a,b)=>a.min-b.min);
+  const others=same.length>1;
+  $("#sMoreLabel").textContent = others ? `כל השעות ב${c.name} · ${dayLong(date)}` : "";
+  $("#sMoreLabel").style.display = others ? "" : "none";
+  $("#sTimes").innerHTML = others ? same.map(s=>timeBtn(s,s.min===+min)).join("") : "";
+  const cur=same.find(s=>s.min===+min)||same[0];
+  $("#sBook").href=cur?.url||m?.url||"#";
+  $("#sBook").innerHTML=`להזמנת כרטיסים ל-${fmt(+min)} ↗`;
+  const tr=$("#sTrailer");
+  if(m?.trailer){ tr.href=m.trailer; tr.style.display=""; } else { tr.style.display="none"; }
+  $("#sheetBg").classList.add("show");
+}
+
+/* =========================================================
+   מיקום + חיווט
+   ========================================================= */
+function locate(){
+  if(!navigator.geolocation) return locateFailed();
+  navigator.geolocation.getCurrentPosition(
+    p=>{ state.pos={lat:p.coords.latitude,lng:p.coords.longitude}; state.geoFail=false; search(); },
+    locateFailed,
+    {timeout:8000, maximumAge:300000});
+}
+/* אין הרשאה — לא זורקים אותו בשקט לעיר אקראית. מודדים ממרכז ידוע,
+   אומרים לו את זה, ונותנים לו לבחור עיר במקום. */
+function locateFailed(){ state.pos=null; state.geoFail=true; search(); }
+
+function bindAll(){
+  const inp=$("#movieInput");
+  $("#findBtn").addEventListener("click",openFind);
+  $("#ovClose").addEventListener("click",closeFind);
+  inp.addEventListener("input",()=>renderSugg(inp.value));
+
+  $("#fromTime").addEventListener("change",search);
+  $("#genreSel").addEventListener("change",e=>{state.genre=e.target.value;search();});
+  $("#moreBtn").addEventListener("click",()=>{
+    const on=$("#morePanel").classList.toggle("show");
+    $("#moreBtn").classList.toggle("on",on);
+    $("#moreBtn").textContent = on ? "עוד סינון ⌃" : "עוד סינון ⌄";
+  });
+  $("#radChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(b) setChip("#radChips","rad",+b.dataset.rad);});
+  $("#langChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(b) setChip("#langChips","lang",b.dataset.lang);});
+  $("#citySel").addEventListener("change",e=>{
+    state.place = e.target.value==="me" ? "me" : +e.target.value;
+    store.set("place",state.place);
+    state.place==="me" ? locate() : search();
+  });
+  $("#sClose").addEventListener("click",()=>$("#sheetBg").classList.remove("show"));
+  $("#sheetBg").addEventListener("click",e=>{ if(e.target.id==="sheetBg") $("#sheetBg").classList.remove("show"); });
+  document.addEventListener("keydown",e=>{
+    if(e.key!=="Escape") return;
+    if($("#ov").classList.contains("show")) return closeFind();
+    $("#sheetBg").classList.remove("show");
+  });
+
+  setChipQuiet("#radChips","rad",state.rad);
+  setChipQuiet("#langChips","lang","");
+  applyMode();
+  if(state.place==="me") locate();
+}
+
+load();
+</script>
+</body>
+</html>
