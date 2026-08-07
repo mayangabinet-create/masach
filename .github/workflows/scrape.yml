@@ -35,4 +35,3 @@ jobs:
           git diff --staged --quiet && echo "no change" && exit 0
           git commit -m "showtimes update $(date -u '+%Y-%m-%d %H:%M')"
           git push
-
