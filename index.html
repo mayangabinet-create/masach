@@ -20,7 +20,8 @@
 <meta property="og:title" content="מסך. — כל ההקרנות בישראל">
 <meta property="og:description" content="בא לכם לראות סרט הערב? בוחרים יום, שעה ומיקום — ומקבלים את ההקרנה הכי מתאימה.">
 <meta property="og:url" content="https://mayangabinet-create.github.io/masach/">
-<meta property="og:image" content="https://mayangabinet-create.github.io/masach/share.png">
+<meta property="og:image" content="https://mayangabinet-create.github.io/masach/share.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -152,11 +153,16 @@ input[type="text"]::placeholder{color:var(--dim)}
 .chip.on{color:var(--acc);border-color:var(--acc)}
 
 /* ---------- תוצאות ---------- */
-main{padding-top:var(--s3)}
+main{padding-top:var(--s4)}
 #results{min-height:200px}
-.toolbar{display:flex;gap:7px;flex-wrap:wrap;padding-bottom:var(--s2);border-bottom:1px solid var(--line-soft)}
-.count{font-size:13px;color:var(--dim);margin-top:var(--s2)}
+.count{font-size:13px;color:var(--dim)}
 .foot{font-size:11px;color:var(--dim);opacity:.75;margin-top:5px}
+/* שורת המיון עומדת בפני עצמה, עם תווית שאומרת מה היא — כדי שלא
+   תיקרא כהמשך של הפילטרים שמעליה. */
+.sortrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  margin-top:var(--s3);padding-bottom:var(--s2);border-bottom:1px solid var(--line-soft)}
+.sortlab{font-size:12px;color:var(--dim);flex:0 0 auto}
+.toolbar{display:flex;gap:7px;flex-wrap:wrap}
 .note{font-size:14px;color:var(--dim);margin-top:var(--s2);line-height:1.6}
 .fixes{display:flex;gap:7px;flex-wrap:wrap;margin-top:var(--s2)}
 .fix{display:inline-flex;align-items:center;line-height:1;border:1px solid var(--line);
@@ -714,10 +720,13 @@ function rowHTML(s,i){
 function renderList(list,note,fixes,total,from){
   const SORTS=[["match","הכי מתאים"],["near","הכי קרוב"],["early","הכי מוקדם"]];
   let h=geoBanner();
-  h+=`<div class="toolbar" role="group" aria-label="סדר התוצאות">${SORTS.map(([k,t])=>
-    `<button class="chip ${state.sort===k?"on":""}" data-sort="${k}">${t}</button>`).join("")}</div>`;
+  /* סדר קריאה: מה מוצג → לפי מה ממוין → הרשימה. כשהמיון היה ראשון
+     הוא נצמד לפקדים שמעליו ונקרא כמו עוד שורת סינון. */
   h+=`<div class="count">${dayLong(state.date)} ${N(numOf(state.date))}${total?` · ${scrCount(total)} מהשעה ${T(from)}`:""}</div>`;
   if(list.length) h+=`<div class="foot">מרחק בקו אווירי · זמן נסיעה משוער · לחיצה על שעה פותחת את דף ההזמנה של הרשת</div>`;
+  if(list.length) h+=`<div class="sortrow"><span class="sortlab">מיון</span>
+    <div class="toolbar" role="group" aria-label="סדר התוצאות">${SORTS.map(([k,t])=>
+    `<button class="chip ${state.sort===k?"on":""}" data-sort="${k}">${t}</button>`).join("")}</div></div>`;
   if(note) h+=`<div class="note">${note}</div>`;
   if(fixes?.length) h+=`<div class="fixes">${fixes.map(f=>`<button class="fix" data-fix="${f.f}">${f.t}</button>`).join("")}</div>`;
   h+=list.length?list.map(rowHTML).join(""):(note?"":'<div class="empty">אין הקרנות ביום הזה.</div>');
