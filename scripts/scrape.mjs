@@ -175,6 +175,35 @@ function parseScreenings(html, venue) {
   return out;
 }
 
+/* הדף מציג 12 הקרנות בלבד; השאר נטענות דרך MoviesGridTime, עמוד אחר עמוד,
+   עד שהתשובה כבר לא מכילה את הסמן ShowMore. */
+async function fetchAllScreenings(v) {
+  const first = await get(
+    `${BASE}/timehour?theathereid=${v.theaterId}&id=${v.pageId}&vid=1`, v.id);
+  const seen = new Set();
+  const rows = [];
+  const add = list => { for (const r of list) if (!seen.has(r.eventId)) { seen.add(r.eventId); rows.push(r); } };
+  add(parseScreenings(first, v));
+  let more = first.includes("ShowMore");
+
+  for (let page = 2; more && page <= 25; page++) {
+    await sleep(400);
+    let chunk;
+    try {
+      chunk = await get(
+        `${BASE}/home/MoviesGridTime?page=${page}&theathereid=${v.theaterId}` +
+        `&id=${v.pageId}&venueId=1`,
+        process.env.DEBUG ? `${v.id}-p${page}` : null);
+    } catch { break; }
+
+    const before = rows.length;
+    add(parseScreenings(chunk, v));
+    if (rows.length === before) break;          // אין חדש — עוצרים
+    more = chunk.includes("ShowMore");
+  }
+  return rows;
+}
+
 /* =================== ראשי =================== */
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
@@ -225,8 +254,7 @@ async function main() {
   const unmatched = new Set();
   for (const v of VENUES) {
     try {
-      const rows = parseScreenings(
-        await get(`${BASE}/timehour?theathereid=${v.theaterId}&id=${v.pageId}&vid=1`, v.id), v);
+      const rows = await fetchAllScreenings(v);
       for (const s of rows) {
         let mid = byTitle.get(norm(s.title));
         if (!mid) {                                  // רץ בלוח אבל לא בקטלוג
