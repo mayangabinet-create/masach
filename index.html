@@ -4,6 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>מסך. — כל ההקרנות בישראל</title>
+<meta name="description" content="כל ההקרנות בבתי הקולנוע בישראל במסך אחד. בוחרים יום, שעה ומיקום — ומקבלים את ההקרנה הכי מתאימה לכם.">
+<meta name="theme-color" content="#0C0C0E">
+
+<!-- אייקון: משמש גם כפאביקון בלשונית וגם כאייקון על מסך הבית באייפון -->
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="apple-mobile-web-app-title" content="מסך.">
+
+<!-- תצוגה מקדימה בשיתוף (וואטסאפ, פייסבוק, טלגרם). הכתובת חייבת להיות
+     מלאה ולא יחסית — הרשתות מושכות אותה מהשרת שלהן, לא מהדפדפן שלך. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="מסך.">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="מסך. — כל ההקרנות בישראל">
+<meta property="og:description" content="בא לכם לראות סרט הערב? בוחרים יום, שעה ומיקום — ומקבלים את ההקרנה הכי מתאימה.">
+<meta property="og:url" content="https://mayangabinet-create.github.io/masach/">
+<meta property="og:image" content="https://mayangabinet-create.github.io/masach/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
@@ -152,8 +172,10 @@ main{padding-top:var(--s3)}
 .item.best .poster{width:84px;height:122px}          /* גודל, לא צבע, הוא מה שמייחד */
 .body{flex:1;min-width:0;padding-top:2px}
 .best-tag{font-size:11px;color:var(--acc);letter-spacing:.08em;font-weight:700;display:block;margin-bottom:5px}
-.titlerow{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
-.title{font-size:18px;font-weight:700;line-height:1.25}
+.title{font-size:18px;font-weight:700;line-height:1.25;display:block}
+/* התגיות תמיד בשורה נפרדת מתחת לשם. כשהן זולגות לצד הכותרת המיקום
+   שלהן משתנה משורה לשורה לפי אורך השם, וזה שובר את הסריקה האנכית. */
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
 .tag{display:inline-flex;align-items:center;line-height:1;font-size:11px;font-weight:700;
   border-radius:5px;padding:4px 7px 3px;border:1px solid currentColor}
 .tag.lang{color:var(--text)}   /* מידע, לא פעולה — לכן לא בכתום */
@@ -203,6 +225,7 @@ main{padding-top:var(--s3)}
 .sheet h2{font-size:20px;font-weight:700;line-height:1.25}
 .sen{font-size:12px;color:var(--dim);margin-top:3px}
 .stags{display:flex;gap:6px;flex-wrap:wrap;margin-top:var(--s1)}
+.where{margin-top:7px}
 .sfacts{font-size:13px;color:var(--dim);margin-top:var(--s1);line-height:1.6}
 .ssyn{font-size:15px;line-height:1.65;margin-top:var(--s3)}
 .slabel{font-size:12px;color:var(--dim);letter-spacing:.04em;margin-top:var(--s4)}
@@ -675,7 +698,8 @@ function rowHTML(s,i){
     ${m?.poster?`<img class="poster" src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:`<div class="poster"></div>`}
     <div class="body">
       ${best?'<span class="best-tag">ההתאמה הכי טובה</span>':""}
-      <div class="titlerow"><span class="title">${cleanTitle(m?.title||"—")}</span>${tags(m)}</div>
+      <span class="title">${cleanTitle(m?.title||"—")}</span>
+      ${tags(m)?`<div class="tags">${tags(m)}</div>`:""}
       <div class="where">${c.name}</div>
       <div class="meta">${N(s.dist.toFixed(1))} ק"מ ממך · ~${N(drive(s.dist))} דק׳ נסיעה${endTxt?" · "+endTxt:""}</div>
       ${best?`<div class="why">${whyBest(s,fromMin())}</div>`:""}
