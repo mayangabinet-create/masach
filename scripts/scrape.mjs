@@ -175,33 +175,51 @@ function parseScreenings(html, venue) {
   return out;
 }
 
-/* הדף מציג 12 הקרנות בלבד; השאר נטענות דרך MoviesGridTime, עמוד אחר עמוד,
-   עד שהתשובה כבר לא מכילה את הסמן ShowMore. */
+/* הדף מציג 12 הקרנות בלבד; השאר נטענות דרך MoviesGridTime, עמוד אחר עמוד.
+   הדפדוף ממשיך גם לימים הבאים — אין תווית תאריך בכרטיסים, אבל הרשימה
+   מסודרת כרונולוגית, אז נפילה גדולה בשעה = מעבר ליום הבא. */
+const MAX_DAYS  = 7;
+const MAX_PAGES = 60;
+
 async function fetchAllScreenings(v) {
+  const seen = new Set(), rows = [];
+  let dayOffset = 0, lastAbs = -1;
+
+  const add = list => {
+    for (const r of list) {
+      if (seen.has(r.eventId)) continue;
+      seen.add(r.eventId);
+      let abs = dayOffset * 1440 + r.min;
+      if (abs < lastAbs) {
+        if (lastAbs - abs > 300) { dayOffset++; abs += 1440; }  // מעבר יום
+        else abs = lastAbs;                                     // רעש קטן בסדר
+      }
+      lastAbs = abs;
+      rows.push({ ...r, dayOffset });
+    }
+  };
+
   const first = await get(
     `${BASE}/timehour?theathereid=${v.theaterId}&id=${v.pageId}&vid=1`, v.id);
-  const seen = new Set();
-  const rows = [];
-  const add = list => { for (const r of list) if (!seen.has(r.eventId)) { seen.add(r.eventId); rows.push(r); } };
   add(parseScreenings(first, v));
   let more = first.includes("ShowMore");
 
-  for (let page = 2; more && page <= 25; page++) {
-    await sleep(400);
+  for (let page = 2; more && page <= MAX_PAGES && dayOffset <= MAX_DAYS; page++) {
+    await sleep(250);
     let chunk;
     try {
       chunk = await get(
         `${BASE}/home/MoviesGridTime?page=${page}&theathereid=${v.theaterId}` +
-        `&id=${v.pageId}&venueId=1`,
-        process.env.DEBUG ? `${v.id}-p${page}` : null);
+        `&id=${v.pageId}&venueId=1`, null);
     } catch { break; }
 
     const before = rows.length;
     add(parseScreenings(chunk, v));
-    if (rows.length === before) break;          // אין חדש — עוצרים
+    if (rows.length === before) break;
     more = chunk.includes("ShowMore");
   }
-  return rows;
+
+  return rows.filter(r => r.dayOffset <= MAX_DAYS);
 }
 
 /* =================== ראשי =================== */
@@ -262,12 +280,16 @@ async function main() {
           unmatched.add(s.title);
           if (!movies[mid]) movies[mid] = { ccId: mid, title: s.title };
         }
+        const d = new Date();
+        d.setDate(d.getDate() + (s.dayOffset || 0));
         screenings.push({
-          movieId: mid, cinemaId: v.id, date: today,
+          movieId: mid, cinemaId: v.id,
+          date: d.toISOString().slice(0, 10),
           min: s.min, hall: s.hall, url: s.url,
         });
       }
-      log.push(`${rows.length ? "✓" : "⚠"} ${v.name}: ${rows.length} הקרנות`);
+      const days = new Set(rows.map(r => r.dayOffset)).size;
+      log.push(`${rows.length ? "✓" : "⚠"} ${v.name}: ${rows.length} הקרנות · ${days} ימים`);
     } catch (e) {
       log.push(`✗ ${v.name}: ${e.message}`);
     }
