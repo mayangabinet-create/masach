@@ -1,0 +1,1443 @@
+{
+  "updatedAt": "2026-08-07T14:39:11.076Z",
+  "date": "2026-08-07",
+  "chain": "סינמה סיטי",
+  "cinemas": [
+    {
+      "id": "cc-gl",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי גלילות",
+      "city": "רמת השרון",
+      "lat": 32.147,
+      "lng": 34.805
+    },
+    {
+      "id": "cc-rl",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי ראשל\"צ",
+      "city": "ראשון לציון",
+      "lat": 31.972,
+      "lng": 34.772
+    },
+    {
+      "id": "cc-jm",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי ירושלים",
+      "city": "ירושלים",
+      "lat": 31.782,
+      "lng": 35.203
+    },
+    {
+      "id": "cc-ks",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי כפר סבא",
+      "city": "כפר סבא",
+      "lat": 32.177,
+      "lng": 34.918
+    },
+    {
+      "id": "cc-nt",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי נתניה",
+      "city": "נתניה",
+      "lat": 32.28,
+      "lng": 34.86
+    },
+    {
+      "id": "cc-hd",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי חדרה",
+      "city": "חדרה",
+      "lat": 32.43,
+      "lng": 34.92
+    },
+    {
+      "id": "cc-bs",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי באר שבע",
+      "city": "באר שבע",
+      "lat": 31.244,
+      "lng": 34.812
+    },
+    {
+      "id": "cc-as",
+      "chain": "סינמה סיטי",
+      "name": "סינמה סיטי אשדוד",
+      "city": "אשדוד",
+      "lat": 31.79,
+      "lng": 34.64
+    }
+  ],
+  "movies": [
+    {
+      "id": "4239",
+      "title": "&#x5D2;&#x27;&#x5D9; &#x5E7;&#x5D9;&#x5D3;&#x5E1; &#x2013; &#x5DE;&#x5E4;&#x5E8;&#x5E5; &#x5D4;&#x5D4;&#x5E8;&#x5E4;&#x5EA;&#x5E7;&#x5D0;&#x5D5;&#x5EA;: &#x5D0;&#x5D9; &#x5D4;&#x5D3;&#x5D9;&#x5E0;&#x5D5;&#x5D6;&#x5D0;&#x5D5;&#x5E8;&#x5D9;",
+      "titleEn": "Paw Patrol: The Dino Movie",
+      "genre": null,
+      "runtime": 88,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%A4%D7%A8%D7%A5%20%D7%94%D7%94%D7%A8%D7%A4%D7%AA%D7%A7%D7%90%D7%95%D7%AA%20G.jpg",
+      "trailer": "https://www.youtube.com/watch?v=FB6lZ1xygh8",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/4239"
+    },
+    {
+      "id": "5771",
+      "title": "&#x5E7;&#x5D5;&#x5E4;&#x5E6;&#x5D9;&#x5DD; &#x5D1;&#x5E8;&#x5D0;&#x5E9;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Hoppers",
+      "genre": null,
+      "runtime": 105,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A7%D7%95%D7%A4%D7%A6%D7%99%D7%9D%20%D7%91%D7%A8%D7%90%D7%A9%20%D7%97%D7%93%D7%A9%202.jpg",
+      "trailer": "https://www.youtube.com/watch?v=LYi_3PPRbh0",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/5771"
+    },
+    {
+      "id": "5780",
+      "title": "&#x5DC;&#x5D4;&#x5E2;&#x5D6; &#x5D1;&#x5D2;&#x5D3;&#x5D5;&#x5DC;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Goat",
+      "genre": null,
+      "runtime": 100,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9C%D7%94%D7%A2%D7%96%20%D7%91%D7%92%D7%93%D7%95%D7%9C%20%D7%97%D7%93%D7%A9%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=a89KYNVpxf0",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/5780"
+    },
+    {
+      "id": "5830",
+      "title": "&#x5DB;&#x5D9; &#x5D0;&#x5EA; &#x5DE;&#x5DB;&#x5D5;&#x5E2;&#x5E8;&#x5EA;",
+      "titleEn": "Cuz You&#x27;re Ugly",
+      "genre": null,
+      "runtime": 83,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9B%D7%99%20%D7%90%D7%AA%20%D7%9E%D7%9B%D7%95%D7%A2%D7%A8%D7%AA%282%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=9hWP3LWR6t0",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/5830"
+    },
+    {
+      "id": "5964",
+      "title": "&#x5D4;&#x5E9;&#x5D8;&#x5DF; &#x5DC;&#x5D5;&#x5D1;&#x5E9;&#x5EA; &#x5E4;&#x5E8;&#x5D0;&#x5D3;&#x5D4; 2",
+      "titleEn": "The Devil Wears Prada 2",
+      "genre": null,
+      "runtime": 118,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%A9%D7%98%D7%9F%20%D7%9C%D7%95%D7%91%D7%A9%D7%AA%20%D7%A4%D7%A8%D7%90%D7%93%D7%94%202%20%D7%A1%D7%95%D7%A4%D7%99.jpg",
+      "trailer": "https://www.youtube.com/watch?v=vyWd93iOLyk",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/5964"
+    },
+    {
+      "id": "5977",
+      "title": "&#x5D8;&#x5E4;&#x5D9;&#x5D8;&#x5D9;: &#x5D4;&#x5E8;&#x5E4;&#x5EA;&#x5E7;&#x5D4; &#x5D1;&#x5DE;&#x5D3;&#x5D1;&#x5E8;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Tafiti: Across the Desert",
+      "genre": null,
+      "runtime": 81,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%98%D7%A4%D7%99%D7%98%D7%99.jpg",
+      "trailer": "https://www.youtube.com/watch?v=pu-yypN56ck",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/5977"
+    },
+    {
+      "id": "6002",
+      "title": "&#x5D2;&#x5E8;&#x5D9;&#x5D9;&#x5E1;&#x5D9; &#x5D5;&#x5E4;&#x5D3;&#x5E8;&#x5D5;: &#x5D7;&#x5D9;&#x5D5;&#x5EA; &#x5D4;&#x5DE;&#x5D7;&#x5DE;&#x5D3; &#x5D1;&#x5E4;&#x5E2;&#x5D5;&#x5DC;&#x5D4;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "GRACIE & PEDRO: PETS TO THE RESCUE",
+      "genre": null,
+      "runtime": 87,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%92%D7%A8%D7%99%D7%99%D7%A1%D7%99%20%D7%95%D7%A4%D7%93%D7%A8%D7%95%20%D7%97%D7%99%D7%95%D7%AA%20%D7%94%D7%9E%D7%97%D7%9E%D7%93%20%D7%91%D7%A4%D7%A2%D7%95%D7%9C%D7%94%20-%20%D7%A4%D7%95%D7%A1%D7%98%D7%A8.jpg",
+      "trailer": "https://www.youtube.com/watch?v=5KALYyGUsYQ",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6002"
+    },
+    {
+      "id": "6031",
+      "title": "&#x5D4;&#x5D0;&#x5D5;&#x5D3;&#x5D9;&#x5E1;&#x5D0;&#x5D4;",
+      "titleEn": "THE ODYSSEY",
+      "genre": null,
+      "runtime": 172,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%90%D7%95%D7%93%D7%99%D7%A1%D7%90%D7%94-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit02-onyx%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=Wm8eh0bgWis",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6031"
+    },
+    {
+      "id": "6047",
+      "title": "&#x5DE;&#x5D9;&#x5D9;&#x5E7;&#x5DC;",
+      "titleEn": "Michael",
+      "genre": null,
+      "runtime": 127,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%99%D7%99%D7%A7%D7%9C-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit02-onyx.jpg",
+      "trailer": "https://www.youtube.com/watch?v=zE0OTb0ONJk",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6047"
+    },
+    {
+      "id": "6050",
+      "title": "&#x5E6;&#x5E2;&#x5E6;&#x5D5;&#x5E2; &#x5E9;&#x5DC; &#x5E1;&#x5D9;&#x5E4;&#x5D5;&#x5E8; 5-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Toy Story 5",
+      "genre": null,
+      "runtime": 102,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A6%D7%A2%D7%A6%D7%95%D7%A2%20%D7%A9%D7%9C%20%D7%A1%D7%99%D7%A4%D7%95%D7%A8%20%D7%97%D7%93%D7%A9%282%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=kAb8aeI2P-0",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6050"
+    },
+    {
+      "id": "6051",
+      "title": "&#x5E6;&#x5E2;&#x5E6;&#x5D5;&#x5E2; &#x5E9;&#x5DC; &#x5E1;&#x5D9;&#x5E4;&#x5D5;&#x5E8; 5-&#x5D0;&#x5E0;&#x5D2;&#x5DC;&#x5D9;&#x5EA;",
+      "titleEn": "Toy Story 5",
+      "genre": null,
+      "runtime": 102,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A6%D7%A2%D7%A6%D7%95%D7%A2%20%D7%A9%D7%9C%20%D7%A1%D7%99%D7%A4%D7%95%D7%A8%20%D7%97%D7%93%D7%A9.jpg",
+      "trailer": "https://www.youtube.com/watch?v=fPBtstJ4v28",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6051"
+    },
+    {
+      "id": "6054",
+      "title": "&#x5E1;&#x5D5;&#x5E4;&#x5E8; &#x5DE;&#x5E8;&#x5D9;&#x5D5; &#x5D2;&#x5DC;&#x5E7;&#x5E1;&#x5D9; &#x5D4;&#x5E1;&#x5E8;&#x5D8;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Super Mario Galaxy",
+      "genre": null,
+      "runtime": 98,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%95%D7%A4%D7%A8-%D7%9E%D7%A8%D7%99%D7%95_%D7%92%D7%9C%D7%A7%D7%A1%D7%99-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit02%286%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=8FexZ-ANOYo",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6054"
+    },
+    {
+      "id": "6065",
+      "title": "&#x5D3;&#x5D5;&#x5E8; &#x5D4;&#x5D4;&#x5E9;&#x5E7;&#x5E2;&#x5D5;&#x5EA; | Investment Generation &#x2013; &#x5D1;&#x5D4;",
+      "titleEn": null,
+      "genre": null,
+      "runtime": 240,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A4%D7%95%D7%A1%D7%98%D7%A8%20%D7%90%D7%AA%D7%A8%20%2812%29.png",
+      "trailer": null,
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6065"
+    },
+    {
+      "id": "6070",
+      "title": "&#x5E2;&#x5E9;&#x5D9;&#x5E8; &#x5E8;&#x5E6;&#x5D7;",
+      "titleEn": "How To Make a Killing",
+      "genre": null,
+      "runtime": 105,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A2%D7%A9%D7%99%D7%A8%20%D7%A8%D7%A6%D7%97%20%D7%A7%D7%98%D7%9F%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA.jpg",
+      "trailer": "https://www.youtube.com/watch?v=FS804_MdxM0",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6070"
+    },
+    {
+      "id": "6100",
+      "title": "&#x5DE;&#x5D0;&#x5E9;&#x5D4; &#x5D5;&#x5D4;&#x5D3;&#x5D5;&#x5D1;-&#x5D4;&#x5D4;&#x5E8;&#x5E4;&#x5EA;&#x5E7;&#x5D4; &#x5D4;&#x5D2;&#x5D3;&#x5D5;&#x5DC;&#x5D4;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "MASHA & THE BEAR &#x2013; WONDER PARK",
+      "genre": null,
+      "runtime": 73,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%90%D7%A9%D7%94%20%D7%95%D7%94%D7%93%D7%95%D7%91%20%D7%A4%D7%95%D7%A1%D7%98%D7%A8.jpg",
+      "trailer": "https://www.youtube.com/watch?v=DqoHN5Xs0J4",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6100"
+    },
+    {
+      "id": "6110",
+      "title": "&#x5DE;&#x5D9;&#x5E0;&#x5D9;&#x5D5;&#x5E0;&#x5D9;&#x5DD; &#x5D5;&#x5DE;&#x5E4;&#x5DC;&#x5E6;&#x5D5;&#x5EA;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Minions & Monsters",
+      "genre": null,
+      "runtime": 90,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%99%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%95%D7%9E%D7%A4%D7%9C%D7%A6%D7%95%D7%AA-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit02%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=PrfUEjL82oc",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6110"
+    },
+    {
+      "id": "6111",
+      "title": "&#x5DE;&#x5D9;&#x5E0;&#x5D9;&#x5D5;&#x5E0;&#x5D9;&#x5DD; &#x5D5;&#x5DE;&#x5E4;&#x5DC;&#x5E6;&#x5D5;&#x5EA;-&#x5D0;&#x5E0;&#x5D2;&#x5DC;&#x5D9;&#x5EA;",
+      "titleEn": "Minions & Monsters",
+      "genre": null,
+      "runtime": 90,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%99%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D_%D7%95%D7%9E%D7%A4%D7%9C%D7%A6%D7%95%D7%AA-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit02.jpg",
+      "trailer": "https://www.youtube.com/watch?v=2GbZYvRtwD4",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6111"
+    },
+    {
+      "id": "6114",
+      "title": "&#x5DE;&#x5E8;&#x5E1;&#x5D5;&#x5E4;&#x5D9;&#x5DC;&#x5D0;&#x5DE;&#x5D9;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Marsupilami",
+      "genre": null,
+      "runtime": 99,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%A8%D7%A1%D7%95%D7%A4%D7%99%D7%9C%D7%90%D7%9E%D7%99%20%283%29%20%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=_lPeqaKxdlQ",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6114"
+    },
+    {
+      "id": "6117",
+      "title": "&#x5D7;&#x5D9;&#x5E0;&#x5D4; &#x5D0;&#x5DE;&#x5E8;&#x5D9;&#x5E7;&#x5D0;&#x5D9;&#x5EA;",
+      "titleEn": null,
+      "genre": null,
+      "runtime": 89,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%97%D7%99%D7%A0%D7%94%20%D7%90%D7%9E%D7%A8%D7%99%D7%A7%D7%90%D7%99%D7%AA%20%D7%A4%D7%95%D7%A1%D7%98%D7%A8.jpg",
+      "trailer": "https://www.youtube.com/watch?v=EqIeTRhl1ZU",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6117"
+    },
+    {
+      "id": "6123",
+      "title": "&#x5E1;&#x5E4;&#x5D9;&#x5D9;&#x5D3;&#x5E8;&#x5DE;&#x5DF;: &#x5D9;&#x5D5;&#x5DD; &#x5D7;&#x5D3;&#x5E9;",
+      "titleEn": "SPIDERMAN: BRAND NEW DAY",
+      "genre": null,
+      "runtime": 150,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%A4%D7%99%D7%99%D7%93%D7%A8%D7%9E%D7%9F%20%D7%99%D7%95%D7%9D%20%D7%97%D7%93%D7%A9%20%D7%A1%D7%95%D7%A4%D7%99%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=pZ6ZCJHcc5Q",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6123"
+    },
+    {
+      "id": "6135",
+      "title": "&#x5D0;&#x5D5;&#x5D1;&#x5E1;&#x5E1;&#x5D9;&#x5D4;",
+      "titleEn": "Obsession",
+      "genre": null,
+      "runtime": 108,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%90%D7%95%D7%91%D7%A1%D7%A1%D7%99%D7%94-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit01%20%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=yVgY29zJYMg",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6135"
+    },
+    {
+      "id": "6162",
+      "title": "&#x5E7;&#x5D5;&#x5E4;&#x5D4; &#x5E8;&#x5D0;&#x5E9;&#x5D9;&#x5EA;: &#x5D4;&#x5E1;&#x5E8;&#x5D8;",
+      "titleEn": null,
+      "genre": null,
+      "runtime": 91,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A7%D7%95%D7%A4%D7%94%20%D7%A8%D7%90%D7%A9%D7%99%D7%AA%20%D7%A4%D7%95%D7%A1%D7%98%D7%A8.jpg",
+      "trailer": "https://www.youtube.com/watch?v=O0zp3Bqw0a8",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6162"
+    },
+    {
+      "id": "6163",
+      "title": "&#x5D4;&#x5DE;&#x5DB;&#x5D5;&#x5D5;&#x5DF;",
+      "titleEn": "Tuner",
+      "genre": null,
+      "runtime": 107,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%9E%D7%9B%D7%95%D7%95%D7%9F%20%D7%97%D7%93%D7%A9.jpg",
+      "trailer": "https://www.youtube.com/watch?v=Z-TV4ZAXKWc",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6163"
+    },
+    {
+      "id": "6165",
+      "title": "&#x5DE;&#x5D5;&#x5D0;&#x5E0;&#x5D4; (&#x5DC;&#x5D9;&#x5D9;&#x5D1; &#x5D0;&#x5E7;&#x5E9;&#x5DF;)-&#x5D0;&#x5E0;&#x5D2;&#x5DC;&#x5D9;&#x5EA;",
+      "titleEn": "Moana (Live Action)",
+      "genre": null,
+      "runtime": 115,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%95%D7%90%D7%A0%D7%94%283%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=IudYNbU6rvA",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6165"
+    },
+    {
+      "id": "6166",
+      "title": "&#x5DE;&#x5D5;&#x5D0;&#x5E0;&#x5D4; (&#x5DC;&#x5D9;&#x5D9;&#x5D1; &#x5D0;&#x5E7;&#x5E9;&#x5DF;)-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Moana (Live Action)",
+      "genre": null,
+      "runtime": 115,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%95%D7%90%D7%A0%D7%94%282%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=OTWLz7p0DaQ",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6166"
+    },
+    {
+      "id": "6169",
+      "title": "&#x5D4;&#x5EA;&#x5D2;&#x5DC;&#x5D9;&#x5EA;",
+      "titleEn": "Disclosure Day",
+      "genre": null,
+      "runtime": 145,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%AA%D7%92%D7%9C%D7%99%D7%AA-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit01.jpg",
+      "trailer": "https://www.youtube.com/watch?v=YVu6ofXXRss",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6169"
+    },
+    {
+      "id": "6196",
+      "title": "&#x5E1;&#x5E8;&#x5D8; &#x5DB;&#x5D7;&#x5D5;&#x5DC; &#x5DC;&#x5D1;&#x5DF;",
+      "titleEn": null,
+      "genre": null,
+      "runtime": 86,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9B%D7%97%D7%95%D7%9C%20%D7%9C%D7%91%D7%9F%20%D7%97%D7%93%D7%A9%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=RVNp_9wbZSc",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6196"
+    },
+    {
+      "id": "6203",
+      "title": "&#x5DE;&#x5E4;&#x5E8;&#x5E5; &#x5D4;&#x5D4;&#x5E8;&#x5E4;&#x5EA;&#x5E7;&#x5D0;&#x5D5;&#x5EA;: &#x5D0;&#x5D9; &#x5D4;&#x5D3;&#x5D9;&#x5E0;&#x5D5;&#x5D6;&#x5D0;&#x5D5;&#x5E8;&#x5D9;&#x5DD;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Paw Patrol: The Dino Movie",
+      "genre": null,
+      "runtime": 88,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%A4%D7%A8%D7%A5_%D7%94%D7%94%D7%A8%D7%A4%D7%AA%D7%A7%D7%90%D7%95%D7%AA-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit02.jpg",
+      "trailer": "https://www.youtube.com/watch?v=FB6lZ1xygh8",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6203"
+    },
+    {
+      "id": "6209",
+      "title": "&#x5DC;&#x5D2;&#x5DE;&#x5D5;&#x5E8; &#x5D0;&#x5EA; &#x5D4;&#x5DC;&#x5D9;&#x5DC;&#x5D4;",
+      "titleEn": "One Night Only",
+      "genre": null,
+      "runtime": 102,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9C%D7%92%D7%9E%D7%95%D7%A8_%D7%90%D7%AA_%D7%94%D7%9C%D7%99%D7%9C%D7%94-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit01%282%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=ne4Jt5rwdoc",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6209"
+    },
+    {
+      "id": "6214",
+      "title": "&#x5E2;&#x5E8;&#x5DA; &#x5E1;&#x5E0;&#x5D8;&#x5D9;&#x5DE;&#x5E0;&#x5D8;&#x5DC;&#x5D9;",
+      "titleEn": "Sentimental Value",
+      "genre": null,
+      "runtime": 132,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A2%D7%A8%D7%9A%20%D7%A1%D7%A0%D7%98%D7%99%D7%9E%D7%A0%D7%98%D7%9C%D7%99.jpg",
+      "trailer": "https://www.youtube.com/watch?v=Tqb2zLiYk3Y",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6214"
+    },
+    {
+      "id": "6216",
+      "title": "&#x5E6;&#x5E2;&#x5E6;&#x5D5;&#x5E2; &#x5E9;&#x5DC; &#x5E1;&#x5D9;&#x5E4;&#x5D5;&#x5E8; 5-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1; &#x5DC;&#x5E6;&#x5E8;&#x5E4;&#x5EA;&#x5D9;&#x5EA;",
+      "titleEn": "Toy Story 5",
+      "genre": null,
+      "runtime": 102,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A6%D7%A2%D7%A6%D7%95%D7%A2%205%20%D7%A6%D7%A8%D7%A4%D7%AA%D7%99%D7%AA%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=R7xZRSgmqw4",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6216"
+    },
+    {
+      "id": "6219",
+      "title": "&#x5D4;&#x5D4;&#x5D6;&#x5DE;&#x5E0;&#x5D4;.",
+      "titleEn": "The Invite.",
+      "genre": null,
+      "runtime": 107,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%94%D7%96%D7%9E%D7%A0%D7%94%282%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=M-X2EU7ZuFE",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6219"
+    },
+    {
+      "id": "6222",
+      "title": "&#x5E4;&#x5E8;&#x5E0;&#x5E7;&#x5D9; &#x5D5;&#x5D4;&#x5DE;&#x5E4;&#x5DC;&#x5E6;&#x5D5;&#x5EA;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "STICH HEAD",
+      "genre": null,
+      "runtime": 92,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A4%D7%A8%D7%A0%D7%A7%D7%99%20%D7%95%D7%94%D7%9E%D7%A4%D7%9C%D7%A6%D7%95%D7%AA%20-%20%D7%A4%D7%95%D7%A1%D7%98%D7%A8.jpg",
+      "trailer": "https://www.youtube.com/watch?v=EKoTQpBAdS8",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6222"
+    },
+    {
+      "id": "6231",
+      "title": "&#x5D4;&#x5DE;&#x5E1;&#x5E2; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5DC;&#x5D0; &#x5DC;&#x5E2;&#x5E5; &#x5D4;&#x5E7;&#x5E1;&#x5DE;&#x5D9;&#x5DD;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "The Magic Faraway Tree",
+      "genre": null,
+      "runtime": 110,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%E2%81%A8%D7%A4%D7%95%D7%A1%D7%98%D7%A8%20%D7%94%D7%9E%D7%A1%D7%A2%20%D7%94%D7%9E%D7%95%D7%A4%D7%9C%D7%90%20%D7%9C%D7%A2%D7%A5%20%D7%94%D7%A7%D7%A1%D7%9E%D7%99%D7%9D%20-%20%D7%A1%D7%95%D7%A4%D7%99%20%D7%A1%D7%95%D7%A4%D7%99%E2%81%A9%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=F7Ns6GamwDE",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6231"
+    },
+    {
+      "id": "6234",
+      "title": "&#x5D0;&#x5D9;&#x5E9; &#x5D4;&#x5D2;&#x5DC;&#x5D9;&#x5D3;&#x5D4;",
+      "titleEn": "Ice Cream Man",
+      "genre": null,
+      "runtime": 86,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%90%D7%99%D7%A9%20%D7%94%D7%92%D7%9C%D7%99%D7%93%D7%942.jpg",
+      "trailer": "https://www.youtube.com/watch?v=R3RgDqbvgVc",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6234"
+    },
+    {
+      "id": "6236",
+      "title": "&#x5DE;&#x5D5;&#x5D8;&#x5D5;&#x5E8; &#x5E1;&#x5D9;&#x5D8;&#x5D9;",
+      "titleEn": "Motor City",
+      "genre": null,
+      "runtime": 103,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%95%D7%98%D7%95%D7%A8%20%D7%A1%D7%99%D7%98%D7%99.jpg",
+      "trailer": "https://www.youtube.com/watch?v=LEcvJdp6zdw",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6236"
+    },
+    {
+      "id": "6239",
+      "title": "&#x5D0;&#x5E9;&#x5DC;&#x5D9;&#x5D5;&#x5EA; &#x5DE;&#x5EA;&#x5D5;&#x5E7;&#x5D5;&#x5EA;",
+      "titleEn": "Just an Illusion",
+      "genre": null,
+      "runtime": 119,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%90%D7%A9%D7%9C%D7%99%D7%95%D7%AA%20%D7%9E%D7%AA%D7%95%D7%A7%D7%95%D7%AA.jpg",
+      "trailer": "https://www.youtube.com/watch?v=ey2bNS-wHXw",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6239"
+    },
+    {
+      "id": "6240",
+      "title": "&#x5E1;&#x5E4;&#x5D9;&#x5D9;&#x5D3;&#x5E8;&#x5DE;&#x5DF;: &#x5D9;&#x5D5;&#x5DD; &#x5D7;&#x5D3;&#x5E9;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1; &#x5DC;&#x5E6;&#x5E8;&#x5E4;&#x5EA;&#x5D9;&#x5EA;",
+      "titleEn": "SPIDERMAN: BRAND NEW DAY",
+      "genre": null,
+      "runtime": 150,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%A4%D7%99%D7%99%D7%93%D7%A8%D7%9E%D7%9F%20%D7%A6%D7%A8%D7%A4%D7%AA%D7%99%D7%AA%20%D7%97%D7%93%D7%A9.jpg",
+      "trailer": "https://www.youtube.com/watch?v=i1kJJn7CjzA",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6240"
+    },
+    {
+      "id": "6241",
+      "title": "&#x5E1;&#x5D9;&#x5E0;&#x5D3;&#x5E8;&#x5DC;&#x5D4; &#x5D5;&#x5E9;&#x5DC;&#x5D5;&#x5E9; &#x5D4;&#x5DE;&#x5E9;&#x5D0;&#x5DC;&#x5D5;&#x5EA;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1;",
+      "titleEn": "Three Wishes for Cinderella",
+      "genre": null,
+      "runtime": 85,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%99%D7%A0%D7%93%D7%A8%D7%9C%D7%94%20%D7%95%D7%A9%D7%9C%D7%95%D7%A9%20%D7%94%D7%9E%D7%A9%D7%90%D7%9C%D7%95%D7%AA%20%D7%A4%D7%95%D7%A1%D7%98%D7%A8.jpg",
+      "trailer": "https://www.youtube.com/watch?v=B8Wz68mfjns",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6241"
+    },
+    {
+      "id": "6246",
+      "title": "&#x5DE;&#x5D5;&#x5D0;&#x5E0;&#x5D4; (&#x5DC;&#x5D9;&#x5D9;&#x5D1; &#x5D0;&#x5E7;&#x5E9;&#x5DF;)-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1; &#x5DC;&#x5E6;&#x5E8;&#x5E4;&#x5EA;&#x5D9;&#x5EA;",
+      "titleEn": "Vaiana: La l&#xE9;gende du bout du monde",
+      "genre": null,
+      "runtime": 115,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9E%D7%95%D7%90%D7%A0%D7%94%20%D7%A6%D7%A8%D7%A4%D7%AA%D7%99%D7%AA.jpg",
+      "trailer": "https://www.youtube.com/watch?v=lMx-TRft1iA",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6246"
+    },
+    {
+      "id": "6247",
+      "title": "&#x5E1;&#x5E4;&#x5D9;&#x5D9;&#x5D3;&#x5E8;&#x5DE;&#x5DF;: &#x5D9;&#x5D5;&#x5DD; &#x5D7;&#x5D3;&#x5E9;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1; &#x5DC;&#x5E8;&#x5D5;&#x5E1;&#x5D9;&#x5EA;",
+      "titleEn": "&#x427;&#x435;&#x43B;&#x43E;&#x432;&#x435;&#x43A;-&#x43F;&#x430;&#x443;&#x43A;: &#x41D;&#x43E;&#x432;&#x44B;&#x439; &#x434;&#x435;&#x43D;&#x44C;",
+      "genre": null,
+      "runtime": null,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%A4%D7%99%D7%99%D7%93%D7%A8%D7%9E%D7%9F%20%D7%99%D7%95%D7%9D%20%D7%97%D7%93%D7%A9%20%D7%A8%D7%95%D7%A1%D7%99%D7%AA.jpg",
+      "trailer": "https://www.youtube.com/watch?v=7Zzt6mLyJjg",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6247"
+    },
+    {
+      "id": "6248",
+      "title": "&#x5D4;&#x5D0;&#x5D5;&#x5D3;&#x5D9;&#x5E1;&#x5D0;&#x5D4;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1; &#x5DC;&#x5E8;&#x5D5;&#x5E1;&#x5D9;&#x5EA;",
+      "titleEn": "&#x41E;&#x434;&#x438;&#x441;&#x441;&#x435;&#x44F;",
+      "genre": null,
+      "runtime": null,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%90%D7%95%D7%93%D7%99%D7%A1%D7%90%D7%94%20%D7%A8%D7%95%D7%A1%D7%99%D7%AA.jpg",
+      "trailer": "https://www.youtube.com/watch?v=xjLLXdYldzA",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6248"
+    },
+    {
+      "id": "6253",
+      "title": "&#x5E1;&#x5D5;&#x5DC;&#x5D8;&#x5D9;&#x5D6; &#x5D4;&#x5E1;&#x5E8;&#x5D8;-&#x5D5;&#x5D5;&#x5DC;&#x5D5;&#x5D2; &#x5D4;-100",
+      "titleEn": "&#x5E1;&#x5D5;&#x5DC;&#x5D8;&#x5D9;&#x5D6; &#x5D4;&#x5E1;&#x5E8;&#x5D8;",
+      "genre": null,
+      "runtime": 100,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%95%D7%9C%D7%98%D7%99%D7%96%20%D7%94%D7%A1%D7%A8%D7%98.jpg",
+      "trailer": "https://www.youtube.com/watch?v=bj8alxbVQ9o",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6253"
+    },
+    {
+      "id": "6254",
+      "title": "&#x5D4;&#x5D0;&#x5D5;&#x5D3;&#x5D9;&#x5E1;&#x5D0;&#x5D4;-&#x5DE;&#x5D3;&#x5D5;&#x5D1;&#x5D1; &#x5DC;&#x5E6;&#x5E8;&#x5E4;&#x5EA;&#x5D9;&#x5EA;",
+      "titleEn": "L&#x2019;odyss&#xE9;e",
+      "genre": null,
+      "runtime": 172,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%90%D7%95%D7%93%D7%99%D7%A1%D7%90%D7%94%20%D7%A6%D7%A8%D7%A4%D7%AA%D7%99%D7%AA.jpg",
+      "trailer": "https://www.youtube.com/watch?v=dGPaUiHt958",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6254"
+    },
+    {
+      "id": "6263",
+      "title": "&#x5EA;&#x5D9;&#x5DB;&#x5D5;&#x5DF; &#x5DE;&#x5D2;&#x5E9;&#x5D9;&#x5DE;&#x5D9;&#x5DD;",
+      "titleEn": "Dream High",
+      "genre": null,
+      "runtime": 100,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%AA%D7%99%D7%9B%D7%95%D7%9F%20%D7%9E%D7%92%D7%A9%D7%99%D7%9E%D7%99%D7%9D.jpg",
+      "trailer": "https://www.youtube.com/watch?v=BApO8FhXZ1g",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6263"
+    },
+    {
+      "id": "6265",
+      "title": "&#x5D7;&#x5D2; &#x5DE;&#x5D5;&#x5DC;&#x5D3; &#x5DE;&#x5E8;",
+      "titleEn": "Bitter Christmas",
+      "genre": null,
+      "runtime": 112,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%97%D7%92%20%D7%9E%D7%95%D7%9C%D7%93%20%D7%9E%D7%A8.jpg",
+      "trailer": "https://www.youtube.com/watch?v=LK8j_6jmuBQ",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6265"
+    },
+    {
+      "id": "6266",
+      "title": "&#x5D1;&#x5D5;&#x5E1;&#x5D9;&#x5EA; &#x5D1;&#x5D4;&#x5E4;&#x5E8;&#x5E2;&#x5D4;",
+      "titleEn": "I Want Your Sex",
+      "genre": null,
+      "runtime": 90,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%91%D7%95%D7%A1%D7%99%D7%AA%20%D7%91%D7%94%D7%A4%D7%A8%D7%A2%D7%94%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=g03_F3S5e68",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6266"
+    },
+    {
+      "id": "6271",
+      "title": "&#x5D2;&#x5D1;&#x5E2;&#x5D4; 338",
+      "titleEn": null,
+      "genre": null,
+      "runtime": 106,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%92%D7%91%D7%A2%D7%94%20338.jpg",
+      "trailer": "https://www.youtube.com/watch?v=XIb8rmfsmxc",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6271"
+    },
+    {
+      "id": "6297",
+      "title": "&#x5D4;&#x5D0;&#x5D5;&#x5E4;&#x5E8;&#x5D4; &#x5DC;&#x5D4; &#x5D1;&#x5D5;&#x5D4;&#x5DD;-&#x5D4;&#x5E4;&#x5E7;&#x5EA; &#x5D4;&#x5E2;&#x5E0;&#x5E7; &#x5DE;&#x5D0;&#x5E8;&#x5E0;&#x5D4; &#x5D3;&#x5D9; &#x5D5;&#x5E8;&#x5D5;&#x5E0;&#x5D4;",
+      "titleEn": "La Boh&#xE8;me",
+      "genre": null,
+      "runtime": 121,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9C%D7%94%20%D7%91%D7%95%D7%94%D7%9D.jpg",
+      "trailer": "https://www.youtube.com/watch?v=lrjJsHvasDA",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6297"
+    },
+    {
+      "id": "6301",
+      "title": "&#x5DB;&#x5D9; &#x5D0;&#x5EA; &#x5DE;&#x5DB;&#x5D5;&#x5E2;&#x5E8;&#x5EA;-&#x5D4;&#x5E7;&#x5E8;&#x5E0;&#x5D4; &#x5D5;&#x5E9;&#x5D9;&#x5D7;&#x5D4;",
+      "titleEn": "&#x5E2;&#x5DD; &#x5D4;&#x5D1;&#x5D9;&#x5DE;&#x5D0;&#x5D9;&#x5EA; &#x5E9;&#x5E8;&#x5D5;&#x5DF; &#x5D0;&#x5E0;&#x5D2;&#x5DC;&#x5D4;&#x5D0;&#x5E8;&#x5D8; &#x5D5;&#x5D4;&#x5E9;&#x5D7;&#x5E7;&#x5E0;&#x5D9;&#x5EA; &#x5E8;&#x5D9;&#x5E7;&#x5D9; &#x5E8;&#x5D9;&#x5D9;&#x5E3; &#x5E1;&#x5D9;&#x5E0;&#x5D9;",
+      "genre": null,
+      "runtime": 120,
+      "rating": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9B%D7%99%20%D7%90%D7%AA%20%D7%9E%D7%9B%D7%95%D7%A2%D7%A8%D7%AA%20%D7%9E%D7%99%D7%95%D7%97%D7%93%281%29.jpg",
+      "trailer": "https://www.youtube.com/watch?v=9hWP3LWR6t0",
+      "synopsis": null,
+      "url": "https://www.cinema-city.co.il/movie/6301"
+    }
+  ],
+  "screenings": [
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840109&theaterId=1170"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840139&theaterId=1170"
+    },
+    {
+      "movieId": "6231",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840187&theaterId=1170"
+    },
+    {
+      "movieId": "6214",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1055,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840159&theaterId=1170"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1065,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840156&theaterId=1170"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840166&theaterId=1170"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839480&theaterId=1170"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1090,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840136&theaterId=1170"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1110,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840119&theaterId=1170"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1120,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840115&theaterId=1170"
+    },
+    {
+      "movieId": "6234",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1130,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840142&theaterId=1170"
+    },
+    {
+      "movieId": "6214",
+      "cinemaId": "cc-gl",
+      "date": "2026-08-07",
+      "min": 1140,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840124&theaterId=1170"
+    },
+    {
+      "movieId": "6110",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842327&theaterId=1173"
+    },
+    {
+      "movieId": "6114",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842349&theaterId=1173"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1065,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842397&theaterId=1173"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1065,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842399&theaterId=1173"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1065,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842400&theaterId=1173"
+    },
+    {
+      "movieId": "6234",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1065,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842356&theaterId=1173"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1070,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842319&theaterId=1173"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842381&theaterId=1173"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1095,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842361&theaterId=1173"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1110,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842386&theaterId=1173"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1110,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=838764&theaterId=1173"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1130,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839439&theaterId=1173"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1250,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839430&theaterId=1174"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1250,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841474&theaterId=1174"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1250,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841478&theaterId=1174"
+    },
+    {
+      "movieId": "6234",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1250,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843522&theaterId=1174"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1260,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841476&theaterId=1174"
+    },
+    {
+      "movieId": "6117",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1275,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841468&theaterId=1174"
+    },
+    {
+      "movieId": "6266",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1275,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841471&theaterId=1174"
+    },
+    {
+      "movieId": "6209",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1290,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841467&theaterId=1174"
+    },
+    {
+      "movieId": "6234",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1300,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841465&theaterId=1174"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1310,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841463&theaterId=1174"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1320,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841475&theaterId=1174"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-jm",
+      "date": "2026-08-07",
+      "min": 1330,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=841469&theaterId=1174"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839508&theaterId=1175"
+    },
+    {
+      "movieId": "6234",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1060,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843540&theaterId=1175"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842062&theaterId=1175"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1110,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842044&theaterId=1175"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1130,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842051&theaterId=1175"
+    },
+    {
+      "movieId": "6209",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1150,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842031&theaterId=1175"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1155,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842033&theaterId=1175"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1160,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839501&theaterId=1175"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1200,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839503&theaterId=1175"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1200,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842047&theaterId=1175"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1210,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842057&theaterId=1175"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-ks",
+      "date": "2026-08-07",
+      "min": 1215,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843366&theaterId=1175"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842563&theaterId=1176"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1065,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842574&theaterId=1176"
+    },
+    {
+      "movieId": "6234",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1110,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843538&theaterId=1176"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1120,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842603&theaterId=1176"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1120,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842589&theaterId=1176"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1140,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842580&theaterId=1176"
+    },
+    {
+      "movieId": "6209",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1155,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842596&theaterId=1176"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1160,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842568&theaterId=1176"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1180,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839390&theaterId=1176"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1190,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842585&theaterId=1176"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1245,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842599&theaterId=1176"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1260,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842576&theaterId=1176"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1060,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843536&theaterId=1350"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=835261&theaterId=1350"
+    },
+    {
+      "movieId": "6166",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840992&theaterId=1350"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840982&theaterId=1350"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1120,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840970&theaterId=1350"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1120,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840976&theaterId=1350"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1140,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840966&theaterId=1350"
+    },
+    {
+      "movieId": "6248",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1170,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840987&theaterId=1350"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1180,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839408&theaterId=1350"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1190,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840963&theaterId=1350"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1200,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840971&theaterId=1350"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-hd",
+      "date": "2026-08-07",
+      "min": 1230,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840940&theaterId=1350"
+    },
+    {
+      "movieId": "6222",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1060,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839682&theaterId=1178"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843286&theaterId=1178"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1090,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839719&theaterId=1178"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1100,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839716&theaterId=1178"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1125,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839687&theaterId=1178"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1140,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=835254&theaterId=1178"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1150,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839709&theaterId=1178"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1170,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839703&theaterId=1178"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1185,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839458&theaterId=1178"
+    },
+    {
+      "movieId": "6266",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1205,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839713&theaterId=1178"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1220,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839710&theaterId=1178"
+    },
+    {
+      "movieId": "6209",
+      "cinemaId": "cc-bs",
+      "date": "2026-08-07",
+      "min": 1230,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839690&theaterId=1178"
+    },
+    {
+      "movieId": "6110",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1050,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840388&theaterId=1181"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=835258&theaterId=1181"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840419&theaterId=1181"
+    },
+    {
+      "movieId": "6162",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1080,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840411&theaterId=1181"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1090,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840385&theaterId=1181"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1100,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840401&theaterId=1181"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1130,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840394&theaterId=1181"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1150,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840382&theaterId=1181"
+    },
+    {
+      "movieId": "6209",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1155,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840375&theaterId=1181"
+    },
+    {
+      "movieId": "6031",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1170,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840397&theaterId=1181"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1170,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=840403&theaterId=1181"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1190,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=839368&theaterId=1181"
+    }
+  ]
+}
