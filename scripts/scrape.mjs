@@ -33,13 +33,19 @@ const VENUES = [
 /* =================== עזרים =================== */
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+/* סינמה סיטי שולחים עברית כישויות מספריות (&#x5E4;) — חייבים לפענח */
+const decodeEntities = s => s
+  .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+  .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(+d))
+  .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
+  .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&apos;/g, "'");
+
 const stripTags = html =>
-  html.replace(/<script[\s\S]*?<\/script>/gi, " ")
-      .replace(/<style[\s\S]*?<\/style>/gi, " ")
-      .replace(/<[^>]*>/g, " ")
-      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
-      .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
-      .replace(/\s+/g, " ").trim();
+  decodeEntities(
+    html.replace(/<script[\s\S]*?<\/script>/gi, " ")
+        .replace(/<style[\s\S]*?<\/style>/gi, " ")
+        .replace(/<[^>]*>/g, " ")
+  ).replace(/\s+/g, " ").trim();
 
 /* השם מופיע פעמיים ברצף בתוך קישור ההקרנה — מנקים */
 const dedupe = t => {
@@ -69,15 +75,29 @@ async function get(url, tag) {
 /* =================== 1. קטלוג =================== */
 function parseCatalog(html) {
   const found = new Map();
-  const re = /<a\b[^>]*href="[^"]*\/movie\/(\d+)"[^>]*>([\s\S]{0,600}?)<\/a>/gi;
+
+  /* הרשת הראשית: <div class="movie-thumb" data-linkmobile="/movie/6117"> … <img alt="שם"> … <h2>שם</h2> */
+  const grid = /data-linkmobile="[^"]*\/movie\/(\d+)"([\s\S]{0,1600})/gi;
   let m;
-  while ((m = re.exec(html)) !== null) {
-    const [, id, inner] = m;
-    if (found.has(id)) continue;
-    const alt = inner.match(/alt="([^"]*?)(?:\s*poster)?"/i);
-    const title = (alt ? alt[1] : stripTags(inner)).trim();
+  while ((m = grid.exec(html)) !== null) {
+    const [, id, chunk] = m;
+    const h2  = chunk.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
+    const alt = chunk.match(/alt="([^"]*?)(?:\s*poster)?"/i);
+    const title = stripTags(h2 ? h2[1] : (alt ? alt[1] : ""));
     if (title) found.set(id, { ccId: id, title });
   }
+
+  /* גיבוי: קישורים בתפריט, עם השם ב-alt של הפוסטר */
+  const links = /<a[^>]*href="[^"]*\/movie\/(\d+)"[^>]*>([\s\S]{0,600}?)<\/a>/gi;
+  while ((m = links.exec(html)) !== null) {
+    const [, id, inner] = m;
+    if (found.has(id)) continue;
+    const nm  = inner.match(/class="movie-name"[^>]*>([\s\S]*?)<\/span>/i);
+    const alt = inner.match(/alt="([^"]*?)(?:\s*poster)?"/i);
+    const title = stripTags(nm ? nm[1] : (alt ? alt[1] : inner));
+    if (title && !/^מעבר לדף/.test(title)) found.set(id, { ccId: id, title });
+  }
+
   return [...found.values()];
 }
 
@@ -92,28 +112,42 @@ function parseMovie(html, ccId) {
   const he = slash > -1 ? full.slice(0, slash).trim() : full.trim();
   const en = slash > -1 ? full.slice(slash + 1).trim() : null;
 
-  const grab = (label, pat) => {
-    const m = text.match(new RegExp(label + "\\s*" + pat));
-    return m ? m[1].trim() : null;
-  };
+  /* השדות יושבים בבלוק אחד: <div class="... sivug"><p><span>תווית</span>&nbsp;ערך</p>… */
+  const block = html.match(/<div[^>]*class="[^"]*sivug[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
+  const fields = {};
+  if (block) {
+    const p = /<p>\s*<span>\s*([^<]+?)\s*<\/span>\s*([\s\S]*?)<\/p>/gi;
+    let m;
+    while ((m = p.exec(block[1])) !== null) {
+      fields[decodeEntities(m[1]).trim()] = stripTags(m[2]);
+    }
+  }
 
+  /* הפוסטר: ה-src מופיע לפני ה-alt, אז תופסים את שני הסדרים */
   const poster =
-    (html.match(/<img[^>]*alt="פוסטר"[^>]*src="([^"]+)"/i) ||
+    (html.match(/<img[^>]*src="([^"]+)"[^>]*alt="פוסטר"/i) ||
+     html.match(/<img[^>]*alt="פוסטר"[^>]*src="([^"]+)"/i) ||
      html.match(/src="(https:\/\/cdn\.modulus\.co\.il\/[^"]*w_505[^"]*)"/i) ||
      [])[1] || null;
 
   const yt = (html.match(/youtube\.com\/embed\/([\w-]{6,})/i) || [])[1] || null;
 
+  /* התקציר: הפסקה שאחרי הכותרת "תקציר הסרט" */
+  const tak = html.match(/<div[^>]*class="[^"]*\btak\b[^"]*"[^>]*>\s*<div>\s*<p>([\s\S]*?)<\/p>/i);
+  const synopsis = tak ? stripTags(tak[1]).slice(0, 1200) : null;
+
+  const runtime = Number((fields["אורך בדקות"] || "").match(/\d{2,3}/)?.[0]) || null;
+
   return {
     ccId,
     title:       he || null,
     titleEn:     en || null,
-    genre:       grab("סיווג", "([^\\d]{2,30}?)\\s*אורך בדקות"),
-    runtime:     Number(grab("אורך בדקות", "(\\d{2,3})")) || null,
-    releaseDate: grab("תאריך בכורה", "(\\d{2}\\/\\d{2}\\/\\d{4})"),
-    rating:      grab("הגבלת צפיה", "([^\\n]{2,25}?)\\s*(?:חייבים|הזמנת)"),
-    synopsis:    (text.match(/תקציר הסרט\s+([\s\S]{20,1200}?)\s+סיווג/) || [])[1] || null,
-    poster,
+    genre:       fields["סיווג"] || null,
+    runtime,
+    releaseDate: fields["תאריך בכורה"] || null,
+    rating:      fields["הגבלת צפיה"] || null,
+    synopsis,
+    poster:      poster && poster.startsWith("/") ? BASE + poster : poster,
     trailer:     yt ? `https://www.youtube.com/watch?v=${yt}` : null,
     url:         `${BASE}/movie/${ccId}`,
   };
@@ -122,20 +156,19 @@ function parseMovie(html, ccId) {
 /* =================== 3. הקרנות =================== */
 function parseScreenings(html, venue) {
   const out = [];
-  const re = /<a\b[^>]*href="([^"]*\/order\/?\?[^"]*eventID=(\d+)[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi;
+  /* המבנה האמיתי: <a href="/order/?eventID=..."> … <span class="movie-name">שם</span>
+     … <span class="movie-hour">18:00</span> … </a>  */
+  const re = /<a[^>]*href="([^"]*\/order\/?\?[^"]*eventID=(\d+)[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi;
   let m;
   while ((m = re.exec(html)) !== null) {
     const [, href, eventId, inner] = m;
-    const text = stripTags(inner);
-    const tm = text.match(/\b([01]?\d|2[0-3]):([0-5]\d)\b/);
-    if (!tm) continue;
-    const time = tm[0];
-    const title = dedupe(
-      text.replace(time, " ").replace(/לרכישה/g, " ").replace(/\s+/g, " ").trim()
-    );
+    const nameM = inner.match(/class="movie-name"[^>]*>([\s\S]*?)<\/span>/i);
+    const hourM = inner.match(/class="movie-hour"[^>]*>\s*([0-2]?\d:[0-5]\d)/i);
+    if (!nameM || !hourM) continue;
+    const title = stripTags(nameM[1]);
     if (!title) continue;
     out.push({
-      eventId, title, min: toMin(time), cinemaId: venue.id, hall: null,
+      eventId, title, min: toMin(hourM[1]), cinemaId: venue.id, hall: null,
       url: href.startsWith("http") ? href : BASE + (href.startsWith("/") ? "" : "/") + href,
     });
   }
@@ -146,6 +179,13 @@ function parseScreenings(html, venue) {
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
   const log = [];
+
+  /* --- 0. בדיקה: שמירת קוד ה-JS כדי לאתר את נקודת הקצה של "הצג נוספים" --- */
+  if (process.env.DEBUG) {
+    for (const f of ["site", "common", "init", "ticketsNew2"]) {
+      try { await get(`${BASE}/js/${f}.js`, `js-${f}`); } catch {}
+    }
+  }
 
   /* --- 1. קטלוג --- */
   let catalog = [];
@@ -246,4 +286,3 @@ async function main() {
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
-
