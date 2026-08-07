@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T14:39:11.076Z",
+  "updatedAt": "2026-08-07T15:20:20.733Z",
   "date": "2026-08-07",
   "chain": "סינמה סיטי",
   "cinemas": [
@@ -672,44 +672,12 @@
   ],
   "screenings": [
     {
-      "movieId": "6123",
+      "movieId": "6271",
       "cinemaId": "cc-gl",
       "date": "2026-08-07",
-      "min": 1050,
+      "min": 1080,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=840109&theaterId=1170"
-    },
-    {
-      "movieId": "6162",
-      "cinemaId": "cc-gl",
-      "date": "2026-08-07",
-      "min": 1050,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=840139&theaterId=1170"
-    },
-    {
-      "movieId": "6231",
-      "cinemaId": "cc-gl",
-      "date": "2026-08-07",
-      "min": 1050,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=840187&theaterId=1170"
-    },
-    {
-      "movieId": "6214",
-      "cinemaId": "cc-gl",
-      "date": "2026-08-07",
-      "min": 1055,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=840159&theaterId=1170"
-    },
-    {
-      "movieId": "6123",
-      "cinemaId": "cc-gl",
-      "date": "2026-08-07",
-      "min": 1065,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=840156&theaterId=1170"
+      "url": "https://www.cinema-city.co.il/order/?eventID=839480&theaterId=1170"
     },
     {
       "movieId": "6123",
@@ -718,14 +686,6 @@
       "min": 1080,
       "hall": null,
       "url": "https://www.cinema-city.co.il/order/?eventID=840166&theaterId=1170"
-    },
-    {
-      "movieId": "6271",
-      "cinemaId": "cc-gl",
-      "date": "2026-08-07",
-      "min": 1080,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=839480&theaterId=1170"
     },
     {
       "movieId": "6123",
@@ -768,60 +728,44 @@
       "url": "https://www.cinema-city.co.il/order/?eventID=840124&theaterId=1170"
     },
     {
-      "movieId": "6110",
-      "cinemaId": "cc-rl",
+      "movieId": "6031",
+      "cinemaId": "cc-gl",
       "date": "2026-08-07",
-      "min": 1050,
+      "min": 1155,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842327&theaterId=1173"
+      "url": "https://www.cinema-city.co.il/order/?eventID=840169&theaterId=1170"
     },
     {
-      "movieId": "6114",
-      "cinemaId": "cc-rl",
+      "movieId": "6047",
+      "cinemaId": "cc-gl",
       "date": "2026-08-07",
-      "min": 1050,
+      "min": 1155,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842349&theaterId=1173"
+      "url": "https://www.cinema-city.co.il/order/?eventID=840130&theaterId=1170"
     },
     {
-      "movieId": "6123",
-      "cinemaId": "cc-rl",
+      "movieId": "5830",
+      "cinemaId": "cc-gl",
       "date": "2026-08-07",
-      "min": 1065,
+      "min": 1155,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842397&theaterId=1173"
+      "url": "https://www.cinema-city.co.il/order/?eventID=840173&theaterId=1170"
     },
     {
-      "movieId": "6247",
-      "cinemaId": "cc-rl",
+      "movieId": "6209",
+      "cinemaId": "cc-gl",
       "date": "2026-08-07",
-      "min": 1065,
+      "min": 1170,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842399&theaterId=1173"
-    },
-    {
-      "movieId": "6247",
-      "cinemaId": "cc-rl",
-      "date": "2026-08-07",
-      "min": 1065,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842400&theaterId=1173"
-    },
-    {
-      "movieId": "6234",
-      "cinemaId": "cc-rl",
-      "date": "2026-08-07",
-      "min": 1065,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842356&theaterId=1173"
+      "url": "https://www.cinema-city.co.il/order/?eventID=840161&theaterId=1170"
     },
     {
       "movieId": "6031",
-      "cinemaId": "cc-rl",
+      "cinemaId": "cc-gl",
       "date": "2026-08-07",
-      "min": 1070,
+      "min": 1170,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842319&theaterId=1173"
+      "url": "https://www.cinema-city.co.il/order/?eventID=840146&theaterId=1170"
     },
     {
       "movieId": "6271",
@@ -862,6 +806,62 @@
       "min": 1130,
       "hall": null,
       "url": "https://www.cinema-city.co.il/order/?eventID=839439&theaterId=1173"
+    },
+    {
+      "movieId": "5830",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1130,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842337&theaterId=1173"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1130,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842316&theaterId=1173"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1140,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842311&theaterId=1173"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1140,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=835245&theaterId=1173"
+    },
+    {
+      "movieId": "6248",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1140,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843463&theaterId=1173"
+    },
+    {
+      "movieId": "6123",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1155,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842392&theaterId=1173"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-rl",
+      "date": "2026-08-07",
+      "min": 1170,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842331&theaterId=1173"
     },
     {
       "movieId": "6271",
@@ -960,22 +960,6 @@
       "url": "https://www.cinema-city.co.il/order/?eventID=841469&theaterId=1174"
     },
     {
-      "movieId": "6271",
-      "cinemaId": "cc-ks",
-      "date": "2026-08-07",
-      "min": 1050,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=839508&theaterId=1175"
-    },
-    {
-      "movieId": "6234",
-      "cinemaId": "cc-ks",
-      "date": "2026-08-07",
-      "min": 1060,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=843540&theaterId=1175"
-    },
-    {
       "movieId": "6123",
       "cinemaId": "cc-ks",
       "date": "2026-08-07",
@@ -1056,20 +1040,20 @@
       "url": "https://www.cinema-city.co.il/order/?eventID=843366&theaterId=1175"
     },
     {
-      "movieId": "6031",
-      "cinemaId": "cc-nt",
+      "movieId": "6123",
+      "cinemaId": "cc-ks",
       "date": "2026-08-07",
-      "min": 1050,
+      "min": 1290,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842563&theaterId=1176"
+      "url": "https://www.cinema-city.co.il/order/?eventID=842061&theaterId=1175"
     },
     {
-      "movieId": "6123",
-      "cinemaId": "cc-nt",
+      "movieId": "6266",
+      "cinemaId": "cc-ks",
       "date": "2026-08-07",
-      "min": 1065,
+      "min": 1300,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842574&theaterId=1176"
+      "url": "https://www.cinema-city.co.il/order/?eventID=842041&theaterId=1175"
     },
     {
       "movieId": "6234",
@@ -1080,20 +1064,20 @@
       "url": "https://www.cinema-city.co.il/order/?eventID=843538&theaterId=1176"
     },
     {
-      "movieId": "6247",
-      "cinemaId": "cc-nt",
-      "date": "2026-08-07",
-      "min": 1120,
-      "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=842603&theaterId=1176"
-    },
-    {
       "movieId": "6271",
       "cinemaId": "cc-nt",
       "date": "2026-08-07",
       "min": 1120,
       "hall": null,
       "url": "https://www.cinema-city.co.il/order/?eventID=842589&theaterId=1176"
+    },
+    {
+      "movieId": "6247",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1120,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842603&theaterId=1176"
     },
     {
       "movieId": "6123",
@@ -1152,12 +1136,20 @@
       "url": "https://www.cinema-city.co.il/order/?eventID=842576&theaterId=1176"
     },
     {
-      "movieId": "6162",
-      "cinemaId": "cc-hd",
+      "movieId": "6031",
+      "cinemaId": "cc-nt",
       "date": "2026-08-07",
-      "min": 1060,
+      "min": 1260,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=843536&theaterId=1350"
+      "url": "https://www.cinema-city.co.il/order/?eventID=842565&theaterId=1176"
+    },
+    {
+      "movieId": "6271",
+      "cinemaId": "cc-nt",
+      "date": "2026-08-07",
+      "min": 1270,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=842587&theaterId=1176"
     },
     {
       "movieId": "6247",
@@ -1248,12 +1240,12 @@
       "url": "https://www.cinema-city.co.il/order/?eventID=840940&theaterId=1350"
     },
     {
-      "movieId": "6222",
-      "cinemaId": "cc-bs",
+      "movieId": "6234",
+      "cinemaId": "cc-hd",
       "date": "2026-08-07",
-      "min": 1060,
+      "min": 1230,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=839682&theaterId=1178"
+      "url": "https://www.cinema-city.co.il/order/?eventID=843535&theaterId=1350"
     },
     {
       "movieId": "6123",
@@ -1344,12 +1336,12 @@
       "url": "https://www.cinema-city.co.il/order/?eventID=839690&theaterId=1178"
     },
     {
-      "movieId": "6110",
-      "cinemaId": "cc-as",
+      "movieId": "6234",
+      "cinemaId": "cc-bs",
       "date": "2026-08-07",
-      "min": 1050,
+      "min": 1230,
       "hall": null,
-      "url": "https://www.cinema-city.co.il/order/?eventID=840388&theaterId=1181"
+      "url": "https://www.cinema-city.co.il/order/?eventID=843336&theaterId=1178"
     },
     {
       "movieId": "6247",
@@ -1438,6 +1430,14 @@
       "min": 1190,
       "hall": null,
       "url": "https://www.cinema-city.co.il/order/?eventID=839368&theaterId=1181"
+    },
+    {
+      "movieId": "6234",
+      "cinemaId": "cc-as",
+      "date": "2026-08-07",
+      "min": 1190,
+      "hall": null,
+      "url": "https://www.cinema-city.co.il/order/?eventID=843523&theaterId=1181"
     }
   ]
 }
