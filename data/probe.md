@@ -1,4 +1,4 @@
-# probe v4 2026-08-08T14:32:43.911Z
+# probe v4 2026-08-08T14:40:24.233Z
 
 === HOT theater page  (231743)
   /ShowingNow
@@ -16,7 +16,7 @@
   /SpecialEvents?eventCatId=253
   /SpecialEventCats
 
-=== PLANET whatson  (85372)
+=== PLANET whatson  (85814)
   (none)
 
 === RAVHEN cinema page  (88423)
