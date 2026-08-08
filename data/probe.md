@@ -1,4 +1,4 @@
-# דוח גשש 2 — 2026-08-08T21:21:29.468Z | תאריך בדיקה: 2026-08-08
+# דוח גשש 2 — 2026-08-08T21:23:49.707Z | תאריך בדיקה: 2026-08-08
 
 ## HOT CINEMA — האם מוגש בשרת
 theater/1 [200] אורך=231471 שעות-ב-HTML=11 רמזי-הזמנה=237
@@ -31,7 +31,7 @@ movieland theater/1290 [403] אורך=5752 שעות-ב-HTML=0 רמזי-הזמנ�
 movieland home [403] אורך=5674 שעות-ב-HTML=0 רמזי-הזמנה=1
 
 ## קולנוע לב
-lev telaviv [200] אורך=94993 שעות-ב-HTML=5 רמזי-הזמנה=73
+lev telaviv [200] אורך=11872 שעות-ב-HTML=0 רמזי-הזמנה=3
 
 ## קובצי JS לבדיקה ידנית
 
@@ -82,16 +82,3 @@ HOT:
 מובילנד:
 
 לב:
-  https://www.lev.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
-  https://www.lev.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.2.2
-  https://www.lev.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9
-  https://www.lev.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.twbsPagination.js
-  https://www.lev.co.il/wp-content/themes/lev/js/swiper.min.js
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.mCustomScrollbar.concat.min.js
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.base64.js
-  https://www.lev.co.il/wp-content/themes/lev/js/script.js?ver=3.1.2
