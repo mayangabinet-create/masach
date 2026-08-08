@@ -1,4 +1,4 @@
-# דוח גשש 2 — 2026-08-08T14:06:30.353Z | תאריך בדיקה: 2026-08-08
+# דוח גשש 2 — 2026-08-08T14:12:12.378Z | תאריך בדיקה: 2026-08-08
 
 ## HOT CINEMA — האם מוגש בשרת
 theater/1 [200] אורך=231743 שעות-ב-HTML=11 רמזי-הזמנה=237
@@ -31,8 +31,7 @@ movieland theater/1290 [403] אורך=5731 שעות-ב-HTML=0 רמזי-הזמנ�
 movieland home [403] אורך=5674 שעות-ב-HTML=0 רמזי-הזמנה=1
 
 ## קולנוע לב
-lev telaviv [200] אורך=100808 שעות-ב-HTML=18 רמזי-הזמנה=86
-   הקשר: pe" content="article" /> <meta property="og:title" content="לב תל אביב (דיזנגוף סנטר) | קולנוע לב | LEV" /> <meta property="og:url" content="https://www.lev.co.il/location/telaviv/" /> <meta property="article:published_time" content="2017-09-02T04:28:17+00:00" /> <meta property="article:modified_time" content="2024-09-16T09:28:24+00:00" /> <meta name="twitter:card" content="summary_large_image" /> <meta name="twitter:title" content="לב תל אביב (דיזנגוף סנטר) | קולנוע לב | LEV" /> <script type="applica
+lev telaviv [200] אורך=12019 שעות-ב-HTML=0 רמזי-הזמנה=3
 
 ## קובצי JS לבדיקה ידנית
 
@@ -83,16 +82,3 @@ HOT:
 מובילנד:
 
 לב:
-  https://www.lev.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
-  https://www.lev.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.2.2
-  https://www.lev.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9
-  https://www.lev.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.twbsPagination.js
-  https://www.lev.co.il/wp-content/themes/lev/js/swiper.min.js
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.mCustomScrollbar.concat.min.js
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.base64.js
-  https://www.lev.co.il/wp-content/themes/lev/js/script.js?ver=3.9.5
