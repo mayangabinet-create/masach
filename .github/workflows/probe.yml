@@ -24,9 +24,12 @@ jobs:
           node -e '
           const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
           const urls = [
-            "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/film-events/in-cinema/1058/at-date/2026-08-08?attr=&lang=he_IL",
-            "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/cinemas/with-event/until/2027-08-08?attr=&lang=he_IL",
-            "https://www.planetcinema.co.il/xmedia/js/config.js",
+            "https://www.planetcinema.co.il/rh/data-api-service/v1/quickbook/10100/cinemas/with-event/until/2027-08-08?attr=&lang=he_IL",
+            "https://www.planetcinema.co.il/pl/data-api-service/v1/quickbook/10100/cinemas/with-event/until/2027-08-08?attr=&lang=he_IL",
+            "https://www.planetcinema.co.il/data-api-service/v1/quickbook/10100/cinemas/with-event/until/2027-08-08?attr=&lang=he_IL",
+            "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10100/cinemas/with-event/until/2027-08-08?attr=&lang=he_IL",
+            "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/attributes?jsonp&lang=he_IL",
+            "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/films?attr=&lang=he_IL",
           ];
           (async () => {
             for (const u of urls) {
