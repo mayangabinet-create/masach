@@ -25,6 +25,9 @@ jobs:
       - name: scrape רב חן
         run: node scripts/scrape-ravhen.mjs
         continue-on-error: true # אם רב חן נופל, לא רוצים לעצור את עדכון סינמה סיטי
+      - name: scrape HOT
+        run: node scripts/scrape-hot.mjs
+        continue-on-error: true
       - run: |
           git config user.name masach-bot
           git config user.email actions@github.com

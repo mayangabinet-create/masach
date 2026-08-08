@@ -13,30 +13,6 @@ jobs:
           node-version: "22"
       - name: run static probe
         run: node scripts/probe-chains.js
-      - name: explore hot theater names
-        run: |
-          node -e '
-          const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
-          async function get(u) {
-            const r = await fetch(u, { headers: { "user-agent": UA, accept: "text/html,*/*" } });
-            return { status: r.status, text: await r.text() };
-          }
-          (async () => {
-            const { text } = await get("https://hotcinema.co.il/theater/1");
-            // any <select> block that looks like a branch/theater picker
-            const selects = [...text.matchAll(/<select[^>]*>[\s\S]*?<\/select>/gi)];
-            console.log("selects found:", selects.length);
-            selects.forEach((m, i) => {
-              const opts = [...m[0].matchAll(/<option[^>]*value="([^"]*)"[^>]*>([^<]*)</gi)];
-              console.log(`\n-- select #${i} (${opts.length} options) --`);
-              console.log(m[0].slice(0,150).replace(/\s+/g," "));
-              opts.slice(0,20).forEach(o => console.log(`   value="${o[1]}" text="${o[2].trim()}"`));
-            });
-            // fallback: grep for "תיאטראות" / theater id+name JS array patterns
-            const arr = text.match(/theaters?\s*[:=]\s*\[[\s\S]{0,2000}?\]/i);
-            if (arr) { console.log("\n-- possible theaters array --"); console.log(arr[0].slice(0,2000)); }
-          })();
-          '
       - name: install playwright
         run: |
           npm install playwright
