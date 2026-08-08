@@ -35,9 +35,9 @@
    כדי שהעין לא תתחרה עם הפוסטרים ותנוח על מבנה חוזר.
    ========================================================= */
 :root{
-  --bg:#0C0C0E; --surface:#151517; --surface2:#1B1B1E;
-  --line:#28282C; --line-soft:#1E1E21;
-  --text:#F2F1EF; --dim:#8A8681;
+  --bg:#121214; --surface:#1B1B1E; --surface2:#212125;
+  --line:#2F2F34; --line-soft:#252528;
+  --text:#F2F1EF; --dim:#928E87;
   --acc:#FF7A1A; --acc-soft:rgba(255,122,26,.16); --on-acc:#1A0E00;
   --red:#E5484D;
   --r:8px;
@@ -215,7 +215,7 @@ main{padding-top:var(--s4)}
   display:inline-block}
 .time:hover{filter:brightness(1.08)}
 .starts{color:var(--red);font-size:12px;font-weight:600}
-.fav{position:absolute;top:var(--s3);left:0;background:none;border:none;font-size:19px;color:var(--line);
+.fav{position:absolute;top:var(--s3);left:0;background:none;border:none;font-size:19px;color:var(--dim);
   line-height:1;padding:4px}
 .fav.on{color:var(--acc)}
 
@@ -798,7 +798,7 @@ function rowHTML(s,i){
         ${flag}
       </div>
     </div>
-    <button class="fav ${fav?"on":""}" data-fav="${c.id}" aria-label="הוספת ${c.name} למועדפים">★</button>
+    <button class="fav ${fav?"on":""}" data-fav="${c.id}" data-favname="${c.name}" aria-label="${fav?`הסרת ${c.name} מהמועדפים`:`הוספת ${c.name} למועדפים`}">★</button>
   </div>`;
 }
 function renderList(list,note,fixes,total,from){
@@ -839,7 +839,7 @@ function renderByVenue(rows){
         <div class="vname">${g.c.name}</div>
         <div class="vdist">${N(g.dist.toFixed(1))} ק"מ ממך · ~${N(drive(g.dist))} דק׳ נסיעה</div></div>
         <div class="vtimes">${g.list.map(s=>timeBtn(s)).join("")}
-        <button class="fav vfav ${fav?"on":""}" data-fav="${g.c.id}" aria-label="הוספת ${g.c.name} למועדפים">★</button></div>
+        <button class="fav vfav ${fav?"on":""}" data-fav="${g.c.id}" data-favname="${g.c.name}" aria-label="${fav?`הסרת ${g.c.name} מהמועדפים`:`הוספת ${g.c.name} למועדפים`}">★</button></div>
       </div>`;
     }
   }
@@ -856,7 +856,10 @@ function bindResults(){
     const toggle=e=>{e.stopPropagation();e.preventDefault();
       const id=f.dataset.fav;
       state.favs.has(id)?state.favs.delete(id):state.favs.add(id);
-      store.set("favs",[...state.favs]); f.classList.toggle("on");};
+      store.set("favs",[...state.favs]);
+      const on=state.favs.has(id),name=f.dataset.favname;
+      f.classList.toggle("on",on);
+      f.setAttribute("aria-label",on?`הסרת ${name} מהמועדפים`:`הוספת ${name} למועדפים`);};
     f.addEventListener("click",toggle);
     f.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ")toggle(e);});
   });
