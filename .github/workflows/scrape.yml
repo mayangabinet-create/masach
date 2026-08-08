@@ -28,6 +28,9 @@ jobs:
       - name: scrape HOT
         run: node scripts/scrape-hot.mjs
         continue-on-error: true
+      - name: scrape פלאנט
+        run: node scripts/scrape-planet.mjs
+        continue-on-error: true
       - run: |
           git config user.name masach-bot
           git config user.email actions@github.com
