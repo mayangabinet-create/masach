@@ -1,54 +1,98 @@
-# דוח גשש — 2026-08-08T13:56:55.863Z
+# דוח גשש 2 — 2026-08-08T14:06:30.353Z | תאריך בדיקה: 2026-08-08
 
-## HOT CINEMA
+## HOT CINEMA — האם מוגש בשרת
+theater/1 [200] אורך=231743 שעות-ב-HTML=11 רמזי-הזמנה=237
+ShowingNow [200] אורך=482251 שעות-ב-HTML=24 רמזי-הזמנה=364
+   הקשר: DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;. &#x5DC;&#x5D0;&#x5D7;&#x5E8; &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5DC;&#x5D0; &#x5D9;&#x5E9;&#x5DE;&#x5E8;&#x5D5; &#x5D4;&#x5DE;&#x5E7;&#x5D5;&#x5DE;&#x5D5;&#x5EA;.&#xA;&#xA;21:30 &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;&#xA;&#xA;&#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5E2;&#x5DC;&#x5D5;&#x5DC; &#x5DC;&#x5D4;&#x5DB;&#x5D9;&#x5DC; &#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5DD; &#x5D2;&#x5E1;&#x5D9;&#x5DD; &#xA;&#
 
-## HOT — סניפים (שם | קואורדינטות | כתובת)
-16 | HOT CINEMA &#x5DB;&#x5E4;&#x5E8; &#x5E1;&#x5D1;&#x5D0; | 32.1654048,34.9300218 | עתיר ידע 4, מתחם אושילנד
-14 | HOT CINEMA &#x5E4;&#x5EA;&#x5D7; &#x5EA;&#x5E7;&#x5D5;&#x5D5;&#x5D4; | 32.0932324,34.8654928 | הקניון הגדול
-1 | HOT CINEMA &#x5DE;&#x5D5;&#x5D3;&#x5D9;&#x5E2;&#x5D9;&#x5DF; | 31.889012,34.963161 | שדרות המלאכה 121, מרכז ישפרו
-17 | HOT CINEMA &#x5E8;&#x5D7;&#x5D5;&#x5D1;&#x5D5;&#x5EA; | 31.8933047,34.806848 | קניון רחובות
-9 | HOT CINEMA &#x5D7;&#x5D9;&#x5E4;&#x5D4; | 32.789711,35.0078224 | גרנד קניון
-2 | HOT CINEMA &#x5E7;&#x5E8;&#x5D9;&#x5D5;&#x5DF; | 32.842737,35.089856 | דרך עכו 192 קרית ביאליק
-15 | HOT CINEMA &#x5DB;&#x5E8;&#x5DE;&#x5D9;&#x5D0;&#x5DC; | אין | קניון חוצות
-6 | HOT CINEMA &#x5E0;&#x5D4;&#x5E8;&#x5D9;&#x5D4; | 32.9906518,35.0953887 | האירית 2 קניון נהריה
-8 | HOT CINEMA &#x5D0;&#x5E9;&#x5E7;&#x5DC;&#x5D5;&#x5DF; | 31.681682,34.558340 | הנמל 11, אשקלון
-5 | HOT CINEMA &#x5D0;&#x5E9;&#x5D3;&#x5D5;&#x5D3; | 31.7928702,34.6391482 | קניון סי-מול אשדוד
-3 | HOT CINEMA | אין | 
+### HOT (תבנית סינמה סיטי) — ניסיון נקודות קצה
+x [404  0] https://hotcinema.co.il/home/MoviesGridTime?page=1&theathereid=1&id=1&venueId=1
+x [404  0] https://hotcinema.co.il/home/MoviesGridTime?page=1&theaterId=1
+x [404  0] https://hotcinema.co.il/timehour?theathereid=1&id=1&vid=1
+x [404  0] https://hotcinema.co.il/Home/GetEvents?theaterId=1
+x [404  0] https://hotcinema.co.il/home/GetShowTimes?theaterId=1
+x [404  0] https://hotcinema.co.il/api/events?theaterId=1
 
-### קובצי JS
-נמצאו 18 קבצים
-נתיבים חשודים: /api/display/shopify/save/browse-abandonment  /api/display/shopify/get-price-rules/  /api/display/validation-emails  /APIRequest/click/  /api/display/click/  /api/display/  /api/display/shopify/check-product-collection/  /api/display/shopify/product-recommendation/  /api/display/wix/product-recommendation/  /api/display/conversion/  /api/display/limitLogs/  /marketing-api/v2/popup  /marketing-api/v2/push/client-config  /marketing-api/v2/push/register
+## פלאנט / רב חן (Cineworld quickbook)
 
-### ניסיון קריאה ישירה
+### פלאנט — ניסיון נקודות קצה
+x [404 text/html 63189] https://www.planetcinema.co.il/api/quickbook/cinemas
+x [404 text/html 63185] https://www.planetcinema.co.il/api/quickbook/films
+x [404 text/html 63277] https://www.planetcinema.co.il/api/quickbook/10108/film-events/in-cinema/1058/at-date/2026-08-08?attr=&lang=he_IL
+x [404 text/html 63169] https://www.planetcinema.co.il/api/cinemas
+
+### רב חן — ניסיון נקודות קצה
+x [404 text/html 52849] https://www.rav-hen.co.il/api/quickbook/cinemas
+x [404 text/html 52937] https://www.rav-hen.co.il/api/quickbook/10108/film-events/in-cinema/1058/at-date/2026-08-08?attr=&lang=he_IL
+רב חן גבעתיים [200] אורך=88423 שעות-ב-HTML=0 רמזי-הזמנה=50
 
 ## מובילנד
-
-### קובצי JS
-נמצאו 0 קבצים
-נתיבים חשודים: (לא נמצאו)
-
-### ניסיון קריאה ישירה
-
-## פלאנט
-
-### קובצי JS
-נמצאו 42 קבצים
-נתיבים חשודים: /gifts-and-movie-cards  /events--and--conferences
-
-### ניסיון קריאה ישירה
-
-## רב חן
-
-### קובצי JS
-נמצאו 49 קבצים
-נתיבים חשודים: /gifts-and-movie-cards
-
-### ניסיון קריאה ישירה
+movieland theater/1290 [403] אורך=5731 שעות-ב-HTML=0 רמזי-הזמנה=1
+movieland home [403] אורך=5674 שעות-ב-HTML=0 רמזי-הזמנה=1
 
 ## קולנוע לב
+lev telaviv [200] אורך=100808 שעות-ב-HTML=18 רמזי-הזמנה=86
+   הקשר: pe" content="article" /> <meta property="og:title" content="לב תל אביב (דיזנגוף סנטר) | קולנוע לב | LEV" /> <meta property="og:url" content="https://www.lev.co.il/location/telaviv/" /> <meta property="article:published_time" content="2017-09-02T04:28:17+00:00" /> <meta property="article:modified_time" content="2024-09-16T09:28:24+00:00" /> <meta name="twitter:card" content="summary_large_image" /> <meta name="twitter:title" content="לב תל אביב (דיזנגוף סנטר) | קולנוע לב | LEV" /> <script type="applica
 
-### קובצי JS
-נמצאו 8 קבצים
-נתיבים חשודים: (לא נמצאו)
+## קובצי JS לבדיקה ידנית
 
-### ניסיון קריאה ישירה
+HOT:
+  https://cdn.popt.in/pixel.js?id=7e6103d9635ec
+  /popup.js?version=3.0
+  /push.js
+  /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+  /lib/jquery/dist/jquery.js
+  /lib/popper.js/dist/umd/popper.min.js
+  /lib/bootstrap/dist/js/bootstrap.js
+  /lib/jquery-validation/dist/jquery.validate.js
+  /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+  /lib/bootstrap-datepicker/bootstrap-datepicker.min.js
+  /lib/bootstrap-datepicker/locales/bootstrap-datepicker.he.min.js
+  /lib/momentjs/moment.min.js
+  /js/vendor/slick/slick.min.js
+  /css/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js
+  /js/sidemenu2.js?v=7c781a9cf2a84c4f8b58053b1dca1196
+  /js/site-carousels.js
+  /js/newsletter.js?v=7c781a9cf2a84c4f8b58053b1dca1196
+  /lib/vuejs/vue.js?v=1
+  /js/common.js
+  /js/init.js?v=7c781a9cf2a84c4f8b58053b1dca1196
+
+פלאנט:
+  https://challenges.cloudflare.com/turnstile/v0/api.js
+  /xmedia/js/vendor/modernizr.js?v=v2.8.106-dirty
+  //fecdn.user1st.info/Loader/head
+  /xmedia/js/config.js?v=v2.8.106-dirty
+  /jsMessages.js?lang=iw_IL&amp;v=v2.8.106-dirty
+  /xmedia/js/polyfills/common-polyfills.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.mobile.custom.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.jloggins.1.0.2.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/json3.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/css_browser_selector.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/handlebars-v4.0.5.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment-timezone.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment-locale.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/touchable.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-datepicker.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-datepicker-locale.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-select.custom.js?v=v2.8.106-dirty
+
+מובילנד:
+
+לב:
+  https://www.lev.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
+  https://www.lev.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
+  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.3
+  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.3
+  https://www.lev.co.il/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.2.2
+  https://www.lev.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9
+  https://www.lev.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
+  https://www.lev.co.il/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.6.3
+  https://www.lev.co.il/wp-content/themes/lev/js/jquery.twbsPagination.js
+  https://www.lev.co.il/wp-content/themes/lev/js/swiper.min.js
+  https://www.lev.co.il/wp-content/themes/lev/js/jquery.mCustomScrollbar.concat.min.js
+  https://www.lev.co.il/wp-content/themes/lev/js/jquery.base64.js
+  https://www.lev.co.il/wp-content/themes/lev/js/script.js?ver=3.9.5
