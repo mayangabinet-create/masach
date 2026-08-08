@@ -1,13 +1,23 @@
-# probe v3 2026-08-08T14:30:19.565Z
+# probe v4 2026-08-08T14:32:43.911Z
 
---- HOT init.js  (4361)
+=== HOT theater page  (231743)
+  /ShowingNow
+  /SpecialEvents?eventCatId=146
+  /SpecialEvents?eventCatId=279
+  /SpecialEvents?eventCatId=283
+  /SpecialEvents?eventCatId=253
+  /SpecialEventCats
+
+=== HOT ShowingNow  (482251)
+  /ShowingNow
+  /SpecialEvents?eventCatId=146
+  /SpecialEvents?eventCatId=279
+  /SpecialEvents?eventCatId=283
+  /SpecialEvents?eventCatId=253
+  /SpecialEventCats
+
+=== PLANET whatson  (85372)
   (none)
 
---- HOT common.js  (3900)
-  (none)
-
---- PLANET config.js  (2620)
-  (none)
-
---- LEV script.js  (21148)
+=== RAVHEN cinema page  (88423)
   (none)
