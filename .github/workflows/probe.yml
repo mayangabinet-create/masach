@@ -13,34 +13,28 @@ jobs:
           node-version: "22"
       - name: run static probe
         run: node scripts/probe-chains.js
-      - name: explore planet cinema list in page js
-        run: |
-          node -e '
-          const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
-          async function get(u) {
-            const r = await fetch(u, { headers: { "user-agent": UA, "accept-language": "he-IL,he;q=0.9" } });
-            return { status: r.status, text: await r.text() };
-          }
-          (async () => {
-            const { status, text } = await get("https://www.planetcinema.co.il/whatson");
-            console.log(`status=${status} len=${text.length}`);
-            // same pattern that revealed HOT'"'"'s branch array
-            const arr = text.match(/(?:cinemas?|sites?|theaters?)\s*[:=]\s*\[[\s\S]{0,3000}?\]/i);
-            console.log("\n-- possible cinemas array --");
-            console.log(arr ? arr[0].slice(0, 3000) : "(none found)");
-            // dropdown/select elements
-            const selects = [...text.matchAll(/<select[^>]*>[\s\S]*?<\/select>/gi)];
-            console.log("\nselects found:", selects.length);
-            selects.slice(0, 5).forEach((m, i) => console.log(`select #${i}:`, m[0].slice(0, 300).replace(/\s+/g, " ")));
-            // any data- attributes or JSON blobs with "cinema" in them
-            const dataHits = [...text.matchAll(/"cinemaId"\s*:\s*"?(\w+)"?/gi)].map(m => m[1]);
-            console.log("\ncinemaId hits:", [...new Set(dataHits)].slice(0, 20));
-          })();
-          '
       - name: install playwright
         run: |
           npm install playwright
           npx playwright install --with-deps chromium
+      - name: explore planet rendered dom
+        run: |
+          node -e '
+          const { chromium } = require("playwright");
+          (async () => {
+            const browser = await chromium.launch();
+            const page = await browser.newPage({ userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36", locale: "he-IL" });
+            await page.goto("https://www.planetcinema.co.il/whatson", { waitUntil: "networkidle", timeout: 30000 }).catch(e => console.log("goto err", e.message));
+            await page.waitForTimeout(3000);
+            const selects = await page.$$eval("select", els => els.map(e => ({ cls: e.className, opts: [...e.options].slice(0,15).map(o => ({ v: o.value, t: o.textContent.trim() })) })));
+            console.log("selects:", JSON.stringify(selects, null, 2).slice(0, 4000));
+            const links = await page.$$eval("a[href]", els => [...new Set(els.map(e => e.getAttribute("href")))].filter(h => /cinema|site|location/i.test(h)));
+            console.log("\ncinema-ish links:", links.slice(0, 30));
+            const buttons = await page.$$eval("[class*=cinema], [class*=site], [data-cinema], [data-site]", els => els.slice(0,20).map(e => ({ tag: e.tagName, cls: e.className, text: e.textContent.trim().slice(0,60) })));
+            console.log("\ncinema-class elements:", JSON.stringify(buttons, null, 2).slice(0, 3000));
+            await browser.close();
+          })();
+          '
       - name: run network probe
         run: node scripts/probe-network.mjs
       - name: commit report
