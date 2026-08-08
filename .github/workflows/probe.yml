@@ -19,6 +19,20 @@ jobs:
           npx playwright install --with-deps chromium
       - name: run network probe
         run: node scripts/probe-network.mjs
+      - name: inspect Lev movie page image markup
+        run: |
+          node -e '
+          fetch("https://www.lev.co.il/movies/%d7%94%d7%90%d7%95%d7%93%d7%99%d7%a1%d7%90%d7%94/", {
+            headers: { "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36" }
+          }).then(r => r.text()).then(html => {
+            console.log("length:", html.length);
+            const metaImgs = [...html.matchAll(/<meta[^>]+(?:property|name)=["'"'"'](?:og:image|twitter:image)[^"'"'"']*["'"'"'][^>]*>/gi)];
+            console.log("meta image tags:", JSON.stringify(metaImgs.map(m => m[0])));
+            const imgs = [...html.matchAll(/<img[^>]+>/gi)].filter(m => /wp-content\/uploads/.test(m[0]));
+            console.log("content <img> tags with wp-content/uploads (first 10):");
+            imgs.slice(0, 10).forEach(m => console.log(" ", m[0]));
+          });
+          '
       - name: commit report
         run: |
           git config user.name masach-bot

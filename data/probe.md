@@ -1,8 +1,8 @@
-# דוח גשש 2 — 2026-08-08T19:41:06.289Z | תאריך בדיקה: 2026-08-08
+# דוח גשש 2 — 2026-08-08T21:52:18.319Z | תאריך בדיקה: 2026-08-08
 
 ## HOT CINEMA — האם מוגש בשרת
-theater/1 [200] אורך=231743 שעות-ב-HTML=11 רמזי-הזמנה=237
-ShowingNow [200] אורך=482251 שעות-ב-HTML=24 רמזי-הזמנה=364
+theater/1 [200] אורך=231471 שעות-ב-HTML=11 רמזי-הזמנה=237
+ShowingNow [200] אורך=476540 שעות-ב-HTML=24 רמזי-הזמנה=358
    הקשר: DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;. &#x5DC;&#x5D0;&#x5D7;&#x5E8; &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5DC;&#x5D0; &#x5D9;&#x5E9;&#x5DE;&#x5E8;&#x5D5; &#x5D4;&#x5DE;&#x5E7;&#x5D5;&#x5DE;&#x5D5;&#x5EA;.&#xA;&#xA;21:30 &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;&#xA;&#xA;&#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5E2;&#x5DC;&#x5D5;&#x5DC; &#x5DC;&#x5D4;&#x5DB;&#x5D9;&#x5DC; &#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5DD; &#x5D2;&#x5E1;&#x5D9;&#x5DD; &#xA;&#
 
 ### HOT (תבנית סינמה סיטי) — ניסיון נקודות קצה
@@ -28,10 +28,10 @@ x [404 text/html 52937] https://www.rav-hen.co.il/api/quickbook/10108/film-event
 
 ## מובילנד
 movieland theater/1290 [403] אורך=5752 שעות-ב-HTML=0 רמזי-הזמנה=1
-movieland home [403] אורך=5674 שעות-ב-HTML=0 רמזי-הזמנה=1
+movieland home [403] אורך=5695 שעות-ב-HTML=0 רמזי-הזמנה=1
 
 ## קולנוע לב
-lev telaviv [200] אורך=94993 שעות-ב-HTML=5 רמזי-הזמנה=73
+lev telaviv [200] אורך=12030 שעות-ב-HTML=0 רמזי-הזמנה=3
 
 ## קובצי JS לבדיקה ידנית
 
@@ -82,16 +82,3 @@ HOT:
 מובילנד:
 
 לב:
-  https://www.lev.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
-  https://www.lev.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.2.2
-  https://www.lev.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9
-  https://www.lev.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
-  https://www.lev.co.il/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.6.3
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.twbsPagination.js
-  https://www.lev.co.il/wp-content/themes/lev/js/swiper.min.js
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.mCustomScrollbar.concat.min.js
-  https://www.lev.co.il/wp-content/themes/lev/js/jquery.base64.js
-  https://www.lev.co.il/wp-content/themes/lev/js/script.js?ver=3.4.4
