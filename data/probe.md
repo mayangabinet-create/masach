@@ -1,8 +1,8 @@
-# דוח גשש 2 — 2026-08-08T19:41:06.289Z | תאריך בדיקה: 2026-08-08
+# דוח גשש 2 — 2026-08-08T21:11:27.946Z | תאריך בדיקה: 2026-08-08
 
 ## HOT CINEMA — האם מוגש בשרת
-theater/1 [200] אורך=231743 שעות-ב-HTML=11 רמזי-הזמנה=237
-ShowingNow [200] אורך=482251 שעות-ב-HTML=24 רמזי-הזמנה=364
+theater/1 [200] אורך=231471 שעות-ב-HTML=11 רמזי-הזמנה=237
+ShowingNow [200] אורך=476540 שעות-ב-HTML=24 רמזי-הזמנה=358
    הקשר: DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;. &#x5DC;&#x5D0;&#x5D7;&#x5E8; &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5DC;&#x5D0; &#x5D9;&#x5E9;&#x5DE;&#x5E8;&#x5D5; &#x5D4;&#x5DE;&#x5E7;&#x5D5;&#x5DE;&#x5D5;&#x5EA;.&#xA;&#xA;21:30 &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;&#xA;&#xA;&#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5E2;&#x5DC;&#x5D5;&#x5DC; &#x5DC;&#x5D4;&#x5DB;&#x5D9;&#x5DC; &#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5DD; &#x5D2;&#x5E1;&#x5D9;&#x5DD; &#xA;&#
 
 ### HOT (תבנית סינמה סיטי) — ניסיון נקודות קצה
@@ -94,4 +94,4 @@ HOT:
   https://www.lev.co.il/wp-content/themes/lev/js/swiper.min.js
   https://www.lev.co.il/wp-content/themes/lev/js/jquery.mCustomScrollbar.concat.min.js
   https://www.lev.co.il/wp-content/themes/lev/js/jquery.base64.js
-  https://www.lev.co.il/wp-content/themes/lev/js/script.js?ver=3.4.4
+  https://www.lev.co.il/wp-content/themes/lev/js/script.js?ver=3.1.2
