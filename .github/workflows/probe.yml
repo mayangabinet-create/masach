@@ -13,35 +13,28 @@ jobs:
           node-version: "22"
       - name: run static probe
         run: node scripts/probe-chains.js
-      - name: explore hot theaters
+      - name: explore hot theater names
         run: |
           node -e '
           const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
-          const today = new Date();
-          const dd = String(today.getDate()).padStart(2,"0") + "/" + String(today.getMonth()+1).padStart(2,"0") + "/" + today.getFullYear();
           async function get(u) {
-            const r = await fetch(u, { headers: { "user-agent": UA, accept: "application/json,text/html,*/*" } });
+            const r = await fetch(u, { headers: { "user-agent": UA, accept: "text/html,*/*" } });
             return { status: r.status, text: await r.text() };
           }
           (async () => {
-            // 1. full TheaterEvents2 shape for theatreid=1
-            const ev = await get(`https://hotcinema.co.il/tickets/TheaterEvents2?movieid=undefined&date=${dd}&theatreid=1&site=undefined&time=&type=undefined&lang=&kinorai=undefined&genreId=0&screentype=&subdub=&isnew=false`);
-            console.log("=== TheaterEvents2 theatreid=1 [" + ev.status + "] len=" + ev.text.length);
-            console.log(ev.text.slice(0, 5000));
-
-            // 2. probe theatreid 1..15 for which exist / have events, and grab titles
-            for (let id = 1; id <= 15; id++) {
-              try {
-                const [page, events] = await Promise.all([
-                  get(`https://hotcinema.co.il/theater/${id}`),
-                  get(`https://hotcinema.co.il/tickets/TheaterEvents2?movieid=undefined&date=${dd}&theatreid=${id}&site=undefined&time=&type=undefined&lang=&kinorai=undefined&genreId=0&screentype=&subdub=&isnew=false`),
-                ]);
-                const title = (page.text.match(/<title>([\s\S]*?)<\/title>/i) || [,"?"])[1].trim();
-                let evCount = 0;
-                try { evCount = (JSON.parse(events.text).TheaterEvents || []).length; } catch {}
-                console.log(`theatreid=${id}  page=${page.status} title="${title}"  events=${events.status}/${evCount}`);
-              } catch (e) { console.log(`theatreid=${id} ERR ${e.message}`); }
-            }
+            const { text } = await get("https://hotcinema.co.il/theater/1");
+            // any <select> block that looks like a branch/theater picker
+            const selects = [...text.matchAll(/<select[^>]*>[\s\S]*?<\/select>/gi)];
+            console.log("selects found:", selects.length);
+            selects.forEach((m, i) => {
+              const opts = [...m[0].matchAll(/<option[^>]*value="([^"]*)"[^>]*>([^<]*)</gi)];
+              console.log(`\n-- select #${i} (${opts.length} options) --`);
+              console.log(m[0].slice(0,150).replace(/\s+/g," "));
+              opts.slice(0,20).forEach(o => console.log(`   value="${o[1]}" text="${o[2].trim()}"`));
+            });
+            // fallback: grep for "תיאטראות" / theater id+name JS array patterns
+            const arr = text.match(/theaters?\s*[:=]\s*\[[\s\S]{0,2000}?\]/i);
+            if (arr) { console.log("\n-- possible theaters array --"); console.log(arr[0].slice(0,2000)); }
           })();
           '
       - name: install playwright
