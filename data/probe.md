@@ -1,54 +1,103 @@
-# דוח גשש — 2026-08-08T14:23:36.605Z
+# דוח גשש 3 — 2026-08-08T14:27:47.023Z
 
-## HOT CINEMA
+## HOT — קובצי הליבה
 
-## HOT — סניפים (שם | קואורדינטות | כתובת)
-16 | HOT CINEMA &#x5DB;&#x5E4;&#x5E8; &#x5E1;&#x5D1;&#x5D0; | 32.1654048,34.9300218 | עתיר ידע 4, מתחם אושילנד
-14 | HOT CINEMA &#x5E4;&#x5EA;&#x5D7; &#x5EA;&#x5E7;&#x5D5;&#x5D5;&#x5D4; | 32.0932324,34.8654928 | הקניון הגדול
-1 | HOT CINEMA &#x5DE;&#x5D5;&#x5D3;&#x5D9;&#x5E2;&#x5D9;&#x5DF; | 31.889012,34.963161 | שדרות המלאכה 121, מרכז ישפרו
-17 | HOT CINEMA &#x5E8;&#x5D7;&#x5D5;&#x5D1;&#x5D5;&#x5EA; | 31.8933047,34.806848 | קניון רחובות
-9 | HOT CINEMA &#x5D7;&#x5D9;&#x5E4;&#x5D4; | 32.789711,35.0078224 | גרנד קניון
-2 | HOT CINEMA &#x5E7;&#x5E8;&#x5D9;&#x5D5;&#x5DF; | 32.842737,35.089856 | דרך עכו 192 קרית ביאליק
-15 | HOT CINEMA &#x5DB;&#x5E8;&#x5DE;&#x5D9;&#x5D0;&#x5DC; | אין | קניון חוצות
-6 | HOT CINEMA &#x5E0;&#x5D4;&#x5E8;&#x5D9;&#x5D4; | 32.9906518,35.0953887 | האירית 2 קניון נהריה
-8 | HOT CINEMA &#x5D0;&#x5E9;&#x5E7;&#x5DC;&#x5D5;&#x5DF; | 31.681682,34.558340 | הנמל 11, אשקלון
-5 | HOT CINEMA &#x5D0;&#x5E9;&#x5D3;&#x5D5;&#x5D3; | 31.7928702,34.6391482 | קניון סי-מול אשדוד
-3 | HOT CINEMA | אין | 
+--- HOT /js/init.js [200] 4361 תווים
+  (כלום)
 
-### קובצי JS
-נמצאו 18 קבצים
-נתיבים חשודים: /api/display/shopify/save/browse-abandonment  /api/display/shopify/get-price-rules/  /api/display/validation-emails  /APIRequest/click/  /api/display/click/  /api/display/  /api/display/shopify/check-product-collection/  /api/display/shopify/product-recommendation/  /api/display/wix/product-recommendation/  /api/display/conversion/  /api/display/limitLogs/  /marketing-api/v2/popup  /marketing-api/v2/push/client-config  /marketing-api/v2/push/register
+--- HOT /js/common.js [200] 3900 תווים
+  (כלום)
 
-### ניסיון קריאה ישירה
+--- HOT /js/sidemenu2.js [200] 741 תווים
+  (כלום)
 
-## מובילנד
+## פלאנט — כל קובצי הסקריפט בעמוד
+סה"כ: 58
+  https://challenges.cloudflare.com/turnstile/v0/api.js
+  /xmedia/js/vendor/modernizr.js?v=v2.8.106-dirty
+  //fecdn.user1st.info/Loader/head
+  https://maps.googleapis.com/maps/api/js?key=AIzaSyBG_mcniVW3go6dDG_QHtuTP0P6-wg8ZQE&amp;libraries=places&amp;language=iw
+  /xmedia/js/config.js?v=v2.8.106-dirty
+  /jsMessages.js?lang=iw_IL&amp;v=v2.8.106-dirty
+  /xmedia/js/polyfills/common-polyfills.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.mobile.custom.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.jloggins.1.0.2.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/json3.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/css_browser_selector.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/handlebars-v4.0.5.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment-timezone.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment-locale.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/touchable.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-datepicker.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-datepicker-locale.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-select.custom.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-rating-input.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/slick.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/tooltip.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.scrollTo.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.unveil.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.highlight.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/searchbox.js?v=v2.8.106-dirty
+  /xmedia/js/methods/user-action-methods.js?v=v2.8.106-dirty
+  /xmedia/js/methods/cinema-search.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.ba-throttle-debounce.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.waypoints.min.js?v=v2.8.106-dirty
+  /xmedia/js/scripts.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/unison.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/js.cookie.js?v=v2.8.106-dirty
+  /xmedia/js/cards.js?v=v2.8.106-dirty
+  /xmedia/js/components/showtimeDatepicker.component.js?v=v2.8.106-dirty
+  /xmedia/js/methods/router.js?v=v2.8.106-dirty
+  /xmedia/js/methods/object-methods.js?v=v2.8.106-dirty
+  /xmedia/js/methods/svg-converter-methods.js?v=v2.8.106-dirty
+  /xmedia/js/methods/msg-methods.js?v=v2.8.106-dirty
+  /xmedia/js/methods/youtube-methods.js?v=v2.8.106-dirty
+  /xmedia/js/methods/nav-tabs-methods.js?v=v2.8.106-dirty
+  /xmedia/js/methods/location.services.js?v=v2.8.106-dirty
+  /xmedia/js/screening.types.handler.js?v=v2.8.106-dirty
+  /xmedia/js/common.js?v=v2.8.106-dirty
+  /xmedia/js/methods/login-service.js?v=v2.8.106-dirty
+  /xmedia/js/common-init.js?v=v2.8.106-dirty
+  /xmedia/js/poster_modal.js?v=v2.8.106-dirty
+  /xmedia/js/menu.js?v=v2.8.106-dirty
+  /xmedia/js/header-module-bundle.min.js?v=v2.8.106-dirty
+  /xmedia/js/mobile-app-bundle.min.js?v=v2.8.106-dirty
+  /xmedia/js/methods/quicksearch.js?v=v2.8.106-dirty
+  /xmedia/js/lang_chooser.js?v=v2.8.106-dirty
+  /xmedia/js/focus-visible.js?v=v2.8.106-dirty
+  /xmedia/js/promobox.js?v=v2.8.106-dirty
+  /xmedia/js/location-picker-bundle.min.js?v=v2.8.106-dirty
+  https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496
 
-### קובצי JS
-נמצאו 0 קבצים
-נתיבים חשודים: (לא נמצאו)
+--- פלאנט ethods/cinema-search.js?v=v2.8.106-dirty [200] 3469 תווים
+  (כלום)
 
-### ניסיון קריאה ישירה
+--- פלאנט er-module-bundle.min.js?v=v2.8.106-dirty [200] 577112 תווים
+  /isLoggedIn
+  https://nominatim.openstreetmap.org/
+  https://maps.googleapis.com/maps/api/
 
-## פלאנט
+--- פלאנט obile-app-bundle.min.js?v=v2.8.106-dirty [200] 246794 תווים
+  itms-apps://itunes.apple.com/app/id411672262?pt=109618820&ct=app_download_web_banner&mt=8
+  itms-apps://itunes.apple.com/app/id1481314301?pt=109618820&ct=app_download_web_banner&mt=8
+  itms-apps://itunes.apple.com/app/id1181953841?pt=109618820&ct=app_download_web_banner&mt=8
 
-### קובצי JS
-נמצאו 42 קבצים
-נתיבים חשודים: /gifts-and-movie-cards  /events--and--conferences
+--- פלאנט on-picker-bundle.min.js?v=v2.8.106-dirty [200] 474721 תווים
+  https://nominatim.openstreetmap.org/
+  https://maps.googleapis.com/maps/api/
 
-### ניסיון קריאה ישירה
+## לב — קובץ התבנית
 
-## רב חן
+--- לב script.js [200] 21148 תווים
+  (כלום)
 
-### קובצי JS
-נמצאו 49 קבצים
-נתיבים חשודים: /gifts-and-movie-cards
+## לב — האם השעות ב-HTML
+שעות בגוף העמוד: 14 17:10 17:50 18:10 18:20 18:40 19:10 19:30 20:50 21:10 21:20 21:30 21:30 21:50 17:00
+הקשר: 026 &nbsp;שבת</option><option value="2026-08-23" >23/08/2026 &nbsp;ראשון</option> </select> <div class="clear"></div></div><div class="holder"> <div class="upcoming_container"> <ul class="items" id="filter_item"> <li><a href="https://www.lev.co.il/order/?pcode=602772&loc=7" class="topmenua" data-pcode="602772" data-siteid="7">יקירתי <span>17:10</span> </a> <a href="https://www.lev.co.il/movies/%d7%99%d7%a7%d7%99%d7%a8%d7%aa%d7%99/" class="smovielink"> תקציר </a> <div class="seperator"></div></li> <li><a href="https://www.lev.co.il/order/?pcode=602755&loc=6" class="topmenua" data-pcode="602755" data-sit
 
-### ניסיון קריאה ישירה
-
-## קולנוע לב
-
-### קובצי JS
-נמצאו 8 קבצים
-נתיבים חשודים: (לא נמצאו)
-
-### ניסיון קריאה ישירה
+## מובילנד — ניסיון עם כותרות דפדפן מלאות
+[403] https://www.movieland.co.il/ — 5823 תווים
+[403] https://movieland.co.il/ — 5819 תווים
