@@ -13,6 +13,33 @@ jobs:
           node-version: "22"
       - name: run static probe
         run: node scripts/probe-chains.js
+      - name: explore hot movie page markup
+        run: |
+          node -e '
+          const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
+          (async () => {
+            const r = await fetch("https://hotcinema.co.il/movie/3781", { headers: { "user-agent": UA, "accept-language": "he-IL,he;q=0.9" } });
+            const html = await r.text();
+            console.log("status:", r.status, "len:", html.length);
+            const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+            console.log("h1:", h1 ? h1[1].slice(0,300) : "(none)");
+            // any element whose class looks like it might hold movie facts
+            const classHits = [...html.matchAll(/class="([^"]*(?:sivug|info|detail|fact|meta|genre|runtime|poster)[^"]*)"/gi)];
+            console.log("candidate classes:", [...new Set(classHits.map(m=>m[1]))].slice(0,30));
+            // all <img> with plausible poster src
+            const imgs = [...html.matchAll(/<img[^>]*>/gi)].slice(0,15);
+            console.log("\nfirst images:");
+            imgs.forEach(m => console.log("  " + m[0].slice(0,200)));
+            // youtube embed
+            console.log("\nyoutube:", (html.match(/youtube\.com\/embed\/[\w-]{6,}/i)||["(none)"])[0]);
+            // dump a chunk right after h1 for visual context
+            if (h1) {
+              const i = html.indexOf(h1[0]);
+              console.log("\ncontext after h1:");
+              console.log(html.slice(i, i+2500).replace(/\s+/g," "));
+            }
+          })();
+          '
       - name: install playwright
         run: |
           npm install playwright
