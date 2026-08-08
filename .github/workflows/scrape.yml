@@ -22,6 +22,9 @@ jobs:
         with:
           name: debug-html
           path: debug/
+      - name: scrape רב חן
+        run: node scripts/scrape-ravhen.mjs
+        continue-on-error: true # אם רב חן נופל, לא רוצים לעצור את עדכון סינמה סיטי
       - run: |
           git config user.name masach-bot
           git config user.email actions@github.com
