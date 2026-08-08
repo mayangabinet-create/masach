@@ -14,17 +14,21 @@
  */
 
 import { writeFile, readFile, mkdir } from "node:fs/promises";
+import { checkRobots } from "./robots.mjs";
 
 const SITE_ID = "10104";
 const BASE = "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook";
 const CHAIN = "רב חן";
-const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
-const PAUSE = 500;
+const UA = "masach-showtimes/1.0 (+https://github.com/mayangabinet-create/masach; non-commercial showtimes aggregator; contact via GitHub issues)";
+let PAUSE = 500;
 const DAYS_AHEAD = 6;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function getJson(url) {
+  const { allowed, crawlDelay } = await checkRobots(url, UA);
+  if (crawlDelay) PAUSE = Math.max(PAUSE, crawlDelay * 1000);
+  if (!allowed) throw new Error(`robots.txt חוסם גישה: ${url}`);
   const res = await fetch(url, { headers: { "user-agent": UA, accept: "application/json" } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();

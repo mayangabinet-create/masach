@@ -17,11 +17,12 @@
  */
 
 import { writeFile, readFile, mkdir } from "node:fs/promises";
+import { checkRobots } from "./robots.mjs";
 
 const BASE = "https://hotcinema.co.il";
 const CHAIN = "HOT";
-const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
-const PAUSE = 350;
+const UA = "masach-showtimes/1.0 (+https://github.com/mayangabinet-create/masach; non-commercial showtimes aggregator; contact via GitHub issues)";
+let PAUSE = 350;
 const DAYS_AHEAD = 5;
 
 /* ID + שם ("Name" בעברית) + עיר משוערכת + קואורדינטות עיר (רמת דיוק
@@ -56,11 +57,17 @@ const stripTags = html => decodeEntities(
 ).replace(/\s+/g, " ").trim();
 
 async function get(url) {
+  const { allowed, crawlDelay } = await checkRobots(url, UA);
+  if (crawlDelay) PAUSE = Math.max(PAUSE, crawlDelay * 1000);
+  if (!allowed) throw new Error(`robots.txt חוסם גישה: ${url}`);
   const res = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "he-IL,he;q=0.9" } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.text();
 }
 async function getJson(url) {
+  const { allowed, crawlDelay } = await checkRobots(url, UA);
+  if (crawlDelay) PAUSE = Math.max(PAUSE, crawlDelay * 1000);
+  if (!allowed) throw new Error(`robots.txt חוסם גישה: ${url}`);
   const res = await fetch(url, { headers: { "User-Agent": UA, accept: "application/json" } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
