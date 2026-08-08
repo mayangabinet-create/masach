@@ -17,21 +17,31 @@ jobs:
         run: |
           npm install playwright
           npx playwright install --with-deps chromium
-      - name: explore planet rendered dom
+      - name: explore planet cinema-selected network
         run: |
           node -e '
           const { chromium } = require("playwright");
+          const NOISE = /(google|gtm|facebook|doubleclick|hotjar|clarity|cloudflare|turnstile|analytics|pixel|newsletter|advertserve|tiktok|instagram|\.css|\.woff|\.png|\.jpg|\.svg|\.gif)/i;
           (async () => {
             const browser = await chromium.launch();
             const page = await browser.newPage({ userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36", locale: "he-IL" });
-            await page.goto("https://www.planetcinema.co.il/whatson", { waitUntil: "networkidle", timeout: 30000 }).catch(e => console.log("goto err", e.message));
-            await page.waitForTimeout(3000);
-            const selects = await page.$$eval("select", els => els.map(e => ({ cls: e.className, opts: [...e.options].slice(0,15).map(o => ({ v: o.value, t: o.textContent.trim() })) })));
-            console.log("selects:", JSON.stringify(selects, null, 2).slice(0, 4000));
-            const links = await page.$$eval("a[href]", els => [...new Set(els.map(e => e.getAttribute("href")))].filter(h => /cinema|site|location/i.test(h)));
-            console.log("\ncinema-ish links:", links.slice(0, 30));
-            const buttons = await page.$$eval("[class*=cinema], [class*=site], [data-cinema], [data-site]", els => els.slice(0,20).map(e => ({ tag: e.tagName, cls: e.className, text: e.textContent.trim().slice(0,60) })));
-            console.log("\ncinema-class elements:", JSON.stringify(buttons, null, 2).slice(0, 3000));
+            const hits = [];
+            page.on("response", res => {
+              const u = res.url();
+              if (NOISE.test(u) || /\.js(\?|$)/i.test(u)) return;
+              hits.push(res);
+            });
+            const url = "https://www.planetcinema.co.il/whatson#/buy-tickets-by-cinema?in-cinema=1070&view-mode=list";
+            await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 }).catch(e => console.log("goto err", e.message));
+            await page.waitForTimeout(6000);
+            console.log("captured", hits.length, "responses for", url);
+            for (const res of hits) {
+              const ct = res.headers()["content-type"] || "";
+              let snippet = "";
+              try { if (/json|text/i.test(ct)) snippet = (await res.text()).slice(0, 500).replace(/\s+/g, " "); } catch {}
+              console.log(`[${res.status()} ${ct.split(";")[0]}] ${res.url()}`);
+              if (snippet) console.log("    " + snippet);
+            }
             await browser.close();
           })();
           '
