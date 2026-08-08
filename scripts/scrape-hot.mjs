@@ -5,10 +5,10 @@
  * נמצא ע"י מעקב אחר בקשות רשת אמיתיות (ראו data/probe-network.md).
  * רשימת הסניפים (מזהה+שם) חולצה מהמערך המוטמע בעמוד /theater/1.
  *
- * HOT בנוי על אותה פלטפורמה (Modulus) כמו סינמה סיטי, ולכן דפי הסרט
- * (/movie/{id}) צפויים להיות באותו מבנה — פרטי הסרט (פוסטר/ז'אנר/
- * תקציר) נשלפים באותה לוגיקה כמו scrape.mjs, עם נפילה חזרה לשם
- * הסרט בלבד אם זה לא מסתדר.
+ * דף הסרט (/movie/{id}) הוא מבנה משלו (לא זהה לסינמה סיטי): כותרת
+ * עברית ב-h1, אנגלית ב-h2, פוסטר = התמונה הראשונה תחת "movie-details",
+ * תקציר בתוך div.desc1. ז'אנר/אורך/דירוג-גיל לא נמצא להם מיקום אמין
+ * עדיין ונשארים null (ראו data/probe.md).
  *
  * רץ אחרי scrape.mjs + scrape-ravhen.mjs, ומוסיף את עצמו לאותם
  * קבצים בלי לדרוס (מזהי "hot-").
@@ -66,34 +66,27 @@ async function getJson(url) {
   return res.json();
 }
 
-/* פרטי סרט — אותה לוגיקה כמו scrape.mjs (אותה פלטפורמה, אותו HTML) */
+/* פרטי סרט — HOT: <h1>שם עברי</h1><h2>שם אנגלי</h2>, פוסטר = התמונה
+   הראשונה בתוך אזור "movie-details", תקציר בתוך div.desc1.
+   ראו data/probe.md — "explore hot movie page markup". */
 function parseMovie(html, movieId, fallbackTitle) {
   const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-  const full = h1 ? stripTags(h1[1]) : "";
-  const slash = full.indexOf("/");
-  const he = slash > -1 ? full.slice(0, slash).trim() : full.trim();
-  const en = slash > -1 ? full.slice(slash + 1).trim() : null;
+  const title = h1 ? stripTags(h1[1]) : (fallbackTitle || null);
+  const h2 = html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
+  const titleEn = h2 ? stripTags(h2[1]) : null;
 
-  const block = html.match(/<div[^>]*class="[^"]*sivug[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
-  const fields = {};
-  if (block) {
-    const p = /<p>\s*<span>\s*([^<]+?)\s*<\/span>\s*([\s\S]*?)<\/p>/gi;
-    let m;
-    while ((m = p.exec(block[1])) !== null) fields[decodeEntities(m[1]).trim()] = stripTags(m[2]);
-  }
-  const poster =
-    (html.match(/<img[^>]*src="([^"]+)"[^>]*alt="פוסטר"/i) ||
-     html.match(/<img[^>]*alt="פוסטר"[^>]*src="([^"]+)"/i) ||
-     [])[1] || null;
+  const di = html.indexOf("movie-details");
+  const posterRaw = di > -1 ? (html.slice(di, di + 2000).match(/<img[^>]*src="([^"]+)"/i) || [])[1] : null;
+  const poster = posterRaw ? decodeEntities(posterRaw) : null;
+
+  const desc1 = html.match(/<div[^>]*class="[^"]*\bdesc1\b[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
+  const synopsis = desc1 ? stripTags(desc1[1]).slice(0, 1200) : null;
+
   const yt = (html.match(/youtube\.com\/embed\/([\w-]{6,})/i) || [])[1] || null;
-  const tak = html.match(/<div[^>]*class="[^"]*\btak\b[^"]*"[^>]*>\s*<div>\s*<p>([\s\S]*?)<\/p>/i);
-  const synopsis = tak ? stripTags(tak[1]).slice(0, 1200) : null;
-  const runtime = Number((fields["אורך בדקות"] || "").match(/\d{2,3}/)?.[0]) || null;
 
   return {
-    ccId: `hot-${movieId}`, title: he || fallbackTitle || null, titleEn: en || null,
-    genre: fields["סיווג"] || null, runtime,
-    releaseDate: fields["תאריך בכורה"] || null, rating: fields["הגבלת צפיה"] || null,
+    ccId: `hot-${movieId}`, title, titleEn,
+    genre: null, runtime: null, releaseDate: null, rating: null,
     synopsis, poster: poster && poster.startsWith("/") ? BASE + poster : poster,
     trailer: yt ? `https://www.youtube.com/watch?v=${yt}` : null,
     url: `${BASE}/movie/${movieId}`,
@@ -145,7 +138,7 @@ async function main() {
   let fetched = 0, failed = 0;
   for (const [mid, name] of movieNames) {
     const key = `hot-${mid}`;
-    if (movies[key]?.genre) continue;
+    if (movies[key]?.poster) continue;
     try {
       movies[key] = parseMovie(await get(`${BASE}/movie/${mid}`), mid, name);
       fetched++;
