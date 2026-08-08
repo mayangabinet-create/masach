@@ -19,8 +19,6 @@ jobs:
           npx playwright install --with-deps chromium
       - name: run network probe
         run: node scripts/probe-network.mjs
-      - name: run לב/מובילנד probe
-        run: node scripts/probe-lev-movieland.mjs
       - name: commit report
         run: |
           git config user.name masach-bot
