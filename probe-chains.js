@@ -1,4 +1,4 @@
-const const fs=require("fs");
+constconst fs=require("fs");
 const H={"user-agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Safari/604.1","accept-language":"he-IL,he;q=0.9"};
 const O=["# probe v4 "+new Date().toISOString()];
 const g=async u=>(await fetch(u,{headers:H})).text();
