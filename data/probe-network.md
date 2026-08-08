@@ -1,14 +1,14 @@
-# גשש רשת — 2026-08-08T21:41:09.357Z
+# גשש רשת — 2026-08-08T21:52:46.189Z
 
 === HOT  (https://hotcinema.co.il/theater/1)
-  [302 ] https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1647348&time=1786225272181&li_adsId=06d8fae9-4694-48f1-a540-6cf8b2aab819&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1
-  [200 application/json] https://px.ads.linkedin.com/attribution_trigger?pid=1647348&time=1786225272181&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1
+  [200 application/json] https://px.ads.linkedin.com/attribution_trigger?pid=1647348&time=1786225968508&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1
       {}
-  [302 ] https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1647348&time=1786225272181&li_adsId=06d8fae9-4694-48f1-a540-6cf8b2aab819&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1&cookiesTest=true
-  [302 ] https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D1647348%26time%3D1786225272181%26li_adsId%3D06d8fae9-4694-48f1-a540-6cf8b2aab819%26url%3Dhttps%253A%252F%252Fhotcinema.co.il%252Ftheater%252F1%26cookiesTest%3Dtrue%26liSync%3Dtrue
+  [302 ] https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1647348&time=1786225968508&li_adsId=d286dfe8-7bb6-4f0f-b2ea-4e597bda5ef1&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1
   [200 application/json] https://v5-b75ccb2b73c54aa4a5098ab7f8533696.ecs.us-east-2.on.aws/events?cee=no
-  [200 application/javascript] https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1647348&time=1786225272181&li_adsId=06d8fae9-4694-48f1-a540-6cf8b2aab819&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1&cookiesTest=true&liSync=true
+  [302 ] https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1647348&time=1786225968508&li_adsId=d286dfe8-7bb6-4f0f-b2ea-4e597bda5ef1&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1&cookiesTest=true
   [200 application/javascript] https://hotcinema.co.il/js/movie-order.js?v=7c781a9cf2a84c4f8b58053b1dca1196
+  [302 ] https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D1647348%26time%3D1786225968508%26li_adsId%3Dd286dfe8-7bb6-4f0f-b2ea-4e597bda5ef1%26url%3Dhttps%253A%252F%252Fhotcinema.co.il%252Ftheater%252F1%26cookiesTest%3Dtrue%26liSync%3Dtrue
+  [200 application/javascript] https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1647348&time=1786225968508&li_adsId=d286dfe8-7bb6-4f0f-b2ea-4e597bda5ef1&url=https%3A%2F%2Fhotcinema.co.il%2Ftheater%2F1&cookiesTest=true&liSync=true
   [200 application/json] https://hotcinema.co.il/tickets/TheaterEvents2?movieid=undefined&date=08/08/2026&theatreid=1&site=undefined&time=&type=undefined&lang=&kinorai=undefined&genreId=0&screentype=&subdub=&isnew=false
       {"TheaterEvents":[],"Genres":[]}
   [200 application/json] https://hotcinema.co.il/tickets/TheaterEvents2?movieid=undefined&date=08/08/2026&theatreid=1&site=undefined&time=&type=undefined&lang=&kinorai=undefined&genreId=0&screentype=&subdub=&isnew=false
@@ -18,37 +18,35 @@
   [200 application/javascript] https://www.planetcinema.co.il/xmedia/js/vendor/moment-timezone.js?v=v2.8.106-dirty
   [200 application/javascript] https://www.planetcinema.co.il/xmedia/js/components/showtimeDatepicker.component.js?v=v2.8.106-dirty
   [200 application/javascript] https://www.planetcinema.co.il/xmedia/js/screening.types.handler.js?v=v2.8.106-dirty
-  [200 image/gif] https://cineworld.advertserve.com/servlet/pageview?session=true&random=86376420
+  [200 image/gif] https://cineworld.advertserve.com/servlet/pageview?session=true&random=37903464
 
 === רב חן  (https://www.rav-hen.co.il/cinemas/givatayim/1058)
-  [200 application/javascript] https://www.rav-hen.co.il/xmedia/js/vendor/moment-timezone.js?v=v2.8.106-dirty
-  [200 application/javascript] https://www.rav-hen.co.il/xmedia/js/screening.types.handler.js?v=v2.8.106-dirty
   [200 application/javascript] https://www.rav-hen.co.il/xmedia/js/components/showtimeDatepicker.component.js?v=v2.8.106-dirty
+  [200 application/javascript] https://www.rav-hen.co.il/xmedia/js/screening.types.handler.js?v=v2.8.106-dirty
+  [200 application/javascript] https://www.rav-hen.co.il/xmedia/js/vendor/moment-timezone.js?v=v2.8.106-dirty
   [200 application/javascript] https://www.rav-hen.co.il/xmedia/js/schedule-app-bundle.min.js?v=v2.8.106-dirty
-  [200 image/gif] https://cineworld.advertserve.com/servlet/pageview?session=true&random=98364367
-  [200 application/json] https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/attributes?jsonp&lang=he_IL
-      {"body":{"attributes":[{"group-name":"age-restriction","items":[{"id":"10-plus","url":"https://www.rav-hen.co.il/xmedia/img/10104/rating/10_.png","visible":true,"sequence":null},{"id":"12-plus","url":"https://www.rav-hen.co.il/xmedia/img/10104/rating/12_.png","visible":true,"sequence":null},{"id":"14-plus","url":"https://www.rav-hen.co.il/xmedia/img/10104/rating/14_.png","visible":true,"sequence":
-  [200 application/json] https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/cinemas/with-event/until/2027-08-08?attr=&lang=he_IL
-      {"body":{"cinemas":[{"id":"1058","groupId":"group-1058","displayName":"רב חן גבעתיים","link":"https://www.rav-hen.co.il/cinemas/givatayim","imageUrl":"https://www.rav-hen.co.il/static/dam/jcr:9bfff276-4a19-4ea8-99cf-2f90dc98559e","address":"קניון גבעתיים - דרך יצחק רבין 53, גבעתיים","addressInfo":{"address1":"קניון גבעתיים - דרך יצחק רבין 53","address2":null,"address3":null,"address4":null,"city":
+  [200 image/gif] https://cineworld.advertserve.com/servlet/pageview?session=true&random=74910076
   [200 application/json] https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/dates/in-cinema/1058/until/2027-08-08?attr=&lang=he_IL
       {"body":{"dates":["2026-08-09","2026-08-10","2026-08-11","2026-08-12"]}}
+  [200 application/json] https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/cinemas/with-event/until/2027-08-08?attr=&lang=he_IL
+      {"body":{"cinemas":[{"id":"1058","groupId":"group-1058","displayName":"רב חן גבעתיים","link":"https://www.rav-hen.co.il/cinemas/givatayim","imageUrl":"https://www.rav-hen.co.il/static/dam/jcr:9bfff276-4a19-4ea8-99cf-2f90dc98559e","address":"קניון גבעתיים - דרך יצחק רבין 53, גבעתיים","addressInfo":{"address1":"קניון גבעתיים - דרך יצחק רבין 53","address2":null,"address3":null,"address4":null,"city":
+  [200 application/json] https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/attributes?jsonp&lang=he_IL
+      {"body":{"attributes":[{"group-name":"age-restriction","items":[{"id":"10-plus","url":"https://www.rav-hen.co.il/xmedia/img/10104/rating/10_.png","visible":true,"sequence":null},{"id":"12-plus","url":"https://www.rav-hen.co.il/xmedia/img/10104/rating/12_.png","visible":true,"sequence":null},{"id":"14-plus","url":"https://www.rav-hen.co.il/xmedia/img/10104/rating/14_.png","visible":true,"sequence":
   [200 application/json] https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/film-events/in-cinema/1058/at-date/2026-08-09?attr=&lang=he_IL
       {"body":{"films":[{"id":"8134s2r","name":"אובססיה","length":110,"posterLink":"https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8134S2R.jpg","videoLink":"https://www.youtube.com/watch?v=yVgY29zJYMg","link":"https://www.rav-hen.co.il/films/obsession/8134s2r","weight":0,"releaseYear":"2025","releaseDate":"2026-05-28T00:00:00","attributeIds":["14-plus","2d","first-subbed-lang-he","horror","origi
   [200 application/json] https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104/film-events-dates/in-cinema/1058/as-at-date/2026-08-09?attr=&lang=he_IL&noAttr=event,ladies-night,marathon,pre
       {"body":{"films":[],"eventsDatesByFilmId":{}}}
 
 === מובילנד  (https://www.movieland.co.il/theater/1290)
-  [200 application/javascript] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a281af923c8660d2
-  [200 text/plain] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/fo/2209320452:1786222855:KxL8pS_ptf9pVzmDbC89kmFKkkqbPYJkD_5o7dx2d1s/a281af923c8660d2/WO1rK2cHSFm4wGx0Rlg9by3mYaX44iTS5ZbgEmhVBrY-1786225293-1.2.1.1-OOqgGneVO74NYw2sMimqvHooJFf8cFzLmn4nA9x3KBor437iGbmdj5F6G3u9XaAV
-  [200 text/javascript] blob:https://www.movieland.co.il/e6dc3c98-f4b7-486a-b8b8-88a4d77e1893
-  [200 text/html] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/fo/2209320452:1786222855:KxL8pS_ptf9pVzmDbC89kmFKkkqbPYJkD_5o7dx2d1s/a281af923c8660d2/WO1rK2cHSFm4wGx0Rlg9by3mYaX44iTS5ZbgEmhVBrY-1786225293-1.2.1.1-OOqgGneVO74NYw2sMimqvHooJFf8cFzLmn4nA9x3KBor437iGbmdj5F6G3u9XaAV
-  [200 application/javascript] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a281afa9ceb2a351
-  [200 text/plain] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/fo/2209320452:1786222855:KxL8pS_ptf9pVzmDbC89kmFKkkqbPYJkD_5o7dx2d1s/a281afa9ceb2a351/G231h4wtv_i93AEj4fshU_IH1DLc9Yn6pd7lHYnG.M4-1786225296-1.2.1.1-37T7iGYVYspXOCyjrL6eBgCfClejG2XmBvQIlT5Do7Ku9D_p6O_9gdm0GtqdXJzv
-      vaOel7uYvIS1wczNv66ZkMKpoZGus7qpqafb3bPPwquwwL6mpefGu8bbyr/IvN/PzM/0vsrHytLuzPy26fUBtOHtwM/n2cL5A/XXwP3MAfLm5wX+AdHZ9gXW1ewLDSAM+CQCJfkABh3zFhwp5+In7PAmJyYpOi4xJRouDC8gKv0uDzUjEyIiKB88IggHRAgiVCNWLFYkKhNXSDwXPVAcO01DVVpQXWVhWjtHYE5ZKV5CbXczQk5Qb09tUn46UVZeWj2Hb0F0i3RDiGlqSkxgT4GLYnhXmVdnaIt/jpdzo2KlZGWVonqIeZuoi6KucXCic6GOipiFhryafbCKdpKLi327hYaktLyLuJiky8K7qK/Qr77IyqWQl9CW0r7Ok9LS3NLasdbZwb/Lv6Ds
-  [200 text/javascript] blob:https://www.movieland.co.il/6269d9f6-3549-4c41-861e-34d1d50c2ec9
-  [200 text/html] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/fo/2209320452:1786222855:KxL8pS_ptf9pVzmDbC89kmFKkkqbPYJkD_5o7dx2d1s/a281afa9ceb2a351/G231h4wtv_i93AEj4fshU_IH1DLc9Yn6pd7lHYnG.M4-1786225296-1.2.1.1-37T7iGYVYspXOCyjrL6eBgCfClejG2XmBvQIlT5Do7Ku9D_p6O_9gdm0GtqdXJzv
-      vaOel7uYvIS1wczNv66ZkMKpqdWuo8iksc2tnLe5vq7Q0L62wp/Kv8O4xejZ47vN4NPty+Pr7azD2c+9++nfvAPXt8IEAPjq3t8NDfcE0RH78tX089AZ2vQS/Bnz/Njc9xfy9fjw9+X9GgL8+gr5/PwhBA4OITIDLfb5/jD5Lg0xFA49JREFQxw8PC8hQSpDMxQlJ1cYQyhbMTUoTD8fK1EXMCEaMjhKYD5NOEVhYGdNY1d1akE5U0dVa2B/eUxvcG5eZj5+dUZ3bG9FfXBOUYFkiVR5UomOfHqGb49+XlVwb2Okontjp6NqjGuohXxzlH6Kb3CWpZuZmp+sn55/jITBt7y4k4rJzKmOp6uwwp2pzpGysLWuzJeY0dad3dfdn9y0pLKkv9Xa48jk
+  [200 application/javascript] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a281c0986bcfe60b
+  [200 text/plain] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/fo/2209320452:1786222855:KxL8pS_ptf9pVzmDbC89kmFKkkqbPYJkD_5o7dx2d1s/a281c0986bcfe60b/q2TPYM4wWrV0UCThz0lVO.ogx8XoOhElqq90XgkM99Y-1786225990-1.2.1.1-LC5HBGb.T57vgcFulSEE1PyvcYyAN7pMi1Aqaho9h2d6oO.PtoO9lH8fmbYkkSp9
+  [200 text/javascript] blob:https://www.movieland.co.il/31da0602-0993-4b64-a95e-b0c9737dc2d1
+  [200 text/html] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/fo/2209320452:1786222855:KxL8pS_ptf9pVzmDbC89kmFKkkqbPYJkD_5o7dx2d1s/a281c0986bcfe60b/q2TPYM4wWrV0UCThz0lVO.ogx8XoOhElqq90XgkM99Y-1786225990-1.2.1.1-LC5HBGb.T57vgcFulSEE1PyvcYyAN7pMi1Aqaho9h2d6oO.PtoO9lH8fmbYkkSp9
+  [200 application/javascript] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=a281c0b1cb64f26a
+  [200 text/plain] https://www.movieland.co.il/cdn-cgi/challenge-platform/h/b/fo/2209320452:1786222855:KxL8pS_ptf9pVzmDbC89kmFKkkqbPYJkD_5o7dx2d1s/a281c0b1cb64f26a/CLtBkvUwm8SKegxKTlx7Cbf1Ca79OBlKkWsuSQndl8o-1786225994-1.2.1.1-oLZtJBRobRpABWh0M.sFQAaboTP8qSpWmCHsRb03Y_5yn1T0uUWL7YyGSL_zn4Cn
+      iG5pYoZjh0+AjJeYinlkW410bFx5foV0dHKmqH6ajXZ7i4lxcLKRhpGmlYqTh6qal5q/iZWSlZ25l8eBtMDLf6y4i5qypI3EzcCii8iXy72xss/Jy5ykwc+hoLfV1+rWw+7M78TK0Oe+4Obzsq3xt7vw8fDzBfj77+T41vnq9Mj42QDt3ezs8ukH7NLRD9LsH+0h9iHu9N0iEwfhCBvmBhgOICUbKDAsJQYSKxkk8ykNOEL9DRkbOho4HUkFHBkpJQhSOgw/Vj8OUzQ1FRcrGkxWLUMiPiIyM1ZKWWI+bi1wLzBgbUVTRGZzVm15PDttPmxZVWNQUYdlSHtVQV1WVkiGUFFvf4dWg2Nvlo2Gc3qbeomTlXBbYpthnYmZXp2dp52lfKGkjIqWimu3
+  [200 text/javascript] blob:https://www.movieland.co.il/f40dc272-abed-41ce-a8b7-d9b37ccf4274
+      var _p=null;if(self.trustedTypes)try{_p=self.trustedTypes.createPolicy('uRGq7',{createScript:function(s){return s;}})}catch(e){self.postMessage({type:'tt-policy-error',msg:e.message})}onmessage=function(e){e.isTrusted&&''===e.origin&&null===e.source&&eval(_p?_p.createScript(e.data):e.data)}
 
 === לב  (https://www.lev.co.il/location/telaviv)
-  [200 application/javascript] https://www.lev.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9
-  [200 application/json] https://m6-211026f8a25b42c08fc190458268b30e.ecs.us-east-2.on.aws/events?cee=no
+  (לא נתפסו בקשות רשת מעניינות)
