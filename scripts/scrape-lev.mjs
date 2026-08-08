@@ -110,8 +110,15 @@ function metaContent(html, prop) {
   return m ? decodeEntities(m[1]) : null;
 }
 
+/* לפעמים lev.co.il מגיש (קאשינג/הגבלת-קצב בצד שרת) גרסה מצומצמת של
+   העמוד בלי תוכן/תמונות אמיתיים (~12k תווים, לעומת ~95k בגרסה המלאה —
+   ראו data/probe.md). מזהים לפי אורך ומנסים שוב אחרי המתנה. */
 async function parseMovie(url, fallbackTitle) {
-  const html = await getHtml(url);
+  let html = await getHtml(url);
+  if (html.length < 20000) {
+    await sleep(2500);
+    html = await getHtml(url);
+  }
   const ogTitle = metaContent(html, "og:title");
   const title = (ogTitle ? ogTitle.split("|")[0].trim() : null) || fallbackTitle;
   return {
