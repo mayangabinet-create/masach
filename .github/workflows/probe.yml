@@ -11,8 +11,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: run probe
+      - name: run static probe
         run: node scripts/probe-chains.js
+      - name: install playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+      - name: run network probe
+        run: node scripts/probe-network.mjs
       - name: commit report
         run: |
           git config user.name masach-bot
