@@ -13,6 +13,23 @@ jobs:
           node-version: "22"
       - name: run static probe
         run: node scripts/probe-chains.js
+      - name: explore planet cinema links
+        run: |
+          node -e '
+          const UA = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
+          async function get(u) {
+            const r = await fetch(u, { headers: { "user-agent": UA, "accept-language": "he-IL,he;q=0.9" } });
+            return { status: r.status, text: await r.text() };
+          }
+          (async () => {
+            for (const u of ["https://www.planetcinema.co.il/", "https://www.planetcinema.co.il/cinemas", "https://www.planetcinema.co.il/whatson"]) {
+              const { status, text } = await get(u);
+              console.log(`\n=== ${u} [${status}] len=${text.length}`);
+              const hrefs = [...text.matchAll(/href="([^"]*\/cinemas?\/[^"]*)"/gi)].map(m => m[1]);
+              console.log("cinema-ish links:", [...new Set(hrefs)].slice(0, 30));
+            }
+          })();
+          '
       - name: install playwright
         run: |
           npm install playwright
