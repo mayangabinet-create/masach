@@ -1,110 +1,109 @@
-/* גשש חד-פעמי: מגלה איך כל רשת קולנוע מגישה את לוח ההקרנות שלה.
-   רץ ב-GitHub Actions, כותב דוח ל-data/probe.md. לא נוגע בשום נתון קיים.
-   נכתב כ-CommonJS בכוונה כדי שיעבוד בכל מקרה, גם בשם .js */
+/* גשש סבב 2 — בדיקה ממוקדת של נקודות קצה אפשריות לכל רשת.
+   ההיגיון: HOT בנויה על אותה פלטפורמה כמו סינמה סיטי (Modulus), ולכן
+   סביר שאותן כתובות עובדות. פלאנט ורב חן שייכות ל-Cineworld, שלה יש
+   API ידוע בשם quickbook. מובילנד רצה על BiggerPicture.
+   בנוסף: בודק לכל עמוד אם השעות בכלל קיימות ב-HTML (כלומר ניתן לגרד
+   ישירות) או שהן נטענות אחר כך. */
 
 const fs = require("fs");
-
 const OUT = [];
 const log = (...a) => OUT.push(a.join(" "));
-
 const UA = { "user-agent":
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36" };
 
 async function get(url, extra) {
   const r = await fetch(url, { headers: Object.assign({}, UA, extra || {}), redirect: "follow" });
-  const text = await r.text();
-  return { status: r.status, ct: r.headers.get("content-type") || "", text };
+  return { status: r.status, ct: r.headers.get("content-type") || "", text: await r.text() };
 }
 
-const HINT = /(grid|event|showtime|screening|session|movie|performance|feed|api)/i;
+const today = new Date().toISOString().slice(0, 10);
 
-async function findEndpoints(base, page) {
-  log("\n### קובצי JS");
-  let html = "";
-  try { html = (await get(base + page)).text; }
-  catch (e) { log("לא הצלחתי לטעון את העמוד:", e.message); return; }
-
-  const srcs = [];
-  const re = /<script[^>]+src=["']([^"']+)["']/gi;
-  let m;
-  while ((m = re.exec(html))) {
-    let s = m[1];
-    if (/google|gtm|facebook|doubleclick|cloudflare|jquery|bootstrap|angular\.min/i.test(s)) continue;
-    if (!/^https?:/.test(s)) s = base + (s[0] === "/" ? "" : "/") + s;
-    srcs.push(s);
-  }
-  log("נמצאו", srcs.length, "קבצים");
-
-  const found = new Set();
-  for (const s of srcs.slice(0, 25)) {
-    try {
-      const js = (await get(s)).text;
-      const pr = /["'](\/[A-Za-z0-9_\-\/]{4,60})["']/g;
-      let p;
-      while ((p = pr.exec(js))) {
-        const path = p[1];
-        if (HINT.test(path) && !/\.(js|css|png|jpg|svg|gif|woff)/i.test(path)) found.add(path);
-      }
-    } catch (e) { log("  שגיאה:", s.slice(-45), e.message); }
-  }
-  const list = Array.from(found);
-  log("נתיבים חשודים:", list.slice(0, 40).join("  ") || "(לא נמצאו)");
-
-  log("\n### ניסיון קריאה ישירה");
-  for (const p of list.slice(0, 12)) {
-    for (const q of ["", "?theaterId=1", "?theathereid=1&id=1&venueId=1"]) {
-      try {
-        const r = await get(base + p + q, {
-          "x-requested-with": "XMLHttpRequest",
-          accept: "application/json, text/html",
-        });
-        const body = r.text.trim();
-        if (r.status === 200 && body.length > 80 && !/^<!DOCTYPE/i.test(body.slice(0, 60))) {
-          log("V " + p + q + "  [" + r.status + " " + r.ct.split(";")[0] + " " + body.length + " תווים]");
-          log("   דוגמה:", body.slice(0, 220).replace(/\s+/g, " "));
-        }
-      } catch (e) {}
+/* האם השעות מוגשות כבר ב-HTML? */
+async function serverRendered(url, label) {
+  try {
+    const { text, status } = await get(url);
+    const times = (text.match(/\b([01]?\d|2[0-3]):[0-5]\d\b/g) || []).length;
+    const links = (text.match(/(order|buy|tickets|booking|session|event)/gi) || []).length;
+    log(`${label} [${status}] אורך=${text.length} שעות-ב-HTML=${times} רמזי-הזמנה=${links}`);
+    if (times > 15) {
+      const i = text.search(/\b([01]?\d|2[0-3]):[0-5]\d\b/);
+      log("   הקשר:", text.slice(Math.max(0, i - 260), i + 260).replace(/\s+/g, " "));
     }
-  }
+  } catch (e) { log(`${label} שגיאה: ${e.message}`); }
 }
 
-async function venues(base, ids, label) {
-  log("\n## " + label + " — סניפים (שם | קואורדינטות | כתובת)");
-  for (const id of ids) {
+async function tryUrls(label, urls) {
+  log(`\n### ${label} — ניסיון נקודות קצה`);
+  for (const u of urls) {
     try {
-      const html = (await get(base + "/theater/" + id)).text;
-      const name = (html.match(/<h1[^>]*>([^<]+)<\/h1>/) || [])[1];
-      const geo = html.match(/maps\/@(-?\d+\.\d+),(-?\d+\.\d+)/);
-      const addr = (html.match(/כתובת<\/[^>]+>\s*([^<]{4,80})/) || [])[1];
-      log(id + " | " + (name ? name.trim() : "?") +
-          " | " + (geo ? geo[1] + "," + geo[2] : "אין") +
-          " | " + (addr ? addr.trim() : "-"));
-    } catch (e) { log(id + " | שגיאה: " + e.message); }
+      const r = await get(u, { "x-requested-with": "XMLHttpRequest", accept: "application/json,text/html,*/*" });
+      const b = r.text.trim();
+      const json = /json/i.test(r.ct);
+      const flag = r.status === 200 && b.length > 60 ? "V" : "x";
+      log(`${flag} [${r.status} ${r.ct.split(";")[0]} ${b.length}] ${u}`);
+      if (flag === "V") log("    ", b.slice(0, 260).replace(/\s+/g, " "));
+    } catch (e) { log(`x ${u} — ${e.message}`); }
   }
 }
 
 async function main() {
-  log("# דוח גשש —", new Date().toISOString());
+  log("# דוח גשש 2 —", new Date().toISOString(), "| תאריך בדיקה:", today);
 
-  log("\n## HOT CINEMA");
-  await venues("https://hotcinema.co.il", [16, 14, 1, 17, 9, 2, 15, 6, 8, 5, 3], "HOT");
-  await findEndpoints("https://hotcinema.co.il", "/theater/1");
+  log("\n## HOT CINEMA — האם מוגש בשרת");
+  await serverRendered("https://hotcinema.co.il/theater/1", "theater/1");
+  await serverRendered("https://hotcinema.co.il/ShowingNow", "ShowingNow");
+  await tryUrls("HOT (תבנית סינמה סיטי)", [
+    "https://hotcinema.co.il/home/MoviesGridTime?page=1&theathereid=1&id=1&venueId=1",
+    "https://hotcinema.co.il/home/MoviesGridTime?page=1&theaterId=1",
+    "https://hotcinema.co.il/timehour?theathereid=1&id=1&vid=1",
+    "https://hotcinema.co.il/Home/GetEvents?theaterId=1",
+    "https://hotcinema.co.il/home/GetShowTimes?theaterId=1",
+    "https://hotcinema.co.il/api/events?theaterId=1",
+  ]);
+
+  log("\n## פלאנט / רב חן (Cineworld quickbook)");
+  await tryUrls("פלאנט", [
+    `https://www.planetcinema.co.il/api/quickbook/cinemas`,
+    `https://www.planetcinema.co.il/api/quickbook/films`,
+    `https://www.planetcinema.co.il/api/quickbook/10108/film-events/in-cinema/1058/at-date/${today}?attr=&lang=he_IL`,
+    `https://www.planetcinema.co.il/api/cinemas`,
+  ]);
+  await tryUrls("רב חן", [
+    `https://www.rav-hen.co.il/api/quickbook/cinemas`,
+    `https://www.rav-hen.co.il/api/quickbook/10108/film-events/in-cinema/1058/at-date/${today}?attr=&lang=he_IL`,
+  ]);
+  await serverRendered("https://www.rav-hen.co.il/cinemas/givatayim/1058", "רב חן גבעתיים");
 
   log("\n## מובילנד");
-  await findEndpoints("https://www.movieland.co.il", "/theater/1290");
-
-  log("\n## פלאנט");
-  await findEndpoints("https://www.planetcinema.co.il", "/whatson");
-
-  log("\n## רב חן");
-  await findEndpoints("https://www.rav-hen.co.il", "/cinemas/givatayim/1058");
+  await serverRendered("https://www.movieland.co.il/theater/1290", "movieland theater/1290");
+  await serverRendered("https://www.movieland.co.il/", "movieland home");
 
   log("\n## קולנוע לב");
-  await findEndpoints("https://www.lev.co.il", "/location/telaviv");
+  await serverRendered("https://www.lev.co.il/location/telaviv", "lev telaviv");
+
+  /* רשימת קובצי ה-JS המלאה — כדי שאפשר יהיה לבדוק אותם ידנית */
+  log("\n## קובצי JS לבדיקה ידנית");
+  for (const [name, url] of [
+    ["HOT", "https://hotcinema.co.il/theater/1"],
+    ["פלאנט", "https://www.planetcinema.co.il/whatson"],
+    ["מובילנד", "https://www.movieland.co.il/theater/1290"],
+    ["לב", "https://www.lev.co.il/location/telaviv"],
+  ]) {
+    try {
+      const html = (await get(url)).text;
+      const re = /<script[^>]+src=["']([^"']+)["']/gi;
+      const list = [];
+      let m;
+      while ((m = re.exec(html))) list.push(m[1]);
+      log(`\n${name}:`);
+      list.filter(s => !/google|gtm|facebook|doubleclick|hotjar|clarity/i.test(s))
+          .slice(0, 20).forEach(s => log("  " + s));
+    } catch (e) { log(name, "שגיאה:", e.message); }
+  }
 
   fs.mkdirSync("data", { recursive: true });
   fs.writeFileSync("data/probe.md", OUT.join("\n"));
-  console.log("נכתב data/probe.md —", OUT.length, "שורות");
+  console.log("נכתב —", OUT.length, "שורות");
 }
 
 main().catch(e => {
