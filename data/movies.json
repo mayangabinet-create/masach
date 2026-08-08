@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T19:42:36.720Z",
+  "updatedAt": "2026-08-08T19:50:00.119Z",
   "byId": {
     "4239": {
       "ccId": "4239",
@@ -865,23 +865,10 @@
       "trailer": "https://www.youtube.com/watch?v=DqoHN5Xs0J4",
       "url": "https://www.rav-hen.co.il/films/masha-the-bear-wonder-park/8046d2r"
     },
-    "hot-3781": {
-      "ccId": "hot-3781",
-      "title": "איש הגלידה",
-      "titleEn": "",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "עיירת קיץ מושלמת צוללת לכאוס כשמוכר גלידה מגיש לילדים מטעמים מתוקים עם תוצאות מזוויעות. אימה חסרת כל רסן מהבמאי והתסריטאי האהוב איליי רות' (\"חג ההודיה\"). מותר לצפייה מגיל 18",
-      "poster": "https://hotcinema.co.il/images/ICE_CREAM_MAN-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=R3RgDqbvgVc",
-      "url": "https://hotcinema.co.il/movie/3781"
-    },
     "hot-3834": {
       "ccId": "hot-3834",
       "title": "גבעה 338",
-      "titleEn": "",
+      "titleEn": "גבעה 338",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -894,7 +881,7 @@
     "hot-3650": {
       "ccId": "hot-3650",
       "title": "ספיידרמן: יום חדש",
-      "titleEn": "",
+      "titleEn": "Spider-Man: Brand new day",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -904,10 +891,23 @@
       "trailer": "https://www.youtube.com/watch?v=a6izKSvp2t8",
       "url": "https://hotcinema.co.il/movie/3650"
     },
+    "hot-3781": {
+      "ccId": "hot-3781",
+      "title": "איש הגלידה",
+      "titleEn": "Ice Cream Man",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "עיירת קיץ מושלמת צוללת לכאוס כשמוכר גלידה מגיש לילדים מטעמים מתוקים עם תוצאות מזוויעות. אימה חסרת כל רסן מהבמאי והתסריטאי האהוב איליי רות' (\"חג ההודיה\"). מותר לצפייה מגיל 18",
+      "poster": "https://hotcinema.co.il/images/ICE_CREAM_MAN-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=R3RgDqbvgVc",
+      "url": "https://hotcinema.co.il/movie/3781"
+    },
     "hot-3567": {
       "ccId": "hot-3567",
       "title": "האודיסאה",
-      "titleEn": "",
+      "titleEn": "The Odyssey",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -920,7 +920,7 @@
     "hot-3797": {
       "ccId": "hot-3797",
       "title": "האודיסאה מדובב לרוסית ОДИССЕЯ",
-      "titleEn": "",
+      "titleEn": "The Odyssey",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -933,7 +933,7 @@
     "hot-3807": {
       "ccId": "hot-3807",
       "title": "החלק החסר",
-      "titleEn": "",
+      "titleEn": "A missing part",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -946,7 +946,7 @@
     "hot-3801": {
       "ccId": "hot-3801",
       "title": "המסע המופלא לעץ הקסמים מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "THE MAGICAL FARAWAY TREE",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -959,7 +959,7 @@
     "hot-3653": {
       "ccId": "hot-3653",
       "title": "חינה אמריקאית",
-      "titleEn": "",
+      "titleEn": "American Hina",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -972,7 +972,7 @@
     "hot-3820": {
       "ccId": "hot-3820",
       "title": "טפיטי: הרפתקה במדבר",
-      "titleEn": "",
+      "titleEn": "Tafiti: Across the Desert",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -985,7 +985,7 @@
     "hot-3737": {
       "ccId": "hot-3737",
       "title": "לגמור את הלילה",
-      "titleEn": "",
+      "titleEn": "One night only",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -998,7 +998,7 @@
     "hot-3582": {
       "ccId": "hot-3582",
       "title": "מואנה לייב אקשן מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "Moana (Live Action)",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1011,7 +1011,7 @@
     "hot-3800": {
       "ccId": "hot-3800",
       "title": "מוטור סיטי",
-      "titleEn": "",
+      "titleEn": "Motor City",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1024,7 +1024,7 @@
     "hot-3614": {
       "ccId": "hot-3614",
       "title": "מיניונים ומפלצות מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "Minions & Monsters",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1037,7 +1037,7 @@
     "hot-3686": {
       "ccId": "hot-3686",
       "title": "מפרץ ההרפתקאות: אי הדינוזאורים מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "PAW PATROL: THE DINO MOVIE",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1050,7 +1050,7 @@
     "hot-3613": {
       "ccId": "hot-3613",
       "title": "מרסופילמי מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "Marsupilami",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1063,7 +1063,7 @@
     "hot-3827": {
       "ccId": "hot-3827",
       "title": "סולטיז הסרט - וולוג ה-100",
-      "titleEn": "",
+      "titleEn": "Saltiz",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1076,7 +1076,7 @@
     "hot-3768": {
       "ccId": "hot-3768",
       "title": "סינדרלה ושלוש המשאלות מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "Three Wishes for Cinderella",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1089,7 +1089,7 @@
     "hot-3796": {
       "ccId": "hot-3796",
       "title": "ספיידרמן: יום חדש מדובב לרוסית - ЧЕЛОВЕК-ПАУК: НОВЫЙ ДЕНЬ",
-      "titleEn": "",
+      "titleEn": "Spider-Man: Brand new day",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1102,7 +1102,7 @@
     "hot-3738": {
       "ccId": "hot-3738",
       "title": "סרט כחול לבן",
-      "titleEn": "",
+      "titleEn": "סרט כחול לבן",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1115,7 +1115,7 @@
     "hot-3636": {
       "ccId": "hot-3636",
       "title": "פדרו וגרייסי: חיות מחמד בפעולה מדובב",
-      "titleEn": "",
+      "titleEn": "GRACIE and PEDRO: PETS TO THE RESCUE",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1128,7 +1128,7 @@
     "hot-3718": {
       "ccId": "hot-3718",
       "title": "פרנקי והמפלצות מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "STICH HEAD",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1141,7 +1141,7 @@
     "hot-3462": {
       "ccId": "hot-3462",
       "title": "צעצוע של סיפור 5 מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "Toy Story 5",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1154,7 +1154,7 @@
     "hot-3711": {
       "ccId": "hot-3711",
       "title": "קופה ראשית: הסרט",
-      "titleEn": "",
+      "titleEn": "קופה ראשית: הסרט",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1167,7 +1167,7 @@
     "hot-3789": {
       "ccId": "hot-3789",
       "title": "תיכון מגשימים",
-      "titleEn": "",
+      "titleEn": "Dream High",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1180,7 +1180,7 @@
     "hot-3766": {
       "ccId": "hot-3766",
       "title": "חגיגות 10 שנים יחד עם מאפין",
-      "titleEn": "",
+      "titleEn": "חגיגות 10 שנים יחד עם מאפין",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1193,7 +1193,7 @@
     "hot-3628": {
       "ccId": "hot-3628",
       "title": "מאשה והדוב – ההרפתקה הגדולה מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "MASHA and THE BEAR – WONDER PARK",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1206,7 +1206,7 @@
     "hot-3803": {
       "ccId": "hot-3803",
       "title": "סוד החיות הקסומות 3 מדובב לעברית",
-      "titleEn": "",
+      "titleEn": "School of Magical Animals",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1219,7 +1219,7 @@
     "hot-3795": {
       "ccId": "hot-3795",
       "title": "ספיידרמן: יום חדש מדובב לצרפתית",
-      "titleEn": "",
+      "titleEn": "Spider-Man: Brand new day",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1232,7 +1232,7 @@
     "hot-3685": {
       "ccId": "hot-3685",
       "title": "אובססיה",
-      "titleEn": "",
+      "titleEn": "Obsession",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1245,7 +1245,7 @@
     "hot-3673": {
       "ccId": "hot-3673",
       "title": "אשליות מתוקות",
-      "titleEn": "",
+      "titleEn": "Just an Illusion",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1258,7 +1258,7 @@
     "hot-3808": {
       "ccId": "hot-3808",
       "title": "ההזמנה",
-      "titleEn": "",
+      "titleEn": "The Invite",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1271,7 +1271,7 @@
     "hot-3233": {
       "ccId": "hot-3233",
       "title": "יהלומים",
-      "titleEn": "",
+      "titleEn": "Diamonds",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1284,7 +1284,7 @@
     "hot-3752": {
       "ccId": "hot-3752",
       "title": "כימים אחדים",
-      "titleEn": "",
+      "titleEn": "For the Love of a Woman",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1297,7 +1297,7 @@
     "hot-3739": {
       "ccId": "hot-3739",
       "title": "מאמא",
-      "titleEn": "",
+      "titleEn": "מאמא",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1310,7 +1310,7 @@
     "hot-3583": {
       "ccId": "hot-3583",
       "title": "מואנה לייב אקשן אנגלית",
-      "titleEn": "",
+      "titleEn": "Moana (Live Action)",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1323,7 +1323,7 @@
     "hot-3756": {
       "ccId": "hot-3756",
       "title": "ערך סנטימנטלי",
-      "titleEn": "",
+      "titleEn": "Sentimental Value",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1336,7 +1336,7 @@
     "hot-3162": {
       "ccId": "hot-3162",
       "title": "דני קושמרו",
-      "titleEn": "",
+      "titleEn": "דני קושמרו",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1349,7 +1349,7 @@
     "hot-3787": {
       "ccId": "hot-3787",
       "title": "מיניונים ומפלצות מדובב לרוסית МИНЬОНЫ И МОНСТРЫ",
-      "titleEn": "",
+      "titleEn": "Minions & Monsters",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1362,7 +1362,7 @@
     "hot-3309": {
       "ccId": "hot-3309",
       "title": "כי את מכוערת",
-      "titleEn": "",
+      "titleEn": "כי את מכוערת",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1375,7 +1375,7 @@
     "hot-3463": {
       "ccId": "hot-3463",
       "title": "צעצוע של סיפור 5 אנגלית",
-      "titleEn": "",
+      "titleEn": "Toy Story 5",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1388,7 +1388,7 @@
     "hot-3780": {
       "ccId": "hot-3780",
       "title": "מה שמחבר בינינו",
-      "titleEn": "",
+      "titleEn": "The ties that bind us",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1401,7 +1401,7 @@
     "hot-3805": {
       "ccId": "hot-3805",
       "title": "בוסית בהפרעה",
-      "titleEn": "",
+      "titleEn": "I Want Your Sex",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1414,7 +1414,7 @@
     "hot-3837": {
       "ccId": "hot-3837",
       "title": "הקרודים מדובב לערבית عائلة كرود مدبلج للعربية",
-      "titleEn": "",
+      "titleEn": "The Croods",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1427,7 +1427,7 @@
     "hot-3838": {
       "ccId": "hot-3838",
       "title": "טורבו מדובב לערבית توربو مدبلج للعربية",
-      "titleEn": "",
+      "titleEn": "Turbo",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1440,7 +1440,7 @@
     "hot-3848": {
       "ccId": "hot-3848",
       "title": "האופרה: לה בוהם – מבית האופרה ארנה די ורונה",
-      "titleEn": "",
+      "titleEn": "La Bohème",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1453,7 +1453,7 @@
     "hot-3833": {
       "ccId": "hot-3833",
       "title": "חג מולד מר",
-      "titleEn": "",
+      "titleEn": "Bitter Christmas",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1466,7 +1466,7 @@
     "hot-3716": {
       "ccId": "hot-3716",
       "title": "מוות אכזרי אש",
-      "titleEn": "",
+      "titleEn": "EVIL DEAD BURN",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1479,7 +1479,7 @@
     "hot-3598": {
       "ccId": "hot-3598",
       "title": "פודקאסט רצח",
-      "titleEn": "",
+      "titleEn": null,
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1492,7 +1492,7 @@
     "hot-3788": {
       "ccId": "hot-3788",
       "title": "מיניונים ומפלצות מדובב לערבית مدبلج بالعربية",
-      "titleEn": "",
+      "titleEn": "Minions & Monsters",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1505,7 +1505,7 @@
     "hot-3784": {
       "ccId": "hot-3784",
       "title": "מיניונים ומפלצות מדובב לצרפתית - Des minions et de",
-      "titleEn": "",
+      "titleEn": "Minions & Monsters",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1518,7 +1518,7 @@
     "hot-3790": {
       "ccId": "hot-3790",
       "title": "Pirate Water Park",
-      "titleEn": "",
+      "titleEn": "Pirate Water Park",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
@@ -1531,7 +1531,7 @@
     "hot-3029": {
       "ccId": "hot-3029",
       "title": "סינמה נוסטלגיה - גריז",
-      "titleEn": "",
+      "titleEn": "Grease",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
