@@ -38,7 +38,6 @@ async function tryUrls(label, urls) {
     try {
       const r = await get(u, { "x-requested-with": "XMLHttpRequest", accept: "application/json,text/html,*/*" });
       const b = r.text.trim();
-      const json = /json/i.test(r.ct);
       const flag = r.status === 200 && b.length > 60 ? "V" : "x";
       log(`${flag} [${r.status} ${r.ct.split(";")[0]} ${b.length}] ${u}`);
       if (flag === "V") log("    ", b.slice(0, 260).replace(/\s+/g, " "));

@@ -1,16 +1,97 @@
-# probe v5 2026-08-08T14:42:36.702Z
+# דוח גשש 2 — 2026-08-08T19:41:06.289Z | תאריך בדיקה: 2026-08-08
 
-=== HOT ShowingNow  (482251)
-  MovieName : 1
-     <div class="row"> <div class="col"> <select class="custom-select" v-model="props.selectedMovie" v-on:change="props.onSelectedMovie(props.selectedMovie)"><option :value="null">בחרו סרט</option><option v-for="movie in props.getMovies" v-bind:value="movie">{{movie.MovieName}}</option></select> </div> </div> <div class="row"> <div class="col"> <select class="custom-select" v-model="props.selectedDate" v-on:change="props.onSelectedDate(props.selectedDate)"><option :value="null">תאריך</option><option v-for="date in props.movieDates" v-bind:value="date">{{date.name}}</option></select> </div> <div class="col"> <select class="custom-select" v-model="props
-  EventId : 0
-  "Hour" : 0
-  Sessions : 0
-  showtimes : 0
+## HOT CINEMA — האם מוגש בשרת
+theater/1 [200] אורך=231743 שעות-ב-HTML=11 רמזי-הזמנה=237
+ShowingNow [200] אורך=482251 שעות-ב-HTML=24 רמזי-הזמנה=364
+   הקשר: DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;. &#x5DC;&#x5D0;&#x5D7;&#x5E8; &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5DC;&#x5D0; &#x5D9;&#x5E9;&#x5DE;&#x5E8;&#x5D5; &#x5D4;&#x5DE;&#x5E7;&#x5D5;&#x5DE;&#x5D5;&#x5EA;.&#xA;&#xA;21:30 &#x5EA;&#x5D7;&#x5D9;&#x5DC;&#x5EA; &#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2;&#xA;&#xA;&#x5D4;&#x5DE;&#x5D5;&#x5E4;&#x5E2; &#x5E2;&#x5DC;&#x5D5;&#x5DC; &#x5DC;&#x5D4;&#x5DB;&#x5D9;&#x5DC; &#x5EA;&#x5DB;&#x5E0;&#x5D9;&#x5DD; &#x5D2;&#x5E1;&#x5D9;&#x5DD; &#xA;&#
 
-=== PLANET  (85814)
-  sessions : 0
-  showtime : 2
-    ת תוקף הרישום כדי להתחבר לחשבון", "movieScreen.special-events": "אירועים מיוחדים", "moviesScreen.premium-format": "פורמט פרימיום", "moviesScreen.now-playing": "עכשיו בקולנוע", "bookingrouter.400.error.message": "משהו השתבש. אנא נסה שוב מאוחר יותר.", "moviesScreen.coming-soon": "בקרוב", "showtimeDetailsTitle": "פרטי שואוטיים", "moviesScreen.family-friendly": "לכל המשפחה", "invalidFirstNameFormat": "תבנית שם פרטי לא תקינה", "moviesScreen.watch-in-format": "חוויות צפייה ייחודיות", "savedCardsHeading": "הכרטיסים השמורים שלך", "useCardNumberInfo": "במידה והקוד לא עובד, השתמשו במספר הכרטיס שלכם:", "moviesScreen.special-events": "אירועים מיוחדים", "preordersHeading": "הזמינו כרטיסים כעת במכירה מוקדמת", "basicSignupFormHeading": "הרשמה", "paymentCanceledHeading": "לא 
-  filmId : 0
-  businessDay : 0
+### HOT (תבנית סינמה סיטי) — ניסיון נקודות קצה
+x [404  0] https://hotcinema.co.il/home/MoviesGridTime?page=1&theathereid=1&id=1&venueId=1
+x [404  0] https://hotcinema.co.il/home/MoviesGridTime?page=1&theaterId=1
+x [404  0] https://hotcinema.co.il/timehour?theathereid=1&id=1&vid=1
+x [404  0] https://hotcinema.co.il/Home/GetEvents?theaterId=1
+x [404  0] https://hotcinema.co.il/home/GetShowTimes?theaterId=1
+x [404  0] https://hotcinema.co.il/api/events?theaterId=1
+
+## פלאנט / רב חן (Cineworld quickbook)
+
+### פלאנט — ניסיון נקודות קצה
+x [404 text/html 63189] https://www.planetcinema.co.il/api/quickbook/cinemas
+x [404 text/html 63185] https://www.planetcinema.co.il/api/quickbook/films
+x [404 text/html 63277] https://www.planetcinema.co.il/api/quickbook/10108/film-events/in-cinema/1058/at-date/2026-08-08?attr=&lang=he_IL
+x [404 text/html 63169] https://www.planetcinema.co.il/api/cinemas
+
+### רב חן — ניסיון נקודות קצה
+x [404 text/html 52849] https://www.rav-hen.co.il/api/quickbook/cinemas
+x [404 text/html 52937] https://www.rav-hen.co.il/api/quickbook/10108/film-events/in-cinema/1058/at-date/2026-08-08?attr=&lang=he_IL
+רב חן גבעתיים [200] אורך=88423 שעות-ב-HTML=0 רמזי-הזמנה=50
+
+## מובילנד
+movieland theater/1290 [403] אורך=5752 שעות-ב-HTML=0 רמזי-הזמנה=1
+movieland home [403] אורך=5674 שעות-ב-HTML=0 רמזי-הזמנה=1
+
+## קולנוע לב
+lev telaviv [200] אורך=94993 שעות-ב-HTML=5 רמזי-הזמנה=73
+
+## קובצי JS לבדיקה ידנית
+
+HOT:
+  https://cdn.popt.in/pixel.js?id=7e6103d9635ec
+  /popup.js?version=3.0
+  /push.js
+  /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+  /lib/jquery/dist/jquery.js
+  /lib/popper.js/dist/umd/popper.min.js
+  /lib/bootstrap/dist/js/bootstrap.js
+  /lib/jquery-validation/dist/jquery.validate.js
+  /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+  /lib/bootstrap-datepicker/bootstrap-datepicker.min.js
+  /lib/bootstrap-datepicker/locales/bootstrap-datepicker.he.min.js
+  /lib/momentjs/moment.min.js
+  /js/vendor/slick/slick.min.js
+  /css/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js
+  /js/sidemenu2.js?v=7c781a9cf2a84c4f8b58053b1dca1196
+  /js/site-carousels.js
+  /js/newsletter.js?v=7c781a9cf2a84c4f8b58053b1dca1196
+  /lib/vuejs/vue.js?v=1
+  /js/common.js
+  /js/init.js?v=7c781a9cf2a84c4f8b58053b1dca1196
+
+פלאנט:
+  https://challenges.cloudflare.com/turnstile/v0/api.js
+  /xmedia/js/vendor/modernizr.js?v=v2.8.106-dirty
+  //fecdn.user1st.info/Loader/head
+  /xmedia/js/config.js?v=v2.8.106-dirty
+  /jsMessages.js?lang=iw_IL&amp;v=v2.8.106-dirty
+  /xmedia/js/polyfills/common-polyfills.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.mobile.custom.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/jquery.jloggins.1.0.2.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/json3.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/css_browser_selector.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/handlebars-v4.0.5.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment-timezone.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/moment-locale.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/touchable.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap.min.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-datepicker.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-datepicker-locale.js?v=v2.8.106-dirty
+  /xmedia/js/vendor/bootstrap-select.custom.js?v=v2.8.106-dirty
+
+מובילנד:
+
+לב:
+  https://www.lev.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
+  https://www.lev.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
+  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.3
+  https://www.lev.co.il/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.3
+  https://www.lev.co.il/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.2.2
+  https://www.lev.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9
+  https://www.lev.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
+  https://www.lev.co.il/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.6.3
+  https://www.lev.co.il/wp-content/themes/lev/js/jquery.twbsPagination.js
+  https://www.lev.co.il/wp-content/themes/lev/js/swiper.min.js
+  https://www.lev.co.il/wp-content/themes/lev/js/jquery.mCustomScrollbar.concat.min.js
+  https://www.lev.co.il/wp-content/themes/lev/js/jquery.base64.js
+  https://www.lev.co.il/wp-content/themes/lev/js/script.js?ver=3.4.4

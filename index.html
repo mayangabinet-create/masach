@@ -38,7 +38,7 @@
   --bg:#0C0C0E; --surface:#151517; --surface2:#1B1B1E;
   --line:#28282C; --line-soft:#1E1E21;
   --text:#F2F1EF; --dim:#8A8681;
-  --acc:#F07818; --acc-soft:rgba(240,120,24,.14); --on-acc:#1A0E00;
+  --acc:#FF7A1A; --acc-soft:rgba(255,122,26,.16); --on-acc:#1A0E00;
   --red:#E5484D;
   --r:8px;
   /* רשת 8px */
@@ -61,6 +61,25 @@ header{padding-top:var(--s4);padding-bottom:var(--s2)}
 .updated{color:var(--dim);font-size:12px;margin-top:var(--s2);opacity:.8;
   display:flex;align-items:center;gap:6px}
 .dot{width:5px;height:5px;border-radius:50%;background:var(--acc);flex:0 0 auto}
+
+/* ---------- הירו: קרוסלת "עכשיו בקולנוע", מחליקה לבד ----------
+   הפוסטר ממלא את הרוחב עד הקצה (בניגוד לשאר העמוד, שמכבד את ריפוד
+   ה-wrap) — זה מה שנותן לה משקל של כותרת ראשית ולא עוד שורה ברשימה. */
+.hero{position:relative;max-width:480px;margin:var(--s3) auto 0;aspect-ratio:16/9;
+  overflow:hidden;border-radius:var(--r);background:var(--surface)}
+.hero[hidden]{display:none}
+.hero-track{display:flex;height:100%;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.hero-slide{flex:0 0 100%;position:relative;height:100%;background:var(--surface2);cursor:pointer}
+.hero-slide img{width:100%;height:100%;object-fit:cover}
+.hero-slide .grad{position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.2) 48%,transparent 72%)}
+.hero-slide .info{position:absolute;inset-inline:0;bottom:0;padding:var(--s3);padding-bottom:30px}
+.hero-slide .htitle{font-size:19px;font-weight:700;line-height:1.25;color:#fff}
+.hero-slide .htag{font-size:12px;color:rgba(255,255,255,.75);margin-top:4px}
+.hero-dots{position:absolute;bottom:var(--s1);inset-inline-start:0;width:100%;
+  display:flex;gap:6px;justify-content:center}
+.hero-dot{width:6px;height:6px;border-radius:99px;background:rgba(255,255,255,.4);transition:width .25s,background .25s}
+.hero-dot.on{background:var(--acc);width:16px}
 
 /* ---------- סרגל ראשי: דביק, קומפקטי, בלי צבע חזק ---------- */
 .primary{position:sticky;top:0;z-index:15;background:var(--bg);
@@ -267,6 +286,11 @@ main{padding-top:var(--s4)}
   <div class="tagline">כל ההקרנות בישראל. מסך אחד.</div>
   <div class="updated" id="updated"><span class="dot"></span>טוען…</div>
 </header>
+
+<div class="hero" id="hero" hidden>
+  <div class="hero-track" id="heroTrack"></div>
+  <div class="hero-dots" id="heroDots"></div>
+</div>
 
 <div class="primary">
   <div class="wrap">
@@ -479,12 +503,72 @@ async function load(){
   DATA = json;
   DATA.movies.forEach(m=>M.set(m.id,m));
   DATA.cinemas.forEach(c=>C.set(c.id,c));
-  buildUpdated(); buildGenres(); buildStrip(); bindAll(); paintLoc(); search();
+  buildUpdated(); buildHero(); buildGenres(); buildStrip(); bindAll(); paintLoc(); search();
 }
 function buildUpdated(){
   const d=new Date(DATA.updatedAt);
   $("#updated").innerHTML=`<span class="dot"></span>${scrCount(DATA.screenings.length)} · עודכן ${agoText(Date.now()-d)}`;
 }
+
+/* =========================================================
+   הירו — קרוסלת "עכשיו בקולנוע": מסך פתיחה עם פוסטרים שמחליפים
+   זה את זה לבד, וגם בהחלקה ביד. כל שקופית היא הקרנה אמיתית של היום
+   (הסרט הראשון שנמצא לה), כדי שלחיצה תפתח בדיוק את אותו גיליון פרטים
+   שכל שורה אחרת פותחת — בלי ללוגיקה כפולה. */
+let heroIdx=0, heroTimer=null, heroSlides=[];
+function buildHero(){
+  const today=todayISO();
+  const seen=new Set(), picks=[];
+  for(const s of DATA.screenings){
+    if(s.date!==today) continue;
+    const m=M.get(s.movieId);
+    if(!m||!m.poster||seen.has(m.id)) continue;
+    seen.add(m.id);
+    picks.push({m,s});
+    if(picks.length>=10) break;
+  }
+  const hero=$("#hero");
+  clearInterval(heroTimer);
+  if(!picks.length){ hero.hidden=true; return; }
+  heroSlides=picks; heroIdx=0;
+  $("#heroTrack").innerHTML=picks.map(({m,s})=>`
+    <div class="hero-slide" data-sid="${s.movieId}|${s.cinemaId}|${s.date}|${s.min}">
+      <img src="${m.poster}" alt="" loading="lazy">
+      <div class="grad"></div>
+      <div class="info">
+        <div class="htitle">${cleanTitle(m.title||"")}</div>
+        ${m.genre?`<div class="htag">${m.genre}</div>`:""}
+      </div>
+    </div>`).join("");
+  $("#heroDots").innerHTML=picks.map((_,i)=>`<span class="hero-dot${i===0?" on":""}"></span>`).join("");
+  $$("#heroTrack .hero-slide").forEach(el=>el.addEventListener("click",()=>openSheet(el.dataset.sid)));
+  hero.hidden=false;
+  paintHero();
+  if(picks.length>1) heroTimer=setInterval(()=>heroGo(heroIdx+1),4500);
+  bindHeroSwipe();
+}
+function paintHero(){
+  $("#heroTrack").style.transform=`translateX(${heroIdx*100}%)`;
+  $$("#heroDots .hero-dot").forEach((d,i)=>d.classList.toggle("on",i===heroIdx));
+}
+function heroGo(i){
+  heroIdx=(i+heroSlides.length)%heroSlides.length;
+  paintHero();
+}
+/* גם בלי לגעת — היא ממשיכה להחליק לבד; נגיעה רק משהה לרגע ומחדשת אחרי */
+function bindHeroSwipe(){
+  const track=$("#heroTrack");
+  let x0=null;
+  track.addEventListener("touchstart",e=>{ x0=e.touches[0].clientX; clearInterval(heroTimer); },{passive:true});
+  track.addEventListener("touchend",e=>{
+    if(x0==null) return;
+    const dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>40) heroGo(heroIdx+(dx<0?1:-1));
+    x0=null;
+    if(heroSlides.length>1) heroTimer=setInterval(()=>heroGo(heroIdx+1),4500);
+  },{passive:true});
+}
+
 function showSkeleton(){ $("#results").innerHTML='<div class="skel"></div>'.repeat(4); }
 function showError(e){
   $("#updated").innerHTML='<span class="dot" style="background:var(--red)"></span>הלוח לא נטען';
