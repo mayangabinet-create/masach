@@ -70,10 +70,16 @@ async function getJson(url) {
    הראשונה בתוך אזור "movie-details", תקציר בתוך div.desc1.
    ראו data/probe.md — "explore hot movie page markup". */
 function parseMovie(html, movieId, fallbackTitle) {
-  const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-  const title = h1 ? stripTags(h1[1]) : (fallbackTitle || null);
-  const h2 = html.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
-  const titleEn = h2 ? stripTags(h2[1]) : null;
+  /* העמוד מכיל שני <h1> זהים (גרסת מובייל/דסקטופ) — רק זה שב"col
+     left-side" מלווה מיד ב-<h2> עם השם האנגלי, אז מחפשים את הצמד. */
+  const h1s = [...html.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/gi)];
+  let title = null, titleEn = null;
+  for (const m of h1s) {
+    const after = html.slice(m.index + m[0].length, m.index + m[0].length + 500);
+    const h2 = after.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i);
+    if (h2) { title = stripTags(m[1]); titleEn = stripTags(h2[1]); break; }
+  }
+  if (!title) title = h1s.length ? stripTags(h1s[0][1]) : (fallbackTitle || null);
 
   const di = html.indexOf("movie-details");
   const posterRaw = di > -1 ? (html.slice(di, di + 2000).match(/<img[^>]*src="([^"]+)"/i) || [])[1] : null;
