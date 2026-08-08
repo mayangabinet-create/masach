@@ -13,15 +13,6 @@ jobs:
           node-version: "22"
       - name: run static probe
         run: node scripts/probe-chains.js
-      - name: verify hot fix
-        run: node scripts/scrape-hot.mjs
-      - name: commit hot fix
-        run: |
-          git config user.name masach-bot
-          git config user.email actions@github.com
-          git add -A data
-          git diff --staged --quiet || git commit -m "showtimes update (hot fix verify)"
-          git push
       - name: install playwright
         run: |
           npm install playwright

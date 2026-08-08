@@ -144,7 +144,7 @@ async function main() {
   let fetched = 0, failed = 0;
   for (const [mid, name] of movieNames) {
     const key = `hot-${mid}`;
-    if (movies[key]?.poster) continue;
+    if (movies[key]?.poster && movies[key]?.titleEn) continue;
     try {
       movies[key] = parseMovie(await get(`${BASE}/movie/${mid}`), mid, name);
       fetched++;
