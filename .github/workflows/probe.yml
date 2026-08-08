@@ -12,8 +12,7 @@ jobs:
         with:
           node-version: "22"
       - name: run probe
-        run: |
-          if [ -f probe-chains.js ]; then node probe-chains.js; else node scripts/probe-chains.js; fi
+        run: node scripts/probe-chains.js
       - name: commit report
         run: |
           git config user.name masach-bot
