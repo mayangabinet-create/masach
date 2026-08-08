@@ -1,0 +1,20 @@
+name: probe chains
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node scripts/probe-chains.mjs
+      - run: |
+          git config user.name masach-bot
+          git config user.email actions@github.com
+          git add -A data
+          git diff --staged --quiet || git commit -m "probe report"
+          git push
