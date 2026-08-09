@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T21:50:42.825Z",
+  "updatedAt": "2026-08-09T04:39:14.621Z",
   "byId": {
     "4239": {
       "ccId": "4239",
@@ -1346,6 +1346,45 @@
       "trailer": null,
       "url": "https://hotcinema.co.il/movie/3162"
     },
+    "hot-3520": {
+      "ccId": "hot-3520",
+      "title": "מירית גליצקי מוגזמת",
+      "titleEn": "מירית גליצקי מוגזמת",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "מהסרטונים במרפסת, הפאנצ׳ים מהרכב, משפטים שהפכו לסלוגן כמו ״עם ישראל חי״, זאת שהרימה את המורל הלאומי ברגעים הכי קשים שידעה המדינה, חוזרת לבמות! מירית גליצקי, או כמו שרובנו מכירים אותה – ה״מוגזמת״, במופע סטנדאפ קורע מצחוק, מדברת כמו שרק היא יודעת על מה שבועט לכולנו בבטן, עם הקול הייחודי שלה (תרתי משמע) וציניות משובחת.",
+      "poster": "https://hotcinema.co.il/images/11282_010126_p3_1100x1550px.jpg?w=314&h=451&mode=",
+      "trailer": null,
+      "url": "https://hotcinema.co.il/movie/3520"
+    },
+    "hot-3791": {
+      "ccId": "hot-3791",
+      "title": "סינמה נוסטלגיה - סופרמן 1978",
+      "titleEn": "Superman - 1978",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "אוגוסט בסינמה נוסטלגיה! תינוק יתום נשלח מכוכב הלכת הגוסס שלו לכדור הארץ, שם הוא גדל והופך לגיבור העל הראשון והגדול ביותר של ביתו המאמץ",
+      "poster": "https://hotcinema.co.il/images/Superman1978-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=LAOJimuidJM",
+      "url": "https://hotcinema.co.il/movie/3791"
+    },
+    "hot-3622": {
+      "ccId": "hot-3622",
+      "title": "ערב תרבות בקולנוע - יהודה אליאס",
+      "titleEn": "ערב תרבות בקולנוע - יהודה אליאס",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "מופע החדש של יהודה אליאס: \"קום והתהלך בארץ\" הכולל שירים ידועים ואהובים בשילוב קטעי קישור מלאי הומור וצחוק בליווי נגנים",
+      "poster": "https://hotcinema.co.il/images/11489_190226_p8_1100x1550px.jpg?w=314&h=451&mode=",
+      "trailer": null,
+      "url": "https://hotcinema.co.il/movie/3622"
+    },
     "hot-3787": {
       "ccId": "hot-3787",
       "title": "מיניונים ומפלצות מדובב לרוסית МИНЬОНЫ И МОНСТРЫ",
@@ -1384,6 +1423,19 @@
       "poster": "https://hotcinema.co.il/images/TOYS5-A.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=fPBtstJ4v28",
       "url": "https://hotcinema.co.il/movie/3463"
+    },
+    "hot-3741": {
+      "ccId": "hot-3741",
+      "title": "יעקוב חמו מגיע לעשות סטנדאפ ב-HOT CINEMA",
+      "titleEn": "יעקוב חמו מגיע לעשות סטנדאפ ב-HOT CINEMA",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "יעקב חמו, הסטנדאפיסט החרדי שמביא לבמה שילוב חד של אמונה, הומור ושנינות. מופע חכם ומצחיק שמדבר לקהל מגוון, שומר על הערכים – ולא מפסיק להצחיק.",
+      "poster": "https://hotcinema.co.il/images/11824_040626_p2_1100x1550px.jpg?w=314&h=451&mode=",
+      "trailer": null,
+      "url": "https://hotcinema.co.il/movie/3741"
     },
     "hot-3780": {
       "ccId": "hot-3780",
@@ -1463,18 +1515,18 @@
       "trailer": "https://www.youtube.com/watch?v=LK8j_6jmuBQ",
       "url": "https://hotcinema.co.il/movie/3833"
     },
-    "hot-3716": {
-      "ccId": "hot-3716",
-      "title": "מוות אכזרי אש",
-      "titleEn": "EVIL DEAD BURN",
+    "hot-2885": {
+      "ccId": "hot-2885",
+      "title": "סינמה נוסטלגיה - אישה יפה",
+      "titleEn": "Pretty Woman",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
       "rating": null,
-      "synopsis": "מביא למסך הגדול את הפרק האכזרי והמצמרר ביותר בסדרה עד כה, עם גל חדש של אימה, הרס ושדים חסרי רחמים. לאחר מותו של בעלה, אישה מחפשת נחמה בבית משפחת בעלה המנוח, הממוקם במקום מבודד. אך כאשר בני המשפחה מתחילים להפוך בזה אחר זה לישויות שטניות - המפגש המשפחתי הופך לסיוט מהגיהינום. בתוך הכאוס, היא מגלה שהנדרים שנשבעה בחייה ממשיכים לרדוף אותה… גם לאחר המוות.",
-      "poster": "https://hotcinema.co.il/images/EVIL_DEAD_BURN-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=jbB1j9WnEgs",
-      "url": "https://hotcinema.co.il/movie/3716"
+      "synopsis": "עיבוד לאגדת הסינדרלה שהיה ללהיט הקופתי הענק של שנת 90'. כמו \"קביריה\" של פליני ופרוצות טובות לב אחרות, גם גיבורת סרט זה עובדת במקצוע העתיק באופן זמני בלבד. איש עסקים עשיר שזקוק להרבה חום ואהבה יהפוך את הלכלוכית לנסיכה אמיתית. קומדיה רומנטית מהסוג המאוד קלאסי - יותר רומנטי מזה אין...",
+      "poster": "https://hotcinema.co.il/images/Pritty Woman-Valenvine.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=2EBAVoN8L_U",
+      "url": "https://hotcinema.co.il/movie/2885"
     },
     "hot-3598": {
       "ccId": "hot-3598",
@@ -1488,6 +1540,19 @@
       "poster": null,
       "trailer": null,
       "url": "https://hotcinema.co.il/movie/3598"
+    },
+    "hot-2580": {
+      "ccId": "hot-2580",
+      "title": "קומדי בר",
+      "titleEn": "Comedy Bar",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "הוט סינמה מארחים את הקומדי בר. הופעות סטנדאפ הטובות ביותר בקומדי בר- מועדון הסטנד אפ של תל אביב מגיע להוט סינמה. דורון פרידמן הפקות מציג: סטנדאפיסטים מתוכניות טלוויזיה המובילות: שחר חסון, דניאל כהן, דובדבני וקובץ , עידן בן דוד, אדם שרון ,יוסי פנסו, נופר סויסה, יוסי טרבלוס, קנדי אבלסון, אמיר הורביץ, דדי גל, נחום דידי, דותן רביד, איל רוזנברג, רוני ששון, אוהד מימרן ועוד רבים וטובים. שימו לב: במופע יופיעו חלק מהאמנים המצוינים ברשימה. יש להגיע עם אישור ההזמנה חצי שעה טרם תחילת המופע. לאחר תחילת המופע לא ישמרו המקומות. 21:30 תחילת המופע המופע עלול להכיל תכנים גסים כניסת ילדים מומלצת מעל גיל 16 או בליווי מבוגר ובאחריותו בלבד",
+      "poster": "https://hotcinema.co.il/images/Comedy Bar.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=YxFGq8Xy4gM",
+      "url": "https://hotcinema.co.il/movie/2580"
     },
     "hot-3788": {
       "ccId": "hot-3788",
@@ -2243,6 +2308,19 @@
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%97%d7%92-%d7%9e%d7%95%d7%9c%d7%93-%d7%9e%d7%a8/"
     },
+    "lev-בואו-לאכול-איתי-שיח-יוצרים": {
+      "ccId": "lev-בואו-לאכול-איתי-שיח-יוצרים",
+      "title": "בואו לאכול איתי + שיח יוצרים",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "בואו לאכול איתי עונה 10 | פרקים חדשים | כאן 11 | \"בואו לאכול איתי\" תכנית הקאלט זוכת פרסי האקדמיה מגיעה לקולנוע \"לב\" להקרנה חגיגית! לכבוד עונת העשור של הפורמט אנחנו מזמינים אתכם לצפות איתנו בשני פרקים מצחיקים וצבעוניים במיוחד שטרם שודרו. 20:00 הקרנה של שני פרקים שלא הוקרנו מהעונה העשירית 21:00 שיח",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%91%d7%95%d7%90%d7%95-%d7%9c%d7%90%d7%9b%d7%95%d7%9c-%d7%90%d7%99%d7%aa%d7%99-%d7%a9%d7%99%d7%97-%d7%99%d7%95%d7%a6%d7%a8%d7%99%d7%9d/"
+    },
     "lev-מאמא": {
       "ccId": "lev-מאמא",
       "title": "מאמא",
@@ -2268,6 +2346,19 @@
       "poster": null,
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%9e%d7%99%d7%9c%d7%94-%d7%a9%d7%9c%d7%99/"
+    },
+    "lev-אורנה-ואלה-שיח-יוצרים": {
+      "ccId": "lev-אורנה-ואלה-שיח-יוצרים",
+      "title": "אורנה ואלה + שיח יוצרים",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "26 שנה אחרי שמסעדת אורנה ואלה נפתחה ברחוב שינקין והפכה למוסד קולינרי תל אביבי מצליח, מחליטות אורנה אגמון ואלה שיין לסגור את מפעל חייהן המשותף. בשבוע האחרון לפעילות המקום מתלווה אליהן הבמאי תומר הימן, שעבד בשנים הראשונות של המסעדה. הדינמיקה האינטנסיבית המלווה את הימים האחרונים והפרידה מקהל הלקוחות, המתכונים והעובדים, מייצרת שיחות אינטימיות וחד-פעמיות. מערכת",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%90%d7%95%d7%a8%d7%a0%d7%94-%d7%95%d7%90%d7%9c%d7%94-%d7%a9%d7%99%d7%97-%d7%99%d7%95%d7%a6%d7%a8%d7%99%d7%9d/"
     },
     "lev-טרום-בכורה-חג-מולד-מר": {
       "ccId": "lev-טרום-בכורה-חג-מולד-מר",
