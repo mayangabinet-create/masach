@@ -794,8 +794,13 @@ function search(){
   for(const s of hits){
     const all=rows.filter(r=>r.movieId===s.movieId&&r.min>=floor)
                   .sort((a,b)=>score(a,from)-score(b,from));
-    s.times=all.slice(0,4);
-    s.timesMore=all.length>4;
+    /* קולנוע אחד מקבל את ההקרנה הכי טובה שלו בלבד — אחרת קולנוע
+       קרוב עם כמה הקרנות טובות תופס את כל ארבע התאים, וזה בדיוק
+       מה שהתלונה ביקשה למנוע: מגוון קולנועים, לא אותו אחד שוב ושוב. */
+    const seenCin=new Set();
+    const uniq=all.filter(r=>!seenCin.has(r.cinemaId)&&seenCin.add(r.cinemaId));
+    s.times=uniq.slice(0,4);
+    s.timesMore=all.length>s.times.length;
   }
   renderList(hits, note, fixes, total, from);
 }
