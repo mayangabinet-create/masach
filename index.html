@@ -225,11 +225,10 @@ main{padding-top:var(--s4)}
   border-radius:10px;padding:10px 12px;border:1.5px solid rgba(242,241,239,.32);text-decoration:none;
   min-width:0}
 .opt:hover{border-color:var(--text)}
-/* האופציה הכי טובה מבין הכרטיסים בירוק — הצבע שמשדר "זה מתאים,
-   אפשר ללחוץ בביטחון", בלי להתחרות עם הכתום ששמור לפעולה עצמה */
-.opt.cur{border-color:var(--good);background:var(--good-soft)}
-.opt.cur .otime{color:var(--good)}
-.opt.cur .ocinema{color:var(--good);opacity:.8}
+/* האופציה הכי טובה מסומנת בסמל, לא בצבע — כוכב קטן לפני השעה.
+   המתאר נשאר לבן-ניטרלי, קצת יותר בולט, בלי להכריע איזה צבע. */
+.opt.cur{border-color:var(--text)}
+.opt .rec{font-size:12px;color:var(--text);flex:0 0 auto}
 .opt .otime{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:16px;direction:ltr;
   display:flex;align-items:center;gap:6px}
 .opt .vip{width:17px;height:17px;border-radius:50%;background:var(--acc);flex:0 0 auto;
@@ -850,10 +849,11 @@ function timeBtn(s,cur){
    שונים יכולים להופיע תחת אותו סרט. */
 function optBtn(s,cur){
   const vip = isVip(s) ? `<span class="vip" aria-hidden="true">🛋️</span>` : "";
+  const rec = cur ? `<span class="rec" aria-hidden="true">★</span>` : "";
   return `<a class="opt${cur?" cur":""}" href="${s.url}" target="_blank" rel="noopener"
-    aria-label="הזמנת כרטיסים ב-${s.cinema.name} בשעה ${fmt(s.min)}${isVip(s)?" באולם VIP":""} באתר הקולנוע"
+    aria-label="${cur?"מומלץ. ":""}הזמנת כרטיסים ב-${s.cinema.name} בשעה ${fmt(s.min)}${isVip(s)?" באולם VIP":""} באתר הקולנוע"
     onclick="event.stopPropagation()">
-    <span class="otime">${vip}${fmt(s.min)}<span class="ext">↗</span></span>
+    <span class="otime">${rec}${vip}${fmt(s.min)}<span class="ext">↗</span></span>
     <span class="ocinema">${s.cinema.name}</span>
   </a>`;
 }
