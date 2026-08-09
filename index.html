@@ -6,11 +6,16 @@
 <title>מסך. — כל ההקרנות בישראל</title>
 <meta name="description" content="כל ההקרנות בבתי הקולנוע בישראל במסך אחד. בוחרים יום, שעה ומיקום — ומקבלים את ההקרנה הכי מתאימה לכם.">
 <meta name="theme-color" content="#0C0C0E">
+<link rel="canonical" href="https://mayangabinet-create.github.io/masach/">
 
 <!-- אייקון: משמש גם כפאביקון בלשונית וגם כאייקון על מסך הבית באייפון -->
 <link rel="icon" href="icon.png" type="image/png">
 <link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.json">
 <meta name="apple-mobile-web-app-title" content="מסך.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <!-- תצוגה מקדימה בשיתוף (וואטסאפ, פייסבוק, טלגרם). הכתובת חייבת להיות
      מלאה ולא יחסית — הרשתות מושכות אותה מהשרת שלהן, לא מהדפדפן שלך. -->
@@ -25,6 +30,9 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="מסך. — כל ההקרנות בישראל">
+<meta name="twitter:description" content="בא לכם לראות סרט הערב? בוחרים יום, שעה ומיקום — ומקבלים את ההקרנה הכי מתאימה.">
+<meta name="twitter:image" content="https://mayangabinet-create.github.io/masach/share.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Assistant:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
@@ -283,11 +291,17 @@ main{padding-top:var(--s4)}
 /* עמודה קבועה: אחיזה + תוכן גולל באמצע + כפתור ההזמנה/סגירה מתחת —
    כדי שקנייה לא תדרוש גלילה מעבר לרשימת הקולנועים, שיכולה עכשיו
    להיות ארוכה (כל הקולנועים, לא רק אחד). */
-.sheet{width:100%;max-width:480px;max-height:88vh;background:var(--surface);
+.sheet{position:relative;width:100%;max-width:480px;max-height:88vh;background:var(--surface);
   border-radius:16px 16px 0 0;padding:var(--s2) var(--s3) var(--s4);animation:rise .22s ease;
   display:flex;flex-direction:column}
 @keyframes rise{from{transform:translateY(24px)}to{transform:none}}
 .grab{width:38px;height:3px;border-radius:99px;background:var(--line);margin:0 auto var(--s3);flex:0 0 auto}
+/* שיתוף — פינה קבועה מעל התוכן הגולל, כמו כפתור המועדפים בכרטיס */
+.sshare{position:absolute;top:var(--s2);left:var(--s3);background:none;border:none;
+  color:var(--dim);padding:7px;line-height:1;border-radius:99px;z-index:2}
+.sshare:hover{color:var(--text)}
+.sshare.copied{color:var(--good)}
+.sshare svg{width:18px;height:18px;display:block}
 .sscroll{overflow-y:auto;min-height:0}
 /* כותרת + פרטים תופסים את כל הרוחב, מעל התמונה — לא צמודים לצידה.
    התמונה יורדת לשורה שלה, ליד המידע התפעולי (מיקום/שעה) בלבד —
@@ -415,6 +429,12 @@ main{padding-top:var(--s4)}
 
 <div class="sheet-bg" id="sheetBg">
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sTitle">
+    <button class="sshare" id="sShare" type="button" aria-label="שיתוף ההקרנה">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+        <line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/>
+      </svg>
+    </button>
     <div class="grab"></div>
     <div class="sscroll">
       <h2 id="sTitle"></h2>
@@ -561,6 +581,7 @@ async function load(){
   DATA.movies.forEach(m=>M.set(m.id,m));
   DATA.cinemas.forEach(c=>C.set(c.id,c));
   buildUpdated(); buildHero(); buildGenres(); buildStrip(); bindAll(); paintLoc(); search();
+  buildStructuredData(); openSharedFromURL();
 }
 function buildUpdated(){
   const d=new Date(DATA.updatedAt);
@@ -996,7 +1017,9 @@ function setChip(sel,key,val){ setChipQuiet(sel,key,val); if(key==="rad") store.
 /* =========================================================
    גיליון — מידע על הסרט. ההזמנה עצמה נשארת בכפתורי השעה.
    ========================================================= */
+let currentSid=null;
 function openSheet(sid){
+  currentSid=sid;
   const[mid,cid,date,min]=sid.split("|");
   const m=M.get(mid), c=C.get(cid);
   $("#sPoster").src=m?.poster||""; $("#sPoster").style.visibility=m?.poster?"visible":"hidden";
@@ -1031,6 +1054,90 @@ function openSheet(sid){
   const tr=$("#sTrailer");
   if(m?.trailer){ tr.href=m.trailer; tr.style.display=""; } else { tr.style.display="none"; }
   $("#sheetBg").classList.add("show");
+}
+
+/* שיתוף הקרנה בודדת: קישור עם הסרט/קולנוע/יום/שעה, כדי שהצד השני
+   ייפתח ישר לאותו גיליון, ולא רק לעמוד הבית הכללי. */
+async function shareSheet(){
+  if(!currentSid) return;
+  const[mid,cid,date,min]=currentSid.split("|");
+  const m=M.get(mid), c=C.get(cid);
+  if(!m||!c) return;
+  const url=`${location.origin}${location.pathname}?m=${encodeURIComponent(mid)}&c=${encodeURIComponent(cid)}&d=${encodeURIComponent(date)}&t=${encodeURIComponent(min)}`;
+  const title=cleanTitle(m.title||"");
+  const text=`${title} · ${c.name} · ${dayLong(date)} ${fmt(+min)} — במסך.`;
+  const btn=$("#sShare");
+  if(navigator.share){
+    try{ await navigator.share({title,text,url}); }catch{}
+    return;
+  }
+  try{
+    await navigator.clipboard.writeText(url);
+    btn.classList.add("copied");
+    btn.setAttribute("aria-label","הקישור להקרנה הועתק");
+    setTimeout(()=>{ btn.classList.remove("copied"); btn.setAttribute("aria-label","שיתוף ההקרנה"); },1600);
+  }catch{}
+}
+
+/* קישור שיתוף ששרד עד היום פותח את ההקרנה המדויקת; אם היא כבר עברה,
+   נופלים על ההקרנה הבאה של אותו סרט במקום להראות שגיאה. */
+function findScreeningForMovie(mid){
+  const today=todayISO(), now=nowMin();
+  const upcoming=DATA.screenings
+    .filter(s=>s.movieId===mid && (s.date>today || (s.date===today && s.min>=now)))
+    .sort((a,b)=> a.date===b.date ? a.min-b.min : (a.date<b.date?-1:1));
+  if(upcoming.length) return upcoming[0];
+  const any=DATA.screenings.filter(s=>s.movieId===mid)
+    .sort((a,b)=> a.date===b.date ? a.min-b.min : (a.date<b.date?-1:1));
+  return any[0]||null;
+}
+function openSharedFromURL(){
+  const p=new URLSearchParams(location.search);
+  const mid=p.get("m");
+  if(!mid || !M.has(mid)) return;
+  let cid=p.get("c"), date=p.get("d"), min=p.get("t");
+  const exists=cid&&date&&min&&DATA.screenings.some(s=>s.movieId===mid&&s.cinemaId===cid&&s.date===date&&String(s.min)===String(min));
+  if(!exists){
+    const s=findScreeningForMovie(mid);
+    if(!s) return;
+    cid=s.cinemaId; date=s.date; min=s.min;
+  }
+  history.replaceState(null,"",location.pathname+location.hash);
+  openSheet(`${mid}|${cid}|${date}|${min}`);
+}
+
+/* נתוני מבנה לגוגל: רשימת הסרטים המוקרנים היום, כדי שתוצאות החיפוש
+   יוכלו להציג פוסטר/תיאור ישירות בלי כניסה לאתר. */
+function buildStructuredData(){
+  const today=todayISO();
+  const seen=new Set(), items=[];
+  for(const s of DATA.screenings){
+    if(s.date!==today) continue;
+    const m=M.get(s.movieId);
+    if(!m||seen.has(m.id)) continue;
+    seen.add(m.id);
+    const movie={"@type":"Movie","name":cleanTitle(m.title||"")};
+    if(m.poster) movie.image=m.poster;
+    if(m.synopsis) movie.description=m.synopsis;
+    if(m.genre) movie.genre=m.genre;
+    if(m.runtime) movie.duration=`PT${m.runtime}M`;
+    items.push(movie);
+    if(items.length>=40) break;
+  }
+  if(!items.length) return;
+  const data={
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":items.map((movie,i)=>({"@type":"ListItem","position":i+1,"item":movie}))
+  };
+  let el=document.getElementById("ldjson");
+  if(!el){
+    el=document.createElement("script");
+    el.type="application/ld+json";
+    el.id="ldjson";
+    document.head.appendChild(el);
+  }
+  el.textContent=JSON.stringify(data);
 }
 
 /* =========================================================
@@ -1116,6 +1223,7 @@ function bindAll(){
   $("#ovLocClose").addEventListener("click",closeLoc);
   $("#cityInput").addEventListener("input",e=>renderCities(e.target.value));
   $("#sClose").addEventListener("click",()=>$("#sheetBg").classList.remove("show"));
+  $("#sShare").addEventListener("click",shareSheet);
   $("#sheetBg").addEventListener("click",e=>{ if(e.target.id==="sheetBg") $("#sheetBg").classList.remove("show"); });
   document.addEventListener("keydown",e=>{
     if(e.key!=="Escape") return;
@@ -1131,6 +1239,14 @@ function bindAll(){
 }
 
 load();
+
+/* מאפשר התקנה כאפליקציה ושימוש בסיסי ללא רשת (הנתונים האחרונים
+   שנטענו בהצלחה נשארים זמינים מה-cache עד לחיבור הבא). */
+if("serviceWorker" in navigator){
+  window.addEventListener("load",()=>{
+    navigator.serviceWorker.register("sw.js").catch(()=>{});
+  });
+}
 </script>
 </body>
 </html>
