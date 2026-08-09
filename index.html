@@ -226,6 +226,10 @@ main{padding-top:var(--s4)}
 .opt .vip{width:17px;height:17px;border-radius:50%;background:var(--acc);flex:0 0 auto;
   display:inline-flex;align-items:center;justify-content:center;font-size:10px;line-height:1}
 .opt .ocinema{font-size:11.5px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* קישור מפורש לשאר הקולנועים/שעות — לא רק כרטיס שמסתמך על לחיצה
+   סמויה, אלא יעד ברור להמשך. הלחיצה עליו נסמכת על אירוע הלחיצה
+   של הכרטיס כולו (openSheet), כי הוא לא קישור נפרד בפני עצמו. */
+.more-times{font-size:12.5px;color:var(--dim);margin-top:var(--s2)}
 /* כפתור פילה גדול, בהשראת רשתות הקולנוע — מתאר לבן ורקע שקוף, כי אלה
    כמה אפשרויות שוות-משקל ולא פעולה אחת בודדת. כתום נשמר לתג ה-VIP
    ולכפתור ההזמנה הגדול (.book) — הפעולה המרכזית היחידה במסך. */
@@ -779,13 +783,15 @@ function search(){
   const seen=new Set();
   hits=hits.filter(s=>!seen.has(s.movieId)&&seen.add(s.movieId));
   hits=hits.slice(0,12);
-  /* ליד כל כרטיס מציגים עד שש האופציות הכי טובות לסרט הזה — בכל
+  /* ליד כל כרטיס מציגים עד ארבע האופציות הכי טובות לסרט הזה — בכל
      קולנוע שהוא, לפי אותו ציון (קרבה לשעה שביקשת + מרחק) ששולט
      בסדר הרשימה. כל אופציה נושאת את שם הקולנוע שלה, כי הן לא
-     בהכרח מאותו קולנוע. לראות עוד קולנועים/שעות: לחיצה על הכרטיס. */
+     בהכרח מאותו קולנוע. אם יש עוד — קישור מפורש "עוד שעות" בתחתית. */
   for(const s of hits){
-    s.times=rows.filter(r=>r.movieId===s.movieId&&r.min>=floor)
-                .sort((a,b)=>score(a,from)-score(b,from)).slice(0,6);
+    const all=rows.filter(r=>r.movieId===s.movieId&&r.min>=floor)
+                  .sort((a,b)=>score(a,from)-score(b,from));
+    s.times=all.slice(0,4);
+    s.timesMore=all.length>4;
   }
   renderList(hits, note, fixes, total, from);
 }
@@ -865,6 +871,7 @@ function rowHTML(s,i){
         <div class="opts">
           ${times.map((t,idx)=>optBtn(t,idx===0)).join("")}
         </div>
+        ${s.timesMore?`<div class="more-times">עוד שעות וקולנועים ⌄</div>`:""}
       </div>
     </div>
     <button class="fav ${fav?"on":""}" data-fav="${top.cinemaId}" data-favname="${top.cinema.name}" aria-label="${fav?`הסרת ${top.cinema.name} מהמועדפים`:`הוספת ${top.cinema.name} למועדפים`}">★</button>
