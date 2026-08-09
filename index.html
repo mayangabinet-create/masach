@@ -994,7 +994,7 @@ function openSheet(sid){
   same.sort((a,b)=>a.min-b.min||a.dist-b.dist);
   const others=same.length>1;
   const cinN=new Set(same.map(s=>s.cinemaId)).size;
-  $("#sMoreLabel").textContent = others ? `כל ההקרנות של הסרט · ${cinCount(cinN)} · ${dayLong(date)}` : "";
+  $("#sMoreLabel").innerHTML = others ? `כל ההקרנות של הסרט · ${cinCount(cinN)} · ${dayLong(date)}` : "";
   $("#sMoreLabel").style.display = others ? "" : "none";
   $("#sTimes").innerHTML = others ? same.map(s=>optBtn(s,s.cinemaId===cid&&s.min===+min)).join("") : "";
   const cur=same.find(s=>s.cinemaId===cid&&s.min===+min)||same[0];
