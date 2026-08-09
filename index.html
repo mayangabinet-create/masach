@@ -474,6 +474,11 @@ const nowMin = () => {const d=new Date();return d.getHours()*60+d.getMinutes();}
 /* הערכה גסה בכוונה: ~2 דק׳ לק"מ + 3. זה לא ניווט, ולכן מוצג תמיד עם ~ */
 const drive = k => Math.max(4, Math.round(k*2)+3);
 const READY = 12;                    /* דקות חניה, קופה וכניסה לאולם */
+/* תקרת מרחק סבירה לרשימות "עוד אופציות" (ליד כרטיס, ובגיליון הסרט) —
+   גם כשהמשתמש בחר "כל הארץ" בסינון הראשי. אין טעם להציע כאופציה
+   נוחה קולנוע שנמצא במרחק לא סביר; אם נשארו מעט אופציות בתוך
+   התקרה, זה בסדר להציג פחות מארבע. */
+const SUGGEST_RAD = 50;
 /* חובה תאריך מקומי ולא toISOString — הוא מחזיר UTC, ובישראל (UTC+2/+3)
    זה אומר שבין חצות לשלוש לפנות בוקר האתר עוד חושב שאתמול הוא "היום". */
 const todayISO = () => {const d=new Date();
@@ -804,8 +809,9 @@ function search(){
      קולנוע שהוא, לפי אותו ציון (קרבה לשעה שביקשת + מרחק) ששולט
      בסדר הרשימה. כל אופציה נושאת את שם הקולנוע שלה, כי הן לא
      בהכרח מאותו קולנוע. אם יש עוד — קישור מפורש "עוד שעות" בתחתית. */
+  const capRad = rad ? Math.min(rad,SUGGEST_RAD) : SUGGEST_RAD;
   for(const s of hits){
-    const all=rows.filter(r=>r.movieId===s.movieId&&r.min>=floor)
+    const all=rows.filter(r=>r.movieId===s.movieId&&r.min>=floor&&(r.dist<=capRad||r===s))
                   .sort((a,b)=>score(a,from)-score(b,from));
     /* קולנוע אחד מקבל את ההקרנה הכי טובה שלו בלבד — אחרת קולנוע
        קרוב עם כמה הקרנות טובות תופס את כל ארבע התאים, וזה בדיוק
@@ -1005,12 +1011,14 @@ function openSheet(sid){
   $("#sCredit").innerHTML=src?`תמונה ופרטים: <a href="${src.href}" target="_blank" rel="noopener">${src.label} ↗</a>`:"";
   /* עוד שעות — בכל קולנוע שמקרין את הסרט הזה, לא רק בקולנוע שבו
      נלחץ הכרטיס. כמו ברשימת הגילוי, כל אופציה נושאת את שם הקולנוע
-     שלה, ומכבדת את רדיוס החיפוש (חוץ מההקרנה שנלחצה, שנשארת תמיד). */
+     שלה, ומכבדת תקרת מרחק סבירה (חוץ מההקרנה שנלחצה, שנשארת תמיד) —
+     גם כשהחיפוש הראשי מוגדר ל"כל הארץ". */
   const past = offOf(date)===0 ? nowMin() : -1;
-  let same=DATA.screenings
+  const capRad = state.rad ? Math.min(state.rad,SUGGEST_RAD) : SUGGEST_RAD;
+  const same=DATA.screenings
     .filter(s=>s.movieId===mid&&s.date===date&&(s.min>=past||(s.cinemaId===cid&&s.min===+min)))
-    .map(enrich);
-  if(state.rad) same=same.filter(s=>s.dist<=state.rad||(s.cinemaId===cid&&s.min===+min));
+    .map(enrich)
+    .filter(s=>s.dist<=capRad||(s.cinemaId===cid&&s.min===+min));
   same.sort((a,b)=>a.min-b.min||a.dist-b.dist);
   const others=same.length>1;
   const cinN=new Set(same.map(s=>s.cinemaId)).size;
