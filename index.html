@@ -40,6 +40,7 @@
   --text:#F2F1EF; --dim:#928E87;
   --acc:#FF7A1A; --acc-soft:rgba(255,122,26,.16); --on-acc:#1A0E00;
   --red:#E5484D;
+  --good:#34D399; --good-soft:rgba(52,211,153,.14);
   --r:8px;
   /* רשת 8px */
   --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:40px;
@@ -224,11 +225,11 @@ main{padding-top:var(--s4)}
   border-radius:10px;padding:10px 12px;border:1.5px solid rgba(242,241,239,.32);text-decoration:none;
   min-width:0}
 .opt:hover{border-color:var(--text)}
-/* האופציה הכי טובה מבין הכרטיסים בולטת ברקע בהיר — היפוך צבעים
-   מלא, לא עוד קו מתאר, כדי שהעין תעצור עליה בלי להזדקק לכתום */
-.opt.cur{background:var(--text);border-color:var(--text)}
-.opt.cur .otime{color:var(--bg)}
-.opt.cur .ocinema{color:var(--bg);opacity:.65}
+/* האופציה הכי טובה מבין הכרטיסים בירוק — הצבע שמשדר "זה מתאים,
+   אפשר ללחוץ בביטחון", בלי להתחרות עם הכתום ששמור לפעולה עצמה */
+.opt.cur{border-color:var(--good);background:var(--good-soft)}
+.opt.cur .otime{color:var(--good)}
+.opt.cur .ocinema{color:var(--good);opacity:.8}
 .opt .otime{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:16px;direction:ltr;
   display:flex;align-items:center;gap:6px}
 .opt .vip{width:17px;height:17px;border-radius:50%;background:var(--acc);flex:0 0 auto;
