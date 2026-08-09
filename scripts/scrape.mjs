@@ -13,11 +13,12 @@
  */
 
 import { writeFile, readFile, mkdir } from "node:fs/promises";
+import { checkRobots } from "./robots.mjs";
 
 const BASE  = "https://www.cinema-city.co.il";
 const CHAIN = "סינמה סיטי";
-const UA    = "Mozilla/5.0 (compatible; masach-showtimes/1.0)";
-const PAUSE = 1200;                       // מנומס לשרת שלהם
+const UA    = "masach-showtimes/1.0 (+https://github.com/mayangabinet-create/masach; non-commercial showtimes aggregator; contact via GitHub issues)";
+let   PAUSE = 1200;                       // מנומס לשרת שלהם — מוגדל אוטומטית אם robots.txt מבקש Crawl-delay גדול יותר
 
 const VENUES = [
   { id:"cc-gl", theaterId:1170, pageId:1,  name:"סינמה סיטי גלילות",  city:"רמת השרון",   lat:32.147, lng:34.805 },
@@ -60,6 +61,9 @@ const norm = t => t.replace(/[\s"'׳״\-–—:,.()]/g, "").toLowerCase();
 const toMin = hhmm => { const [h, m] = hhmm.split(":").map(Number); return h * 60 + m; };
 
 async function get(url, tag) {
+  const { allowed, crawlDelay } = await checkRobots(url, UA);
+  if (crawlDelay) PAUSE = Math.max(PAUSE, crawlDelay * 1000);
+  if (!allowed) throw new Error(`robots.txt חוסם גישה: ${url}`);
   const res = await fetch(url, {
     headers: { "User-Agent": UA, "Accept-Language": "he-IL,he;q=0.9" },
   });

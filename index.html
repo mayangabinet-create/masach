@@ -266,6 +266,8 @@ main{padding-top:var(--s4)}
 .stags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .sfacts{font-size:13px;color:var(--dim);margin-top:var(--s2);line-height:1.7}
 .ssyn{font-size:15px;line-height:1.65;margin-top:var(--s4)}
+.scredit{font-size:12px;color:var(--dim);margin-top:var(--s1)}
+.scredit a{color:inherit}
 .slabel{font-size:12px;color:var(--dim);letter-spacing:.04em;margin-top:var(--s4)}
 .book{display:block;width:100%;margin-top:var(--s3);background:var(--acc);color:var(--on-acc);
   border-radius:var(--r);padding:15px;font-size:16px;font-weight:700;text-align:center;text-decoration:none}
@@ -390,6 +392,7 @@ main{padding-top:var(--s4)}
       </div>
     </div>
     <div class="ssyn" id="sSyn"></div>
+    <div class="scredit" id="sCredit"></div>
     <div class="slabel" id="sMoreLabel"></div>
     <div class="vtimes" id="sTimes"></div>
     <a class="book" id="sBook" target="_blank" rel="noopener">להזמנת כרטיסים</a>
@@ -767,6 +770,20 @@ function search(){
    תצוגה — כל שורה זהה במבנה (עקביות מרגיעה); ההתאמה הכי טובה
    מיוחדת בגודל ובנימוק, לא ברקע צבעוני.
    ========================================================= */
+/* קרדיט מקור לפוסטר/תקציר: הרשת שממנה נגרד הסרט, לפי דומיין ה-url
+   שלו (כל רשת כותבת שם ל-movie/booking page משלה). */
+const CHAIN_BY_HOST=[
+  [/cinema-city\.co\.il/,"סינמה סיטי"],
+  [/rav-hen\.co\.il/,"רב חן"],
+  [/hotcinema\.co\.il/,"HOT"],
+  [/planetcinema\.co\.il/,"פלאנט"],
+];
+function sourceOf(m){
+  const href=m?.url||m?.poster; if(!href) return null;
+  let host; try{ host=new URL(href).host; }catch{ return null; }
+  const hit=CHAIN_BY_HOST.find(([re])=>re.test(host));
+  return hit ? {label:hit[1], href:m.url||href} : null;
+}
 function tags(m){
   let t="";
   if(m?.rating) t+=`<span class="tag rating">${m.rating}</span>`;
@@ -915,6 +932,8 @@ function openSheet(sid){
   $("#sFacts").innerHTML=[m?.genre,m?.runtime?`${m.runtime} דק׳`:null,langOf(m?.title)?.label].filter(Boolean).join(" · ")+
     `<br>${c.name} · ${dayLong(date)} ${N(numOf(date))} · ${T(+min)}`+(m?.runtime?` (מסתיים ${T(+min+m.runtime)})`:"");
   $("#sSyn").textContent=m?.synopsis||"";
+  const src=sourceOf(m);
+  $("#sCredit").innerHTML=src?`תמונה ופרטים: <a href="${src.href}" target="_blank" rel="noopener">${src.label} ↗</a>`:"";
   const past = offOf(date)===0 ? nowMin() : -1;
   const same=DATA.screenings
     .filter(s=>s.movieId===mid&&s.cinemaId===cid&&s.date===date&&(s.min>=past||s.min===+min))
