@@ -224,7 +224,10 @@ main{padding-top:var(--s4)}
   border-radius:10px;padding:10px 12px;border:1.5px solid rgba(242,241,239,.32);text-decoration:none;
   min-width:0}
 .opt:hover{border-color:var(--text)}
-.opt.cur{outline:2px solid var(--text);outline-offset:2px}
+/* האופציה הכי טובה מבין הכרטיסים זוהרת בכתום — הצבע היחיד שמסמן
+   "זה מה שהכי מתאים לך", ולא רק מתאר לבן כמו כל שאר האופציות */
+.opt.cur{border-color:var(--acc);background:var(--acc-soft)}
+.opt.cur .otime{color:var(--acc)}
 .opt .otime{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:16px;direction:ltr;
   display:flex;align-items:center;gap:6px}
 .opt .vip{width:17px;height:17px;border-radius:50%;background:var(--acc);flex:0 0 auto;
@@ -478,8 +481,10 @@ const numOf = iso => {const d=dOf(iso);return `${d.getDate()}.${d.getMonth()+1}`
 /* סינמה סיטי דוחפים את גרסת השפה לתוך שם הסרט: "ספיידרמן: יום חדש-מדובב
    לרוסית". זה לא חלק מהשם — זה נתון על ההקרנה, ומקומו בתגית.
    רק סיומות שפה מוכרות נחתכות, אחרת שמות כמו "כי את מכוערת-הקרנה ושיחה"
-   או "סולטיז הסרט-וולוג ה-100" היו נפגעים. */
-const LANG_RE = /\s*[-–]\s*(מדובב(?:\s+ל([\u0590-\u05FF]+))?|אנגלית)\s*$/;
+   או "סולטיז הסרט-וולוג ה-100" היו נפגעים. המקף לא חובה, כי חלק
+   מהמקורות מדביקים את מילת השפה בלי מקף — ומה שאחריה (למשל שם הסרט
+   חוזר בערבית/רוסית/צרפתית) נחתך גם הוא, עד סוף המחרוזת. */
+const LANG_RE = /\s*[-–]?\s*(מדובב(?:\s+ל([\u0590-\u05FF]+))?|אנגלית).*$/;
 function langOf(title){
   const m=(title||"").match(LANG_RE);
   if(!m) return null;
