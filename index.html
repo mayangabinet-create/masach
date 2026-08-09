@@ -280,10 +280,15 @@ main{padding-top:var(--s4)}
 .sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;
   align-items:flex-end;justify-content:center;z-index:50}
 .sheet-bg.show{display:flex}
-.sheet{width:100%;max-width:480px;max-height:88vh;overflow-y:auto;background:var(--surface);
-  border-radius:16px 16px 0 0;padding:var(--s2) var(--s3) var(--s4);animation:rise .22s ease}
+/* עמודה קבועה: אחיזה + תוכן גולל באמצע + כפתור ההזמנה/סגירה מתחת —
+   כדי שקנייה לא תדרוש גלילה מעבר לרשימת הקולנועים, שיכולה עכשיו
+   להיות ארוכה (כל הקולנועים, לא רק אחד). */
+.sheet{width:100%;max-width:480px;max-height:88vh;background:var(--surface);
+  border-radius:16px 16px 0 0;padding:var(--s2) var(--s3) var(--s4);animation:rise .22s ease;
+  display:flex;flex-direction:column}
 @keyframes rise{from{transform:translateY(24px)}to{transform:none}}
-.grab{width:38px;height:3px;border-radius:99px;background:var(--line);margin:0 auto var(--s3)}
+.grab{width:38px;height:3px;border-radius:99px;background:var(--line);margin:0 auto var(--s3);flex:0 0 auto}
+.sscroll{overflow-y:auto;min-height:0}
 /* כותרת + פרטים תופסים את כל הרוחב, מעל התמונה — לא צמודים לצידה.
    התמונה יורדת לשורה שלה, ליד המידע התפעולי (מיקום/שעה) בלבד —
    בדיוק כמו בכרטיס סרט ברשתות הקולנוע. */
@@ -411,17 +416,19 @@ main{padding-top:var(--s4)}
 <div class="sheet-bg" id="sheetBg">
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sTitle">
     <div class="grab"></div>
-    <h2 id="sTitle"></h2>
-    <div class="sen" id="sEn"></div>
-    <div class="stags" id="sTags"></div>
-    <div class="shead">
-      <img id="sPoster" alt="" onerror="this.style.visibility='hidden'">
-      <div class="sfacts" id="sFacts"></div>
+    <div class="sscroll">
+      <h2 id="sTitle"></h2>
+      <div class="sen" id="sEn"></div>
+      <div class="stags" id="sTags"></div>
+      <div class="shead">
+        <img id="sPoster" alt="" onerror="this.style.visibility='hidden'">
+        <div class="sfacts" id="sFacts"></div>
+      </div>
+      <div class="ssyn" id="sSyn"></div>
+      <div class="scredit" id="sCredit"></div>
+      <div class="slabel" id="sMoreLabel"></div>
+      <div class="vtimes" id="sTimes"></div>
     </div>
-    <div class="ssyn" id="sSyn"></div>
-    <div class="scredit" id="sCredit"></div>
-    <div class="slabel" id="sMoreLabel"></div>
-    <div class="vtimes" id="sTimes"></div>
     <a class="book" id="sBook" target="_blank" rel="noopener">להזמנת כרטיסים</a>
     <a class="ghost" id="sTrailer" target="_blank" rel="noopener">לצפייה בטריילר ↗</a>
     <button class="ghost" id="sClose">סגירה</button>
@@ -800,8 +807,13 @@ function search(){
   for(const s of hits){
     const all=rows.filter(r=>r.movieId===s.movieId&&r.min>=floor)
                   .sort((a,b)=>score(a,from)-score(b,from));
-    s.times=all.slice(0,4);
-    s.timesMore=all.length>4;
+    /* קולנוע אחד מקבל את ההקרנה הכי טובה שלו בלבד — אחרת קולנוע
+       קרוב עם כמה הקרנות טובות תופס את כל ארבע התאים, וזה בדיוק
+       מה שהתלונה ביקשה למנוע: מגוון קולנועים, לא אותו אחד שוב ושוב. */
+    const seenCin=new Set();
+    const uniq=all.filter(r=>!seenCin.has(r.cinemaId)&&seenCin.add(r.cinemaId));
+    s.times=uniq.slice(0,4);
+    s.timesMore=all.length>s.times.length;
   }
   renderList(hits, note, fixes, total, from);
 }
@@ -1002,7 +1014,7 @@ function openSheet(sid){
   same.sort((a,b)=>a.min-b.min||a.dist-b.dist);
   const others=same.length>1;
   const cinN=new Set(same.map(s=>s.cinemaId)).size;
-  $("#sMoreLabel").textContent = others ? `כל ההקרנות של הסרט · ${cinCount(cinN)} · ${dayLong(date)}` : "";
+  $("#sMoreLabel").innerHTML = others ? `כל ההקרנות של הסרט · ${cinCount(cinN)} · ${dayLong(date)}` : "";
   $("#sMoreLabel").style.display = others ? "" : "none";
   $("#sTimes").innerHTML = others ? same.map(s=>optBtn(s,s.cinemaId===cid&&s.min===+min)).join("") : "";
   const cur=same.find(s=>s.cinemaId===cid&&s.min===+min)||same[0];
