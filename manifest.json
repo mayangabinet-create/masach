@@ -1,0 +1,17 @@
+{
+  "name": "מסך. — כל ההקרנות בישראל",
+  "short_name": "מסך.",
+  "description": "כל ההקרנות בבתי הקולנוע בישראל במסך אחד. בוחרים יום, שעה ומיקום — ומקבלים את ההקרנה הכי מתאימה.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121214",
+  "theme_color": "#0C0C0E",
+  "lang": "he",
+  "dir": "rtl",
+  "icons": [
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
