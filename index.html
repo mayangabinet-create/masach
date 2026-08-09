@@ -764,7 +764,15 @@ function search(){
   }
   const seen=new Set();
   hits=hits.filter(s=>!seen.has(s.movieId)&&seen.add(s.movieId));
-  renderList(hits.slice(0,12), note, fixes, total, from);
+  hits=hits.slice(0,12);
+  /* ליד כל כרטיס מציגים כמה שעות קרובות באותו קולנוע (לא בקולנועים
+     אחרים — זה נשאר בתצוגה המלאה שנפתחת בלחיצה), כדי לא לצמצם
+     לבחירה בודדת כשיש כמה הקרנות נוחות של אותו סרט. */
+  for(const s of hits){
+    s.times=rows.filter(r=>r.movieId===s.movieId&&r.cinemaId===s.cinemaId&&r.min>=floor)
+                .sort((a,b)=>a.min-b.min).slice(0,4);
+  }
+  renderList(hits, note, fixes, total, from);
 }
 
 /* =========================================================
@@ -817,8 +825,8 @@ function geoBanner(){
 function rowHTML(s,i){
   const m=s.movie,c=s.cinema,mg=margin(s),today=offOf(s.date)===0;
   const best=i===0&&state.sort==="match"&&mg>=0;
-  const endTxt = m?.runtime ? `מסתיים ${T(s.min+m.runtime)}` : "";
   const fav = state.favs.has(c.id);
+  const times = s.times?.length ? s.times : [s];
   return `<div class="item ${best?"best":""}" data-sid="${s.movieId}|${s.cinemaId}|${s.date}|${s.min}">
     ${best?'<span class="best-tag">ההתאמה הכי טובה</span>':""}
     <span class="title">${cleanTitle(m?.title||"—")}</span>
@@ -828,9 +836,8 @@ function rowHTML(s,i){
       <div class="body">
         ${langLine(m)?`<div class="langline">${langLine(m)}</div>`:""}
         <div class="where">${c.name}</div>
-        ${endTxt?`<div class="meta">${endTxt}</div>`:""}
         <div class="timerow">
-          ${timeBtn(s)}
+          ${times.map(t=>timeBtn(t,t.min===s.min)).join("")}
         </div>
       </div>
     </div>
