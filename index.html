@@ -212,12 +212,17 @@ main{padding-top:var(--s4)}
 /* שורת מטא-דאטה מצומצמת לשני פרטים בלבד: מרחק+נסיעה, וסיום */
 .meta{color:var(--dim);font-size:12px;margin-top:var(--s1)}
 .timerow{display:flex;align-items:center;gap:var(--s2);margin-top:var(--s3);flex-wrap:wrap}
-/* כפתור פילה גדול, בהשראת רשתות הקולנוע — יעד לחיצה נוח ובולט,
-   לא עוד תגית קטנה בשורה */
+/* כפתור פילה גדול, בהשראת רשתות הקולנוע — מתאר לבן ורקע שקוף, כי אלה
+   כמה אפשרויות שוות-משקל ולא פעולה אחת בודדת. כתום נשמר לתג ה-VIP
+   ולכפתור ההזמנה הגדול (.book) — הפעולה המרכזית היחידה במסך. */
 .time{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:17px;direction:ltr;
-  background:var(--acc);color:var(--on-acc);border-radius:99px;padding:12px 20px;border:none;text-decoration:none;
-  display:inline-block}
-.time:hover{filter:brightness(1.08)}
+  background:none;color:var(--text);border-radius:99px;padding:11px 20px;
+  border:1.5px solid rgba(242,241,239,.32);text-decoration:none;
+  display:inline-flex;align-items:center;gap:7px}
+.time:hover{border-color:var(--text)}
+/* תג "VIP" — כורסאות נוחות. העיגול הכתום היחיד בכפתור, בכוונה */
+.time .vip{width:19px;height:19px;border-radius:50%;background:var(--acc);flex:0 0 auto;
+  display:inline-flex;align-items:center;justify-content:center;font-size:11px;line-height:1}
 .starts{color:var(--red);font-size:12px;font-weight:600}
 .fav{position:absolute;top:var(--s3);left:0;background:none;border:none;font-size:19px;color:var(--dim);
   line-height:1;padding:4px}
@@ -231,7 +236,7 @@ main{padding-top:var(--s4)}
 /* רשת של שתי עמודות, כמו ברשתות הקולנוע — כפתורים גדולים שממלאים
    את הרוחב במקום להצטופף בשורה */
 .vtimes{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2);margin-top:var(--s3)}
-.vtimes .time{width:100%;text-align:center}
+.vtimes .time{width:100%;justify-content:center}
 .vtimes .fav{position:static;grid-column:1/-1;justify-self:start}
 
 /* מצבי טעינה / שגיאה */
@@ -255,6 +260,7 @@ main{padding-top:var(--s4)}
 .grab{width:38px;height:3px;border-radius:99px;background:var(--line);margin:0 auto var(--s3)}
 .shead{display:flex;gap:var(--s2)}
 .shead img{width:96px;height:140px;object-fit:cover;border-radius:8px;flex:0 0 auto;background:var(--surface2)}
+.mhead{margin-bottom:var(--s4)}
 .sheet h2{font-size:20px;font-weight:700;line-height:1.25}
 .sen{font-size:12px;color:var(--dim);margin-top:5px}
 .stags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
@@ -769,11 +775,15 @@ function tags(m){
   if(m && isEvent(m)) t+=`<span class="tag ev">אירוע</span>`;
   return t;
 }
+/* אולם VIP = כורסאות נוחות (ריקליינר). רק שם האולם חושף את זה,
+   ורק ברשת פלאנט הוא מגיע במידע כרגע. */
+const isVip = s => /VIP/i.test(s.hall||"");
 /* כפתור שעה = יציאה להזמנה באתר הרשת. החץ אומר את זה בלי מילים. */
 function timeBtn(s,cur){
+  const vip = isVip(s) ? `<span class="vip" aria-hidden="true">🛋️</span>` : "";
   return `<a class="time${cur?" cur":""}" href="${s.url}" target="_blank" rel="noopener"
-    aria-label="הזמנת כרטיסים להקרנה ב-${fmt(s.min)} באתר הקולנוע"
-    onclick="event.stopPropagation()">${fmt(s.min)}<span class="ext">↗</span></a>`;
+    aria-label="הזמנת כרטיסים להקרנה ב-${fmt(s.min)}${isVip(s)?" באולם VIP":""} באתר הקולנוע"
+    onclick="event.stopPropagation()">${vip}${fmt(s.min)}<span class="ext">↗</span></a>`;
 }
 function geoBanner(){
   if(!originUnknown()) return "";
@@ -832,7 +842,16 @@ function renderByVenue(rows){
   const w=g=>g.dist-(state.favs.has(g.c.id)?5:0);
   const groups=[...by.values()].sort((a,b)=>w(a)-w(b));
   let h=geoBanner();
-  h+=`<div class="count">${cleanTitle(m?.title||"")} · ${dayLong(state.date)} ${N(numOf(state.date))}</div>`;
+  /* התמונה יושבת רק ליד הכותרת, לא נמתחת לאורך כל רשימת הזמנים —
+   * בדיוק כמו בכרטיסי הסרט של רשתות הקולנוע. */
+  h+=`<div class="shead mhead">
+    ${m?.poster?`<img src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:""}
+    <div>
+      <span class="title">${cleanTitle(m?.title||"")}</span>
+      ${tags(m)?`<div class="tags">${tags(m)}</div>`:""}
+      <div class="where">${dayLong(state.date)} ${N(numOf(state.date))}</div>
+    </div>
+  </div>`;
   if(!groups.length){
     h+=`<div class="note">אין הקרנות של הסרט הזה ביום ובטווח שנבחרו.</div>
         <div class="fixes"><button class="fix" data-fix="allrad">כל הארץ</button>
