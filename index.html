@@ -817,9 +817,6 @@ function geoBanner(){
 function rowHTML(s,i){
   const m=s.movie,c=s.cinema,mg=margin(s),today=offOf(s.date)===0;
   const best=i===0&&state.sort==="match"&&mg>=0;
-  let flag="";
-  if(today && mg<0)       flag=`<span class="tight">כנראה לא תספיק להגיע</span>`;
-  else if(today && mg<15) flag=`<span class="starts">כדאי לצאת עכשיו</span>`;
   const endTxt = m?.runtime ? `מסתיים ${T(s.min+m.runtime)}` : "";
   const fav = state.favs.has(c.id);
   return `<div class="item ${best?"best":""}" data-sid="${s.movieId}|${s.cinemaId}|${s.date}|${s.min}">
@@ -831,11 +828,9 @@ function rowHTML(s,i){
       <div class="body">
         ${langLine(m)?`<div class="langline">${langLine(m)}</div>`:""}
         <div class="where">${c.name}</div>
-        <div class="meta">${N(s.dist.toFixed(1))} ק"מ ממך · ~${N(drive(s.dist))} דק׳ נסיעה${endTxt?" · "+endTxt:""}</div>
-        ${best?`<div class="why">${whyBest(s,fromMin())}</div>`:""}
+        ${endTxt?`<div class="meta">${endTxt}</div>`:""}
         <div class="timerow">
           ${timeBtn(s)}
-          ${flag}
         </div>
       </div>
     </div>
@@ -848,7 +843,7 @@ function renderList(list,note,fixes,total,from){
   /* סדר קריאה: מה מוצג → לפי מה ממוין → הרשימה. כשהמיון היה ראשון
      הוא נצמד לפקדים שמעליו ונקרא כמו עוד שורת סינון. */
   h+=`<div class="count">${dayLong(state.date)} ${N(numOf(state.date))}${total?` · ${scrCount(total)} מ-${T(from)}`:""}</div>`;
-  if(list.length) h+=`<div class="foot">מרחק בקו אווירי · זמן נסיעה משוער · לחיצה על שעה פותחת את דף ההזמנה של הרשת</div>`;
+  if(list.length) h+=`<div class="foot">לחיצה על שעה פותחת את דף ההזמנה של הרשת</div>`;
   if(list.length) h+=`<div class="sortrow"><span class="sortlab">מיון</span>
     <div class="toolbar" role="group" aria-label="סדר התוצאות">${SORTS.map(([k,t])=>
     `<button class="chip ${state.sort===k?"on":""}" data-sort="${k}">${t}</button>`).join("")}</div></div>`;
@@ -884,13 +879,12 @@ function renderByVenue(rows){
         <div class="fixes"><button class="fix" data-fix="allrad">כל הארץ</button>
         <button class="fix" data-fix="nextday">היום הבא</button></div>`;
   }else{
-    h+=`<div class="foot">${cinCount(groups.length)} · לפי הקרבה אליך · לחיצה על שעה פותחת את דף ההזמנה של הרשת</div>`;
+    h+=`<div class="foot">${cinCount(groups.length)} · לחיצה על שעה פותחת את דף ההזמנה של הרשת</div>`;
     for(const g of groups){
       g.list.sort((a,b)=>a.min-b.min);
       const fav=state.favs.has(g.c.id);
       h+=`<div class="venue"><div class="vhead">
-        <div class="vname">${g.c.name}</div>
-        <div class="vdist">${N(g.dist.toFixed(1))} ק"מ ממך · ~${N(drive(g.dist))} דק׳ נסיעה</div></div>
+        <div class="vname">${g.c.name}</div></div>
         <div class="vtimes">${g.list.map(s=>timeBtn(s)).join("")}
         <button class="fav vfav ${fav?"on":""}" data-fav="${g.c.id}" data-favname="${g.c.name}" aria-label="${fav?`הסרת ${g.c.name} מהמועדפים`:`הוספת ${g.c.name} למועדפים`}">★</button></div>
       </div>`;
