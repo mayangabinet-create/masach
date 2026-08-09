@@ -220,10 +220,11 @@ main{padding-top:var(--s4)}
   border-radius:10px;padding:10px 12px;border:1.5px solid rgba(242,241,239,.32);text-decoration:none;
   min-width:0}
 .opt:hover{border-color:var(--text)}
-/* האופציה הכי טובה מבין הכרטיסים זוהרת בכתום — הצבע היחיד שמסמן
-   "זה מה שהכי מתאים לך", ולא רק מתאר לבן כמו כל שאר האופציות */
-.opt.cur{border-color:var(--acc);background:var(--acc-soft)}
-.opt.cur .otime{color:var(--acc)}
+/* האופציה הכי טובה מבין הכרטיסים בולטת ברקע בהיר — היפוך צבעים
+   מלא, לא עוד קו מתאר, כדי שהעין תעצור עליה בלי להזדקק לכתום */
+.opt.cur{background:var(--text);border-color:var(--text)}
+.opt.cur .otime{color:var(--bg)}
+.opt.cur .ocinema{color:var(--bg);opacity:.65}
 .opt .otime{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:16px;direction:ltr;
   display:flex;align-items:center;gap:6px}
 .opt .vip{width:17px;height:17px;border-radius:50%;background:var(--acc);flex:0 0 auto;
