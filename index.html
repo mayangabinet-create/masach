@@ -190,21 +190,24 @@ main{padding-top:var(--s4)}
   background:var(--surface);color:var(--text);border-radius:6px;padding:9px 13px 8px;font-size:14px}
 .fix:hover{border-color:var(--acc);color:var(--acc)}
 
-/* שורת הקרנה — הפוסטר הוא העוגן היחיד; בעברית, בזכות flex-row+rtl,
-   הילד הראשון (הפוסטר) יושב מימין — בדיוק העמוד השדרה שהעין חוזרת אליו. */
-.item{display:flex;gap:var(--s2);width:100%;text-align:start;background:none;border:none;
-  border-bottom:1px solid var(--line-soft);padding:var(--s4) 0;color:inherit;position:relative;
+/* שורת הקרנה — כותרת ופרטים ברוחב מלא למעלה, לא צמודים לפוסטר, כדי
+   שהשם יקבל את המקום שלו; הפוסטר יורד לשורה נפרדת (.irow) ליד המידע
+   התפעולי (מיקום/מרחק/שעה) בלבד — בדיוק כמו בכרטיס סרט ברשתות הקולנוע.
+   רווח נדיב בין כרטיס לכרטיס, כדי שכל סרט יעמוד בפני עצמו. */
+.item{display:block;width:100%;text-align:start;background:none;border:none;
+  border-bottom:1px solid var(--line-soft);padding:var(--s5) 0;color:inherit;position:relative;
   -webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+.irow{display:flex;gap:var(--s2);margin-top:12px}
 .poster{width:72px;height:104px;object-fit:cover;border-radius:6px;flex:0 0 auto;background:var(--surface2)}
 .item.best .poster{width:84px;height:122px}          /* גודל, לא צבע, הוא מה שמייחד */
-.body{flex:1;min-width:0;padding-top:2px}
+.body{flex:1;min-width:0}
 .best-tag{font-size:11px;color:var(--acc);letter-spacing:.08em;font-weight:700;display:block;margin-bottom:7px}
-.title{font-size:19px;font-weight:700;line-height:1.3;display:block}
+.title{font-size:20px;font-weight:700;line-height:1.3;display:block}
 /* שורת פרטים כטקסט פשוט מתחת לשם — ז'אנר · משך · דירוג — בלי מסגרת,
    בהשראת רשתות הקולנוע. שפת ההקרנה (מדובב/כתוביות) בשורה נפרדת משלה,
    כי היא לא חלק מהכותרת ולא עוד "תגית". */
 .facts{color:var(--dim);font-size:12.5px;margin-top:6px}
-.langline{color:var(--dim);font-size:12.5px;margin-top:3px}
+.langline{color:var(--dim);font-size:12.5px;margin-top:6px}
 .where{color:var(--dim);font-size:14px;margin-top:var(--s1);line-height:1.3}
 /* שורת מטא-דאטה מצומצמת לשני פרטים בלבד: מרחק+נסיעה, וסיום */
 .meta{color:var(--dim);font-size:12px;margin-top:var(--s1)}
@@ -255,13 +258,16 @@ main{padding-top:var(--s4)}
   border-radius:16px 16px 0 0;padding:var(--s2) var(--s3) var(--s4);animation:rise .22s ease}
 @keyframes rise{from{transform:translateY(24px)}to{transform:none}}
 .grab{width:38px;height:3px;border-radius:99px;background:var(--line);margin:0 auto var(--s3)}
-.shead{display:flex;gap:var(--s2)}
+/* כותרת + פרטים תופסים את כל הרוחב, מעל התמונה — לא צמודים לצידה.
+   התמונה יורדת לשורה שלה, ליד המידע התפעולי (מיקום/שעה) בלבד —
+   בדיוק כמו בכרטיס סרט ברשתות הקולנוע. */
+.shead{display:flex;gap:var(--s2);margin-top:var(--s3)}
 .shead img{width:96px;height:140px;object-fit:cover;border-radius:8px;flex:0 0 auto;background:var(--surface2)}
 .mhead{margin-bottom:var(--s4)}
-.sheet h2{font-size:20px;font-weight:700;line-height:1.25}
+.sheet h2{font-size:22px;font-weight:700;line-height:1.3}
 .sen{font-size:12px;color:var(--dim);margin-top:5px}
-.stags{font-size:13px;color:var(--dim);margin-top:10px}
-.sfacts{font-size:13px;color:var(--dim);margin-top:6px;line-height:1.7}
+.stags{font-size:13px;color:var(--dim);margin-top:8px}
+.sfacts{font-size:13px;color:var(--dim);line-height:1.7}
 .ssyn{font-size:15px;line-height:1.65;margin-top:var(--s4)}
 .scredit{font-size:12px;color:var(--dim);margin-top:var(--s1)}
 .scredit a{color:inherit}
@@ -379,14 +385,12 @@ main{padding-top:var(--s4)}
 <div class="sheet-bg" id="sheetBg">
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sTitle">
     <div class="grab"></div>
+    <h2 id="sTitle"></h2>
+    <div class="sen" id="sEn"></div>
+    <div class="stags" id="sTags"></div>
     <div class="shead">
       <img id="sPoster" alt="" onerror="this.style.visibility='hidden'">
-      <div>
-        <h2 id="sTitle"></h2>
-        <div class="sen" id="sEn"></div>
-        <div class="stags" id="sTags"></div>
-        <div class="sfacts" id="sFacts"></div>
-      </div>
+      <div class="sfacts" id="sFacts"></div>
     </div>
     <div class="ssyn" id="sSyn"></div>
     <div class="scredit" id="sCredit"></div>
@@ -819,18 +823,20 @@ function rowHTML(s,i){
   const endTxt = m?.runtime ? `מסתיים ${T(s.min+m.runtime)}` : "";
   const fav = state.favs.has(c.id);
   return `<div class="item ${best?"best":""}" data-sid="${s.movieId}|${s.cinemaId}|${s.date}|${s.min}">
-    ${m?.poster?`<img class="poster" src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:`<div class="poster"></div>`}
-    <div class="body">
-      ${best?'<span class="best-tag">ההתאמה הכי טובה</span>':""}
-      <span class="title">${cleanTitle(m?.title||"—")}</span>
-      ${factsLine(m)?`<div class="facts">${factsLine(m)}</div>`:""}
-      ${langLine(m)?`<div class="langline">${langLine(m)}</div>`:""}
-      <div class="where">${c.name}</div>
-      <div class="meta">${N(s.dist.toFixed(1))} ק"מ ממך · ~${N(drive(s.dist))} דק׳ נסיעה${endTxt?" · "+endTxt:""}</div>
-      ${best?`<div class="why">${whyBest(s,fromMin())}</div>`:""}
-      <div class="timerow">
-        ${timeBtn(s)}
-        ${flag}
+    ${best?'<span class="best-tag">ההתאמה הכי טובה</span>':""}
+    <span class="title">${cleanTitle(m?.title||"—")}</span>
+    ${factsLine(m)?`<div class="facts">${factsLine(m)}</div>`:""}
+    <div class="irow">
+      ${m?.poster?`<img class="poster" src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:`<div class="poster"></div>`}
+      <div class="body">
+        ${langLine(m)?`<div class="langline">${langLine(m)}</div>`:""}
+        <div class="where">${c.name}</div>
+        <div class="meta">${N(s.dist.toFixed(1))} ק"מ ממך · ~${N(drive(s.dist))} דק׳ נסיעה${endTxt?" · "+endTxt:""}</div>
+        ${best?`<div class="why">${whyBest(s,fromMin())}</div>`:""}
+        <div class="timerow">
+          ${timeBtn(s)}
+          ${flag}
+        </div>
       </div>
     </div>
     <button class="fav ${fav?"on":""}" data-fav="${c.id}" data-favname="${c.name}" aria-label="${fav?`הסרת ${c.name} מהמועדפים`:`הוספת ${c.name} למועדפים`}">★</button>
@@ -860,15 +866,17 @@ function renderByVenue(rows){
   const w=g=>g.dist-(state.favs.has(g.c.id)?5:0);
   const groups=[...by.values()].sort((a,b)=>w(a)-w(b));
   let h=geoBanner();
-  /* התמונה יושבת רק ליד הכותרת, לא נמתחת לאורך כל רשימת הזמנים —
-   * בדיוק כמו בכרטיסי הסרט של רשתות הקולנוע. */
-  h+=`<div class="shead mhead">
-    ${m?.poster?`<img src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:""}
-    <div>
-      <span class="title">${cleanTitle(m?.title||"")}</span>
-      ${factsLine(m)?`<div class="facts">${factsLine(m)}</div>`:""}
-      ${langLine(m)?`<div class="langline">${langLine(m)}</div>`:""}
-      <div class="where">${dayLong(state.date)} ${N(numOf(state.date))}</div>
+  /* כותרת + פרטים ברוחב מלא, מעל התמונה — לא צמודים לצידה — בדיוק
+   * כמו בכרטיס סרט ברשתות הקולנוע. */
+  h+=`<div class="mhead">
+    <span class="title">${cleanTitle(m?.title||"")}</span>
+    ${factsLine(m)?`<div class="facts">${factsLine(m)}</div>`:""}
+    <div class="shead">
+      ${m?.poster?`<img src="${m.poster}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`:""}
+      <div>
+        ${langLine(m)?`<div class="langline">${langLine(m)}</div>`:""}
+        <div class="where">${dayLong(state.date)} ${N(numOf(state.date))}</div>
+      </div>
     </div>
   </div>`;
   if(!groups.length){
