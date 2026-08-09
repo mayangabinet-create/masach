@@ -983,15 +983,21 @@ function openSheet(sid){
   $("#sSyn").textContent=m?.synopsis||"";
   const src=sourceOf(m);
   $("#sCredit").innerHTML=src?`תמונה ופרטים: <a href="${src.href}" target="_blank" rel="noopener">${src.label} ↗</a>`:"";
+  /* עוד שעות — בכל קולנוע שמקרין את הסרט הזה, לא רק בקולנוע שבו
+     נלחץ הכרטיס. כמו ברשימת הגילוי, כל אופציה נושאת את שם הקולנוע
+     שלה, ומכבדת את רדיוס החיפוש (חוץ מההקרנה שנלחצה, שנשארת תמיד). */
   const past = offOf(date)===0 ? nowMin() : -1;
-  const same=DATA.screenings
-    .filter(s=>s.movieId===mid&&s.cinemaId===cid&&s.date===date&&(s.min>=past||s.min===+min))
-    .sort((a,b)=>a.min-b.min);
+  let same=DATA.screenings
+    .filter(s=>s.movieId===mid&&s.date===date&&(s.min>=past||(s.cinemaId===cid&&s.min===+min)))
+    .map(enrich);
+  if(state.rad) same=same.filter(s=>s.dist<=state.rad||(s.cinemaId===cid&&s.min===+min));
+  same.sort((a,b)=>a.min-b.min||a.dist-b.dist);
   const others=same.length>1;
-  $("#sMoreLabel").textContent = others ? `כל השעות ב${c.name} · ${dayLong(date)}` : "";
+  const cinN=new Set(same.map(s=>s.cinemaId)).size;
+  $("#sMoreLabel").textContent = others ? `כל ההקרנות של הסרט · ${cinCount(cinN)} · ${dayLong(date)}` : "";
   $("#sMoreLabel").style.display = others ? "" : "none";
-  $("#sTimes").innerHTML = others ? same.map(s=>timeBtn(s,s.min===+min)).join("") : "";
-  const cur=same.find(s=>s.min===+min)||same[0];
+  $("#sTimes").innerHTML = others ? same.map(s=>optBtn(s,s.cinemaId===cid&&s.min===+min)).join("") : "";
+  const cur=same.find(s=>s.cinemaId===cid&&s.min===+min)||same[0];
   $("#sBook").href=cur?.url||m?.url||"#";
   $("#sBook").innerHTML=`להזמנת כרטיסים ל-${fmt(+min)} ↗`;
   const tr=$("#sTrailer");
