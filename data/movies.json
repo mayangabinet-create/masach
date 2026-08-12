@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T05:06:03.596Z",
+  "updatedAt": "2026-08-12T10:33:47.903Z",
   "byId": {
     "4239": {
       "ccId": "4239",
@@ -52,19 +52,6 @@
       "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9B%D7%99%20%D7%90%D7%AA%20%D7%9E%D7%9B%D7%95%D7%A2%D7%A8%D7%AA%282%29.jpg",
       "trailer": "https://www.youtube.com/watch?v=9hWP3LWR6t0",
       "url": "https://www.cinema-city.co.il/movie/5830"
-    },
-    "5964": {
-      "ccId": "5964",
-      "title": "השטן לובשת פראדה 2",
-      "titleEn": "The Devil Wears Prada 2",
-      "genre": "קומדיה",
-      "runtime": 118,
-      "releaseDate": "30/04/2026",
-      "rating": "מותר לכל",
-      "synopsis": "עשרים שנה אחרי שגילמו את התפקידים האייקוניים של מירנדה, אנדי, אמילי ונייג׳ל — מריל סטריפ, אן האת׳וויי, אמילי בלאנט וסטנלי טוצ׳י חוזרים לרחובות האופנתיים של ניו יורק בסרט ההמשך ללהיט מ- 2006 \"השטן לובשת פראדה\" שהגדיר דור שלם ואופנתי.",
-      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%A9%D7%98%D7%9F%20%D7%9C%D7%95%D7%91%D7%A9%D7%AA%20%D7%A4%D7%A8%D7%90%D7%93%D7%94%202%20%D7%A1%D7%95%D7%A4%D7%99.jpg",
-      "trailer": "https://www.youtube.com/watch?v=vyWd93iOLyk",
-      "url": "https://www.cinema-city.co.il/movie/5964"
     },
     "5977": {
       "ccId": "5977",
@@ -325,6 +312,19 @@
       "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%AA%D7%92%D7%9C%D7%99%D7%AA-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit01.jpg",
       "trailer": "https://www.youtube.com/watch?v=YVu6ofXXRss",
       "url": "https://www.cinema-city.co.il/movie/6169"
+    },
+    "6202": {
+      "ccId": "6202",
+      "title": "ספא וויקנד",
+      "titleEn": "SPA WEEKEND",
+      "genre": "קומדיה",
+      "runtime": 97,
+      "releaseDate": "20/08/2026",
+      "rating": "טרם נקבע",
+      "synopsis": "שחוקות מחיי היומיום ונואשות להפסקה, שלוש חברות יוצאות לנופש בספא יוקרתי. כשחברתן המופרעת מצטרפת, סוף השבוע לוקח תפנית לחוויה בלתי נשכחת של כיף, צחוק והמון החלטות רעות.",
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%A4%D7%90%20%D7%95%D7%95%D7%99%D7%A7%D7%A0%D7%93.jpg",
+      "trailer": "https://www.youtube.com/watch?v=4OGojVW2AIg",
+      "url": "https://www.cinema-city.co.il/movie/6202"
     },
     "6203": {
       "ccId": "6203",
@@ -677,6 +677,19 @@
       "trailer": "https://www.youtube.com/watch?v=lrjJsHvasDA",
       "url": "https://www.cinema-city.co.il/movie/6297"
     },
+    "6308": {
+      "ccId": "6308",
+      "title": "הצגת ילדים - הקסם שבצבע",
+      "titleEn": "סתיו בכל הצבעים",
+      "genre": null,
+      "runtime": 75,
+      "releaseDate": "15/08/2026",
+      "rating": "טרם נקבע",
+      "synopsis": null,
+      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%AA%D7%99%D7%95%20%D7%91%D7%9B%D7%9C%20%D7%94%D7%A6%D7%91%D7%A2%D7%99%D7%9D.jpg",
+      "trailer": null,
+      "url": "https://www.cinema-city.co.il/movie/6308"
+    },
     "x-קיץשלכוכביםקופיקו": {
       "ccId": "x-קיץשלכוכביםקופיקו",
       "title": "קיץ של כוכבים - קופיקו"
@@ -906,19 +919,6 @@
       "trailer": "https://www.youtube.com/watch?v=5YgdVnG4EkQ",
       "url": "https://www.rav-hen.co.il/films/fuze/8040s2r"
     },
-    "rh-8046d2r": {
-      "ccId": "rh-8046d2r",
-      "title": "מאשה והדוב-ההרפתקה הגדולה",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 73,
-      "releaseDate": "16/07/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8046D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=DqoHN5Xs0J4",
-      "url": "https://www.rav-hen.co.il/films/masha-the-bear-wonder-park/8046d2r"
-    },
     "hot-3781": {
       "ccId": "hot-3781",
       "title": "איש הגלידה",
@@ -1113,19 +1113,6 @@
       "poster": "https://hotcinema.co.il/images/Saltiz-Movie.png?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=bj8alxbVQ9o",
       "url": "https://hotcinema.co.il/movie/3827"
-    },
-    "hot-3768": {
-      "ccId": "hot-3768",
-      "title": "סינדרלה ושלוש המשאלות מדובב לעברית",
-      "titleEn": "Three Wishes for Cinderella",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "סינדרלה מאוהבת בנסיך, חוטב העצים מאוהב בסינדרלה והנסיך מאוהב... רק בעצמו. משולש אהבה בלתי צפוי ומשעשע במיוחד, שמוביל לטוויסט קסום ומפתיע לסיפור הקלאסי. לסינדרלה חלומות ושאיפות, הערצה עיוורת לנסיך וערימת מטלות בית, באדיבות אימה החורגת המרשעת. למזלה עומד לצידה סוורין, חברה הטוב, חוטב עצים גמלוני, שבעצמו חולם על תהילה ועל זכייה בליבה של סינדרלה. יום אחד מצליח סוורין לריב עם עץ משאלות קסום, שהופך אותו לסנאי. עכשיו יוצאת סינדרלה עם חבריה ושלושה אגוזים קסומים שהשיגו, להרפתקה נגד הזמן. האם יצליחו לבטל את הקללה בזמן? ואם היא תנצל הזדמנות להקסים את הנסיך כפי שתמיד רצתה – האם באמת אותו היא אוהבת? כשקסמו של הנסיך מתפוגג, סינדרלה חייבת לבחור: פנטזיה מהאגדות או הדבר האמיתי? קומדיה שנונה וחמה על אהבה, נאמנות ומציאת הקול האישי שלנו - אפילו כשאנחנו מוצאים את עצמנו עם גוף של סנאי.",
-      "poster": "https://hotcinema.co.il/images/ThreeWishesforCinderella-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=B8Wz68mfjns",
-      "url": "https://hotcinema.co.il/movie/3768"
     },
     "hot-3650": {
       "ccId": "hot-3650",
@@ -1399,6 +1386,19 @@
       "poster": "https://hotcinema.co.il/images/MASHAnTheBEAR–WonderPark-A.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=DqoHN5Xs0J4",
       "url": "https://hotcinema.co.il/movie/3628"
+    },
+    "hot-3768": {
+      "ccId": "hot-3768",
+      "title": "סינדרלה ושלוש המשאלות מדובב לעברית",
+      "titleEn": "Three Wishes for Cinderella",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "סינדרלה מאוהבת בנסיך, חוטב העצים מאוהב בסינדרלה והנסיך מאוהב... רק בעצמו. משולש אהבה בלתי צפוי ומשעשע במיוחד, שמוביל לטוויסט קסום ומפתיע לסיפור הקלאסי. לסינדרלה חלומות ושאיפות, הערצה עיוורת לנסיך וערימת מטלות בית, באדיבות אימה החורגת המרשעת. למזלה עומד לצידה סוורין, חברה הטוב, חוטב עצים גמלוני, שבעצמו חולם על תהילה ועל זכייה בליבה של סינדרלה. יום אחד מצליח סוורין לריב עם עץ משאלות קסום, שהופך אותו לסנאי. עכשיו יוצאת סינדרלה עם חבריה ושלושה אגוזים קסומים שהשיגו, להרפתקה נגד הזמן. האם יצליחו לבטל את הקללה בזמן? ואם היא תנצל הזדמנות להקסים את הנסיך כפי שתמיד רצתה – האם באמת אותו היא אוהבת? כשקסמו של הנסיך מתפוגג, סינדרלה חייבת לבחור: פנטזיה מהאגדות או הדבר האמיתי? קומדיה שנונה וחמה על אהבה, נאמנות ומציאת הקול האישי שלנו - אפילו כשאנחנו מוצאים את עצמנו עם גוף של סנאי.",
+      "poster": "https://hotcinema.co.il/images/ThreeWishesforCinderella-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=B8Wz68mfjns",
+      "url": "https://hotcinema.co.il/movie/3768"
     },
     "hot-3685": {
       "ccId": "hot-3685",
@@ -1686,19 +1686,6 @@
       "trailer": "https://www.youtube.com/watch?v=DXqvS92LCx0",
       "url": "https://www.planetcinema.co.il/films/hill-338/8403s2r"
     },
-    "pl-6628d2r": {
-      "ccId": "pl-6628d2r",
-      "title": "גרייסי ופדרו: חיות המחמד בפעולה",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 87,
-      "releaseDate": "23/07/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/6628D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=5KALYyGUsYQ",
-      "url": "https://www.planetcinema.co.il/films/gracie-pedro-pets-to-the-rescue/6628d2r"
-    },
     "pl-7460s2r": {
       "ccId": "pl-7460s2r",
       "title": "האודיסאה",
@@ -1724,19 +1711,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8200S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=M-X2EU7ZuFE",
       "url": "https://www.planetcinema.co.il/films/the-invite/8200s2r"
-    },
-    "pl-7918s2r": {
-      "ccId": "pl-7918s2r",
-      "title": "החלק החסר",
-      "titleEn": null,
-      "genre": "דרמה",
-      "runtime": 98,
-      "releaseDate": "30/07/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7918S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=SdlXjDy8xWA",
-      "url": "https://www.planetcinema.co.il/films/a-missing-part/7918s2r"
     },
     "pl-7946d2r": {
       "ccId": "pl-7946d2r",
@@ -1802,19 +1776,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8275S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=LEcvJdp6zdw",
       "url": "https://www.planetcinema.co.il/films/motor-city/8275s2r"
-    },
-    "pl-7785s2r": {
-      "ccId": "pl-7785s2r",
-      "title": "מייקל",
-      "titleEn": null,
-      "genre": "דרמה",
-      "runtime": 127,
-      "releaseDate": "22/04/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7785S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=zE0OTb0ONJk",
-      "url": "https://www.planetcinema.co.il/films/michael/7785s2r"
     },
     "pl-8023s2r": {
       "ccId": "pl-8023s2r",
@@ -1998,6 +1959,19 @@
       "trailer": "https://www.youtube.com/watch?v=_mbeY377SWA",
       "url": "https://www.planetcinema.co.il/films/valley-of-shadows/8375s2r"
     },
+    "pl-6628d2r": {
+      "ccId": "pl-6628d2r",
+      "title": "גרייסי ופדרו: חיות המחמד בפעולה",
+      "titleEn": null,
+      "genre": "אנימציה",
+      "runtime": 87,
+      "releaseDate": "23/07/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/6628D2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=5KALYyGUsYQ",
+      "url": "https://www.planetcinema.co.il/films/gracie-pedro-pets-to-the-rescue/6628d2r"
+    },
     "pl-8437s2r": {
       "ccId": "pl-8437s2r",
       "title": "האחד והיחיד שלי",
@@ -2010,6 +1984,19 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8437S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=_SD472Xmzqg",
       "url": "https://www.planetcinema.co.il/films/my-one-and-only/8437s2r"
+    },
+    "pl-7918s2r": {
+      "ccId": "pl-7918s2r",
+      "title": "החלק החסר",
+      "titleEn": null,
+      "genre": "דרמה",
+      "runtime": 98,
+      "releaseDate": "30/07/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7918S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=SdlXjDy8xWA",
+      "url": "https://www.planetcinema.co.il/films/a-missing-part/7918s2r"
     },
     "pl-8386s2r": {
       "ccId": "pl-8386s2r",
@@ -2076,6 +2063,19 @@
       "trailer": "https://www.youtube.com/watch?v=5YgdVnG4EkQ",
       "url": "https://www.planetcinema.co.il/films/fuze/8040s2r"
     },
+    "pl-7785s2r": {
+      "ccId": "pl-7785s2r",
+      "title": "מייקל",
+      "titleEn": null,
+      "genre": "דרמה",
+      "runtime": 127,
+      "releaseDate": "22/04/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7785S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=zE0OTb0ONJk",
+      "url": "https://www.planetcinema.co.il/films/michael/7785s2r"
+    },
     "pl-8160s2r1": {
       "ccId": "pl-8160s2r1",
       "title": "НА КРАЮ ОУК-СТРИТ- End of Oak street",
@@ -2115,19 +2115,6 @@
       "trailer": "https://www.youtube.com/watch?v=3cIe7LKZoMA",
       "url": "https://www.planetcinema.co.il/films/school-of-magical-animals-3/6928d2r"
     },
-    "pl-4823s2r": {
-      "ccId": "pl-4823s2r",
-      "title": "סינדרלה ושלוש המשאלות",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 85,
-      "releaseDate": "23/07/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/4823S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=B8Wz68mfjns",
-      "url": "https://www.planetcinema.co.il/films/three-wishes-for-cinderella/4823s2r"
-    },
     "pl-8368s2r": {
       "ccId": "pl-8368s2r",
       "title": "אשליות מתוקות",
@@ -2153,6 +2140,19 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8256S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=EqIeTRhl1ZU",
       "url": "https://www.planetcinema.co.il/films/american-hina/8256s2r"
+    },
+    "pl-4823s2r": {
+      "ccId": "pl-4823s2r",
+      "title": "סינדרלה ושלוש המשאלות",
+      "titleEn": null,
+      "genre": "אנימציה",
+      "runtime": 85,
+      "releaseDate": "23/07/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/4823S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=B8Wz68mfjns",
+      "url": "https://www.planetcinema.co.il/films/three-wishes-for-cinderella/4823s2r"
     },
     "pl-8348s2r": {
       "ccId": "pl-8348s2r",
