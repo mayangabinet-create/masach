@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T04:04:47.386Z",
+  "updatedAt": "2026-08-17T10:02:14.793Z",
   "byId": {
     "4239": {
       "ccId": "4239",
@@ -27,19 +27,6 @@
       "trailer": "https://www.youtube.com/watch?v=LYi_3PPRbh0",
       "url": "https://www.cinema-city.co.il/movie/5771"
     },
-    "5780": {
-      "ccId": "5780",
-      "title": "להעז בגדול-מדובב",
-      "titleEn": "Goat",
-      "genre": "ילדים",
-      "runtime": 100,
-      "releaseDate": "26/02/2026",
-      "rating": "מותר לכל",
-      "synopsis": "אולפני סוני אנימציה שהביאו אלינו את \"ספיידרמן: ברחבי ממדי העכביש\" מציגים את סרט האנימציה המסקרן לחורף הקרוב- להעז בגדול!",
-      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9C%D7%94%D7%A2%D7%96%20%D7%91%D7%92%D7%93%D7%95%D7%9C%20%D7%97%D7%93%D7%A9%281%29.jpg",
-      "trailer": "https://www.youtube.com/watch?v=a89KYNVpxf0",
-      "url": "https://www.cinema-city.co.il/movie/5780"
-    },
     "5830": {
       "ccId": "5830",
       "title": "כי את מכוערת",
@@ -52,19 +39,6 @@
       "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%9B%D7%99%20%D7%90%D7%AA%20%D7%9E%D7%9B%D7%95%D7%A2%D7%A8%D7%AA%282%29.jpg",
       "trailer": "https://www.youtube.com/watch?v=9hWP3LWR6t0",
       "url": "https://www.cinema-city.co.il/movie/5830"
-    },
-    "5964": {
-      "ccId": "5964",
-      "title": "השטן לובשת פראדה 2",
-      "titleEn": "The Devil Wears Prada 2",
-      "genre": "קומדיה",
-      "runtime": 118,
-      "releaseDate": "30/04/2026",
-      "rating": "מותר לכל",
-      "synopsis": "עשרים שנה אחרי שגילמו את התפקידים האייקוניים של מירנדה, אנדי, אמילי ונייג׳ל — מריל סטריפ, אן האת׳וויי, אמילי בלאנט וסטנלי טוצ׳י חוזרים לרחובות האופנתיים של ניו יורק בסרט ההמשך ללהיט מ- 2006 \"השטן לובשת פראדה\" שהגדיר דור שלם ואופנתי.",
-      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%94%D7%A9%D7%98%D7%9F%20%D7%9C%D7%95%D7%91%D7%A9%D7%AA%20%D7%A4%D7%A8%D7%90%D7%93%D7%94%202%20%D7%A1%D7%95%D7%A4%D7%99.jpg",
-      "trailer": "https://www.youtube.com/watch?v=vyWd93iOLyk",
-      "url": "https://www.cinema-city.co.il/movie/5964"
     },
     "5977": {
       "ccId": "5977",
@@ -143,19 +117,6 @@
       "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A6%D7%A2%D7%A6%D7%95%D7%A2%20%D7%A9%D7%9C%20%D7%A1%D7%99%D7%A4%D7%95%D7%A8%20%D7%97%D7%93%D7%A9.jpg",
       "trailer": "https://www.youtube.com/watch?v=fPBtstJ4v28",
       "url": "https://www.cinema-city.co.il/movie/6051"
-    },
-    "6054": {
-      "ccId": "6054",
-      "title": "סופר מריו גלקסי הסרט-מדובב",
-      "titleEn": "Super Mario Galaxy",
-      "genre": "אנימציה",
-      "runtime": 98,
-      "releaseDate": "16/04/2026",
-      "rating": "מותר לכל",
-      "synopsis": null,
-      "poster": "https://cdn.modulus.co.il/fetch/cinemacity/w_505,h_721,mode_,quality_95,v_4f7026f8-2419-4c0e-a835-774fecc120bf41/http://80.178.112.171/images/%D7%A1%D7%95%D7%A4%D7%A8-%D7%9E%D7%A8%D7%99%D7%95_%D7%92%D7%9C%D7%A7%D7%A1%D7%99-%D7%A1%D7%99%D7%A0%D7%9E%D7%94_%D7%A1%D7%99%D7%98%D7%99-kit02%286%29.jpg",
-      "trailer": "https://www.youtube.com/watch?v=8FexZ-ANOYo",
-      "url": "https://www.cinema-city.co.il/movie/6054"
     },
     "6065": {
       "ccId": "6065",
@@ -676,6 +637,10 @@
       "ccId": "x-הצגתילדיםהסינורשלרוני",
       "title": "הצגת ילדים - הסינור של רוני"
     },
+    "x-סופרמריוגלקסיהסרטמדובב": {
+      "ccId": "x-סופרמריוגלקסיהסרטמדובב",
+      "title": "סופר מריו גלקסי הסרט-מדובב"
+    },
     "x-בטטתכורסהמפגשלייב": {
       "ccId": "x-בטטתכורסהמפגשלייב",
       "title": "בטטת כורסה - מפגש לייב"
@@ -974,19 +939,6 @@
       "trailer": "https://www.youtube.com/watch?v=EqIeTRhl1ZU",
       "url": "https://hotcinema.co.il/movie/3653"
     },
-    "hot-3820": {
-      "ccId": "hot-3820",
-      "title": "טפיטי: הרפתקה במדבר",
-      "titleEn": "Tafiti: Across the Desert",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "הרפתקה קומית חדשה לכל המשפחה, מבוססת על סדרת הספרים המצליחה! טפיטי הוא סוריקטה סקרן שלמד שאסור להתיידד עם חיות אחרות – בטח לא עם חזיר בר מגושם! אבל כשסבא של טפיטי חולה, הוא יוצא למסע אמיץ כדי למצוא פרח קסום שירפא אותו. אל המסע מצטרף חזיר הבר השובב, וביחד הם יוצרים סיפור מלא אומץ, קסם וחברות יוצאת דופן.",
-      "poster": "https://hotcinema.co.il/images/Tafiti-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=pu-yypN56ck",
-      "url": "https://hotcinema.co.il/movie/3820"
-    },
     "hot-3737": {
       "ccId": "hot-3737",
       "title": "לגמור את הלילה",
@@ -1195,6 +1147,19 @@
       "trailer": "https://www.youtube.com/watch?v=KrY_CTdOHhI",
       "url": "https://hotcinema.co.il/movie/3819"
     },
+    "hot-3820": {
+      "ccId": "hot-3820",
+      "title": "טפיטי: הרפתקה במדבר",
+      "titleEn": "Tafiti: Across the Desert",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "הרפתקה קומית חדשה לכל המשפחה, מבוססת על סדרת הספרים המצליחה! טפיטי הוא סוריקטה סקרן שלמד שאסור להתיידד עם חיות אחרות – בטח לא עם חזיר בר מגושם! אבל כשסבא של טפיטי חולה, הוא יוצא למסע אמיץ כדי למצוא פרח קסום שירפא אותו. אל המסע מצטרף חזיר הבר השובב, וביחד הם יוצרים סיפור מלא אומץ, קסם וחברות יוצאת דופן.",
+      "poster": "https://hotcinema.co.il/images/Tafiti-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=pu-yypN56ck",
+      "url": "https://hotcinema.co.il/movie/3820"
+    },
     "hot-3752": {
       "ccId": "hot-3752",
       "title": "כימים אחדים",
@@ -1338,19 +1303,6 @@
       "trailer": "https://www.youtube.com/watch?v=9hWP3LWR6t0",
       "url": "https://hotcinema.co.il/movie/3309"
     },
-    "hot-3803": {
-      "ccId": "hot-3803",
-      "title": "סוד החיות הקסומות 3 מדובב לעברית",
-      "titleEn": "School of Magical Animals",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "הקסם חזר! תלמידי הכיתה בבית הספר וינטרשטיין מקבלים חיות מדברות נוספות לבית הספר. אל הפינגווין והשועל מצטרפים כעת תנין שנון ולטאה ארוכת לשון. התלמידים והחיות יוצאים יחדיו להרפתקה להציל את היער מפני חבורת עסקנים שרוצה לכרות אותו. הרפתקה מסוכנת אך שילוב הכוחות ביניהם מוביל במהרה לחוויה מצחיקה, מלהיבה ומסמרת שיער שתסתיים במוזיאון הטבע ההיסטורי של העיירה. סרט המשך להצלחה הקולנועית סוד החיות הקסומות שמבוסס על סדרת הספרים שתורגמה לשפות רבות בהצלחה גדולה כולל בישראל.",
-      "poster": "https://hotcinema.co.il/images/SchoolofMagicalAnimals-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=3cIe7LKZoMA",
-      "url": "https://hotcinema.co.il/movie/3803"
-    },
     "hot-3797": {
       "ccId": "hot-3797",
       "title": "האודיסאה מדובב לרוסית ОДИССЕЯ",
@@ -1363,6 +1315,19 @@
       "poster": "https://hotcinema.co.il/images/ODessY_RU-A.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=3wFLyQ0Q1mk",
       "url": "https://hotcinema.co.il/movie/3797"
+    },
+    "hot-3803": {
+      "ccId": "hot-3803",
+      "title": "סוד החיות הקסומות 3 מדובב לעברית",
+      "titleEn": "School of Magical Animals",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "הקסם חזר! תלמידי הכיתה בבית הספר וינטרשטיין מקבלים חיות מדברות נוספות לבית הספר. אל הפינגווין והשועל מצטרפים כעת תנין שנון ולטאה ארוכת לשון. התלמידים והחיות יוצאים יחדיו להרפתקה להציל את היער מפני חבורת עסקנים שרוצה לכרות אותו. הרפתקה מסוכנת אך שילוב הכוחות ביניהם מוביל במהרה לחוויה מצחיקה, מלהיבה ומסמרת שיער שתסתיים במוזיאון הטבע ההיסטורי של העיירה. סרט המשך להצלחה הקולנועית סוד החיות הקסומות שמבוסס על סדרת הספרים שתורגמה לשפות רבות בהצלחה גדולה כולל בישראל.",
+      "poster": "https://hotcinema.co.il/images/SchoolofMagicalAnimals-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=3cIe7LKZoMA",
+      "url": "https://hotcinema.co.il/movie/3803"
     },
     "hot-3636": {
       "ccId": "hot-3636",
@@ -1416,19 +1381,6 @@
       "trailer": "https://www.youtube.com/watch?v=VlRtm8Gh9PQ",
       "url": "https://hotcinema.co.il/movie/3838"
     },
-    "hot-3628": {
-      "ccId": "hot-3628",
-      "title": "מאשה והדוב – ההרפתקה הגדולה מדובב לעברית",
-      "titleEn": "MASHA and THE BEAR – WONDER PARK",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "בפעם הראשונה על מסך הקולנוע. מאשה והדוב – הדמויות האהובות על ילדי כל העולם מגיעות לבתי הקולנוע בישראל. בסרט כמו בכל פרקי הסדרה האהובה, נתענג על חוויותיה של הילדה הקטנה מאשה וחברה, הדוב. מאשה היא ילדה קטנה, חברותית והיפראקטיבית אשר לא נחה לרגע בגלל עודף האנרגיה שלה ותמיד מתייחסת לכולם כאילו היא מכירה אותם שנים. הדוב מצידו אוהב אותה אהבת אמת, דואג לה ובמנסה להשגיח עליה, לא כל כך בהצלחה ולשרוד את כל התעלולים שלה. אבל - לפעמים הוא גם רוצה קצת שקט ופרטיות – לקרוא ספר או לנמנם ליד הטלויזיה – מה שלא כל כך מתאפשר לו בחברתה. בסרט, מאשה והדוב יוצאים להרפתקה חדשה ומלהיבה בפארק הפלאות, שם מחכה להם יום גדוש במתקנים מסעירים ובמפגשים בלתי נשכחים ונפגוש גם את כל חבריהם המוכרים והאהובים בעוד הרפתקאות שישאירו את קהל הילדים וגם את ההורים עם חיוך גדול וטעם נפלא. החברות של מאשה והדוב משמשת כמשל של איך ילד מתחבר עם העולם הגדול ואיך מבוגר עוזר לו עם המשימות הקשות.",
-      "poster": "https://hotcinema.co.il/images/MASHAnTheBEAR–WonderPark-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=DqoHN5Xs0J4",
-      "url": "https://hotcinema.co.il/movie/3628"
-    },
     "hot-3808": {
       "ccId": "hot-3808",
       "title": "ההזמנה",
@@ -1454,6 +1406,19 @@
       "poster": "https://hotcinema.co.il/images/Croods_AR-A.png?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=4fVCKy69zUY",
       "url": "https://hotcinema.co.il/movie/3837"
+    },
+    "hot-3628": {
+      "ccId": "hot-3628",
+      "title": "מאשה והדוב – ההרפתקה הגדולה מדובב לעברית",
+      "titleEn": "MASHA and THE BEAR – WONDER PARK",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "בפעם הראשונה על מסך הקולנוע. מאשה והדוב – הדמויות האהובות על ילדי כל העולם מגיעות לבתי הקולנוע בישראל. בסרט כמו בכל פרקי הסדרה האהובה, נתענג על חוויותיה של הילדה הקטנה מאשה וחברה, הדוב. מאשה היא ילדה קטנה, חברותית והיפראקטיבית אשר לא נחה לרגע בגלל עודף האנרגיה שלה ותמיד מתייחסת לכולם כאילו היא מכירה אותם שנים. הדוב מצידו אוהב אותה אהבת אמת, דואג לה ובמנסה להשגיח עליה, לא כל כך בהצלחה ולשרוד את כל התעלולים שלה. אבל - לפעמים הוא גם רוצה קצת שקט ופרטיות – לקרוא ספר או לנמנם ליד הטלויזיה – מה שלא כל כך מתאפשר לו בחברתה. בסרט, מאשה והדוב יוצאים להרפתקה חדשה ומלהיבה בפארק הפלאות, שם מחכה להם יום גדוש במתקנים מסעירים ובמפגשים בלתי נשכחים ונפגוש גם את כל חבריהם המוכרים והאהובים בעוד הרפתקאות שישאירו את קהל הילדים וגם את ההורים עם חיוך גדול וטעם נפלא. החברות של מאשה והדוב משמשת כמשל של איך ילד מתחבר עם העולם הגדול ואיך מבוגר עוזר לו עם המשימות הקשות.",
+      "poster": "https://hotcinema.co.il/images/MASHAnTheBEAR–WonderPark-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=DqoHN5Xs0J4",
+      "url": "https://hotcinema.co.il/movie/3628"
     },
     "hot-3847": {
       "ccId": "hot-3847",
@@ -1559,19 +1524,6 @@
       "trailer": "https://www.youtube.com/watch?v=DXqvS92LCx0",
       "url": "https://www.planetcinema.co.il/films/hill-338/8403s2r"
     },
-    "pl-6628d2r": {
-      "ccId": "pl-6628d2r",
-      "title": "גרייסי ופדרו: חיות המחמד בפעולה",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 87,
-      "releaseDate": "23/07/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/6628D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=5KALYyGUsYQ",
-      "url": "https://www.planetcinema.co.il/films/gracie-pedro-pets-to-the-rescue/6628d2r"
-    },
     "pl-7460s2r": {
       "ccId": "pl-7460s2r",
       "title": "האודיסאה",
@@ -1610,19 +1562,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7918S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=SdlXjDy8xWA",
       "url": "https://www.planetcinema.co.il/films/a-missing-part/7918s2r"
-    },
-    "pl-7946d2r": {
-      "ccId": "pl-7946d2r",
-      "title": "המסע המופלא לעץ הקסמים",
-      "titleEn": null,
-      "genre": "הרפתקה",
-      "runtime": 110,
-      "releaseDate": "30/07/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7946D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=pHXSgO2CP5E",
-      "url": "https://www.planetcinema.co.il/films/the-magic-faraway-tree/7946d2r"
     },
     "pl-8386s2r": {
       "ccId": "pl-8386s2r",
@@ -1689,32 +1628,6 @@
       "trailer": "https://www.youtube.com/watch?v=i8Mhyq8r2AA",
       "url": "https://www.planetcinema.co.il/films/mama/8262s2r"
     },
-    "pl-7794s2r": {
-      "ccId": "pl-7794s2r",
-      "title": "מואנה לייב אקשן",
-      "titleEn": null,
-      "genre": "משפחה",
-      "runtime": 120,
-      "releaseDate": "09/07/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7794S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=IudYNbU6rvA",
-      "url": "https://www.planetcinema.co.il/films/moana-live-action/7794s2r"
-    },
-    "pl-7785s2r": {
-      "ccId": "pl-7785s2r",
-      "title": "מייקל",
-      "titleEn": null,
-      "genre": "דרמה",
-      "runtime": 127,
-      "releaseDate": "22/04/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7785S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=zE0OTb0ONJk",
-      "url": "https://www.planetcinema.co.il/films/michael/7785s2r"
-    },
     "pl-8023s2r": {
       "ccId": "pl-8023s2r",
       "title": "מיניונים ומפלצות",
@@ -1740,19 +1653,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8093D2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=FB6lZ1xygh8",
       "url": "https://www.planetcinema.co.il/films/paw-patrol-the-dino-movie/8093d2r"
-    },
-    "pl-7941s2r": {
-      "ccId": "pl-7941s2r",
-      "title": "מרסופילאמי",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 100,
-      "releaseDate": "06/08/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7941S2R.jpg",
-      "trailer": null,
-      "url": "https://www.planetcinema.co.il/films/marsupilami/7941s2r"
     },
     "pl-8223s2r": {
       "ccId": "pl-8223s2r",
@@ -1897,6 +1797,19 @@
       "trailer": "https://www.youtube.com/watch?v=KRX-urTl5-w",
       "url": "https://www.planetcinema.co.il/films/-the-odyssey/7460s2r2"
     },
+    "pl-6628d2r": {
+      "ccId": "pl-6628d2r",
+      "title": "גרייסי ופדרו: חיות המחמד בפעולה",
+      "titleEn": null,
+      "genre": "אנימציה",
+      "runtime": 87,
+      "releaseDate": "23/07/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/6628D2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=5KALYyGUsYQ",
+      "url": "https://www.planetcinema.co.il/films/gracie-pedro-pets-to-the-rescue/6628d2r"
+    },
     "pl-8438s2r": {
       "ccId": "pl-8438s2r",
       "title": "לה בוהם - אופרה בקולנוע",
@@ -1910,6 +1823,32 @@
       "trailer": "https://www.youtube.com/watch?v=lrjJsHvasDA",
       "url": "https://www.planetcinema.co.il/films/la-boheme/8438s2r"
     },
+    "pl-7794s2r": {
+      "ccId": "pl-7794s2r",
+      "title": "מואנה לייב אקשן",
+      "titleEn": null,
+      "genre": "משפחה",
+      "runtime": 120,
+      "releaseDate": "09/07/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7794S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=IudYNbU6rvA",
+      "url": "https://www.planetcinema.co.il/films/moana-live-action/7794s2r"
+    },
+    "pl-7941s2r": {
+      "ccId": "pl-7941s2r",
+      "title": "מרסופילאמי",
+      "titleEn": null,
+      "genre": "אנימציה",
+      "runtime": 100,
+      "releaseDate": "06/08/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7941S2R.jpg",
+      "trailer": null,
+      "url": "https://www.planetcinema.co.il/films/marsupilami/7941s2r"
+    },
     "pl-8085s2r2": {
       "ccId": "pl-8085s2r2",
       "title": "ЧЕЛОВЕК-ПАУК: НОВЫЙ ДЕНЬ - Spider-Man:",
@@ -1922,6 +1861,32 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8085S2R2.jpg",
       "trailer": "https://www.youtube.com/watch?v=B_Vi8wgyvcQ",
       "url": "https://www.planetcinema.co.il/films/8085s2r2/8085s2r2"
+    },
+    "pl-7785s2r": {
+      "ccId": "pl-7785s2r",
+      "title": "מייקל",
+      "titleEn": null,
+      "genre": "דרמה",
+      "runtime": 127,
+      "releaseDate": "22/04/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7785S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=zE0OTb0ONJk",
+      "url": "https://www.planetcinema.co.il/films/michael/7785s2r"
+    },
+    "pl-7946d2r": {
+      "ccId": "pl-7946d2r",
+      "title": "המסע המופלא לעץ הקסמים",
+      "titleEn": null,
+      "genre": "הרפתקה",
+      "runtime": 110,
+      "releaseDate": "30/07/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7946D2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=pHXSgO2CP5E",
+      "url": "https://www.planetcinema.co.il/films/the-magic-faraway-tree/7946d2r"
     },
     "pl-8046d2r": {
       "ccId": "pl-8046d2r",
@@ -1975,97 +1940,6 @@
       "trailer": "https://www.youtube.com/watch?v=yVgY29zJYMg",
       "url": "https://www.planetcinema.co.il/films/obsession/8134s2r"
     },
-    "lev-פרנקי-והמפלצות-מדובב": {
-      "ccId": "lev-פרנקי-והמפלצות-מדובב",
-      "title": "פרנקי והמפלצות-מדובב",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "ילד שנוצר על ידי מדען, אשר חי בטירה מסתורית, יוצא להרפתקה שמטלטלת את עולמו. הילד מטפל במפלצות המשעשעות בטירה מבודדת ושומר עליהן מהעולם שבחוץ. יום אחד הוא מגלה לראשונה מה יש מעבר לחומות. במסע מפתיע, יחד עם חברים לא צפויים, הוא מתמודד עם פחדים, בחירות ואומץ. בדרך הוא מגלה מהי תחושת שייכות אמיתית, וגם אם",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%a4%d7%a8%d7%a0%d7%a7%d7%99-%d7%95%d7%94%d7%9e%d7%a4%d7%9c%d7%a6%d7%95%d7%aa-%d7%9e%d7%93%d7%95%d7%91%d7%91/"
-    },
-    "lev-יקירתי": {
-      "ccId": "lev-יקירתי",
-      "title": "יקירתי",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "ניקו הצעיר נשלח לבלות את חודשי הקיץ עם דודה ג'לה. הוא דעתן ועקשן ומחובר לפלאפון, היא מסורתית, שמרנית ורגילה לנימוסים וסדר יום קבוע, אבל בדירה המיושנת בה היא חיה רוב חייה מסתתר גם סוד... בואו של הילד משבש כמובן את חייה של ג'לה; הוא מתחצף, היא מנסה לחנך אותו, ונדמה שהחיכוך בין ישן וחדש, מסורת",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%99%d7%a7%d7%99%d7%a8%d7%aa%d7%99/"
-    },
-    "lev-בחזרה-מההימאליה": {
-      "ccId": "lev-בחזרה-מההימאליה",
-      "title": "בחזרה מההימאליה",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "קיקה, קלרה ובנה לוקאס יוצאים לחופשה בצפון הודו. במהלך לילה סוער, תקרית דרמטית מפרידה ביניהם וקיקה מחולץ כשהוא פצוע ומובל אל כפר מבודד למרגלות ההימלאיה. שם, למול היופי הבלתי נתפס, קיקה מתאושש בהדרגה ולומד את אורח חייהם הייחודי של בני השבט – את המסורות, האמונות והקשר העמוק לטבע. תהליך ההחלמה הופך למסע פנימי של גילוי",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%91%d7%97%d7%96%d7%a8%d7%94-%d7%9e%d7%94%d7%94%d7%99%d7%9e%d7%90%d7%9c%d7%99%d7%94/"
-    },
-    "lev-ספיידרמן-יום-חדש": {
-      "ccId": "lev-ספיידרמן-יום-חדש",
-      "title": "ספיידרמן: יום חדש",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "לאחר ההצלחה הגלובלית חסרת התקדים של הסרט הקודם, הסרט \"ספיידרמן: יום חדש\" פותח פרק חדש לחלוטין עבור פיטר פרקר וספיידרמן. 4 שנים חלפו מאז אירועי הסרט הקודם ופיטר הוא כעת אדם בוגר שחי לגמרי לבדו, לאחר שבחר מרצונו למחוק את עצמו מחייהם ומזיכרונותיהם של האנשים שהוא אוהב. בעודו נלחם בפשע בניו יורק שכבר אינה מכירה",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%a1%d7%a4%d7%99%d7%99%d7%93%d7%a8%d7%9e%d7%9f-%d7%99%d7%95%d7%9d-%d7%97%d7%93%d7%a9/"
-    },
-    "lev-חג-מולד-מר": {
-      "ccId": "lev-חג-מולד-מר",
-      "title": "חג מולד מר",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "פסטיבל קאן – התחרות הרשמית סרטו החדש של אלמודובר, אחד הבמאים המצליחים והאהובים בעולם, הוא אחד האישיים והמרגשים עד כה. \"חג מולד מר\" מביא את סיפורו של ראול, במאי מפורסם בעיצומו של משבר כתיבה. כשהוא שואב השראה מאירועים בחייה של העוזרת האישית שלו, הוא בורא את דמותה של אלזה – במאית שכותבת תסריט משלה, במסע",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%97%d7%92-%d7%9e%d7%95%d7%9c%d7%93-%d7%9e%d7%a8/"
-    },
-    "lev-תיכון-מגשימים": {
-      "ccId": "lev-תיכון-מגשימים",
-      "title": "תיכון מגשימים",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "יואב (אמיר בנאי), נער שגדל עם אמא חד-הורית שנאבקת לפרנס, עובר דירה ומגיע לתיכון שבו המילים חזקות מהאגרופים ומי שיודע לחרוז שולט במגרש. אחרי שחנן (יונתן הורנצ'יק) מלך השכבה משפיל אותו בקרב ראפ, יואב נחוש להוכיח את עצמו ולזכות בליבה של מאיה (יעל שלביה), מלכת השכבה. הוא מגלה את חמורבי (עמית אולמן) - ראפר אגדי",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%aa%d7%99%d7%9b%d7%95%d7%9f-%d7%9e%d7%92%d7%a9%d7%99%d7%9e%d7%99%d7%9d/"
-    },
-    "lev-צעצוע-של-סיפור-5-מדובב": {
-      "ccId": "lev-צעצוע-של-סיפור-5-מדובב",
-      "title": "צעצוע של סיפור 5 מדובב",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "הצעצועים חוזרים ב״צעצוע של סיפור 5״ מבית דיסני פיקסאר. והפעם, הצעצועים פוגשים טכנולוגיה. באז, וודי, ג׳סי ושאר החבורה עומדים מול אתגר חדש שהילדים אובססיביים אליו כיום - מוצרים אלקטרוניים!",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%a6%d7%a2%d7%a6%d7%95%d7%a2-%d7%a9%d7%9c-%d7%a1%d7%99%d7%a4%d7%95%d7%a8-5-%d7%9e%d7%93%d7%95%d7%91%d7%91/"
-    },
     "lev-אשליות-מתוקות": {
       "ccId": "lev-אשליות-מתוקות",
       "title": "אשליות מתוקות",
@@ -2091,6 +1965,32 @@
       "poster": null,
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%9e%d7%a8%d7%a1%d7%95%d7%a4%d7%99%d7%9c%d7%90%d7%9e%d7%99-%d7%9e%d7%93%d7%95%d7%91%d7%91/"
+    },
+    "lev-חג-מולד-מר": {
+      "ccId": "lev-חג-מולד-מר",
+      "title": "חג מולד מר",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "פסטיבל קאן – התחרות הרשמית סרטו החדש של אלמודובר, אחד הבמאים המצליחים והאהובים בעולם, הוא אחד האישיים והמרגשים עד כה. \"חג מולד מר\" מביא את סיפורו של ראול, במאי מפורסם בעיצומו של משבר כתיבה. כשהוא שואב השראה מאירועים בחייה של העוזרת האישית שלו, הוא בורא את דמותה של אלזה – במאית שכותבת תסריט משלה, במסע",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%97%d7%92-%d7%9e%d7%95%d7%9c%d7%93-%d7%9e%d7%a8/"
+    },
+    "lev-ספיידרמן-יום-חדש": {
+      "ccId": "lev-ספיידרמן-יום-חדש",
+      "title": "ספיידרמן: יום חדש",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "לאחר ההצלחה הגלובלית חסרת התקדים של הסרט הקודם, הסרט \"ספיידרמן: יום חדש\" פותח פרק חדש לחלוטין עבור פיטר פרקר וספיידרמן. 4 שנים חלפו מאז אירועי הסרט הקודם ופיטר הוא כעת אדם בוגר שחי לגמרי לבדו, לאחר שבחר מרצונו למחוק את עצמו מחייהם ומזיכרונותיהם של האנשים שהוא אוהב. בעודו נלחם בפשע בניו יורק שכבר אינה מכירה",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%a1%d7%a4%d7%99%d7%99%d7%93%d7%a8%d7%9e%d7%9f-%d7%99%d7%95%d7%9d-%d7%97%d7%93%d7%a9/"
     },
     "lev-גבעה-338": {
       "ccId": "lev-גבעה-338",
@@ -2170,6 +2070,32 @@
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%94%d7%90%d7%95%d7%93%d7%99%d7%a1%d7%90%d7%94/"
     },
+    "lev-יקירתי": {
+      "ccId": "lev-יקירתי",
+      "title": "יקירתי",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "ניקו הצעיר נשלח לבלות את חודשי הקיץ עם דודה ג'לה. הוא דעתן ועקשן ומחובר לפלאפון, היא מסורתית, שמרנית ורגילה לנימוסים וסדר יום קבוע, אבל בדירה המיושנת בה היא חיה רוב חייה מסתתר גם סוד... בואו של הילד משבש כמובן את חייה של ג'לה; הוא מתחצף, היא מנסה לחנך אותו, ונדמה שהחיכוך בין ישן וחדש, מסורת",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%99%d7%a7%d7%99%d7%a8%d7%aa%d7%99/"
+    },
+    "lev-בחזרה-מההימאליה": {
+      "ccId": "lev-בחזרה-מההימאליה",
+      "title": "בחזרה מההימאליה",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "קיקה, קלרה ובנה לוקאס יוצאים לחופשה בצפון הודו. במהלך לילה סוער, תקרית דרמטית מפרידה ביניהם וקיקה מחולץ כשהוא פצוע ומובל אל כפר מבודד למרגלות ההימלאיה. שם, למול היופי הבלתי נתפס, קיקה מתאושש בהדרגה ולומד את אורח חייהם הייחודי של בני השבט – את המסורות, האמונות והקשר העמוק לטבע. תהליך ההחלמה הופך למסע פנימי של גילוי",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%91%d7%97%d7%96%d7%a8%d7%94-%d7%9e%d7%94%d7%94%d7%99%d7%9e%d7%90%d7%9c%d7%99%d7%94/"
+    },
     "lev-מילה-שלי": {
       "ccId": "lev-מילה-שלי",
       "title": "מילה שלי",
@@ -2183,6 +2109,19 @@
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%9e%d7%99%d7%9c%d7%94-%d7%a9%d7%9c%d7%99/"
     },
+    "lev-פרנקי-והמפלצות-מדובב": {
+      "ccId": "lev-פרנקי-והמפלצות-מדובב",
+      "title": "פרנקי והמפלצות-מדובב",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "ילד שנוצר על ידי מדען, אשר חי בטירה מסתורית, יוצא להרפתקה שמטלטלת את עולמו. הילד מטפל במפלצות המשעשעות בטירה מבודדת ושומר עליהן מהעולם שבחוץ. יום אחד הוא מגלה לראשונה מה יש מעבר לחומות. במסע מפתיע, יחד עם חברים לא צפויים, הוא מתמודד עם פחדים, בחירות ואומץ. בדרך הוא מגלה מהי תחושת שייכות אמיתית, וגם אם",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%a4%d7%a8%d7%a0%d7%a7%d7%99-%d7%95%d7%94%d7%9e%d7%a4%d7%9c%d7%a6%d7%95%d7%aa-%d7%9e%d7%93%d7%95%d7%91%d7%91/"
+    },
     "lev-מפרץ-ההרפתקאות-אי-הדינוזאורים-מדובב": {
       "ccId": "lev-מפרץ-ההרפתקאות-אי-הדינוזאורים-מדובב",
       "title": "מפרץ ההרפתקאות: אי הדינוזאורים-מדובב",
@@ -2195,6 +2134,32 @@
       "poster": null,
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%9e%d7%a4%d7%a8%d7%a5-%d7%94%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa-%d7%90%d7%99-%d7%94%d7%93%d7%99%d7%a0%d7%95%d7%96%d7%90%d7%95%d7%a8%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91/"
+    },
+    "lev-תיכון-מגשימים": {
+      "ccId": "lev-תיכון-מגשימים",
+      "title": "תיכון מגשימים",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "יואב (אמיר בנאי), נער שגדל עם אמא חד-הורית שנאבקת לפרנס, עובר דירה ומגיע לתיכון שבו המילים חזקות מהאגרופים ומי שיודע לחרוז שולט במגרש. אחרי שחנן (יונתן הורנצ'יק) מלך השכבה משפיל אותו בקרב ראפ, יואב נחוש להוכיח את עצמו ולזכות בליבה של מאיה (יעל שלביה), מלכת השכבה. הוא מגלה את חמורבי (עמית אולמן) - ראפר אגדי",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%aa%d7%99%d7%9b%d7%95%d7%9f-%d7%9e%d7%92%d7%a9%d7%99%d7%9e%d7%99%d7%9d/"
+    },
+    "lev-צעצוע-של-סיפור-5-מדובב": {
+      "ccId": "lev-צעצוע-של-סיפור-5-מדובב",
+      "title": "צעצוע של סיפור 5 מדובב",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "הצעצועים חוזרים ב״צעצוע של סיפור 5״ מבית דיסני פיקסאר. והפעם, הצעצועים פוגשים טכנולוגיה. באז, וודי, ג׳סי ושאר החבורה עומדים מול אתגר חדש שהילדים אובססיביים אליו כיום - מוצרים אלקטרוניים!",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%a6%d7%a2%d7%a6%d7%95%d7%a2-%d7%a9%d7%9c-%d7%a1%d7%99%d7%a4%d7%95%d7%a8-5-%d7%9e%d7%93%d7%95%d7%91%d7%91/"
     }
   }
 }
