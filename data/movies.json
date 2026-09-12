@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T12:57:13.671Z",
+  "updatedAt": "2026-09-12T17:50:36.882Z",
   "byId": {
     "5830": {
       "ccId": "5830",
@@ -750,19 +750,6 @@
       "trailer": "https://www.youtube.com/watch?v=ALnLMyzV55k",
       "url": "https://www.rav-hen.co.il/films/insidious-out-of-the-further/8183s2r"
     },
-    "rh-8473d2r": {
-      "ccId": "rh-8473d2r",
-      "title": "טד החוקר ומנורת הקסמים",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 94,
-      "releaseDate": "10/09/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8473D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=wHMwyvy4Jgs",
-      "url": "https://www.rav-hen.co.il/films/tad-and-the-magic-lamp/8473d2r"
-    },
     "rh-8440s2r": {
       "ccId": "rh-8440s2r",
       "title": "מה שמריאל יודעת",
@@ -775,32 +762,6 @@
       "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8440S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=iBB68PzTw8g",
       "url": "https://www.rav-hen.co.il/films/what-marielle-knows/8440s2r"
-    },
-    "rh-8093d2r": {
-      "ccId": "rh-8093d2r",
-      "title": "מפרץ ההרפתקאות: אי הדינוזאורים",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 90,
-      "releaseDate": "06/08/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8093D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=FB6lZ1xygh8",
-      "url": "https://www.rav-hen.co.il/films/paw-patrol-the-dino-movie/8093d2r"
-    },
-    "rh-8295s2r": {
-      "ccId": "rh-8295s2r",
-      "title": "נקמה בלב ים",
-      "titleEn": null,
-      "genre": "אקשן",
-      "runtime": 95,
-      "releaseDate": "20/08/2026",
-      "rating": "14+",
-      "synopsis": null,
-      "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8295S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=IDK2OTFYkyI",
-      "url": "https://www.rav-hen.co.il/films/mutiny/8295s2r"
     },
     "rh-8085s2r": {
       "ccId": "rh-8085s2r",
@@ -867,6 +828,19 @@
       "trailer": "https://www.youtube.com/watch?v=at0fOnMCrWQ",
       "url": "https://www.rav-hen.co.il/films/the-pout-pout-fish/7942d2r"
     },
+    "rh-8473d2r": {
+      "ccId": "rh-8473d2r",
+      "title": "טד החוקר ומנורת הקסמים",
+      "titleEn": null,
+      "genre": "אנימציה",
+      "runtime": 94,
+      "releaseDate": "10/09/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8473D2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=wHMwyvy4Jgs",
+      "url": "https://www.rav-hen.co.il/films/tad-and-the-magic-lamp/8473d2r"
+    },
     "rh-7541d2r": {
       "ccId": "rh-7541d2r",
       "title": "טפיטי: הרפתקה במדבר",
@@ -892,6 +866,32 @@
       "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8023S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=PrfUEjL82oc",
       "url": "https://www.rav-hen.co.il/films/minions-monsters/8023s2r"
+    },
+    "rh-8093d2r": {
+      "ccId": "rh-8093d2r",
+      "title": "מפרץ ההרפתקאות: אי הדינוזאורים",
+      "titleEn": null,
+      "genre": "אנימציה",
+      "runtime": 90,
+      "releaseDate": "06/08/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8093D2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=FB6lZ1xygh8",
+      "url": "https://www.rav-hen.co.il/films/paw-patrol-the-dino-movie/8093d2r"
+    },
+    "rh-8295s2r": {
+      "ccId": "rh-8295s2r",
+      "title": "נקמה בלב ים",
+      "titleEn": null,
+      "genre": "אקשן",
+      "runtime": 95,
+      "releaseDate": "20/08/2026",
+      "rating": "14+",
+      "synopsis": null,
+      "poster": "https://www.rav-hen.co.il/xmedia-cw/repo/feats/posters/8295S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=IDK2OTFYkyI",
+      "url": "https://www.rav-hen.co.il/films/mutiny/8295s2r"
     },
     "rh-7784s2r": {
       "ccId": "rh-7784s2r",
@@ -919,19 +919,6 @@
       "trailer": "https://www.youtube.com/watch?v=2_JDEfiwGi0",
       "url": "https://www.rav-hen.co.il/films/coyote-vs-acme/8352s2r"
     },
-    "hot-3865": {
-      "ccId": "hot-3865",
-      "title": "איש החידות",
-      "titleEn": "THE LUCKIEST MAN IN AMERICA",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "מבוסס על סיפורו האמיתי של האיש ששבר את השיטה וזכה בשעשועון היוקרתי ביותר בארה״ב. מאי 1984. מיליוני צופים מרותקים למסך, חולמים על הרגע שבו גם הם יוכלו להפוך בן־לילה לאנשים עשירים. הרבה לפני \"מי רוצה להיות מיליונר?\" ו\"גלגל המזל\", שעשועוני הטלוויזיה כבר הפכו את החלום על הכסף הגדול לבידור שסוחף את אמריקה. מייקל לארסון, נהג מובטל של משאית גלידה מאוהיו, מגיע לאולפן של שעשועון הטלוויזיה המצליח \"Press Your Luck\". למתמודד שנראה רגיל לחלוטין יש סוד שאיש בהפקה לא מכיר: הוא משוכנע שפיצח את השיטה — וגילה את הדרך לנצח את המשחק ולזכות שוב ושוב. ככל שסכום הזכייה שלו מטפס והוא מסרב לעצור, החגיגה באולפן הופכת למתח. בחדר הבקרה, מנהלי התוכנית ההמומים מתחילים להבין שמשהו כאן לא מסתדר — ויוצאים לגלות מי האיש שמולם, מה הוא יודע, ועד כמה רחוק הוא מוכן ללכת בשביל הזכייה הגדולה. סיפור אמיתי ובלתי ייאמן על האיש שנכנס לשעשועון טלוויזיה כדי לזכות בכסף — וכמעט ניצח את המשחק עצמו.",
-      "poster": "https://hotcinema.co.il/images/TLMIA-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=9Yib_QHT3vk",
-      "url": "https://hotcinema.co.il/movie/3865"
-    },
     "hot-3866": {
       "ccId": "hot-3866",
       "title": "בכל מחיר",
@@ -944,32 +931,6 @@
       "poster": "https://hotcinema.co.il/images/ByAnyMeans-A.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=ECp14e55cd4",
       "url": "https://hotcinema.co.il/movie/3866"
-    },
-    "hot-3834": {
-      "ccId": "hot-3834",
-      "title": "גבעה 338",
-      "titleEn": "גבעה 338",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "קומדיה פרועה על בסיס קטן ונשכח אי שם בבקעה במרכזו של השבר הסורי האפריקאי. ממשלת סין מוכנה לרכוש את השטח הקטן והזניח הזה ממדינת ישראל בסכום עתק לשם סלילת דרך המשי המתחדשת, כל מה שצריך לעשות זה לפנות את הבסיס. לצורך המשימה מגוייס רן שם טוב -\"קצין פירוק\" שנשלח לפקד ״מתוך שיקולי צבא והתייעלות״ אבל מה שרן לא יודע, וגם קודקודי הצבא, שמתחת לבסיס יש בונקר ישן שאיש לא זוכר לשם מה הוקם ולאחרונה מתרחשים בו דברים מוזרים שמעכבים את פינוי הבסיס ומביא את כל החיילים להתאחד נגד כוחות שונים ומשונים.",
-      "poster": "https://hotcinema.co.il/images/Gevha338-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=XIb8rmfsmxc",
-      "url": "https://hotcinema.co.il/movie/3834"
-    },
-    "hot-3825": {
-      "ccId": "hot-3825",
-      "title": "דג ושמו באסה מדובב לעברית",
-      "titleEn": "THE POUT POUT FISH",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "קומדיה לכל המשפחה בדיבובו של דניאל כהן ולינוי תבור מר פיש, דג צעיר אך רוטן, זעפן שאינו מכיר בחיוך, חי על ספינה טרופה מוזנחת, פוגש יום אחד בסוסת הים הצעירה פיפ שחושבת בטעות שביתו הוא מגרש גרוטאות וברגע משעשע השניים מחריבים בטעות את הבית. אבל יש תקווה! למרות היריבות, השניים משתפים פעולה ויוצאים למסע בלב האוקיינוס בחיפוש אחר ה\"שימר\" - חיית ים מיתולוגית שתגשים להם משאלה לבית חדש, אך יש רק בעיה אחת: מישהו אחר נמצא במרדף אחרי \"שימר\" וההרפתקאה מסתבכת.",
-      "poster": "https://hotcinema.co.il/images/ThePoutPoutFish-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=at0fOnMCrWQ",
-      "url": "https://hotcinema.co.il/movie/3825"
     },
     "hot-3567": {
       "ccId": "hot-3567",
@@ -1010,45 +971,6 @@
       "trailer": "https://www.youtube.com/watch?v=ALnLMyzV55k",
       "url": "https://hotcinema.co.il/movie/3852"
     },
-    "hot-3863": {
-      "ccId": "hot-3863",
-      "title": "חולים על החיים",
-      "titleEn": "SUNNY DANCER",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "כאילו שלכבוש את מחלת הסרטן לא קשה מספיק, ההורים של אייבי בת ה-17 רשמו אותה למה שהיא מכנה \"מחנה כימו\". אך החוויה המפתיעה מובילה את אייבי לפתח חברות לא צפויה עם קבוצה של אאוטסיידרים הזויים, ולחוות קיץ שלא תשכח לעולם. בלה רמזי (\"האחרונים מבינינו\") וניל פטריק האריס (\"איך פגשתי את אמא\") מככבים בקומדיה פרועה, מרגשת ועטורת שבחים שכבשה את פסטיבל ברלין.",
-      "poster": "https://hotcinema.co.il/images/SUNNY_DANCER-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=57MHCaiTsno",
-      "url": "https://hotcinema.co.il/movie/3863"
-    },
-    "hot-3892": {
-      "ccId": "hot-3892",
-      "title": "טד החוקר ומנורת הקסמים מדובב לעברית",
-      "titleEn": "Tadeo Jones and the Magic Lamp",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "בספטמבר הקרוב, טד החוקר חוזר בזמן! טד ושרה, עכשיו הורים לאולי השובבה, מוצאים את עצמם הרחק בעבר כאשר מנורת קסמים מסתורית מעניקה למומיה את משאלתו לחזור בזמן לממלכת פאיטיטי שבפרו בשנת 1502. טד, שרה וכל החבורה יצטרכו לרדוף אחריו אל העבר לפני שישנה את ההיסטוריה… המסע שלהם יוביל אותם מעבר לאוקיינוס האטלנטי: מפרו ליוון, ומשם עמוק אל המזרח התיכון, עד למערה של עלי באבא וארבעים השודדים. בדיבוב לעברית",
-      "poster": "https://hotcinema.co.il/images/TedJonens4-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=wHMwyvy4Jgs",
-      "url": "https://hotcinema.co.il/movie/3892"
-    },
-    "hot-3864": {
-      "ccId": "hot-3864",
-      "title": "ילד המדבר מדובב לעברית",
-      "titleEn": "THE DESERT CHILD",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "סאן בת ה-14 מחליטה להוציא לאור את הסיפור שסבה נהג לספר לה, על ילד בשם הדרה, שבגיל שנתיים איבד את משפחתו בסופת חול, וניצל בזכות זוג יענים שגידלו אותו במדבר. כשספרה מתפרסם, סאן מוזמנת לבקר במדבר סהרה, ונדהמת לגלות שהדרה היה יותר מסתם סיפור לפני השינה. הרפתקה נוגעת ללב בהשראת סיפורו האמיתי והבלתי ייאמן של הדרה, \"המוגלי של המדבר\" שגדל עם יענים בתחילת המאה ה-20. מהבמאי האהוב ז'יל דה מסטר (\"מיה והאריה הלבן\", \"אמה, הזאב והאריה הגדול\").",
-      "poster": "https://hotcinema.co.il/images/theDESERTchild-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=D4g6qe_bwmA",
-      "url": "https://hotcinema.co.il/movie/3864"
-    },
     "hot-3719": {
       "ccId": "hot-3719",
       "title": "כוכבי הכלב",
@@ -1075,58 +997,6 @@
       "trailer": "https://www.youtube.com/watch?v=ne4Jt5rwdoc",
       "url": "https://hotcinema.co.il/movie/3737"
     },
-    "hot-3777": {
-      "ccId": "hot-3777",
-      "title": "לוני טונס קיוטי נגד אקמי אנגלית",
-      "titleEn": "Coyote Vs ACME",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "אחרי ששבר את התעשיה והפך לאחד הסרטים המצופים של התקופה, הסרט המצחיק ביותר של השנה (בהתחייבות!) מגיע לקולנוע! הלוני טון ויילי קאיוטי תובע את תאגיד ACME על אספקת מוצרים פגומים ומתפוצצים במשך שנים. עם וויל פורטה בתפקיד התובע, באגס באני בתפקיד מקור מסתורי, מיפ מיפ בתפקיד עצמו, והופעה קורעת של ג'ון סינה כעורך הדין התאגידי החלקלק. סאטירה חכמה, טיפשית, שנונה, קצבית, ואולי מתפוצצת. שמתאימה באמת, אבל ב ב באמת, לכל הגילאים.",
-      "poster": "https://hotcinema.co.il/images/Coyotee-New.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=2_JDEfiwGi0",
-      "url": "https://hotcinema.co.il/movie/3777"
-    },
-    "hot-3776": {
-      "ccId": "hot-3776",
-      "title": "לוני טונס קיוטי נגד אקמי מדובב לעברית",
-      "titleEn": "Coyote Vs ACME",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "אחרי ששבר את התעשיה והפך לאחד הסרטים המצופים של התקופה, הסרט המצחיק ביותר של השנה (בהתחייבות!) מגיע לקולנוע! הלוני טון ויילי קאיוטי תובע את תאגיד ACME על אספקת מוצרים פגומים ומתפוצצים במשך שנים. עם וויל פורטה בתפקיד התובע, באגס באני בתפקיד מקור מסתורי, מיפ מיפ בתפקיד עצמו, והופעה קורעת של ג'ון סינה כעורך הדין התאגידי החלקלק. סאטירה חכמה, טיפשית, שנונה, קצבית, ואולי מתפוצצת. שמתאימה באמת, אבל ב ב באמת, לכל הגילאים.",
-      "poster": "https://hotcinema.co.il/images/Coyotee-New.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=2_JDEfiwGi0",
-      "url": "https://hotcinema.co.il/movie/3776"
-    },
-    "hot-3614": {
-      "ccId": "hot-3614",
-      "title": "מיניונים ומפלצות מדובב לעברית",
-      "titleEn": "Minions & Monsters",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "להוליווד יש בעיית מפלצות. \"מיניונים ומפלצות\" - הלהיט החדש מאולפני Illumination, מסדרת סרטי האנימציה המצליחה ביותר בישראל ובעולם בכל הזמנים מגיע רק לבתי הקולנוע . אולפני Illumination (\"מיניונים\", \"סופר מריו\", \"לשיר\") מרחיבים את היקום הקולנועי שלהם עם פרק חדש ופרוע, הכולל דמויות חדשות לגמרי, בסדרת סרטי האנימציה המצליחה ביותר בהיסטוריה. זהו הסיפור המשוגע, המגוחך והנכון-לחלוטין על איך המיניונים כבשו את הוליווד, הפכו לכוכבי קולנוע, איבדו הכל, שחררו מפלצות אל העולם ואז התאחדו כדי לנסות ולהציל את כדור הארץ מהכאוס שהם עצמם יצרו. יותר מעשור לאחר יצירתם, המיניונים הפכו לדמויות האנימציה האהובות ביותר בעולם. הם מוכרים בכל העולם ואהובים על מעריצים מכל הגילים, והם הזניקו את סדרות הסרטים \"גנוב על הירח\" ו\"המיניונים\" של אולפני Illumination להכנסות עולמיות של למעלה מ-5.6 מיליארד דולר. \"מיונים ומפלצות\" קיץ 2026 בקולנוע באנגלית ובדיבוב לעברית.",
-      "poster": "https://hotcinema.co.il/images/Minions-Final.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=PrfUEjL82oc",
-      "url": "https://hotcinema.co.il/movie/3614"
-    },
-    "hot-3686": {
-      "ccId": "hot-3686",
-      "title": "מפרץ ההרפתקאות: אי הדינוזאורים מדובב לעברית",
-      "titleEn": "PAW PATROL: THE DINO MOVIE",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "ההרפתקה הגדולה ביותר נוחתת בקולנוע באוגוסט הקרוב! לאחר שספינתם נלכדת בסערה מסתורית, יחידת החילוץ מגיעה לאי טרופי מלא בדינוזאורים. הם פוגשים את רקס, שגר באי והפך למומחה בכל מה שקשור לדינוזאורים. יחידת החילוץ יוצאת למשימה הגדולה ביותר שלהם – לעזור לדינוזאורים באי לפני שהר הגעש יתפרץ. אוגוסט בקולנוע",
-      "poster": "https://hotcinema.co.il/images/PawPatrol_TheDinoMovie-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=FB6lZ1xygh8",
-      "url": "https://hotcinema.co.il/movie/3686"
-    },
     "hot-3826": {
       "ccId": "hot-3826",
       "title": "נקמה בלב ים",
@@ -1139,32 +1009,6 @@
       "poster": "https://hotcinema.co.il/images/Mutiny-A.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=IDK2OTFYkyI",
       "url": "https://hotcinema.co.il/movie/3826"
-    },
-    "hot-3827": {
-      "ccId": "hot-3827",
-      "title": "סולטיז הסרט - וולוג ה-100",
-      "titleEn": "Saltiz",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "רגע לפני שהסולטיז לוחצים פרסום על וולוג ה-100 שלהם - הכל נעלם. הערוץ מחוק. אף אחד לא יודע מי, אף אחד לא יודע למה. הסולטיז יוצאים במסע הכי ארוך ומסוכן בחייהם במטרה להחזיר את הערוץ אבל בדרך הכל משתבש.",
-      "poster": "https://hotcinema.co.il/images/Saltiz-Movie.png?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=bj8alxbVQ9o",
-      "url": "https://hotcinema.co.il/movie/3827"
-    },
-    "hot-3817": {
-      "ccId": "hot-3817",
-      "title": "סינמה נוסטלגיה - 50 שנה לסרט נהג מונית",
-      "titleEn": "Taxi Driver",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "ספטמבר בסינמה נוסטלגיה! הסרט נהג מונית חוזר לכבוד מלוא 50 שנים לסרט הקנוני! יוצא מלחמה חסר יציבות נפשית עובד כנהג מונית לילי בניו יורק, שם הניוון והזלזול הנתפסים מלבים את יצרו לפעולה אלימה. הופעה בלתי נשכחת של רוברט דה-נירו!",
-      "poster": "https://hotcinema.co.il/images/Taxi Driver-Nos.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=T5IligQP7Fo",
-      "url": "https://hotcinema.co.il/movie/3817"
     },
     "hot-3650": {
       "ccId": "hot-3650",
@@ -1231,18 +1075,44 @@
       "trailer": "https://www.youtube.com/watch?v=6OwBEk6TRc4",
       "url": "https://hotcinema.co.il/movie/3857"
     },
-    "hot-3789": {
-      "ccId": "hot-3789",
-      "title": "תיכון מגשימים",
-      "titleEn": "Dream High",
+    "hot-3865": {
+      "ccId": "hot-3865",
+      "title": "איש החידות",
+      "titleEn": "THE LUCKIEST MAN IN AMERICA",
       "genre": null,
       "runtime": null,
       "releaseDate": null,
       "rating": null,
-      "synopsis": "מחווה בראפ לסרטי נעורים המספרת את סיפורו של יואב (אמיר בנאי), נער שמגיע לתיכון חדש שבו המעמד החברתי נקבע בקרבות ראפ, מושפל ביומו הראשון על ידי חנן (יונתן הורנצ'יק), מלך השכבה. בעזרת חמורבי (עמית אולמן), ראפר אגדי שמסתתר מאחורי דלפק הקיוסק, הוא הופך מהדחוי של השכבה לכוכב הבאטלים וכובש את הלב של מאיה (יעל שלביה), מלכת השכבה - אבל ההצלחה מרחיקה אותו מהחברים ומשימי (נועם קלינשטיין), הנערה היחידה שבאמת רואה אותו. באליפות הארצית, מול אלפי צופים, יואב צריך לבחור בין התהילה לבין מי שהוא באמת. מחווה בראפ לסרטי נעורים סרט מאת עמית אולמן (״העיר הזאת״)",
-      "poster": "https://hotcinema.co.il/images/Magshimim-New.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=BApO8FhXZ1g",
-      "url": "https://hotcinema.co.il/movie/3789"
+      "synopsis": "מבוסס על סיפורו האמיתי של האיש ששבר את השיטה וזכה בשעשועון היוקרתי ביותר בארה״ב. מאי 1984. מיליוני צופים מרותקים למסך, חולמים על הרגע שבו גם הם יוכלו להפוך בן־לילה לאנשים עשירים. הרבה לפני \"מי רוצה להיות מיליונר?\" ו\"גלגל המזל\", שעשועוני הטלוויזיה כבר הפכו את החלום על הכסף הגדול לבידור שסוחף את אמריקה. מייקל לארסון, נהג מובטל של משאית גלידה מאוהיו, מגיע לאולפן של שעשועון הטלוויזיה המצליח \"Press Your Luck\". למתמודד שנראה רגיל לחלוטין יש סוד שאיש בהפקה לא מכיר: הוא משוכנע שפיצח את השיטה — וגילה את הדרך לנצח את המשחק ולזכות שוב ושוב. ככל שסכום הזכייה שלו מטפס והוא מסרב לעצור, החגיגה באולפן הופכת למתח. בחדר הבקרה, מנהלי התוכנית ההמומים מתחילים להבין שמשהו כאן לא מסתדר — ויוצאים לגלות מי האיש שמולם, מה הוא יודע, ועד כמה רחוק הוא מוכן ללכת בשביל הזכייה הגדולה. סיפור אמיתי ובלתי ייאמן על האיש שנכנס לשעשועון טלוויזיה כדי לזכות בכסף — וכמעט ניצח את המשחק עצמו.",
+      "poster": "https://hotcinema.co.il/images/TLMIA-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=9Yib_QHT3vk",
+      "url": "https://hotcinema.co.il/movie/3865"
+    },
+    "hot-3834": {
+      "ccId": "hot-3834",
+      "title": "גבעה 338",
+      "titleEn": "גבעה 338",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "קומדיה פרועה על בסיס קטן ונשכח אי שם בבקעה במרכזו של השבר הסורי האפריקאי. ממשלת סין מוכנה לרכוש את השטח הקטן והזניח הזה ממדינת ישראל בסכום עתק לשם סלילת דרך המשי המתחדשת, כל מה שצריך לעשות זה לפנות את הבסיס. לצורך המשימה מגוייס רן שם טוב -\"קצין פירוק\" שנשלח לפקד ״מתוך שיקולי צבא והתייעלות״ אבל מה שרן לא יודע, וגם קודקודי הצבא, שמתחת לבסיס יש בונקר ישן שאיש לא זוכר לשם מה הוקם ולאחרונה מתרחשים בו דברים מוזרים שמעכבים את פינוי הבסיס ומביא את כל החיילים להתאחד נגד כוחות שונים ומשונים.",
+      "poster": "https://hotcinema.co.il/images/Gevha338-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=XIb8rmfsmxc",
+      "url": "https://hotcinema.co.il/movie/3834"
+    },
+    "hot-3825": {
+      "ccId": "hot-3825",
+      "title": "דג ושמו באסה מדובב לעברית",
+      "titleEn": "THE POUT POUT FISH",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "קומדיה לכל המשפחה בדיבובו של דניאל כהן ולינוי תבור מר פיש, דג צעיר אך רוטן, זעפן שאינו מכיר בחיוך, חי על ספינה טרופה מוזנחת, פוגש יום אחד בסוסת הים הצעירה פיפ שחושבת בטעות שביתו הוא מגרש גרוטאות וברגע משעשע השניים מחריבים בטעות את הבית. אבל יש תקווה! למרות היריבות, השניים משתפים פעולה ויוצאים למסע בלב האוקיינוס בחיפוש אחר ה\"שימר\" - חיית ים מיתולוגית שתגשים להם משאלה לבית חדש, אך יש רק בעיה אחת: מישהו אחר נמצא במרדף אחרי \"שימר\" וההרפתקאה מסתבכת.",
+      "poster": "https://hotcinema.co.il/images/ThePoutPoutFish-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=at0fOnMCrWQ",
+      "url": "https://hotcinema.co.il/movie/3825"
     },
     "hot-3867": {
       "ccId": "hot-3867",
@@ -1257,6 +1127,32 @@
       "trailer": "https://www.youtube.com/watch?v=sCeQE-QEW8A",
       "url": "https://hotcinema.co.il/movie/3867"
     },
+    "hot-3863": {
+      "ccId": "hot-3863",
+      "title": "חולים על החיים",
+      "titleEn": "SUNNY DANCER",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "כאילו שלכבוש את מחלת הסרטן לא קשה מספיק, ההורים של אייבי בת ה-17 רשמו אותה למה שהיא מכנה \"מחנה כימו\". אך החוויה המפתיעה מובילה את אייבי לפתח חברות לא צפויה עם קבוצה של אאוטסיידרים הזויים, ולחוות קיץ שלא תשכח לעולם. בלה רמזי (\"האחרונים מבינינו\") וניל פטריק האריס (\"איך פגשתי את אמא\") מככבים בקומדיה פרועה, מרגשת ועטורת שבחים שכבשה את פסטיבל ברלין.",
+      "poster": "https://hotcinema.co.il/images/SUNNY_DANCER-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=57MHCaiTsno",
+      "url": "https://hotcinema.co.il/movie/3863"
+    },
+    "hot-3892": {
+      "ccId": "hot-3892",
+      "title": "טד החוקר ומנורת הקסמים מדובב לעברית",
+      "titleEn": "Tadeo Jones and the Magic Lamp",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "בספטמבר הקרוב, טד החוקר חוזר בזמן! טד ושרה, עכשיו הורים לאולי השובבה, מוצאים את עצמם הרחק בעבר כאשר מנורת קסמים מסתורית מעניקה למומיה את משאלתו לחזור בזמן לממלכת פאיטיטי שבפרו בשנת 1502. טד, שרה וכל החבורה יצטרכו לרדוף אחריו אל העבר לפני שישנה את ההיסטוריה… המסע שלהם יוביל אותם מעבר לאוקיינוס האטלנטי: מפרו ליוון, ומשם עמוק אל המזרח התיכון, עד למערה של עלי באבא וארבעים השודדים. בדיבוב לעברית",
+      "poster": "https://hotcinema.co.il/images/TedJonens4-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=wHMwyvy4Jgs",
+      "url": "https://hotcinema.co.il/movie/3892"
+    },
     "hot-3820": {
       "ccId": "hot-3820",
       "title": "טפיטי: הרפתקה במדבר",
@@ -1270,6 +1166,45 @@
       "trailer": "https://www.youtube.com/watch?v=pu-yypN56ck",
       "url": "https://hotcinema.co.il/movie/3820"
     },
+    "hot-3864": {
+      "ccId": "hot-3864",
+      "title": "ילד המדבר מדובב לעברית",
+      "titleEn": "THE DESERT CHILD",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "סאן בת ה-14 מחליטה להוציא לאור את הסיפור שסבה נהג לספר לה, על ילד בשם הדרה, שבגיל שנתיים איבד את משפחתו בסופת חול, וניצל בזכות זוג יענים שגידלו אותו במדבר. כשספרה מתפרסם, סאן מוזמנת לבקר במדבר סהרה, ונדהמת לגלות שהדרה היה יותר מסתם סיפור לפני השינה. הרפתקה נוגעת ללב בהשראת סיפורו האמיתי והבלתי ייאמן של הדרה, \"המוגלי של המדבר\" שגדל עם יענים בתחילת המאה ה-20. מהבמאי האהוב ז'יל דה מסטר (\"מיה והאריה הלבן\", \"אמה, הזאב והאריה הגדול\").",
+      "poster": "https://hotcinema.co.il/images/theDESERTchild-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=D4g6qe_bwmA",
+      "url": "https://hotcinema.co.il/movie/3864"
+    },
+    "hot-3777": {
+      "ccId": "hot-3777",
+      "title": "לוני טונס קיוטי נגד אקמי אנגלית",
+      "titleEn": "Coyote Vs ACME",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "אחרי ששבר את התעשיה והפך לאחד הסרטים המצופים של התקופה, הסרט המצחיק ביותר של השנה (בהתחייבות!) מגיע לקולנוע! הלוני טון ויילי קאיוטי תובע את תאגיד ACME על אספקת מוצרים פגומים ומתפוצצים במשך שנים. עם וויל פורטה בתפקיד התובע, באגס באני בתפקיד מקור מסתורי, מיפ מיפ בתפקיד עצמו, והופעה קורעת של ג'ון סינה כעורך הדין התאגידי החלקלק. סאטירה חכמה, טיפשית, שנונה, קצבית, ואולי מתפוצצת. שמתאימה באמת, אבל ב ב באמת, לכל הגילאים.",
+      "poster": "https://hotcinema.co.il/images/Coyotee-New.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=2_JDEfiwGi0",
+      "url": "https://hotcinema.co.il/movie/3777"
+    },
+    "hot-3776": {
+      "ccId": "hot-3776",
+      "title": "לוני טונס קיוטי נגד אקמי מדובב לעברית",
+      "titleEn": "Coyote Vs ACME",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "אחרי ששבר את התעשיה והפך לאחד הסרטים המצופים של התקופה, הסרט המצחיק ביותר של השנה (בהתחייבות!) מגיע לקולנוע! הלוני טון ויילי קאיוטי תובע את תאגיד ACME על אספקת מוצרים פגומים ומתפוצצים במשך שנים. עם וויל פורטה בתפקיד התובע, באגס באני בתפקיד מקור מסתורי, מיפ מיפ בתפקיד עצמו, והופעה קורעת של ג'ון סינה כעורך הדין התאגידי החלקלק. סאטירה חכמה, טיפשית, שנונה, קצבית, ואולי מתפוצצת. שמתאימה באמת, אבל ב ב באמת, לכל הגילאים.",
+      "poster": "https://hotcinema.co.il/images/Coyotee-New.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=2_JDEfiwGi0",
+      "url": "https://hotcinema.co.il/movie/3776"
+    },
     "hot-3582": {
       "ccId": "hot-3582",
       "title": "מואנה לייב אקשן מדובב לעברית",
@@ -1282,6 +1217,58 @@
       "poster": "https://hotcinema.co.il/images/Moana-LA-A.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=QSf5Ad5MoNg",
       "url": "https://hotcinema.co.il/movie/3582"
+    },
+    "hot-3614": {
+      "ccId": "hot-3614",
+      "title": "מיניונים ומפלצות מדובב לעברית",
+      "titleEn": "Minions & Monsters",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "להוליווד יש בעיית מפלצות. \"מיניונים ומפלצות\" - הלהיט החדש מאולפני Illumination, מסדרת סרטי האנימציה המצליחה ביותר בישראל ובעולם בכל הזמנים מגיע רק לבתי הקולנוע . אולפני Illumination (\"מיניונים\", \"סופר מריו\", \"לשיר\") מרחיבים את היקום הקולנועי שלהם עם פרק חדש ופרוע, הכולל דמויות חדשות לגמרי, בסדרת סרטי האנימציה המצליחה ביותר בהיסטוריה. זהו הסיפור המשוגע, המגוחך והנכון-לחלוטין על איך המיניונים כבשו את הוליווד, הפכו לכוכבי קולנוע, איבדו הכל, שחררו מפלצות אל העולם ואז התאחדו כדי לנסות ולהציל את כדור הארץ מהכאוס שהם עצמם יצרו. יותר מעשור לאחר יצירתם, המיניונים הפכו לדמויות האנימציה האהובות ביותר בעולם. הם מוכרים בכל העולם ואהובים על מעריצים מכל הגילים, והם הזניקו את סדרות הסרטים \"גנוב על הירח\" ו\"המיניונים\" של אולפני Illumination להכנסות עולמיות של למעלה מ-5.6 מיליארד דולר. \"מיונים ומפלצות\" קיץ 2026 בקולנוע באנגלית ובדיבוב לעברית.",
+      "poster": "https://hotcinema.co.il/images/Minions-Final.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=PrfUEjL82oc",
+      "url": "https://hotcinema.co.il/movie/3614"
+    },
+    "hot-3686": {
+      "ccId": "hot-3686",
+      "title": "מפרץ ההרפתקאות: אי הדינוזאורים מדובב לעברית",
+      "titleEn": "PAW PATROL: THE DINO MOVIE",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "ההרפתקה הגדולה ביותר נוחתת בקולנוע באוגוסט הקרוב! לאחר שספינתם נלכדת בסערה מסתורית, יחידת החילוץ מגיעה לאי טרופי מלא בדינוזאורים. הם פוגשים את רקס, שגר באי והפך למומחה בכל מה שקשור לדינוזאורים. יחידת החילוץ יוצאת למשימה הגדולה ביותר שלהם – לעזור לדינוזאורים באי לפני שהר הגעש יתפרץ. אוגוסט בקולנוע",
+      "poster": "https://hotcinema.co.il/images/PawPatrol_TheDinoMovie-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=FB6lZ1xygh8",
+      "url": "https://hotcinema.co.il/movie/3686"
+    },
+    "hot-3827": {
+      "ccId": "hot-3827",
+      "title": "סולטיז הסרט - וולוג ה-100",
+      "titleEn": "Saltiz",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "רגע לפני שהסולטיז לוחצים פרסום על וולוג ה-100 שלהם - הכל נעלם. הערוץ מחוק. אף אחד לא יודע מי, אף אחד לא יודע למה. הסולטיז יוצאים במסע הכי ארוך ומסוכן בחייהם במטרה להחזיר את הערוץ אבל בדרך הכל משתבש.",
+      "poster": "https://hotcinema.co.il/images/Saltiz-Movie.png?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=bj8alxbVQ9o",
+      "url": "https://hotcinema.co.il/movie/3827"
+    },
+    "hot-3817": {
+      "ccId": "hot-3817",
+      "title": "סינמה נוסטלגיה - 50 שנה לסרט נהג מונית",
+      "titleEn": "Taxi Driver",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "ספטמבר בסינמה נוסטלגיה! הסרט נהג מונית חוזר לכבוד מלוא 50 שנים לסרט הקנוני! יוצא מלחמה חסר יציבות נפשית עובד כנהג מונית לילי בניו יורק, שם הניוון והזלזול הנתפסים מלבים את יצרו לפעולה אלימה. הופעה בלתי נשכחת של רוברט דה-נירו!",
+      "poster": "https://hotcinema.co.il/images/Taxi Driver-Nos.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=T5IligQP7Fo",
+      "url": "https://hotcinema.co.il/movie/3817"
     },
     "hot-3796": {
       "ccId": "hot-3796",
@@ -1321,6 +1308,19 @@
       "poster": "https://hotcinema.co.il/images/TOYS5-A.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=kAb8aeI2P-0",
       "url": "https://hotcinema.co.il/movie/3462"
+    },
+    "hot-3789": {
+      "ccId": "hot-3789",
+      "title": "תיכון מגשימים",
+      "titleEn": "Dream High",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "מחווה בראפ לסרטי נעורים המספרת את סיפורו של יואב (אמיר בנאי), נער שמגיע לתיכון חדש שבו המעמד החברתי נקבע בקרבות ראפ, מושפל ביומו הראשון על ידי חנן (יונתן הורנצ'יק), מלך השכבה. בעזרת חמורבי (עמית אולמן), ראפר אגדי שמסתתר מאחורי דלפק הקיוסק, הוא הופך מהדחוי של השכבה לכוכב הבאטלים וכובש את הלב של מאיה (יעל שלביה), מלכת השכבה - אבל ההצלחה מרחיקה אותו מהחברים ומשימי (נועם קלינשטיין), הנערה היחידה שבאמת רואה אותו. באליפות הארצית, מול אלפי צופים, יואב צריך לבחור בין התהילה לבין מי שהוא באמת. מחווה בראפ לסרטי נעורים סרט מאת עמית אולמן (״העיר הזאת״)",
+      "poster": "https://hotcinema.co.il/images/Magshimim-New.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=BApO8FhXZ1g",
+      "url": "https://hotcinema.co.il/movie/3789"
     },
     "hot-3797": {
       "ccId": "hot-3797",
@@ -1621,19 +1621,6 @@
       "trailer": "https://www.youtube.com/watch?v=M-X2EU7ZuFE",
       "url": "https://hotcinema.co.il/movie/3808"
     },
-    "hot-3877": {
-      "ccId": "hot-3877",
-      "title": "שנת הבגידה שלי",
-      "titleEn": "A Brief Affair",
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "ליאה ורוקו נפגשים במקרה בבר, והמשיכה ביניהם מיידית, עוצמתית ובלתי ניתנת להכחשה. השניים מתחילים ברומן סודי שמבוסס על פגישות מהירות וחשאיות בבית מלון, אך ככל שהזמן עובר, נדמה שרגשותיה של ליאה אל רוקו מתעצמים. כשנדמה שמערכת היחסים האסורה מתקרבת לנקודת הרתיחה, תפנית בלתי צפויה תגרום לגילויים מרעישים ומפתיעים שיסכנו את מערכות היחסים של ליאה, של רוקו, ושל כל מי שהם אוהבים. \"שנת הבגידה שלי\" היא דרמה איטלקית סוחפת ויצרית - סיפור מותח, מפתיע ומרגש על שני אנשים שמסכנים את כל מה שיש להם, מבלי לדעת באמת למה הם נכנסים... איטלקית, כתוביות בעברית ובאנגלית",
-      "poster": "https://hotcinema.co.il/images/ABriefAffair-A.jpg?w=314&h=451&mode=",
-      "trailer": "https://www.youtube.com/watch?v=Ty49-tPxvew",
-      "url": "https://hotcinema.co.il/movie/3877"
-    },
     "hot-3665": {
       "ccId": "hot-3665",
       "title": "סופר מריו גלקסי הסרט מדובב לערבית - سوبر ماريو جالاكسي",
@@ -1646,6 +1633,19 @@
       "poster": "https://hotcinema.co.il/images/Mario2-Final.jpg?w=314&h=451&mode=",
       "trailer": "https://www.youtube.com/watch?v=UsfWxHKllAI",
       "url": "https://hotcinema.co.il/movie/3665"
+    },
+    "hot-3877": {
+      "ccId": "hot-3877",
+      "title": "שנת הבגידה שלי",
+      "titleEn": "A Brief Affair",
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "ליאה ורוקו נפגשים במקרה בבר, והמשיכה ביניהם מיידית, עוצמתית ובלתי ניתנת להכחשה. השניים מתחילים ברומן סודי שמבוסס על פגישות מהירות וחשאיות בבית מלון, אך ככל שהזמן עובר, נדמה שרגשותיה של ליאה אל רוקו מתעצמים. כשנדמה שמערכת היחסים האסורה מתקרבת לנקודת הרתיחה, תפנית בלתי צפויה תגרום לגילויים מרעישים ומפתיעים שיסכנו את מערכות היחסים של ליאה, של רוקו, ושל כל מי שהם אוהבים. \"שנת הבגידה שלי\" היא דרמה איטלקית סוחפת ויצרית - סיפור מותח, מפתיע ומרגש על שני אנשים שמסכנים את כל מה שיש להם, מבלי לדעת באמת למה הם נכנסים... איטלקית, כתוביות בעברית ובאנגלית",
+      "poster": "https://hotcinema.co.il/images/ABriefAffair-A.jpg?w=314&h=451&mode=",
+      "trailer": "https://www.youtube.com/watch?v=Ty49-tPxvew",
+      "url": "https://hotcinema.co.il/movie/3877"
     },
     "hot-3858": {
       "ccId": "hot-3858",
@@ -1777,19 +1777,6 @@
       "trailer": "https://www.youtube.com/watch?v=9Yib_QHT3vk",
       "url": "https://www.planetcinema.co.il/films/the-luckiest-man-in-america/8461s2r"
     },
-    "pl-8375s2r": {
-      "ccId": "pl-8375s2r",
-      "title": "בחזרה מההימלאיה",
-      "titleEn": null,
-      "genre": "דרמה",
-      "runtime": 120,
-      "releaseDate": "13/08/2026",
-      "rating": "12+",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8375S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=_mbeY377SWA",
-      "url": "https://www.planetcinema.co.il/films/valley-of-shadows/8375s2r"
-    },
     "pl-8320s2r": {
       "ccId": "pl-8320s2r",
       "title": "בכל מחיר",
@@ -1802,19 +1789,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8320S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=ECp14e55cd4",
       "url": "https://www.planetcinema.co.il/films/by-any-means/8320s2r"
-    },
-    "pl-8403s2r": {
-      "ccId": "pl-8403s2r",
-      "title": "גבעה 338",
-      "titleEn": null,
-      "genre": "קומדיה",
-      "runtime": 106,
-      "releaseDate": "06/08/2026",
-      "rating": "9+",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8403S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=DXqvS92LCx0",
-      "url": "https://www.planetcinema.co.il/films/hill-338/8403s2r"
     },
     "pl-7460s2r": {
       "ccId": "pl-7460s2r",
@@ -1842,19 +1816,6 @@
       "trailer": "https://www.youtube.com/watch?v=CxNQ93CRLFQ",
       "url": "https://www.planetcinema.co.il/films/the-uprising/8483s2r"
     },
-    "pl-8386s2r": {
-      "ccId": "pl-8386s2r",
-      "title": "המשפחה האיטלקית שלי",
-      "titleEn": null,
-      "genre": "קומדיה",
-      "runtime": 97,
-      "releaseDate": "13/08/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8386S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=KrY_CTdOHhI",
-      "url": "https://www.planetcinema.co.il/films/damned-if-you-do-damned-if-you-dont/8386s2r"
-    },
     "pl-8183s2r": {
       "ccId": "pl-8183s2r",
       "title": "הרוע שבפנים: מחוץ למעבר",
@@ -1880,45 +1841,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8433S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=57MHCaiTsno",
       "url": "https://www.planetcinema.co.il/films/sunny-dancer/8433s2r"
-    },
-    "pl-8473d2r": {
-      "ccId": "pl-8473d2r",
-      "title": "טד החוקר ומנורת הקסמים",
-      "titleEn": null,
-      "genre": "אנימציה",
-      "runtime": 94,
-      "releaseDate": "10/09/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8473D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=wHMwyvy4Jgs",
-      "url": "https://www.planetcinema.co.il/films/tad-and-the-magic-lamp/8473d2r"
-    },
-    "pl-8051d2r": {
-      "ccId": "pl-8051d2r",
-      "title": "ילד המדבר",
-      "titleEn": null,
-      "genre": "משפחה",
-      "runtime": 92,
-      "releaseDate": "10/09/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8051D2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=D4g6qe_bwmA",
-      "url": "https://www.planetcinema.co.il/films/the-desert-child/8051d2r"
-    },
-    "pl-7944s2r": {
-      "ccId": "pl-7944s2r",
-      "title": "כוכבי כלב",
-      "titleEn": null,
-      "genre": "אקשן",
-      "runtime": 120,
-      "releaseDate": "27/08/2026",
-      "rating": "12+",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7944S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=zWfR37U6NT4",
-      "url": "https://www.planetcinema.co.il/films/dog-stars/7944s2r"
     },
     "pl-8184s2r": {
       "ccId": "pl-8184s2r",
@@ -1958,19 +1880,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8295S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=IDK2OTFYkyI",
       "url": "https://www.planetcinema.co.il/films/mutiny/8295s2r"
-    },
-    "pl-8471s2r": {
-      "ccId": "pl-8471s2r",
-      "title": "סיפורים קרועים",
-      "titleEn": null,
-      "genre": "קומדיה",
-      "runtime": 98,
-      "releaseDate": "03/09/2026",
-      "rating": "12+",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8471S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=oNTxnCY83zE",
-      "url": "https://www.planetcinema.co.il/films/homo-sapiens/8471s2r"
     },
     "pl-8085s2r": {
       "ccId": "pl-8085s2r",
@@ -2050,31 +1959,31 @@
       "trailer": "https://www.youtube.com/watch?v=Ty49-tPxvew",
       "url": "https://www.planetcinema.co.il/films/a-brief-affair/8472s2r"
     },
-    "pl-7460s2r2": {
-      "ccId": "pl-7460s2r2",
-      "title": "ОДИССЕЯ - The Odyssey",
+    "pl-8375s2r": {
+      "ccId": "pl-8375s2r",
+      "title": "בחזרה מההימלאיה",
       "titleEn": null,
-      "genre": "אקשן",
-      "runtime": 172,
-      "releaseDate": "16/07/2026",
-      "rating": null,
+      "genre": "דרמה",
+      "runtime": 120,
+      "releaseDate": "13/08/2026",
+      "rating": "12+",
       "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7460S2R2.jpg",
-      "trailer": "https://www.youtube.com/watch?v=KRX-urTl5-w",
-      "url": "https://www.planetcinema.co.il/films/-the-odyssey/7460s2r2"
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8375S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=_mbeY377SWA",
+      "url": "https://www.planetcinema.co.il/films/valley-of-shadows/8375s2r"
     },
-    "pl-8085s2r2": {
-      "ccId": "pl-8085s2r2",
-      "title": "ЧЕЛОВЕК-ПАУК: НОВЫЙ ДЕНЬ - Spider-Man:",
+    "pl-8403s2r": {
+      "ccId": "pl-8403s2r",
+      "title": "גבעה 338",
       "titleEn": null,
-      "genre": "אקשן",
-      "runtime": 140,
-      "releaseDate": "29/07/2026",
-      "rating": "לכל",
+      "genre": "קומדיה",
+      "runtime": 106,
+      "releaseDate": "06/08/2026",
+      "rating": "9+",
       "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8085S2R2.jpg",
-      "trailer": "https://www.youtube.com/watch?v=B_Vi8wgyvcQ",
-      "url": "https://www.planetcinema.co.il/films/8085s2r2/8085s2r2"
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8403S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=DXqvS92LCx0",
+      "url": "https://www.planetcinema.co.il/films/hill-338/8403s2r"
     },
     "pl-7942d2r": {
       "ccId": "pl-7942d2r",
@@ -2101,6 +2010,58 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8200S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=M-X2EU7ZuFE",
       "url": "https://www.planetcinema.co.il/films/the-invite/8200s2r"
+    },
+    "pl-8386s2r": {
+      "ccId": "pl-8386s2r",
+      "title": "המשפחה האיטלקית שלי",
+      "titleEn": null,
+      "genre": "קומדיה",
+      "runtime": 97,
+      "releaseDate": "13/08/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8386S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=KrY_CTdOHhI",
+      "url": "https://www.planetcinema.co.il/films/damned-if-you-do-damned-if-you-dont/8386s2r"
+    },
+    "pl-8473d2r": {
+      "ccId": "pl-8473d2r",
+      "title": "טד החוקר ומנורת הקסמים",
+      "titleEn": null,
+      "genre": "אנימציה",
+      "runtime": 94,
+      "releaseDate": "10/09/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8473D2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=wHMwyvy4Jgs",
+      "url": "https://www.planetcinema.co.il/films/tad-and-the-magic-lamp/8473d2r"
+    },
+    "pl-8051d2r": {
+      "ccId": "pl-8051d2r",
+      "title": "ילד המדבר",
+      "titleEn": null,
+      "genre": "משפחה",
+      "runtime": 92,
+      "releaseDate": "10/09/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8051D2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=D4g6qe_bwmA",
+      "url": "https://www.planetcinema.co.il/films/the-desert-child/8051d2r"
+    },
+    "pl-7944s2r": {
+      "ccId": "pl-7944s2r",
+      "title": "כוכבי כלב",
+      "titleEn": null,
+      "genre": "אקשן",
+      "runtime": 120,
+      "releaseDate": "27/08/2026",
+      "rating": "12+",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7944S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=zWfR37U6NT4",
+      "url": "https://www.planetcinema.co.il/films/dog-stars/7944s2r"
     },
     "pl-7794s2r": {
       "ccId": "pl-7794s2r",
@@ -2167,6 +2128,19 @@
       "trailer": null,
       "url": "https://www.planetcinema.co.il/films/marsupilami/7941s2r"
     },
+    "pl-8471s2r": {
+      "ccId": "pl-8471s2r",
+      "title": "סיפורים קרועים",
+      "titleEn": null,
+      "genre": "קומדיה",
+      "runtime": 98,
+      "releaseDate": "03/09/2026",
+      "rating": "12+",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8471S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=oNTxnCY83zE",
+      "url": "https://www.planetcinema.co.il/films/homo-sapiens/8471s2r"
+    },
     "pl-7578s2r": {
       "ccId": "pl-7578s2r",
       "title": "ערך סנטימנטלי",
@@ -2232,6 +2206,19 @@
       "trailer": null,
       "url": "https://www.planetcinema.co.il/films/magshimim/8289s2r"
     },
+    "pl-7460s2r2": {
+      "ccId": "pl-7460s2r2",
+      "title": "ОДИССЕЯ - The Odyssey",
+      "titleEn": null,
+      "genre": "אקשן",
+      "runtime": 172,
+      "releaseDate": "16/07/2026",
+      "rating": null,
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/7460S2R2.jpg",
+      "trailer": "https://www.youtube.com/watch?v=KRX-urTl5-w",
+      "url": "https://www.planetcinema.co.il/films/-the-odyssey/7460s2r2"
+    },
     "pl-8460s2r": {
       "ccId": "pl-8460s2r",
       "title": "לה טראוויאטה - אופרה בקולנוע",
@@ -2245,18 +2232,18 @@
       "trailer": "https://www.youtube.com/watch?v=jGhC3Bgq7X4",
       "url": "https://www.planetcinema.co.il/films/la-traviata/8460s2r"
     },
-    "pl-8326s2r": {
-      "ccId": "pl-8326s2r",
-      "title": "מאבדים שליטה",
+    "pl-8469s2r": {
+      "ccId": "pl-8469s2r",
+      "title": "הנוקמים: סוף המשחק - הדרן",
       "titleEn": null,
-      "genre": "קומדיה",
-      "runtime": 95,
-      "releaseDate": "01/10/2026",
+      "genre": "אקשן",
+      "runtime": 181,
+      "releaseDate": "24/09/2026",
       "rating": null,
       "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8326S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=kAh4rj8Q4CM",
-      "url": "https://www.planetcinema.co.il/films/rolling-loud/8326s2r"
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8469S2R.jpg",
+      "trailer": null,
+      "url": "https://www.planetcinema.co.il/films/avengers-endgame-re-release/8469s2r"
     },
     "pl-8425s2i": {
       "ccId": "pl-8425s2i",
@@ -2283,6 +2270,19 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8046D2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=DqoHN5Xs0J4",
       "url": "https://www.planetcinema.co.il/films/masha-the-bear-wonder-park/8046d2r"
+    },
+    "pl-8085s2r2": {
+      "ccId": "pl-8085s2r2",
+      "title": "ЧЕЛОВЕК-ПАУК: НОВЫЙ ДЕНЬ - Spider-Man:",
+      "titleEn": null,
+      "genre": "אקשן",
+      "runtime": 140,
+      "releaseDate": "29/07/2026",
+      "rating": "לכל",
+      "synopsis": null,
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8085S2R2.jpg",
+      "trailer": "https://www.youtube.com/watch?v=B_Vi8wgyvcQ",
+      "url": "https://www.planetcinema.co.il/films/8085s2r2/8085s2r2"
     },
     "pl-8093d2r1": {
       "ccId": "pl-8093d2r1",
@@ -2388,19 +2388,6 @@
       "trailer": "https://www.youtube.com/watch?v=5YgdVnG4EkQ",
       "url": "https://www.planetcinema.co.il/films/fuze/8040s2r"
     },
-    "pl-8469s2r": {
-      "ccId": "pl-8469s2r",
-      "title": "הנוקמים: סוף המשחק - הדרן",
-      "titleEn": null,
-      "genre": "אקשן",
-      "runtime": 181,
-      "releaseDate": "24/09/2026",
-      "rating": null,
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8469S2R.jpg",
-      "trailer": null,
-      "url": "https://www.planetcinema.co.il/films/avengers-endgame-re-release/8469s2r"
-    },
     "pl-8262s2r": {
       "ccId": "pl-8262s2r",
       "title": "מאמא",
@@ -2413,19 +2400,6 @@
       "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8262S2R.jpg",
       "trailer": "https://www.youtube.com/watch?v=i8Mhyq8r2AA",
       "url": "https://www.planetcinema.co.il/films/mama/8262s2r"
-    },
-    "pl-8439s2r": {
-      "ccId": "pl-8439s2r",
-      "title": "ויהי גשם",
-      "titleEn": null,
-      "genre": "קומדיה",
-      "runtime": 109,
-      "releaseDate": "20/08/2026",
-      "rating": "לכל",
-      "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8439S2R.jpg",
-      "trailer": "https://www.youtube.com/watch?v=V5KXO2rmGSg",
-      "url": "https://www.planetcinema.co.il/films/let-it-rain/8439s2r"
     },
     "pl-8160s2r": {
       "ccId": "pl-8160s2r",
@@ -2440,18 +2414,44 @@
       "trailer": "https://www.youtube.com/watch?v=oa8NkcPZrf0",
       "url": "https://www.planetcinema.co.il/films/end-of-oak-street/8160s2r"
     },
-    "pl-8160s2r1": {
-      "ccId": "pl-8160s2r1",
-      "title": "НА КРАЮ ОУК-СТРИТ- End of Oak street",
+    "pl-8439s2r": {
+      "ccId": "pl-8439s2r",
+      "title": "ויהי גשם",
       "titleEn": null,
-      "genre": "אימה",
-      "runtime": 100,
-      "releaseDate": "13/08/2026",
-      "rating": null,
+      "genre": "קומדיה",
+      "runtime": 109,
+      "releaseDate": "20/08/2026",
+      "rating": "לכל",
       "synopsis": null,
-      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8160S2R1.jpg",
-      "trailer": "https://www.youtube.com/watch?v=PtDkTqzZODw",
-      "url": "https://www.planetcinema.co.il/films/8160s2r1/8160s2r1"
+      "poster": "https://www.planetcinema.co.il/xmedia-cw/repo/feats/posters/8439S2R.jpg",
+      "trailer": "https://www.youtube.com/watch?v=V5KXO2rmGSg",
+      "url": "https://www.planetcinema.co.il/films/let-it-rain/8439s2r"
+    },
+    "lev-האודיסאה": {
+      "ccId": "lev-האודיסאה",
+      "title": "האודיסאה",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "לאחר מלחמת טרויה, אודיסאוס עומד בפני מסע מסוכן בחזרה לאיתקה, כשהוא פוגש יצורים כמו הקיקלופ פוליפמוס, הסירנות, וקירקה לאורך המסע. סרטו החדש של הבמאי זוכה האוסקר כריסטופר נולאן בכיכובם של מאט דיימון, טום הולנד, אן האת'וויי, זנדאיה, לופיטה ניונגו, רוברט פטינסון, שרליז ת'רון, ג'ון ברנטל, אליוט פייג', ועוד.",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%94%d7%90%d7%95%d7%93%d7%99%d7%a1%d7%90%d7%94/"
+    },
+    "lev-חולים-על-החיים": {
+      "ccId": "lev-חולים-על-החיים",
+      "title": "חולים על החיים",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "כאילו שלכבוש את מחלת הסרטן לא קשה מספיק, ההורים של אייבי בת ה-17 רשמו אותה למה שהיא מכנה \"מחנה כימו\". אך החוויה המפתיעה מובילה את אייבי לפתח חברות לא צפויה עם קבוצה של אאוטסיידרים הזויים, ולחוות קיץ שלא תשכח לעולם. בלה רמזי (\"האחרונים מבינינו\") וניל פטריק האריס (\"איך פגשתי את אמא\") מככבים בקומדיה פרועה, מרגשת",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%97%d7%95%d7%9c%d7%99%d7%9d-%d7%a2%d7%9c-%d7%94%d7%97%d7%99%d7%99%d7%9d/"
     },
     "lev-המרד": {
       "ccId": "lev-המרד",
@@ -2466,19 +2466,6 @@
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%94%d7%9e%d7%a8%d7%93/"
     },
-    "lev-בחזרה-מההימאליה": {
-      "ccId": "lev-בחזרה-מההימאליה",
-      "title": "בחזרה מההימאליה",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "קיקה, קלרה ובנה לוקאס יוצאים לחופשה בצפון הודו. במהלך לילה סוער, תקרית דרמטית מפרידה ביניהם וקיקה מחולץ כשהוא פצוע ומובל אל כפר מבודד למרגלות ההימלאיה. שם, למול היופי הבלתי נתפס, קיקה מתאושש בהדרגה ולומד את אורח חייהם הייחודי של בני השבט – את המסורות, האמונות והקשר העמוק לטבע. תהליך ההחלמה הופך למסע פנימי של גילוי",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%91%d7%97%d7%96%d7%a8%d7%94-%d7%9e%d7%94%d7%94%d7%99%d7%9e%d7%90%d7%9c%d7%99%d7%94/"
-    },
     "lev-ההזמנה": {
       "ccId": "lev-ההזמנה",
       "title": "ההזמנה.",
@@ -2491,6 +2478,19 @@
       "poster": null,
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%94%d7%94%d7%96%d7%9e%d7%a0%d7%94/"
+    },
+    "lev-שנת-הבגידה-שלי": {
+      "ccId": "lev-שנת-הבגידה-שלי",
+      "title": "שנת הבגידה שלי",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "ליאה ורוקו נפגשים במקרה בבר, והמשיכה ביניהם מיידית, עוצמתית ובלתי ניתנת להכחשה. השניים מתחילים ברומן סודי שמבוסס על פגישות מהירות וחשאיות בבית מלון, אך ככל שהזמן עובר, נדמה שרגשותיה של ליאה אל רוקו מתעצמים. כשנדמה שמערכת היחסים האסורה מתקרבת לנקודת הרתיחה, תפנית בלתי צפויה תגרום לגילויים מרעישים ומפתיעים שיסכנו את מערכות היחסים של ליאה, של",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%a9%d7%a0%d7%aa-%d7%94%d7%91%d7%92%d7%99%d7%93%d7%94-%d7%a9%d7%9c%d7%99/"
     },
     "lev-עצמאות": {
       "ccId": "lev-עצמאות",
@@ -2531,58 +2531,6 @@
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%9e%d7%94-%d7%a9%d7%9e%d7%a8%d7%99%d7%90%d7%9c-%d7%99%d7%95%d7%93%d7%a2%d7%aa/"
     },
-    "lev-שנת-הבגידה-שלי": {
-      "ccId": "lev-שנת-הבגידה-שלי",
-      "title": "שנת הבגידה שלי",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "ליאה ורוקו נפגשים במקרה בבר, והמשיכה ביניהם מיידית, עוצמתית ובלתי ניתנת להכחשה. השניים מתחילים ברומן סודי שמבוסס על פגישות מהירות וחשאיות בבית מלון, אך ככל שהזמן עובר, נדמה שרגשותיה של ליאה אל רוקו מתעצמים. כשנדמה שמערכת היחסים האסורה מתקרבת לנקודת הרתיחה, תפנית בלתי צפויה תגרום לגילויים מרעישים ומפתיעים שיסכנו את מערכות היחסים של ליאה, של",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%a9%d7%a0%d7%aa-%d7%94%d7%91%d7%92%d7%99%d7%93%d7%94-%d7%a9%d7%9c%d7%99/"
-    },
-    "lev-חולים-על-החיים": {
-      "ccId": "lev-חולים-על-החיים",
-      "title": "חולים על החיים",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "כאילו שלכבוש את מחלת הסרטן לא קשה מספיק, ההורים של אייבי בת ה-17 רשמו אותה למה שהיא מכנה \"מחנה כימו\". אך החוויה המפתיעה מובילה את אייבי לפתח חברות לא צפויה עם קבוצה של אאוטסיידרים הזויים, ולחוות קיץ שלא תשכח לעולם. בלה רמזי (\"האחרונים מבינינו\") וניל פטריק האריס (\"איך פגשתי את אמא\") מככבים בקומדיה פרועה, מרגשת",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%97%d7%95%d7%9c%d7%99%d7%9d-%d7%a2%d7%9c-%d7%94%d7%97%d7%99%d7%99%d7%9d/"
-    },
-    "lev-חג-מולד-מר": {
-      "ccId": "lev-חג-מולד-מר",
-      "title": "חג מולד מר",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "פסטיבל קאן – התחרות הרשמית סרטו החדש של אלמודובר, אחד הבמאים המצליחים והאהובים בעולם, הוא אחד האישיים והמרגשים עד כה. \"חג מולד מר\" מביא את סיפורו של ראול, במאי מפורסם בעיצומו של משבר כתיבה. כשהוא שואב השראה מאירועים בחייה של העוזרת האישית שלו, הוא בורא את דמותה של אלזה – במאית שכותבת תסריט משלה, במסע",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%97%d7%92-%d7%9e%d7%95%d7%9c%d7%93-%d7%9e%d7%a8/"
-    },
-    "lev-האודיסאה": {
-      "ccId": "lev-האודיסאה",
-      "title": "האודיסאה",
-      "titleEn": null,
-      "genre": null,
-      "runtime": null,
-      "releaseDate": null,
-      "rating": null,
-      "synopsis": "לאחר מלחמת טרויה, אודיסאוס עומד בפני מסע מסוכן בחזרה לאיתקה, כשהוא פוגש יצורים כמו הקיקלופ פוליפמוס, הסירנות, וקירקה לאורך המסע. סרטו החדש של הבמאי זוכה האוסקר כריסטופר נולאן בכיכובם של מאט דיימון, טום הולנד, אן האת'וויי, זנדאיה, לופיטה ניונגו, רוברט פטינסון, שרליז ת'רון, ג'ון ברנטל, אליוט פייג', ועוד.",
-      "poster": null,
-      "trailer": null,
-      "url": "https://www.lev.co.il/movies/%d7%94%d7%90%d7%95%d7%93%d7%99%d7%a1%d7%90%d7%94/"
-    },
     "lev-אשליות-מתוקות": {
       "ccId": "lev-אשליות-מתוקות",
       "title": "אשליות מתוקות",
@@ -2608,6 +2556,32 @@
       "poster": null,
       "trailer": null,
       "url": "https://www.lev.co.il/movies/%d7%98%d7%93-%d7%94%d7%97%d7%95%d7%a7%d7%a8-%d7%95%d7%9e%d7%a0%d7%95%d7%a8%d7%aa-%d7%94%d7%a7%d7%a1%d7%9e%d7%99%d7%9d-%d7%9e%d7%93%d7%95%d7%91%d7%91/"
+    },
+    "lev-חג-מולד-מר": {
+      "ccId": "lev-חג-מולד-מר",
+      "title": "חג מולד מר",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "פסטיבל קאן – התחרות הרשמית סרטו החדש של אלמודובר, אחד הבמאים המצליחים והאהובים בעולם, הוא אחד האישיים והמרגשים עד כה. \"חג מולד מר\" מביא את סיפורו של ראול, במאי מפורסם בעיצומו של משבר כתיבה. כשהוא שואב השראה מאירועים בחייה של העוזרת האישית שלו, הוא בורא את דמותה של אלזה – במאית שכותבת תסריט משלה, במסע",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%97%d7%92-%d7%9e%d7%95%d7%9c%d7%93-%d7%9e%d7%a8/"
+    },
+    "lev-בחזרה-מההימאליה": {
+      "ccId": "lev-בחזרה-מההימאליה",
+      "title": "בחזרה מההימאליה",
+      "titleEn": null,
+      "genre": null,
+      "runtime": null,
+      "releaseDate": null,
+      "rating": null,
+      "synopsis": "קיקה, קלרה ובנה לוקאס יוצאים לחופשה בצפון הודו. במהלך לילה סוער, תקרית דרמטית מפרידה ביניהם וקיקה מחולץ כשהוא פצוע ומובל אל כפר מבודד למרגלות ההימלאיה. שם, למול היופי הבלתי נתפס, קיקה מתאושש בהדרגה ולומד את אורח חייהם הייחודי של בני השבט – את המסורות, האמונות והקשר העמוק לטבע. תהליך ההחלמה הופך למסע פנימי של גילוי",
+      "poster": null,
+      "trailer": null,
+      "url": "https://www.lev.co.il/movies/%d7%91%d7%97%d7%96%d7%a8%d7%94-%d7%9e%d7%94%d7%94%d7%99%d7%9e%d7%90%d7%9c%d7%99%d7%94/"
     },
     "lev-יקירתי": {
       "ccId": "lev-יקירתי",
